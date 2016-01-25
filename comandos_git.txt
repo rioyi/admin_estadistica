@@ -1,0 +1,129 @@
+Configuracion global de git
+configurar usuario
+$git config --global user.name rioyi
+
+condigurar email
+$git config --global user.email rioyi@publicwall.com.ve
+
+configurar colores
+$git config --global color.ui true
+
+ver las configuraciones asignandas
+$ git config --global list
+
+----------------------------------------
+INICIAR PROYECTO
+
+Inicio de todo
+$git init
+(solo se usar para dar inicio a un proyecto)
+
+Estado
+$git status
+
+Agregar a archivo o preparado
+$git add
+$git add -A 
+(para agregar todo lo modificado)
+
+Hacer commit con comentarios
+$git commit -m "Comentario a agregar"
+
+Listar informacion de todos los commit
+$git log
+
+Moverse entre commit
+$git checkout CODIGO_SHA_DEL_COMMIT
+
+Regresar al ultimo commit
+$git checkout master
+
+----------------------------------------
+///////////////////ALERTA///////////////
+
+Borrar commit
+$git reset
+
+Borrar sin afectar el codigo fuente
+$git reset --soft
+(no toca el working area)
+
+Borrar commit y codigo
+$git reset --hard
+
+/////////////////ALERTA/////////////////
+
+AYUDA
+
+ayuda general
+$git help
+
+ayuda especifica del comando
+$git help COMANDO
+
+---------------------------------------------
+
+RAMAS Y FUSIONES
+
+
+Ver lista de ramas y rama actual
+$git branch
+
+Crear rama
+$git branch NAME_RAMA
+
+crear y mover a la rama
+$git branch -b NAME_RAMA
+
+Moverse a un rama
+$git checkout NAME_RAMA
+
+Borrar rama
+$git branch -D NAME_RAMA
+
+FUSIONES
+
+Primero se debe situarse en la rama que abosorbe
+lugo ejecutar el marge
+
+$git merge RAMA_A_ABSORBER
+
+-------------------------------------------------------
+
+GITHUB
+
+Bajar o ver proyecto al local
+$git clone HTTPS://dsadsadsajhksad.git
+
+Crear repositorio en git para enlazar con el local
+
+$git remote add origin https://asdsadsdsa.git
+
+comprobar repo agreado
+$git remote -v
+
+quitar repositorio del local
+$git remote remove origin
+
+subir cambios o commit
+$git push origin RAMA
+$git push -u origin
+(si se agrega la opcion -f se fuerza la subida)
+ --------------------------------------------------------
+
+ TAG
+
+ Crear tag anotadas
+ $git tag -a v1.0 -m "mensaje del tag"
+
+ Crear tag simple
+ $git tag v0.1
+
+ Asignar tag a Commit
+ $git tag v0.1 -m "MENSAJE" COD_SHA_DEL_COMMIT 
+
+Subir un tag al GUTHUB
+$git push origin v1.0
+
+Subir todos los tags creados
+$git push origin --tags
