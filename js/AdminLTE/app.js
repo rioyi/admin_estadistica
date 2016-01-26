@@ -146,7 +146,7 @@ $(function() {
         "z-index": "999999",
         cursor: "pointer",
         color: "#ddd"
-    }).html("<i class='fa fa-gear'></i>").addClass("no-print");
+    }).html().addClass("no-print");
 
     var demo_settings = $("<div />").css({
         "padding": "10px",
