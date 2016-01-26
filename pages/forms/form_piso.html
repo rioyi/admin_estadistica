@@ -121,8 +121,8 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li><a href="pages/charts/morris.html"><i class="fa fa-angle-double-right"></i> Periodo Escolar </a></li>
-                                <li><a href="pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Piso </a></li>
-                                <li><a href="pages/forms/form_docente.html"><i class="fa fa-angle-double-right"></i> Docente </a></li>
+                                <li><a href="form_piso.html"><i class="fa fa-angle-double-right"></i> Piso </a></li>
+                                <li><a href="form_docente.html"><i class="fa fa-angle-double-right"></i> Docente </a></li>
                                 <li><a href="#"><i class="fa fa-angle-double-right"></i> Usuario </a></li>
                             </ul>
                         </li>
@@ -216,13 +216,13 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Sección Docentes
+                        Sección Pisos o Departamentos
                         <small>Registro - Vista</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
                         <li><a href="#">Formularios</a></li>
-                        <li class="active">Formulario Docente</li>
+                        <li class="active">Formulario Pisos/Departamento</li>
                     </ol>
                 </section>
 
@@ -233,80 +233,36 @@
 
                             <div class="box box-info">
                                 <div class="box-header">
-                                    <h3 class="box-title">Registrar Docente</h3>
+                                    <h3 class="box-title">Registrar Piso/Departamento</h3>
                                 </div>
                             <!-- inicio de form -->
-                            <form action="../control/registro_docente.php" method="post" >
+                            <form action="../control/registro_piso.php" method="post" >
 
                                 <div class="box-body">
                                     <!-- Nombre -->
                                     <div class="form-group">
-                                        <label>Nombre:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-user"></i>
-                                            </div>
-                                            <input type="text" name="nombre" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
-                                        </div><!-- /.input group -->
-                                    </div><!-- /.form group -->
-
-                                    <!-- Apellido -->
-                                    <label>Apellido</label>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-user"></i>
-                                            </div>
-                                            <input type="text" name="apellido" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask/>
-                                        </div><!-- /.input group -->
-                                    </div><!-- /.form group -->
-
-                                    <!-- phone mask -->
-                                    <div class="form-group">
-                                        <label>Teléfono:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-phone"></i>
-                                            </div>
-                                            <input type="text" name="telefono" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask/>
-                                        </div><!-- /.input group -->
-                                    </div><!-- /.form group -->
-
-                                    <!-- phone mask -->
-                                    <div class="form-group">
-                                        <label>Dirección</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="glyphicon glyphicon-home"></i>
-                                            </div>
-                                            <input type="text-area" name="direccion" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask/>
-                                        </div><!-- /.input group -->
-                                    </div><!-- /.form group -->
-
-                                    <!-- phone mask -->
-                                    <div class="form-group">
-                                        <label>Piso</label>
+                                        <label>Número de Piso:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
                                                 <i class="glyphicon glyphicon-sort"></i>
                                             </div>
-                                            <input type="text" name="piso" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask/>
+                                            <input type="text" name="piso" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    <!-- phone mask -->
+                                    <!-- Apellido -->
+                                    <label>Descripción</label>
                                     <div class="form-group">
-                                        <label>E-mail:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="glyphicon glyphicon-envelope"></i>
+                                                <i class="glyphicon glyphicon-list"></i>
                                             </div>
-                                            <input type="text" naome="email" class="form-control" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask/>
+                                            <input type="textarea" name="descripcion" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask/>
                                         </div><!-- /.input group -->
-                                        <div class="box-footer">
-                                        <button type="submit" class="btn btn-primary">REGISTRAR</button>
-                                    </div>
+
                                     </div><!-- /.form group -->
+
+                                    <button type="submit" class="btn btn-primary">REGISTRAR</button>
 
                                    
 
@@ -318,37 +274,31 @@
                         <div class="col-md-6">
                             <div class="box box-success">
                                 <div class="box-header">
-                                     <h3 class="box-title">Lista de Docentes -DEMO-</h3>
+                                     <h3 class="box-title">Lista de Pisos -DEMO-</h3>
                                 </div><!-- /.box-header -->
                                 <div class="box-body">
                                     <table class="table table-bordered">
                                         <tr>
-                                            <th style="width: 10px">#</th>
-                                            <th>Nombre y Apellido</th>
-                                            <th>Piso</th>
+                                            <th style="width: 10px">Piso</th>
+                                            <th>Descripción</th>
+                                            
                                             
                                         </tr>
                                         <tr>
                                             <td>1</td>
-                                            <td>Virginia Lusinchi</td>
-                                            <td>                                         
-                                                2                                                
-                                            </td>
+                                            <td>Cardiología</td>
+                                            
                                             
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>Marilyn Monroe</td>
-                                            <td>                                                                                      
-                                                666                                                
-                                            </td>
+                                            <td>Nefrología</td>
+                                            
                                         </tr>
                                         <tr>
                                             <td>3.</td>
-                                            <td>Maria Teresa</td>
-                                            <td>                                                                                    
-                                                69                                               
-                                            </td>
+                                            <td>Oncología</td>
+                                            
                                         </tr>
                                         
                                     </table>
