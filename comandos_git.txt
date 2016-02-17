@@ -127,3 +127,9 @@ $git push origin v1.0
 
 Subir todos los tags creados
 $git push origin --tags
+
+BAJAR CAMBIO 
+
+$git fetch origin
+$git marge origin/master
+$git push origin master
