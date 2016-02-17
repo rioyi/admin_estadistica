@@ -271,6 +271,30 @@
                             </form>
                            
                         </div><!-- /.col (left) -->
+
+<?php
+#$consulta = $_POST['consulta'];
+#echo "<h3>Su Consulta es: $consulta</h3>";
+
+require ("../control/conexion_bd.php");
+  
+  $sql="SELECT * FROM piso";
+  $datos=mysql_query($sql,$link);
+  $contador = mysql_num_rows($datos);
+    if ($contador == 0)
+      {
+        echo "<center><h1><font color='#E74C3C'>NO SE ENCONTRO RESULTADOS :-( </font></h1></center>";
+      }
+    else
+      {
+        
+      
+                      
+                               
+
+        ?>
+
+
                         <div class="col-md-6">
                             <div class="box box-success">
                                 <div class="box-header">
@@ -283,23 +307,25 @@
                                             <th>Descripción</th>
                                             
                                             
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Cardiología</td>
-                                            
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Nefrología</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>3.</td>
-                                            <td>Oncología</td>
-                                            
-                                        </tr>
+                                        <?php
+                              while ($renglon=mysql_fetch_array($datos)) 
+                                {
+                                  ?>
+                              <tbody>
+                                <tr>                                
+                                  <td><?php echo $renglon['numero_piso']; ?></td>
+                                  <td><?php echo $renglon['descripcion_piso']; ?></td>
+                                  <td>
+                                  <a href="ver_alumno.php?id=<?php echo $renglon['ci_escolar']?>"> <button class="btn btn-success btn-xs"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button></a>
+                                  <!--<a href="inscripcion.php?id=<?php echo $renglon['ci_escolar']?>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> MODIFICAR</button> -->
+                                  <a href="../emergente/borrar_alumno.php?id=<?php echo $renglon['id_piso']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button>   
+                                    
+                                  </td>
+                                </tr>
+
+                                 
+                              </tbody>
+                              <?php } }?>
                                         
                                     </table>
                                 </div><!-- /.box-body -->
