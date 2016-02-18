@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+?>
         <meta charset="UTF-8">
         <title>Sistema | Estadistico</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -304,7 +308,8 @@ require ("../control/conexion_bd.php");
                                     <table class="table table-bordered">
                                         <tr>
                                             <th style="width: 10px">Piso</th>
-                                            <th>Descripción</th>
+                                            <th> <center> Descripción </center></th>
+                                            <th> <center> Acción </center> </th>
                                             
                                             
                                         <?php
