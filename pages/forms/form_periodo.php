@@ -240,12 +240,22 @@
                                 <div class="box-body">
                                     <!-- Nombre -->
                                     <div class="form-group">
-                                        <label>Periodo Escolar:</label>
+                                        <label>Año inicio Periodo Escolar:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="periodo_escolar" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" name="inicio" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                        </div><!-- /.input group -->
+                                    </div><!-- /.form group -->
+
+                                    <div class="form-group">
+                                        <label>Año final Periodo Escolar:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" name="final" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -260,36 +270,66 @@
                             </form>
                            
                         </div><!-- /.col (left) -->
+
+
+<?php
+#$consulta = $_POST['consulta'];
+#echo "<h3>Su Consulta es: $consulta</h3>";
+
+require ("../control/conexion_bd.php");
+  
+  $sql="SELECT * FROM periodo_escolar";
+  $datos=mysql_query($sql,$link);
+  $contador = mysql_num_rows($datos);
+    if ($contador == 0)
+      {
+        echo "<center><h1><font color='#E74C3C'>NO SE ENCONTRO RESULTADOS :-( </font></h1></center>";
+      }
+    else
+      {
+                    
+?>
+
+
+
+
+
+
+
                         <div class="col-md-6">
                             <div class="box box-success">
                                 <div class="box-header">
-                                     <h3 class="box-title">Lista de Periodos Escolares -DEMO-</h3>
+                                     <h3 class="box-title">Lista de Periodos Escolares</h3>
                                 </div><!-- /.box-header -->
                                 <div class="box-body">
                                 <div class="alert alert-info" role="alert"><CENTER><H2>PERIODO ACTUAL 2015-2016</H2></CENTER></div>
                                     <table class="table table-bordered">
                                         <tr>
-                                            <th style="width: 10px">#</th>
-                                            <th>Periodo Escolar</th>
+                                            <th style="width: 10px">ID</th>
+                                            <th> <center> PERIODO ESCOLAR </center></th>
+                                            <th>OPCIONES</th>
                                             
                                             
                                         </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>2002-2003</td>
-                                            
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>2003-2004</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>3.</td>
-                                            <td>2004-2005</td>
-                                            
-                                        </tr>
+                                        <?php
+                              while ($renglon=mysql_fetch_array($datos)) 
+                                {
+?>
+                              <tbody>
+                                <tr>                                
+                                  <td><?php echo $renglon['id_periodo_escolar']; ?></td>
+                                  <td><center><?php echo $renglon['inicio']; echo " - "; echo $renglon['fin']?></center></td>
+                                  <td>
+                                  <a href="ver_alumno.php?id=<?php echo $renglon['ci_escolar']?>"> <button class="btn btn-success btn-xs"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button></a>
+                                  <!--<a href="inscripcion.php?id=<?php echo $renglon['ci_escolar']?>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> MODIFICAR</button> -->
+                                  <a href="../emergente/borrar_alumno.php?id=<?php echo $renglon['id_piso']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button>   
+                                    
+                                  </td>
+                                </tr>
+
+                                 
+                              </tbody>
+                              <?php } }?>
                                         
                                     </table>
                                 </div><!-- /.box-body -->

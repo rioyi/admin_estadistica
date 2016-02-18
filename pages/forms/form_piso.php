@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <?php
+<?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 ?>
@@ -125,7 +125,7 @@ ini_set('display_errors', '1');
                             </a>
                             <ul class="treeview-menu">
                                 <li><a href="pages/charts/morris.html"><i class="fa fa-angle-double-right"></i> Periodo Escolar </a></li>
-                                <li><a href="form_piso.html"><i class="fa fa-angle-double-right"></i> Piso </a></li>
+                                <li><a href="form_piso.php"><i class="fa fa-angle-double-right"></i> Piso </a></li>
                                 <li><a href="form_docente.html"><i class="fa fa-angle-double-right"></i> Docente </a></li>
                                 <li><a href="#"><i class="fa fa-angle-double-right"></i> Usuario </a></li>
                             </ul>
@@ -291,12 +291,8 @@ require ("../control/conexion_bd.php");
       }
     else
       {
-        
-      
-                      
-                               
-
-        ?>
+                    
+?>
 
 
                         <div class="col-md-6">
@@ -312,7 +308,7 @@ require ("../control/conexion_bd.php");
                                             <th> <center> Acción </center> </th>
                                             
                                             
-                                        <?php
+<?php
                               while ($renglon=mysql_fetch_array($datos)) 
                                 {
                                   ?>

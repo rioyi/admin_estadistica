@@ -1,6 +1,12 @@
+
 <!DOCTYPE html>
 <html>
     <head>
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+?>
         <meta charset="UTF-8">
         <title>Sistema | Estadistico</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -120,9 +126,9 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="form_periodo.html"><i class="fa fa-angle-double-right"></i> Periodo Escolar </a></li>
-                                <li><a href="form_piso.html"><i class="fa fa-angle-double-right"></i> Piso </a></li>
-                                <li><a href="form_docente.html"><i class="fa fa-angle-double-right"></i> Docente </a></li>
+                                <li><a href="form_periodo.php"><i class="fa fa-angle-double-right"></i> Periodo Escolar </a></li>
+                                <li><a href="form_piso.php"><i class="fa fa-angle-double-right"></i> Piso </a></li>
+                                <li><a href="form_docente.php"><i class="fa fa-angle-double-right"></i> Docente </a></li>
                                 <li><a href="#"><i class="fa fa-angle-double-right"></i> Usuario </a></li>
                             </ul>
                         </li>
@@ -241,7 +247,7 @@
                                 <div class="box-body">
                                     <!-- Nombre -->
                                     <div class="form-group">
-                                        <label>Nombre:</label>
+                                        <label>NOMBRE:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
                                                 <i class="fa fa-user"></i>
@@ -251,7 +257,7 @@
                                     </div><!-- /.form group -->
 
                                     <!-- Apellido -->
-                                    <label>Apellido</label>
+                                    <label>APELLLIDO</label>
                                     <div class="form-group">
                                         <div class="input-group">
                                             <div class="input-group-addon">
@@ -263,7 +269,7 @@
 
                                     <!-- phone mask -->
                                     <div class="form-group">
-                                        <label>Teléfono:</label>
+                                        <label>TELÉFONO:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
                                                 <i class="fa fa-phone"></i>
@@ -274,7 +280,7 @@
 
                                     <!-- phone mask -->
                                     <div class="form-group">
-                                        <label>Dirección</label>
+                                        <label>DIRECCIÓN</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
                                                 <i class="glyphicon glyphicon-home"></i>
@@ -285,7 +291,7 @@
 
                                     <!-- phone mask -->
                                     <div class="form-group">
-                                        <label>Piso</label>
+                                        <label>PISO</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
                                                 <i class="glyphicon glyphicon-sort"></i>
@@ -296,7 +302,7 @@
 
                                     <!-- phone mask -->
                                     <div class="form-group">
-                                        <label>E-mail:</label>
+                                        <label>EMAIL:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
                                                 <i class="glyphicon glyphicon-envelope"></i>
@@ -304,7 +310,7 @@
                                             <input type="text" naome="email" class="form-control" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask/>
                                         </div><!-- /.input group -->
                                         <div class="box-footer">
-                                        <button type="submit" class="btn btn-primary">REGISTRAR</button>
+                                        <center><button type="submit" class="btn-lg btn-primary">REGISTRAR</button></center>
                                     </div>
                                     </div><!-- /.form group -->
 
@@ -315,41 +321,62 @@
                             </form>
                            
                         </div><!-- /.col (left) -->
+
+
+<?php
+#$consulta = $_POST['consulta'];
+#echo "<h3>Su Consulta es: $consulta</h3>";
+
+require ("../control/conexion_bd.php");
+  
+  $sql="SELECT * FROM docente";
+  $datos=mysql_query($sql,$link);
+  $contador = mysql_num_rows($datos);
+    if ($contador == 0)
+      {
+        echo "<center><h1><font color='#E74C3C'>NO SE ENCONTRO RESULTADOS :-( </font></h1></center>";
+      }
+    else
+      {
+                    
+?>
+
+
+
+
                         <div class="col-md-6">
                             <div class="box box-success">
                                 <div class="box-header">
-                                     <h3 class="box-title">Lista de Docentes -DEMO-</h3>
+                                     <h3 class="box-title">Lista de Docentes</h3>
                                 </div><!-- /.box-header -->
                                 <div class="box-body">
                                     <table class="table table-bordered">
                                         <tr>
-                                            <th style="width: 10px">#</th>
-                                            <th>Nombre y Apellido</th>
-                                            <th>Piso</th>
-                                            
+                                        
+                                            <th style="width: 10px">PISO</th>
+                                            <th><center>NOMBRE Y APELLIDO</center></th>
+                                            <th>  OPCIONES</th>
+                                        
                                         </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Virginia Lusinchi</td>
-                                            <td>                                         
-                                                2                                                
-                                            </td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Marilyn Monroe</td>
-                                            <td>                                                                                      
-                                                666                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3.</td>
-                                            <td>Maria Teresa</td>
-                                            <td>                                                                                    
-                                                69                                               
-                                            </td>
-                                        </tr>
+<?php
+                              while ($renglon=mysql_fetch_array($datos)) 
+                                {
+?>
+                              <tbody>
+                                <tr>                                
+                                  <td><?php echo $renglon['piso']; ?></td>
+                                  <td><?php echo $renglon['nombre_docente']; echo "  "; echo $renglon['apellido_docente']?></td>
+                                  <td>
+                                  <a href="ver_alumno.php?id=<?php echo $renglon['ci_escolar']?>"> <button class="btn btn-success btn-xs"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button></a>
+                                  <!--<a href="inscripcion.php?id=<?php echo $renglon['ci_escolar']?>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> MODIFICAR</button> -->
+                                  <a href="../emergente/borrar_alumno.php?id=<?php echo $renglon['id_piso']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button>   
+                                    
+                                  </td>
+                                </tr>
+
+                                 
+                              </tbody>
+                              <?php } }?>
                                         
                                     </table>
                                 </div><!-- /.box-body -->
