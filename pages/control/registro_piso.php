@@ -20,6 +20,8 @@ require("../control/conexion_bd.php");
 			mysql_close($link);
 			#header('location: emergente/registro_alumno.php');
 			echo "Se a Registrado el piso";
+			echo "<html><br><html>";
+			echo "<html><a href='../../index.html'>inicio</a><html>";
 		
 
 

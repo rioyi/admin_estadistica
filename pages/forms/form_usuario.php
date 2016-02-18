@@ -120,9 +120,9 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="pages/charts/morris.html"><i class="fa fa-angle-double-right"></i> Periodo Escolar </a></li>
-                                <li><a href="pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Piso </a></li>
-                                <li><a href="pages/forms/form_docente.html"><i class="fa fa-angle-double-right"></i> Docente </a></li>
+                                <li><a href="form_periodo.php"><i class="fa fa-angle-double-right"></i> Periodo Escolar </a></li>
+                                <li><a href="form_piso.php"><i class="fa fa-angle-double-right"></i> Piso </a></li>
+                                <li><a href="form_docente.php"><i class="fa fa-angle-double-right"></i> Docente </a></li>
                                 <li><a href="#"><i class="fa fa-angle-double-right"></i> Usuario </a></li>
                             </ul>
                         </li>
@@ -216,13 +216,12 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Sección Docentes
-                        <small>Registro - Vista</small>
+                        Sección Usuarios                     <small>Registro - Vista</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
                         <li><a href="#">Formularios</a></li>
-                        <li class="active">Formulario Docente</li>
+                        <li class="active">Formulario Periodo Escolar</li>
                     </ol>
                 </section>
 
@@ -233,80 +232,78 @@
 
                             <div class="box box-info">
                                 <div class="box-header">
-                                    <h3 class="box-title">Registrar Docente</h3>
+                                    <h3 class="box-title">Registrar Periodo Escolar</h3>
                                 </div>
                             <!-- inicio de form -->
-                            <form action="../control/registro_docente.php" method="post" >
+                            <form action="../control/registro_usuario.php" method="post" >
 
                                 <div class="box-body">
                                     <!-- Nombre -->
                                     <div class="form-group">
-                                        <label>Nombre:</label>
+                                        <label>Nombre Usuario:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-user"></i>
+                                                <i class="fa fa-calendar"></i>
                                             </div>
                                             <input type="text" name="nombre" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    <!-- Apellido -->
-                                    <label>Apellido</label>
                                     <div class="form-group">
+                                        <label>Email:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-user"></i>
+                                                <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="apellido" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask/>
+                                            <input type="text" name="email" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    <!-- phone mask -->
                                     <div class="form-group">
-                                        <label>Teléfono:</label>
+                                        <label>Clave:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-phone"></i>
+                                                <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="telefono" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask/>
+                                            <input type="text" name="clave" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    <!-- phone mask -->
                                     <div class="form-group">
-                                        <label>Dirección</label>
+                                        <label>Confirmar Clave:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="glyphicon glyphicon-home"></i>
+                                                <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text-area" name="direccion" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask/>
+                                            <input type="text" name="clave_confirmada" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    <!-- phone mask -->
                                     <div class="form-group">
-                                        <label>Piso</label>
+                                            <label>Pregunta Secreta</label>
+                                            <select class="form-control" name="pregunta">
+                                                <option value="">Seleccionar</option>
+                                                <option value="color_favorito" >Color Favorito</option>
+                                                <option value="animal_favorito">Animal Favorito</option>
+                                                <option value="marca_favorita">Marca Favorita</option>
+                                                <option value="numero_favorito">Número Favorito</option>
+                                                <option value="ciudad_favorita">Ciudad Favorita</option>
+                                            </select>
+                                        </div>
+
+                                    <div class="form-group">
+                                        <label>Respuesta Secreta:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="glyphicon glyphicon-sort"></i>
+                                                <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="piso" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask/>
+                                            <input type="text" name="respuesta" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    <!-- phone mask -->
-                                    <div class="form-group">
-                                        <label>E-mail:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="glyphicon glyphicon-envelope"></i>
-                                            </div>
-                                            <input type="text" naome="email" class="form-control" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask/>
-                                        </div><!-- /.input group -->
-                                        <div class="box-footer">
-                                        <button type="submit" class="btn btn-primary">REGISTRAR</button>
-                                    </div>
-                                    </div><!-- /.form group -->
+                                    
+
+                                    <button type="submit" class="btn btn-primary">REGISTRAR</button>
 
                                    
 
@@ -315,41 +312,66 @@
                             </form>
                            
                         </div><!-- /.col (left) -->
+
+
+<?php
+#$consulta = $_POST['consulta'];
+#echo "<h3>Su Consulta es: $consulta</h3>";
+
+require ("../control/conexion_bd.php");
+  
+  $sql="SELECT * FROM usuario";
+  $datos=mysql_query($sql,$link);
+  $contador = mysql_num_rows($datos);
+    if ($contador == 0)
+      {
+        echo "<center><h1><font color='#E74C3C'>NO SE ENCONTRO RESULTADOS :-( </font></h1></center>";
+      }
+    else
+      {
+                    
+?>
+
+
+
+
+
+
+
                         <div class="col-md-6">
                             <div class="box box-success">
                                 <div class="box-header">
-                                     <h3 class="box-title">Lista de Docentes -DEMO-</h3>
+                                     <h3 class="box-title">Lista de Usuarios Registraso</h3>
                                 </div><!-- /.box-header -->
                                 <div class="box-body">
+                               
                                     <table class="table table-bordered">
                                         <tr>
-                                            <th style="width: 10px">#</th>
-                                            <th>Nombre y Apellido</th>
-                                            <th>Piso</th>
+                                            <th style="width: 10px">ID</th>
+                                            <th> <center> USUARIOS </center></th>
+                                            <th>OPCIONES</th>
+                                            
                                             
                                         </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Virginia Lusinchi</td>
-                                            <td>                                         
-                                                2                                                
-                                            </td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Marilyn Monroe</td>
-                                            <td>                                                                                      
-                                                666                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3.</td>
-                                            <td>Maria Teresa</td>
-                                            <td>                                                                                    
-                                                69                                               
-                                            </td>
-                                        </tr>
+                                        <?php
+                              while ($renglon=mysql_fetch_array($datos)) 
+                                {
+?>
+                              <tbody>
+                                <tr>                                
+                                  <td><?php echo $renglon['id_usuario']; ?></td>
+                                  <td><center><?php echo $renglon['nombre_usuario'];?></center></td>
+                                  <td>
+                                  <a href="ver_alumno.php?id=<?php echo $renglon['ci_escolar']?>"> <button class="btn btn-success btn-xs"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button></a>
+                                  <!--<a href="inscripcion.php?id=<?php echo $renglon['ci_escolar']?>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> MODIFICAR</button> -->
+                                  <a href="../emergente/borrar_alumno.php?id=<?php echo $renglon['id_piso']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button>   
+                                    
+                                  </td>
+                                </tr>
+
+                                 
+                              </tbody>
+                              <?php } }?>
                                         
                                     </table>
                                 </div><!-- /.box-body -->
@@ -376,8 +398,9 @@
         </div><!-- ./wrapper -->
 
 
-        <!-- jQuery 2.0.2 -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- jQuery 2.0.2 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -->
+        <script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>
         <!-- Bootstrap -->
         <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
         <!-- InputMask -->
