@@ -320,9 +320,9 @@ require ("../control/conexion_bd.php");
                                   <td><?php echo $renglon['id_periodo_escolar']; ?></td>
                                   <td><center><?php echo $renglon['inicio']; echo " - "; echo $renglon['fin']?></center></td>
                                   <td>
-                                  <a href="ver_alumno.php?id=<?php echo $renglon['ci_escolar']?>"> <button class="btn btn-success btn-xs"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button></a>
+                                  <a href="ver_alumno.php?id=<?php echo $renglon['id_periodo_escolar']?>"> <button class="btn btn-success btn-xs"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button></a>
                                   <!--<a href="inscripcion.php?id=<?php echo $renglon['ci_escolar']?>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> MODIFICAR</button> -->
-                                  <a href="../emergente/borrar_alumno.php?id=<?php echo $renglon['id_piso']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button>   
+                                  <a href="../emergente/borrar_periodo.php?id=<?php echo $renglon['id_periodo_escolar']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button>   
                                     
                                   </td>
                                 </tr>
