@@ -2,11 +2,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
 
-?>
+
         <meta charset="UTF-8">
         <title>Sistema | Estadistico</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -110,28 +107,9 @@ ini_set('display_errors', '1');
                     </form>
                     <!-- /.formulario del buscado -->
                     <!-- sidebar del menu: el estilo puedeo ser encontrado en sidebar.less -->
-                    <ul class="sidebar-menu">
-                        <li class="active">
-                            <a href="../../index.html">
-                                <i class="fa fa-dashboard"></i> <span>Menu Principal</span>
-                            </a>
-                        </li>
-
-
-
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-th"></i>
-                                <span>Misceláneo</span>
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="form_periodo.php"><i class="fa fa-angle-double-right"></i> Periodo Escolar </a></li>
-                                <li><a href="form_piso.php"><i class="fa fa-angle-double-right"></i> Piso </a></li>
-                                <li><a href="form_docente.php"><i class="fa fa-angle-double-right"></i> Docente </a></li>
-                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Usuario </a></li>
-                            </ul>
-                        </li>
+<?php 
+    include("menu_form.php")
+?>
 
 <!----------------------
 
@@ -369,7 +347,7 @@ require ("../control/conexion_bd.php");
                                   <td>
                                   <a href="ver_alumno.php?id=<?php echo $renglon['ci_escolar']?>"> <button class="btn btn-success btn-xs"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button></a>
                                   <!--<a href="inscripcion.php?id=<?php echo $renglon['ci_escolar']?>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> MODIFICAR</button> -->
-                                  <a href="../emergente/borrar_alumno.php?id=<?php echo $renglon['id_piso']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button>   
+                                  <a href="../emergente/borrar_docente.php?id=<?php echo $renglon['id_docente']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button>   
                                     
                                   </td>
                                 </tr>
