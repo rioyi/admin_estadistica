@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 26-01-2016 a las 17:28:28
+-- Tiempo de generación: 22-02-2016 a las 17:13:26
 -- Versión del servidor: 5.5.47-0ubuntu0.14.04.1
 -- Versión de PHP: 5.5.9-1ubuntu4.14
 
@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `docente` (
   `piso` int(2) NOT NULL,
   PRIMARY KEY (`id_docente`),
   KEY `piso` (`piso`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Volcado de datos para la tabla `docente`
@@ -75,10 +75,8 @@ CREATE TABLE IF NOT EXISTS `docente` (
 
 INSERT INTO `docente` (`id_docente`, `nombre_docente`, `apellido_docente`, `email`, `direccion`, `telefono`, `piso`) VALUES
 (1, 'maria', 'angarita', 'dasd@sdsadas.com', 'su casa', '3432432', 1),
-(4, '1111', 'DSFDSF', '', 'DSFDSFD', 'DSFSDFSDF', 0),
 (5, '1111', 'DSFDSF', '', 'DSFDSFD', 'DSFSDFSDF', 0),
-(6, '1111', 'DSFDSF', '', 'DSFDSFD', 'DSFSDFSDF', 0),
-(7, '333', 'DSFDSF', '', 'DSFDSFD', 'DSFSDFSDF', 0);
+(9, 'Marilyn', 'Monroe', '', 'USA', '5555555', 2);
 
 -- --------------------------------------------------------
 
@@ -180,18 +178,19 @@ CREATE TABLE IF NOT EXISTS `origen` (
 
 CREATE TABLE IF NOT EXISTS `periodo_escolar` (
   `id_periodo_escolar` int(10) NOT NULL AUTO_INCREMENT,
-  `periodo_escolar` varchar(10) NOT NULL,
+  `inicio` int(4) NOT NULL,
+  `fin` int(4) NOT NULL,
   PRIMARY KEY (`id_periodo_escolar`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Volcado de datos para la tabla `periodo_escolar`
 --
 
-INSERT INTO `periodo_escolar` (`id_periodo_escolar`, `periodo_escolar`) VALUES
-(1, ''),
-(2, ''),
-(3, '66666');
+INSERT INTO `periodo_escolar` (`id_periodo_escolar`, `inicio`, `fin`) VALUES
+(3, 66666, 0),
+(6, 2132, 2314),
+(7, 2015, 2016);
 
 -- --------------------------------------------------------
 
@@ -204,15 +203,16 @@ CREATE TABLE IF NOT EXISTS `piso` (
   `descripcion_piso` varchar(50) DEFAULT NULL,
   `numero_piso` int(11) NOT NULL,
   PRIMARY KEY (`id_piso`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Volcado de datos para la tabla `piso`
 --
 
 INSERT INTO `piso` (`id_piso`, `descripcion_piso`, `numero_piso`) VALUES
-(1, '', 0),
-(2, 'un buen piso', 3);
+(3, 'Mediciona 1', 1),
+(4, 'Medicina 2', 2),
+(5, 'cirujia', 3);
 
 -- --------------------------------------------------------
 
@@ -260,7 +260,16 @@ CREATE TABLE IF NOT EXISTS `sexo` (
   `id_sexo` int(1) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(8) NOT NULL,
   PRIMARY KEY (`id_sexo`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Volcado de datos para la tabla `sexo`
+--
+
+INSERT INTO `sexo` (`id_sexo`, `nombre`) VALUES
+(1, 'Masculin'),
+(2, 'Femenino'),
+(3, 'N/A');
 
 -- --------------------------------------------------------
 
@@ -338,6 +347,30 @@ CREATE TABLE IF NOT EXISTS `tipo_servicio` (
   `tipo_servicio` varchar(20) NOT NULL,
   PRIMARY KEY (`id_tipo_servicio`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuario`
+--
+
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(20) NOT NULL,
+  `clave` varchar(20) NOT NULL,
+  `pregunta_secreta` varchar(20) NOT NULL,
+  `nombre_usuario` varchar(20) NOT NULL,
+  `respuesta_secreta` varchar(20) NOT NULL,
+  PRIMARY KEY (`id_usuario`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`id_usuario`, `email`, `clave`, `pregunta_secreta`, `nombre_usuario`, `respuesta_secreta`) VALUES
+(1, 'wilbert@gmail.com', '123', 'home', 'Wilbert Angarita', ''),
+(2, 'marita@marraida', '123', 'color_favorito', 'Maria Angarita', 'azul');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
