@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 22-02-2016 a las 17:13:26
+-- Tiempo de generación: 23-02-2016 a las 14:58:40
 -- Versión del servidor: 5.5.47-0ubuntu0.14.04.1
 -- Versión de PHP: 5.5.9-1ubuntu4.14
 
@@ -136,7 +136,25 @@ CREATE TABLE IF NOT EXISTS `mes` (
   `id_mes` int(2) NOT NULL AUTO_INCREMENT,
   `mes` varchar(10) NOT NULL,
   PRIMARY KEY (`id_mes`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=23 ;
+
+--
+-- Volcado de datos para la tabla `mes`
+--
+
+INSERT INTO `mes` (`id_mes`, `mes`) VALUES
+(1, 'ENERO'),
+(2, 'FEBRERO'),
+(3, 'MARZO'),
+(4, 'ABRIL'),
+(5, 'MAYO'),
+(6, 'JUNIO'),
+(7, 'JULIO'),
+(8, 'AGOSTO'),
+(9, 'SEPTIEMBRE'),
+(10, 'OCTUBRE'),
+(21, 'NOVIEMBRE'),
+(22, 'DICIEMBRE');
 
 -- --------------------------------------------------------
 
@@ -181,7 +199,7 @@ CREATE TABLE IF NOT EXISTS `periodo_escolar` (
   `inicio` int(4) NOT NULL,
   `fin` int(4) NOT NULL,
   PRIMARY KEY (`id_periodo_escolar`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Volcado de datos para la tabla `periodo_escolar`
@@ -190,7 +208,9 @@ CREATE TABLE IF NOT EXISTS `periodo_escolar` (
 INSERT INTO `periodo_escolar` (`id_periodo_escolar`, `inicio`, `fin`) VALUES
 (3, 66666, 0),
 (6, 2132, 2314),
-(7, 2015, 2016);
+(7, 2015, 2016),
+(8, 2222, 2225),
+(9, 2016, 2017);
 
 -- --------------------------------------------------------
 
@@ -362,7 +382,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `nombre_usuario` varchar(20) NOT NULL,
   `respuesta_secreta` varchar(20) NOT NULL,
   PRIMARY KEY (`id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Volcado de datos para la tabla `usuario`
@@ -370,7 +390,8 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 
 INSERT INTO `usuario` (`id_usuario`, `email`, `clave`, `pregunta_secreta`, `nombre_usuario`, `respuesta_secreta`) VALUES
 (1, 'wilbert@gmail.com', '123', 'home', 'Wilbert Angarita', ''),
-(2, 'marita@marraida', '123', 'color_favorito', 'Maria Angarita', 'azul');
+(2, 'marita@marraida', '123', 'color_favorito', 'Maria Angarita', 'azul'),
+(3, 'virginia', '123', 'color_favorito', 'Virginia Lusinchi', 'rojo');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
