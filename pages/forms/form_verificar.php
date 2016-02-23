@@ -133,108 +133,135 @@
                 <section class="content">
                     <div class="row">
                         <div class="col-md-4">
-
                             <div class="box box-info">
                                 <div class="box-header">
                                     <h3 class="box-title">Menú Registro Periodo Escolar</h3>
                                 </div>                                                        
-                                <div class="box-body">
-
+                                <div class="box-body">                                
                                 
-<!-- Menu vertical -->
-
-    <div class="btn-group-vertical" role="group" aria-label="...">
-      <a class="btn btn-primary btn-lg" href="#" role="button">PERIODO Y MES ESCOLAR</a>
-      <a class="btn btn-primary btn-lg" href="#" role="button">ESCOLARIDAD</a>
-      <a class="btn btn-primary btn-lg" href="#" role="button">REFERIDO</a>
-      <a class="btn btn-primary btn-lg" href="#" role="button">SERVICIO DE APOYO</a>
-      <a class="btn btn-primary btn-lg" href="#" role="button">TIEMPO PERMANENCIA</a>
-      <a class="btn btn-primary btn-lg" href="#" role="button">TIPO DE ATENCION</a>
-      <a class="btn btn-primary btn-lg" href="#" role="button">TIPO EDUCACIÓN ESPECIALx</a>
-      <a class="btn btn-primary btn-lg" href="#" role="button">ORIGEN</a>
-       
-    </div> <center></center>
-
-<!-- fin menu vertical -->
-
-                                    
-
-                                    
-
-                                    
-
+                                    <!-- inicio div pills nav -->
                                    
-
+                                         <ul class="nav nav-pills nav-stacked">
+                                            <li role="presentation" class="active"><a href="#tab1" data-toggle="tab"> PERIODO Y MES ESCOLAR</a></li>
+                                            <li class="divider" role="presentation"><a href="#tab2" data-toggle="tab">ESCOLARIDAD</a></li>
+                                            <li role="presentation" ><a href="#tab3" data-toggle="tab">Messages</a></li>
+                                        </ul>                                       
+                                    <!-- cierre del div container-->                                    
                                 </div><!-- /.box-body -->
-                            </div><!-- /.box -->
-                            </form>
-                           
+                            </div><!-- /.box -->                       
                         </div><!-- /.col (left) -->
 
+                        <div class="tab-content">
+                                <div class="tab-pane active" id="tab1">contenido 1
+                                    <div class="col-md-8">
+                                        <div class="box box-success">
+                                            <div class="box-header">
+                                                 <h3 class="box-title">Periodo y Mes Escolar</h3>
+                                            </div><!-- /.box-header -->
+                                            <div class="box-body">                                
+                                            <!-- PERIODO ESCOLAR -->
+                                                <div class="alert alert-success" role="alert">
+                                                    <CENTER>
+                                                        <H2>
+                                                            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                                                            Periodo Escolar Actual
+                                                            <!--INICIO OJO!!!!! CONSULTAR ULTIMO REGISTRO DEL PERIODO ESCOLAR-->
+                                                                <?php
+                                                                require ("../control/conexion_bd.php");
+                                                                $ultimo="SELECT * FROM periodo_escolar order by id_periodo_escolar desc limit 1";
+                                                                $res_ultimo = mysql_query($ultimo,$link);
+                                                                $renglon=mysql_fetch_array($res_ultimo);
 
-                        <div class="col-md-8">
-                            <div class="box box-success">
-                                <div class="box-header">
-                                     <h3 class="box-title">Periodo y Mes Escolar</h3>
-                                </div><!-- /.box-header -->
-                                <div class="box-body">
-                                
-                                <!-- PERIODO ESCOLAR -->
+                                                                echo $renglon['inicio'];
+                                                                echo "-";
+                                                                echo $renglon['fin'];
+                                                                ?><!--FIN OJO!!!!! CONSULTAR ULTIMO REGISTRO DEL PERIODO ESCOLAR-->  
+                                                        </H2>
+                                                    </CENTER>
+                                                </div> <!-- /.alert -->                                  
+                                                    <!-- select dinamico -->
+                                                    <div class="form-group">
+                                                        <h3>SELECCIONAR MES</h3>
+                                                        <select class="form-control" name="mes" >
+                                                            <?php
+                                                            $selectvalue = $renglon['mes'];
+                                                            $result = mysql_query("SELECT * FROM mes");
+                                                            while($row = mysql_fetch_array($result))
+                                                              {
+                                                                $selected = "";
+                                                                if($selectvalue==$row['id_mes']){
+                                                                    $selected = 'selected'; 
+                                                                }
+                                                                echo '<option value="'.$row['mes'].'" '.$selected.'>' . $row['mes'] . "</option>";
+                                                              }
+                                                            ?>
+                                                        </select>
+                                                    </div>  <!-- /.form-group   Select Dinamico -->                             
+                                            </div><!-- /.box-body -->                           
+                                    </div><!-- /.col (right) -->
+                            </div> <!-- ./tab-pane--> 
 
-                                    <div class="alert alert-success" role="alert"><CENTER><H2>
-                                        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                                        Periodo Escolar Actual
-<!--INICIO OJO!!!!! CONSULTAR ULTIMO REGISTRO DEL PERIODO ESCOLAR-->
-                                <?php
-                                require ("../control/conexion_bd.php");
-                                $ultimo="SELECT * FROM periodo_escolar order by id_periodo_escolar desc limit 1";
-                                $res_ultimo = mysql_query($ultimo,$link);
-                                $renglon=mysql_fetch_array($res_ultimo);
+                                </div><!-- /div tab1 -->
 
-                                echo $renglon['inicio'];
-                                echo "-";
-                                echo $renglon['fin'];
-                                ?>
-<!--FIN OJO!!!!! CONSULTAR ULTIMO REGISTRO DEL PERIODO ESCOLAR-->
-                                </H2></CENTER></div>
+                                <div class="tab-pane" id="tab2">
 
-                                <!-- PERIODO ESCOLAR
+                                        <div class="col-md-8">
+                                        <img src="../../img/demo.jpg">
+                                        <div class="box box-success">
+                                            <div class="box-header">
+                                                 <h3 class="box-title">Escolaridad</h3>
+                                            </div><!-- /.box-header -->
+                                            <div class="box-body">                                                    
+                                            <!-- PERIODO ESCOLAR -->
+                                                <div class="alert alert-success" role="alert">                        
+                                                    <CENTER>
+                                                        <H2>
+                                                            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                                                            Periodo Escolar Actual
+                                                            <!--INICIO OJO!!!!! CONSULTAR ULTIMO REGISTRO DEL PERIODO ESCOLAR-->
+                                                                <?php
+                                                                require ("../control/conexion_bd.php");
+                                                                $ultimo="SELECT * FROM periodo_escolar order by id_periodo_escolar desc limit 1";
+                                                                $res_ultimo = mysql_query($ultimo,$link);
+                                                                $renglon=mysql_fetch_array($res_ultimo);
+
+                                                                echo $renglon['inicio'];
+                                                                echo "-";
+                                                                echo $renglon['fin'];
+                                                                ?><!--FIN OJO!!!!! CONSULTAR ULTIMO REGISTRO DEL PERIODO ESCOLAR-->  
+                                                        </H2>
+                                                    </CENTER>
+                                                </div> <!-- /.alert -->                                  
+                                                    <!-- select dinamico -->
+                                                    <div class="form-group">
+                                                        <h3>SELECCIONAR MES</h3>
+                                                        <select class="form-control" name="mes" >
+                                                            <?php
+                                                            $selectvalue = $renglon['mes'];
+                                                            $result = mysql_query("SELECT * FROM mes");
+                                                            while($row = mysql_fetch_array($result))
+                                                              {
+                                                                $selected = "";
+                                                                if($selectvalue==$row['id_mes']){
+                                                                    $selected = 'selected'; 
+                                                                }
+                                                                echo '<option value="'.$row['mes'].'" '.$selected.'>' . $row['mes'] . "</option>";
+                                                              }
+                                                            ?>
+                                                        </select>
+                                                    </div>  <!-- /.form-group   Select Dinamico -->                             
+                                            </div><!-- /.box-body -->                           
+                                    </div><!-- /.col (right) -->
+                            </div> <!-- ./tab-pane--> 
 
 
-                                    
-                                    <!-- select dinamico -->
-                                    <div class="form-group">
-                                    <h3>SELECCIONAR MES</h3>
-                                        <select class="form-control" name="mes" >
-                                            <?php
-                                            $selectvalue = $renglon['mes'];
-                                            $result = mysql_query("SELECT * FROM mes");
-                                            while($row = mysql_fetch_array($result))
-                                              {
-                                                $selected = "";
-                                                if($selectvalue==$row['id_mes']){
-                                                    $selected = 'selected'; 
-                                                }
-                                                echo '<option value="'.$row['mes'].'" '.$selected.'>' . $row['mes'] . "</option>";
-                                              }
-                                            ?>
-                                        </select>
-                                    </div>
-                                    <!-- Select Dinamico
-                                  
-                              
-                                        
-                                   
-                                </div><!-- /.box-body -->
-                                
-                                </div>
-                            </div><!-- /.form group -->
+                                </div><!-- /div tab2 -->
+                                <div class="tab-pane" id="tab3">contenido 3
 
-                                </div><!-- /.box-body -->
-                            </div><!-- /.box -->
 
-                            
-                        </div><!-- /.col (right) -->
+                                </div><!-- /div tab1 -->
+
+                        </div> <!-- /.tab-content -->
                     </div><!-- /.row -->                    
 
                 </section><!-- /.content -->
