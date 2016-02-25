@@ -144,7 +144,7 @@
                                          <ul class="nav nav-pills nav-stacked">
                                             <li role="presentation" class="active"><a href="#tab1" data-toggle="tab"> PERIODO Y MES ESCOLAR</a></li>
                                             <li class="divider" role="presentation"><a href="#tab2" data-toggle="tab">ESCOLARIDAD</a></li>
-                                            <li role="presentation" ><a href="#tab3" data-toggle="tab">DEMO</a></li>
+                                            <li role="presentation" ><a href="#tab3" data-toggle="tab">ATENCIÓN</a></li>
                                             <li role="presentation"><a href="#tab1" data-toggle="tab"> DEMO</a></li>
                                             <li class="divider" role="presentation"><a href="#tab2" data-toggle="tab">DEMO</a></li>
                                             <li role="presentation" ><a href="#tab3" data-toggle="tab">DEMO</a></li>
@@ -1881,10 +1881,252 @@
 
                                   
                                 </div> <!-- cierre del tab 2 ??? buscar donde inicia -->
-                                <div class="tab-pane" id="tab3">contenido 3
+ <!-- inicio Tab3 -->           <div class="tab-pane" id="tab3">
 
+                                	<div class="tab-pane" id="tab2">
 
-                                </div><!-- /div tab1 -->
+                                            <div class="col-md-8">                                               
+                                                <div class="box box-success">
+                                                    <div class="box-header">
+                                                         <h3 class="box-title">ATENCIÓN</h3>
+                                                    </div><!-- /.box-header -->
+                                                        <div class="box-body">                                       
+                                                            <div class="alert alert-success" role="alert">          
+                                                                <CENTER>
+                                                                    <H2>
+                                                                        <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                                                                        Atención                                  
+                                                                    </H2>
+                                                                </CENTER>
+                                                                </div>
+                                                                
+                                                            </div> <!-- /.alert -->             
+                                                            <img src="../../img/demo.jpg">
+                                                            <br>
+                                                            <br>
+                                                            <br>
+                                                            <br>
+                                                            <br>
+                                                            <br>                         
+                                                        </div><!-- /.box-body -->
+                                                </div> <!-- ./box box-success-->
+                                                <!-- inicio panel 2 -->
+                                                <div class="col-md-6">                                               
+                                                    <div class="box box-success">
+                                                        <div class="box-header">
+                                                             <h3 class="box-title">ATENCIÓN VARONES </h3>
+                                                        </div><!-- /.box-header -->
+                                                            <div class="box-body">
+                                                                <div class="alert alert-info" role="alert">
+                                                                    <CENTER>
+                                                                        <H3>
+                                                                            <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+                                                                            VARONES
+                                                                            
+                                                                        </H3>
+                                                                    </CENTER>
+                                                                </div> <!-- /.alert -->
+                                                                <div class="row">
+                                                                    <div class="col-xs-6">       
+                                                                        <center>
+                                                                            <label>En Aula</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label>En Habitación</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                           <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                </div><!-- ./row -->
+                                                            </div><!-- /.box-body -->           
+                                                </div><!-- /.col-med-8 -->
+                                            </div> <!-- ./tab-pane-->
+<!-- inicio panel 3 -->                                                                      
+
+                                                        <div class="col-md-6">                                      
+                                                            <div class="box box-success">
+                                                                <div class="box-header">
+                                                                     <h3 class="box-title">ATENCIÓN HEMBRAS</h3>
+                                                                </div><!-- /.box-header -->
+                                                                    <div class="box-body">                           
+                                                                        <div class="alert alert-danger" role="alert"> 
+                                                                            <CENTER>
+                                                                                <H3>
+                                                                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                                                                                    HEMBRAS                             
+                                                                                </H3>
+                                                                            </CENTER>                                
+                                                                        </div> <!-- /.alert -->
+                                                                <div class="row">
+                                                                <div class="col-xs-6">       
+                                                                        <center>
+                                                                            <label>En Aula</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label>En Habitación</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                           <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-6">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                    </div><!-- .col-xs-3 -->   
+                                                                   
+                                                                                         
+                                                                </div><!-- ./row -->
+                                                                    </div><!-- /.box-body -->
+                                                            </div> <!-- ./box box-success-->
+                                                        </div> <!-- /.col-med-6 -->
+
+                                  
+                                </div> <!-- cierre del tab 2 ??? buscar donde inicia -->
+
+                                </div><!-- /div tab3 -->
 
                         </div> <!-- /.tab-content -->
                     </div><!-- /.row -->                    
