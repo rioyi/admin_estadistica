@@ -4444,7 +4444,7 @@
                                                                             <CENTER>
                                                                                 <H3>
                                                                                     <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                                                                                    VARONES                             
+                                                                                    HEMBRAS                             
                                                                                 </H3>
                                                                             </CENTER>                                
                                                                         </div> <!-- /.alert -->
