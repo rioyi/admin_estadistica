@@ -5644,7 +5644,7 @@
                                                 <div class="col-md-8">                                               
                                                     <div class="box box-success">
                                                         <div class="box-header">
-                                                             <h3 class="box-title">Escolaridad </h3>
+                                                             <h3 class="box-title">Tipo de Atención</h3>
                                                         </div><!-- /.box-header -->
                                                             <div class="box-body">
                                                                 <div class="alert alert-info" role="alert">
@@ -5661,253 +5661,253 @@
                                                                         <center>
                                                                             <label>Cirugia</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Trauma</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Orl</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Pediatría</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Neumo</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Cardio</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                      <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->  
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                        <input type="text" class="form-control" placeholder="GI">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                        <input type="text" class="form-control" placeholder="GI">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                        <input type="text" class="form-control" placeholder="GI">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                        <input type="text" class="form-control" placeholder="GI">
                                                                     </div><!-- .col-xs-3 -->                             
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                        <input type="text" class="form-control" placeholder="GI">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                        <input type="text" class="form-control" placeholder="GI">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     
                                                                     
@@ -5937,181 +5937,181 @@
                                                                         <center>
                                                                             <label>Nefro</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Urología</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Neuro</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Hermato</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Oncología</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Dermato</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                      <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->  
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
@@ -6300,10 +6300,395 @@
                                                             </div> <!-- ./box box-success-->
                                                         </div> <!-- /.col-med-6 -->
 
-                                                        <div class="col-md-6">                                      
+                                                       <div class="col-md-8">                                               
+                                                    <div class="box box-success">
+                                                        <div class="box-header">
+                                                             <h3 class="box-title">Tipo de Atención</h3>
+                                                        </div><!-- /.box-header -->
+                                                            <div class="box-body">
+                                                                <div class="alert alert-danger" role="alert">
+                                                                    <CENTER>
+                                                                        <H3>
+                                                                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                                                                            HEMBRAS
+                                                                            
+                                                                        </H3>
+                                                                    </CENTER>
+                                                                </div> <!-- /.alert -->
+                                                                <div class="row">
+                                                                    <div class="col-xs-2">                           
+                                                                        <center>
+                                                                            <label>Cirugia</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label>Trauma</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label>Orl</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label>Pediatría</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label>Neumo</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label>Cardio</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                    </div><!-- .col-xs-3 -->  
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                    </div><!-- .col-xs-3 -->                             
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                    </div><!-- .col-xs-3 --> 
+                                                                    
+                                                                    
+
+                                                                </div><!-- ./row -->
+                                                            </div><!-- /.box-body -->                               
+                                                </div><!-- /.col-med-8 -->                                    
+
+                                            </div> <!-- ./tab-pane-->
+
+                                            <div class="col-md-4">                                      
                                                             <div class="box box-success">
                                                                 <div class="box-header">
-                                                                     <h3 class="box-title">ESCOLARIDAD</h3>
+                                                                     <h3 class="box-title">TIPO DE ATENCIÓN</h3>
+                                                                </div><!-- /.box-header -->
+                                                                    <div class="box-body">                           
+                                                                        <div class="alert alert-danger" role="alert"> 
+                                                                            <CENTER>
+                                                                                <H3>
+                                                                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                                                                                    HEMBRAS                             
+                                                                                </H3>
+                                                                            </CENTER>                                
+                                                                        </div> <!-- /.alert -->
+                                                                        <div class="row">
+                                                                           <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label>Gastro</label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="P1">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                            <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label>Infecto</label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="P1">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                            <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label></label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="P2">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                            <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label></label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="P2">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                            <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label></label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="P3">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                            <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label></label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="P3">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                            <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label></label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="P4">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                            <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label></label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="P4">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                            <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label></label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="P5">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                            <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label></label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="P5">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                            <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label></label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="GI">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                            <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label></label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="GI">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                            <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label></label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="GII">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                            <div class="col-md-6">                           
+                                                                                <center>
+                                                                                    <label></label>
+                                                                                </center>
+                                                                                <input type="text" class="form-control" placeholder="GII">
+                                                                            </div><!-- .col-xs-3 -->
+                                                                     
+                                                                   
+                                                                                         
+                                                                </div><!-- ./row -->
+                                                                    </div><!-- /.box-body -->
+                                                            </div> <!-- ./box box-success-->
+                                                        </div> <!-- /.col-med-6 -->
+
+<!-- inicio panel 3 -->
+                                                        <div class="col-md-8">                                      
+                                                            <div class="box box-success">
+                                                                <div class="box-header">
+                                                                     <h3 class="box-title">TIPO DE ATENCIÓN</h3>
                                                                 </div><!-- /.box-header -->
                                                                     <div class="box-body">                           
                                                                         <div class="alert alert-danger" role="alert"> 
@@ -6317,811 +6702,263 @@
                                                                         <div class="row">
                                                                    <div class="col-xs-2">                           
                                                                         <center>
-                                                                            <label>9°no</label>
+                                                                            <label>Nefro</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>1° Año</label>
+                                                                            <label>Urología</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>2° Año</label>
+                                                                            <label>Neuro</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>3° Año</label>
+                                                                            <label>Hermato</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>S/E</label>
+                                                                            <label>Oncología</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>E/E</label>
+                                                                            <label>Dermato</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="P1">
                                                                     </div><!-- .col-xs-3 -->
                                                                      <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
+                                                                        <input type="text" class="form-control" placeholder="P2">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->  
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
+                                                                        <input type="text" class="form-control" placeholder="P3">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
+                                                                        <input type="text" class="form-control" placeholder="P4">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
+                                                                        <input type="text" class="form-control" placeholder="P5">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                        <input type="text" class="form-control" placeholder="GI">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                        <input type="text" class="form-control" placeholder="GI">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                        <input type="text" class="form-control" placeholder="GI">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                        <input type="text" class="form-control" placeholder="GI">
                                                                     </div><!-- .col-xs-3 -->                             
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                        <input type="text" class="form-control" placeholder="GI">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
+                                                                        <input type="text" class="form-control" placeholder="GI">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->  
                                                                    
                                                                                          
                                                                 </div><!-- ./row -->
                                                                     </div><!-- /.box-body -->
                                                             </div> <!-- ./box box-success-->
-                                                        </div> <!-- /.col-med-6 -->
-
-                                                        <div class="col-md-6">                                      
-                                                            <div class="box box-success">
-                                                                <div class="box-header">
-                                                                     <h3 class="box-title">ESCOLARIDAD</h3>
-                                                                </div><!-- /.box-header -->
-                                                                    <div class="box-body">                           
-                                                                        <div class="alert alert-danger" role="alert"> 
-                                                                            <CENTER>
-                                                                                <H3>
-                                                                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                                                                                    HEMBRAS                             
-                                                                                </H3>
-                                                                            </CENTER>                                
-                                                                        </div> <!-- /.alert -->
-                                                                        <div class="row">
-                                                                   <div class="col-xs-2">                           
-                                                                        <center>
-                                                                            <label>9°no</label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label>1° Año</label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label>2° Año</label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label>3° Año</label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label>S/E</label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label>E/E</label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                     <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
-                                                                    </div><!-- .col-xs-3 -->  
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
-                                                                    </div><!-- .col-xs-3 -->                             
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
-                                                                    </div><!-- .col-xs-3 -->  
-                                                                   
-                                                                                         
-                                                                </div><!-- ./row -->
-                                                                    </div><!-- /.box-body -->
-                                                            </div> <!-- ./box box-success-->
-                                                        </div> <!-- /.col-med-6 -->
-
-                                                        <div class="col-md-6">                                      
-                                                            <div class="box box-success">
-                                                                <div class="box-header">
-                                                                     <h3 class="box-title">ESCOLARIDAD</h3>
-                                                                </div><!-- /.box-header -->
-                                                                    <div class="box-body">                           
-                                                                        <div class="alert alert-danger" role="alert"> 
-                                                                            <CENTER>
-                                                                                <H3>
-                                                                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                                                                                    HEMBRAS                             
-                                                                                </H3>
-                                                                            </CENTER>                                
-                                                                        </div> <!-- /.alert -->
-                                                                        <div class="row">
-                                                                   <div class="col-xs-2">                           
-                                                                        <center>
-                                                                            <label>9°no</label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label>1° Año</label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label>2° Año</label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label>3° Año</label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label>S/E</label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label>E/E</label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                     <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 2">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
-                                                                    </div><!-- .col-xs-3 -->  
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
-                                                                    </div><!-- .col-xs-3 -->                             
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
-                                                                    </div><!-- .col-xs-3 --> 
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II">
-                                                                    </div><!-- .col-xs-3 -->  
-                                                                   
-                                                                                         
-                                                                </div><!-- ./row -->
-                                                                    </div><!-- /.box-body -->
-                                                            </div> <!-- ./box box-success-->
-                                                        </div> <!-- /.col-med-6 -->
-
+                                                        </div> <!-- /.col-med-7 -->
+                                                        
                                   
                                 </div> <!-- cierre del tab 2 ??? buscar donde inicia -->
 
