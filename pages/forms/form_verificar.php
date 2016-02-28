@@ -149,8 +149,8 @@
                                             <li class="divider" role="presentation"><a href="#tab5" data-toggle="tab">TIEMPO DE PERMANENCIA</a></li>
                                             <li role="presentation" ><a href="#tab6" data-toggle="tab">POBLACIÓN REFERIDA</a></li>
                                             <li role="presentation"><a href="#tab7" data-toggle="tab"> TIPO DE ATENCIÓN</a></li>
-                                            <li class="divider" role="presentation"><a href="#tab8" data-toggle="tab">AREA DE ATENCIÓN</a></li>
-                                            <li role="presentation" ><a href="#tab9" data-toggle="tab">ASISTENCIA</a></li>
+                                            <!-- <li class="divider" role="presentation"><a href="#tab8" data-toggle="tab">AREA DE ATENCIÓN</a></li> -->
+                                            <li role="presentation" ><a href="#tab8" data-toggle="tab">ASISTENCIA</a></li>
 
                                         </ul>                                       
                                     <!-- cierre del div container-->                                    
@@ -6951,15 +6951,9455 @@
                                                                             <label></label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="GII">
-                                                                    </div><!-- .col-xs-3 -->  
-                                                                   
-                                                                                         
+                                                                    </div><!-- .col-xs-3 -->                               
                                                                 </div><!-- ./row -->
                                                                     </div><!-- /.box-body -->
                                                             </div> <!-- ./box box-success-->
-                                                        </div> <!-- /.col-med-7 -->
-                                                        
-                                  
+                                                        </div> <!-- /.col-med-7 -->                        
+                                </div> <!-- cierre del tab 2 ??? buscar donde inicia -->
+
+
+                                <div class="tab-pane" id="tab8">
+
+                                            <div class="col-md-8">                                               
+                                                <div class="box box-success">
+                                                    <div class="box-header">
+                                                         <h3 class="box-title">Asitencia</h3>
+                                                    </div><!-- /.box-header -->
+                                                        <div class="box-body">                                       
+                                                            <div class="alert alert-success" role="alert">          
+                                                                <CENTER>
+                                                                    <H2>
+                                                                        <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                                                                        Asistencia                                  
+                                                                    </H2>
+                                                                </CENTER>
+                                                                </div>
+                                                                <br>
+                                                                <br>
+                                                                <br>
+                                                                <br>
+                                                                <br>
+                                                                <br>
+                                                                <br>
+                                                                <br>
+                                                                <br>
+                                                                <br>
+                                                                <br>
+                                                            </div> <!-- /.alert -->                                      
+                                                        </div><!-- /.box-body -->
+                                                </div> <!-- ./box box-success-->
+                                                <!-- inicio panel 2 -->
+                                                <div class="col-md-6">                                               
+                                                    <div class="box box-success">
+                                                        <div class="box-header">
+                                                             <h3 class="box-title">Asistencia</h3>
+                                                        </div><!-- /.box-header -->
+                                                            <div class="box-body">
+                                                                <div class="alert alert-info" role="alert">
+                                                                    <CENTER>
+                                                                        <H3>
+                                                                            <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+                                                                            PISO 1
+                                                                            
+                                                                        </H3>
+                                                                    </CENTER>
+                                                                </div> <!-- /.alert -->
+                                                                <div class="row">
+                                                                    <div class="col-md-3">                           
+                                                                        <center>
+                                                                            <label>Fecha</label>                                                                            
+                                                                        </center>
+                                                                        <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Días</label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Varones</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Hembras</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                    
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                 
+
+                                                                </div><!-- ./row -->
+                                                            </div><!-- /.box-body -->                               
+                                                </div><!-- /.col-med-8 -->
+                                                </div>
+<!-- panel 2 de asistencia piso 2 -->
+
+                                                <div class="col-md-6">                                               
+                                                    <div class="box box-success">
+                                                        <div class="box-header">
+                                                             <h3 class="box-title">Asistencia</h3>
+                                                        </div><!-- /.box-header -->
+                                                            <div class="box-body">
+                                                                <div class="alert alert-info" role="alert">
+                                                                    <CENTER>
+                                                                        <H3>
+                                                                            <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+                                                                            PISO 2
+                                                                            
+                                                                        </H3>
+                                                                    </CENTER>
+                                                                </div> <!-- /.alert -->
+                                                                <div class="row">
+                                                                    <div class="col-md-3">                           
+                                                                        <center>
+                                                                            <label>Fecha</label>                                                                            
+                                                                        </center>
+                                                                        <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Días</label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Varones</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Hembras</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                    
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                 
+
+                                                                </div><!-- ./row -->
+                                                            </div><!-- /.box-body -->                               
+                                                </div><!-- /.col-med-8 -->
+                                                </div>
+<!-- asistencia piso 3 -->
+                                                
+                                                <div class="col-md-6">                                               
+                                                    <div class="box box-success">
+                                                        <div class="box-header">
+                                                             <h3 class="box-title">Asistencia</h3>
+                                                        </div><!-- /.box-header -->
+                                                            <div class="box-body">
+                                                                <div class="alert alert-info" role="alert">
+                                                                    <CENTER>
+                                                                        <H3>
+                                                                            <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+                                                                            PISO 3
+                                                                            
+                                                                        </H3>
+                                                                    </CENTER>
+                                                                </div> <!-- /.alert -->
+                                                                <div class="row">
+                                                                    <div class="col-md-3">                           
+                                                                        <center>
+                                                                            <label>Fecha</label>                                                                            
+                                                                        </center>
+                                                                        <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Días</label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Varones</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Hembras</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                    
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                 
+
+                                                                </div><!-- ./row -->
+                                                            </div><!-- /.box-body -->                               
+                                                </div><!-- /.col-med-8 -->
+                                                </div>
+<!-- asistencia piso 3 -->
+                                                <!-- panel 2 de asistencia piso 2 -->
+
+                                                <div class="col-md-6">                                               
+                                                    <div class="box box-success">
+                                                        <div class="box-header">
+                                                             <h3 class="box-title">Asistencia</h3>
+                                                        </div><!-- /.box-header -->
+                                                            <div class="box-body">
+                                                                <div class="alert alert-info" role="alert">
+                                                                    <CENTER>
+                                                                        <H3>
+                                                                            <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+                                                                            PISO 4
+                                                                            
+                                                                        </H3>
+                                                                    </CENTER>
+                                                                </div> <!-- /.alert -->
+                                                                <div class="row">
+                                                                    <div class="col-md-3">                           
+                                                                        <center>
+                                                                            <label>Fecha</label>                                                                            
+                                                                        </center>
+                                                                        <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Días</label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Varones</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Hembras</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                    
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                 
+
+                                                                </div><!-- ./row -->
+                                                            </div><!-- /.box-body -->                               
+                                                </div><!-- /.col-med-8 -->
+                                                </div>
+                                                <!-- panel 2 de asistencia piso 2 -->
+<!-- PISO 5 ASISTENCIA-->
+                                                <div class="col-md-6">                                               
+                                                    <div class="box box-success">
+                                                        <div class="box-header">
+                                                             <h3 class="box-title">Asistencia</h3>
+                                                        </div><!-- /.box-header -->
+                                                            <div class="box-body">
+                                                                <div class="alert alert-info" role="alert">
+                                                                    <CENTER>
+                                                                        <H3>
+                                                                            <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+                                                                            PISO 5
+                                                                            
+                                                                        </H3>
+                                                                    </CENTER>
+                                                                </div> <!-- /.alert -->
+                                                                <div class="row">
+                                                                    <div class="col-md-3">                           
+                                                                        <center>
+                                                                            <label>Fecha</label>                                                                            
+                                                                        </center>
+                                                                        <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Días</label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Varones</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Hembras</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                    
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                 
+
+                                                                </div><!-- ./row -->
+                                                            </div><!-- /.box-body -->                               
+                                                </div><!-- /.col-med-8 -->
+                                                </div>
+                                                <!-- panel 2 de asistencia piso 2 -->
+<!-- GARZA I ASISTENCIA -->
+                                                <div class="col-md-6">                                               
+                                                    <div class="box box-success">
+                                                        <div class="box-header">
+                                                             <h3 class="box-title">Asistencia</h3>
+                                                        </div><!-- /.box-header -->
+                                                            <div class="box-body">
+                                                                <div class="alert alert-info" role="alert">
+                                                                    <CENTER>
+                                                                        <H3>
+                                                                            <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+                                                                            GARZA I
+                                                                            
+                                                                        </H3>
+                                                                    </CENTER>
+                                                                </div> <!-- /.alert -->
+                                                                <div class="row">
+                                                                    <div class="col-md-3">                           
+                                                                        <center>
+                                                                            <label>Fecha</label>                                                                            
+                                                                        </center>
+                                                                        <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Días</label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Varones</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Hembras</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                    
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                 
+
+                                                                </div><!-- ./row -->
+                                                            </div><!-- /.box-body -->                               
+                                                </div><!-- /.col-med-8 -->
+                                                </div>
+                                                <!-- panel 2 de asistencia piso 2 -->
+<!-- GARZA II ASISTENCIA -->
+                                                <div class="col-md-6">                                               
+                                                    <div class="box box-success">
+                                                        <div class="box-header">
+                                                             <h3 class="box-title">Asistencia</h3>
+                                                        </div><!-- /.box-header -->
+                                                            <div class="box-body">
+                                                                <div class="alert alert-info" role="alert">
+                                                                    <CENTER>
+                                                                        <H3>
+                                                                            <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+                                                                            GARZA II
+                                                                            
+                                                                        </H3>
+                                                                    </CENTER>
+                                                                </div> <!-- /.alert -->
+                                                                <div class="row">
+                                                                    <div class="col-md-3">                           
+                                                                        <center>
+                                                                            <label>Fecha</label>                                                                            
+                                                                        </center>
+                                                                        <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Días</label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Varones</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label>Hembras</label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                    
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                       <select class="form-control" name="semana_1_1">
+                                                                            <option value="0">--</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>                                                                            
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <select class="form-control">
+                                                                            <option>----</option>
+                                                                            <option value="Lunes">Lunes</option>
+                                                                            <option value="Martes">Martes</option>
+                                                                            <option value="Miercoles">Miercoles</option>
+                                                                            <option value="Jueves">Jueves</option>
+                                                                            <option value="Viernes">Viernes</option>
+                                                                            <option value="Sábado">Sábado</option>
+                                                                            <option value="Domingo">Domingo</option>                                                                            
+                                                                        </select>
+                                                                    </div><!-- .col-xs-3 -->
+                                                                     <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-md-3">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                    </div><!-- .col-xs-3 -->                                                                 
+
+                                                                </div><!-- ./row -->
+                                                            </div><!-- /.box-body -->                               
+                                                </div><!-- /.col-med-8 -->
+                                                </div>
+
+
+                                                                   
                                 </div> <!-- cierre del tab 2 ??? buscar donde inicia -->
 
 
