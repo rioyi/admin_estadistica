@@ -157,9 +157,9 @@
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->                       
                         </div><!-- /.col (left) -->
-
+						<form action="../control/registro_data_mes.php" method="POST">	
                         <div class="tab-content">
-                                <div class="tab-pane active" id="tab1">
+<!-- INICIO TAB1 -->            <div class="tab-pane active" id="tab1">
                                     <div class="col-md-8">
                                         <div class="box box-success">
                                             <div class="box-header">
@@ -183,6 +183,9 @@
                                                                 echo "-";
                                                                 echo $renglon['fin'];
                                                                 ?><!--FIN OJO!!!!! CONSULTAR ULTIMO REGISTRO DEL PERIODO ESCOLAR-->  
+                                                                <input type="hidden" name="periodo_e" value="<?php echo $renglon['id_periodo_escolar']; ?>" />
+                                                                    
+                                                                
                                                         </H2>
                                                     </CENTER>
                                                 </div> <!-- /.alert -->                                  
@@ -210,7 +213,7 @@
 
                                 </div><!-- /div tab1 -->
 
-                                    <div class="tab-pane" id="tab2">
+<!-- INICIO TAB2 -->            <div class="tab-pane" id="tab2">
 
                                             <div class="col-md-8">                                               
                                                 <div class="box box-success">
@@ -251,13 +254,13 @@
                                                                         <center>
                                                                             <label>Maternal</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="Piso 1" name="maternal_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Nivel 1</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 1">
+                                                                        <input type="text" class="form-control" placeholder="Piso 1" name="nivel1_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
@@ -507,7 +510,7 @@
                                                 </div><!-- /.col-med-8 -->                                    
 
                                             </div> <!-- ./tab-pane-->
-<!-- inicio panel 3 -->
+
                                                         <div class="col-md-6">                                      
                                                             <div class="box box-success">
                                                                 <div class="box-header">
@@ -1881,7 +1884,7 @@
 
                                   
                                 </div> <!-- cierre del tab 2 ??? buscar donde inicia -->
- <!-- inicio Tab3 -->           <div class="tab-pane" id="tab3">
+<!-- INICIO TAB3 -->            <div class="tab-pane" id="tab3">
 
                                 	<div class="tab-pane" id="tab2">
 
@@ -2124,8 +2127,8 @@
                                                         </div> <!-- /.col-med-6 -->           
                                 </div> <!-- cierre del tab 3 ??? buscar donde inicia -->
                                 </div><!-- /div tab3 -->
-<!-- inicio Tab4 -->
-                                <div class="tab-pane" id="tab4">
+
+<!-- INICIO TAB4 -->            <div class="tab-pane" id="tab4">
 
                                             <div class="col-md-8">                                               
                                                 <div class="box box-success">
@@ -3794,7 +3797,7 @@
                                                             </div> <!-- ./box box-success-->
                                                         </div> <!-- /.col-med-6 -->                                 
                                 </div> <!-- cierre del tab 2 ??? buscar donde inicia -->
-                                <div class="tab-pane" id="tab5">
+<!-- INICIO TAB5 -->                                <div class="tab-pane" id="tab5">
 
                                             <div class="col-md-8">                                               
                                                 <div class="box box-success">
@@ -4495,7 +4498,7 @@
                                                         </div> <!-- /.col-med-6 -->                
          										</div><!-- ./tab-pane id tab4 -->
 
-<!-- inicio Tab6 -->
+<!-- INICIO TAB6 -->
 							     <div class="tab-pane" id="tab6">
 
                                             <div class="col-md-8">                                               
@@ -5619,7 +5622,7 @@
                                                             </div> <!-- ./box box-success-->
                                                         </div> <!-- /.col-med-6 -->         
                                 </div> <!-- cierre del tab 2 ??? buscar donde inicia -->
-<!-- inicio tab 7 -->
+<!-- INICIO TAB7 -->
                                 <div class="tab-pane" id="tab7">
 
                                             <div class="col-md-8">                                               
@@ -6300,8 +6303,8 @@
                                                             </div> <!-- ./box box-success-->
                                                         </div> <!-- /.col-med-6 -->
 
-                                                       <div class="col-md-8">                                               
-                                                    <div class="box box-success">
+                                                       	<div class="col-md-8">                                               
+                                                    		<div class="box box-success">
                                                         <div class="box-header">
                                                              <h3 class="box-title">Tipo de Atención</h3>
                                                         </div><!-- /.box-header -->
@@ -6573,7 +6576,7 @@
 
                                                                 </div><!-- ./row -->
                                                             </div><!-- /.box-body -->                               
-                                                </div><!-- /.col-med-8 -->                                    
+                                                		</div><!-- /.col-med-8 -->                                    
 
                                             </div> <!-- ./tab-pane-->
 
@@ -6959,7 +6962,7 @@
                                 </div> <!-- cierre del tab 2 ??? buscar donde inicia -->
 
 
-                                <div class="tab-pane" id="tab8">
+<!-- INICIO TAB8 -->                                <div class="tab-pane" id="tab8">
 
                                             <div class="col-md-8">                                               
                                                 <div class="box box-success">
@@ -7007,11 +7010,11 @@
                                                                     </CENTER>
                                                                 </div> <!-- /.alert -->
                                                                 <div class="row">
-                                                                    <div class="col-md-3">                           
+                                                                    <div class="col-xs-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="1,2,3...">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7072,9 +7075,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="1,2,3...">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7135,9 +7138,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="1,2,3...">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7198,9 +7201,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="1,2,3...">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7261,9 +7264,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="1,2,3..">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7347,9 +7350,9 @@
                                                                 <div class="row">
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="1,2,3...">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7410,9 +7413,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="1,2,3...">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7473,9 +7476,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="1,2,3...">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7536,9 +7539,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="1,2,3...">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7599,9 +7602,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="1,2,3...">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7686,9 +7689,9 @@
                                                                 <div class="row">
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="1,2,3...">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7749,9 +7752,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="1,2,3...">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7812,9 +7815,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7875,9 +7878,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -7938,9 +7941,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8024,9 +8027,9 @@
                                                                 <div class="row">
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8087,9 +8090,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8150,9 +8153,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8213,9 +8216,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8276,9 +8279,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8363,9 +8366,9 @@
                                                                 <div class="row">
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8426,9 +8429,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8489,9 +8492,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8552,9 +8555,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8615,9 +8618,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8701,9 +8704,9 @@
                                                                 <div class="row">
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8764,9 +8767,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8827,9 +8830,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8890,9 +8893,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -8953,9 +8956,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -9040,9 +9043,9 @@
                                                                 <div class="row">
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -9103,9 +9106,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -9166,9 +9169,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -9229,9 +9232,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -9292,9 +9295,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -9378,9 +9381,9 @@
                                                                 <div class="row">
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -9441,9 +9444,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -9504,9 +9507,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -9567,9 +9570,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -9630,9 +9633,9 @@
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-3">                           
                                                                         <center>
-                                                                            <label>Fecha</label>                                                                            
+                                                                            <label>Día</label>                                                                            
                                                                         </center>
-                                                                        <input type="date" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-md-2">
                                                                         <center>
@@ -9690,18 +9693,33 @@
                                                                         <center>
                                                                             <hr>
                                                                         </center>                                                                        
-                                                                    </div><!-- .col-xs-3 -->                                                                    
+                                                                    </div><!-- .col-xs-3 -->                                                                 
                                                                                                                                      
-
+												
                                                                 </div><!-- ./row -->
                                                             </div><!-- /.box-body -->                               
                                                 </div><!-- /.col-med-8 -->
                                                 </div>
 
-                                                
+                                                <div class="col-md-12">                                               
+                                                    <div class="box box-success">
+                                                        <div class="box-header">
+                                                             <h3 class="box-title">Asistencia Semana 4</h3>
+                                                        </div><!-- /.box-header -->
+                                                            <div class="box-body">                                                                
+                                                                	<button  type="submit" class="btn btn-primary btn-lg btn-block">
+													                    <H1>
+													                        <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> REGISTRAR
+													                    </H1>
+													                </button>                                                               
+                                                                                                                                     
+												
+                                                                </div><!-- ./row -->
+                                                            </div><!-- /.box-body -->                               
+                                                </div><!-- /.col-med-8 -->
+                                                </div>                                               
 
-
-                                                                   
+								                                
                                 </div> <!-- cierre del tab 2 ??? buscar donde inicia -->
 
 
@@ -9709,6 +9727,7 @@
 
 
                         </div> <!-- /.tab-content -->
+<!-- FIN FORM -->   </form> <!-- /FORM -->
                     </div><!-- /.row -->                    
 
                 </section><!-- /.content -->
