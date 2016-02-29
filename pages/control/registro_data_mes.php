@@ -21,7 +21,9 @@ $maternal_gii_v = $_POST['maternal_gii_v'];
 $sql_maternal = "SELECT escolaridad FROM tipo_escolaridad WHERE id_tipo_escolaridad = 1";
 $resul_maternal = mysql_query($sql_maternal,$link);
 $maternal_resul = mysql_fetch_array($resul_maternal);
-$maternal = $maternal_resul['escolaridad'];          
+$maternal = $maternal_resul['escolaridad'];  
+
+        
 
 	#NIVEL1
 $nivel1_p1_v = $_POST['maternal_p1_v'];
@@ -37,29 +39,24 @@ $resul_n1 = mysql_query($sql_n1,$link);
 $n1_resul = mysql_fetch_array($resul_n1);
 $n1 = $n1_resul['escolaridad'];
 
-echo "$mes";
-echo "$periodo_e";
+	#NIVEL2
+$nivel1_p1_v = $_POST['maternal_p1_v'];
+$nivel1_p2_v = $_POST['maternal_p2_v'];
+$nivel1_p3_v = $_POST['maternal_p3_v'];
+$nivel1_p4_v = $_POST['maternal_p4_v'];
+$nivel1_p5_v = $_POST['maternal_p5_v'];
+$nivel1_gi_v = $_POST['maternal_gi_v'];
+$nivel1_gii_v = $_POST['maternal_gii_v'];
 
-echo $maternal;
-echo "$n1";
-echo "<br>";
-
-
-
-
-function consulta(){
-
-$sql_n1 = "SELECT escolaridad FROM tipo_escolaridad WHERE id_tipo_escolaridad = 2";
+$sql_n1 = "SELECT escolaridad FROM tipo_escolaridad WHERE id_tipo_escolaridad = 3";
 $resul_n1 = mysql_query($sql_n1,$link);
 $n1_resul = mysql_fetch_array($resul_n1);
 $n1 = $n1_resul['escolaridad'];
 
 
-	return "$n1";
-}
 
 
-echo consulta();
+
 
 
 
