@@ -2,6 +2,8 @@
 
 require ("../control/conexion_bd.php");
 
+
+
 #seccion de mes tab1 
 $periodo_e = $_POST['periodo_e'];
 $mes = $_POST['mes'];
@@ -40,13 +42,24 @@ echo "$periodo_e";
 
 echo $maternal;
 echo "$n1";
+echo "<br>";
 
 
 
 
+function consulta(){
+
+$sql_n1 = "SELECT escolaridad FROM tipo_escolaridad WHERE id_tipo_escolaridad = 2";
+$resul_n1 = mysql_query($sql_n1,$link);
+$n1_resul = mysql_fetch_array($resul_n1);
+$n1 = $n1_resul['escolaridad'];
 
 
+	return "$n1";
+}
 
+
+echo consulta();
 
 
 
