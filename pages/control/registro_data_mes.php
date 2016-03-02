@@ -673,60 +673,372 @@ $v_e111_gii_v = $_POST['v_e111_gii_v'];
 #3
 
 #fila 1 panel 3
-$v_e6_p1_v = $_POST['v_e6_p1_v'];
-$v_e7_p1_v = $_POST['v_e7_p1_v'];
-$v_e8_p1_v = $_POST['v_e8_p1_v'];
-$v_e9_p1_v = $_POST['v_e9_p1_v'];
-$v_e10_p1_v = $_POST['v_e10_p1_v'];
-$v_e111_p1_v = $_POST['v_e111_p1_v'];
+$v_e12_p1_v = $_POST['v_e12_p1_v'];
+$v_e13_p1_v = $_POST['v_e13_p1_v'];
+$v_e14_p1_v = $_POST['v_e14_p1_v'];
+$v_e15_p1_v = $_POST['v_e15_p1_v'];
+$v_e16_p1_v = $_POST['v_e16_p1_v'];
+$v_e17_p1_v = $_POST['v_e17_p1_v'];
 
 #fila 2 panel 3
-$v_e6_p2_v = $_POST['v_e6_p2_v'];
-$v_e7_p2_v = $_POST['v_e7_p2_v'];
-$v_e8_p2_v = $_POST['v_e8_p2_v'];
-$v_e9_p2_v = $_POST['v_e9_p2_v'];
-$v_e10_p2_v = $_POST['v_e10_p2_v'];
-$v_e111_p2_v = $_POST['v_e111_p2_v'];
+$v_e12_p2_v = $_POST['v_e12_p2_v'];
+$v_e13_p2_v = $_POST['v_e13_p2_v'];
+$v_e14_p2_v = $_POST['v_e14_p2_v'];
+$v_e15_p2_v = $_POST['v_e15_p2_v'];
+$v_e16_p2_v = $_POST['v_e16_p2_v'];
+$v_e17_p2_v = $_POST['v_e17_p2_v'];
 
 #fila 3 panel 3
-$v_e6_p3_v = $_POST['v_e6_p3_v'];
-$v_e7_p3_v = $_POST['v_e7_p3_v'];
-$v_e8_p3_v = $_POST['v_e8_p3_v'];
-$v_e9_p3_v = $_POST['v_e9_p3_v'];
-$v_e10_p3_v = $_POST['v_e10_p3_v'];
-$v_e111_p3_v = $_POST['v_e111_p3_v'];
+$v_e12_p3_v = $_POST['v_e12_p3_v'];
+$v_e13_p3_v = $_POST['v_e13_p3_v'];
+$v_e14_p3_v = $_POST['v_e14_p3_v'];
+$v_e15_p3_v = $_POST['v_e15_p3_v'];
+$v_e16_p3_v = $_POST['v_e16_p3_v'];
+$v_e17_p3_v = $_POST['v_e17_p3_v'];
+
 
 #fila 4 panel 3
-$v_e6_p4_v = $_POST['v_e6_p4_v'];
-$v_e7_p4_v = $_POST['v_e7_p4_v'];
-$v_e8_p4_v = $_POST['v_e8_p4_v'];
-$v_e9_p4_v = $_POST['v_e9_p4_v'];
-$v_e10_p4_v = $_POST['v_e10_p4_v'];
-$v_e111_p4_v = $_POST['v_e111_p4_v'];
+$v_e12_p4_v = $_POST['v_e12_p4_v'];
+$v_e13_p4_v = $_POST['v_e13_p4_v'];
+$v_e14_p4_v = $_POST['v_e14_p4_v'];
+$v_e15_p4_v = $_POST['v_e15_p4_v'];
+$v_e16_p4_v = $_POST['v_e16_p4_v'];
+$v_e17_p4_v = $_POST['v_e17_p4_v'];
 
 #fila 5 panel 3
-$v_e6_p5_v = $_POST['v_e6_p5_v'];
-$v_e7_p5_v = $_POST['v_e7_p5_v'];
-$v_e8_p5_v = $_POST['v_e8_p5_v'];
-$v_e9_p5_v = $_POST['v_e9_p5_v'];
-$v_e10_p5_v = $_POST['v_e10_p5_v'];
-$v_e111_p5_v = $_POST['v_e111_p5_v'];
+$v_e12_p5_v = $_POST['v_e12_p5_v'];
+$v_e13_p5_v = $_POST['v_e13_p5_v'];
+$v_e14_p5_v = $_POST['v_e14_p5_v'];
+$v_e15_p5_v = $_POST['v_e15_p5_v'];
+$v_e16_p5_v = $_POST['v_e16_p5_v'];
+$v_e17_p5_v = $_POST['v_e17_p5_v'];
 
 #fila 6 panel 3
-$v_e6_gi_v = $_POST['v_e6_gi_v'];
-$v_e7_gi_v = $_POST['v_e7_gi_v'];
-$v_e8_gi_v = $_POST['v_e8_gi_v'];
-$v_e9_gi_v = $_POST['v_e9_gi_v'];
-$v_e10_gi_v = $_POST['v_e10_gi_v'];
-$v_e111_gi_v = $_POST['v_e111_gi_v'];
+$v_e12_gi_v = $_POST['v_e12_gi_v'];
+$v_e13_gi_v = $_POST['v_e13_gi_v'];
+$v_e14_gi_v = $_POST['v_e14_gi_v'];
+$v_e15_gi_v = $_POST['v_e15_gi_v'];
+$v_e16_gi_v = $_POST['v_e16_gi_v'];
+$v_e17_gi_v = $_POST['v_e17_gi_v'];
 
 #fila 7 panel 3
-$v_e6_gii_v = $_POST['v_e6_gii_v'];
-$v_e7_gii_v = $_POST['v_e7_gii_v'];
-$v_e8_gii_v = $_POST['v_e8_gii_v'];
-$v_e9_gii_v = $_POST['v_e9_gii_v'];
-$v_e10_gii_v = $_POST['v_e10_gii_v'];
-$v_e111_gii_v = $_POST['v_e111_gii_v'];
+$v_e12_gii_v = $_POST['v_e12_gii_v'];
+$v_e13_gii_v = $_POST['v_e13_gii_v'];
+$v_e14_gii_v = $_POST['v_e14_gii_v'];
+$v_e15_gii_v = $_POST['v_e15_gii_v'];
+$v_e16_gii_v = $_POST['v_e16_gii_v'];
+$v_e17_gii_v = $_POST['v_e17_gii_v'];
+
+#VISITA AGRUPADO POR EDAD HEMBRAS (por filas)
+
+#fila 1 panel 1
+$v_e11_p1_h = $_POST['v_e11_p1_h'];
+$v_e1_p1_h = $_POST['v_e1_p1_h'];
+$v_e2_p1_h = $_POST['v_e2_p1_h'];
+$v_e3_p1_h = $_POST['v_e3_p1_h'];
+$v_e4_p1_h = $_POST['v_e4_p1_h'];
+$v_e5_p1_h = $_POST['v_e5_p1_h'];
+
+#fila 2 panel 1
+$v_e11_p2_h = $_POST['v_e11_p2_h'];
+$v_e1_p2_h = $_POST['v_e1_p2_h'];
+$v_e2_p2_h = $_POST['v_e2_p2_h'];
+$v_e3_p2_h = $_POST['v_e3_p2_h'];
+$v_e4_p2_h = $_POST['v_e4_p2_h'];
+$v_e5_p2_h = $_POST['v_e5_p2_h'];
+
+#fila 3 panel 1
+$v_e11_p3_h = $_POST['v_e11_p3_h'];
+$v_e1_p3_h = $_POST['v_e1_p3_h'];
+$v_e2_p3_h = $_POST['v_e2_p3_h'];
+$v_e3_p3_h = $_POST['v_e3_p3_h'];
+$v_e4_p3_h = $_POST['v_e4_p3_h'];
+$v_e5_p3_h = $_POST['v_e5_p3_h'];
+
+#fila 4 panel 1
+$v_e11_p4_h = $_POST['v_e11_p4_h'];
+$v_e1_p4_h = $_POST['v_e1_p4_h'];
+$v_e2_p4_h = $_POST['v_e2_p4_h'];
+$v_e3_p4_h = $_POST['v_e3_p4_h'];
+$v_e4_p4_h = $_POST['v_e4_p4_h'];
+$v_e5_p4_h = $_POST['v_e5_p4_h'];
+
+#fila 5 panel 1
+$v_e11_p5_h = $_POST['v_e11_p5_h'];
+$v_e1_p5_h = $_POST['v_e1_p5_h'];
+$v_e2_p5_h = $_POST['v_e2_p5_h'];
+$v_e3_p5_h = $_POST['v_e3_p5_h'];
+$v_e4_p5_h = $_POST['v_e4_p5_h'];
+$v_e5_p5_h = $_POST['v_e5_p5_h'];
+
+#fila 6 panel 1
+$v_e11_gi_h = $_POST['v_e11_gi_h'];
+$v_e1_gi_h = $_POST['v_e1_gi_h'];
+$v_e2_gi_h = $_POST['v_e2_gi_h'];
+$v_e3_gi_h = $_POST['v_e3_gi_h'];
+$v_e4_gi_h = $_POST['v_e4_gi_h'];
+$v_e5_gi_h = $_POST['v_e5_gi_h'];
+
+#fila 7 panel 1
+$v_e11_p2_h = $_POST['v_e11_p2_h'];
+$v_e1_p2_h = $_POST['v_e1_p2_h'];
+$v_e2_p2_h = $_POST['v_e2_p2_h'];
+$v_e3_p2_h = $_POST['v_e3_p2_h'];
+$v_e4_p2_h= $_POST['v_e4_p2_h'];
+$v_e5_p2_h = $_POST['v_e5_p2_h'];
+
+#2
+#fila 1 panel 2
+$v_e6_p1_h = $_POST['v_e6_p1_h'];
+$v_e7_p1_h = $_POST['v_e7_p1_h'];
+$v_e8_p1_h = $_POST['v_e8_p1_h'];
+$v_e9_p1_h = $_POST['v_e9_p1_h'];
+$v_e10_p1_h = $_POST['v_e10_p1_h'];
+$v_e111_p1_h = $_POST['v_e111_p1_h'];
+
+#fila 2 panel 2
+$v_e6_p2_h = $_POST['v_e6_p2_h'];
+$v_e7_p2_h = $_POST['v_e7_p2_h'];
+$v_e8_p2_h = $_POST['v_e8_p2_h'];
+$v_e9_p2_h = $_POST['v_e9_p2_h'];
+$v_e10_p2_h = $_POST['v_e10_p2_h'];
+$v_e111_p2_h = $_POST['v_e111_p2_h'];
+
+#fila 3 panel 2
+$v_e6_p3_h = $_POST['v_e6_p3_h'];
+$v_e7_p3_h = $_POST['v_e7_p3_h'];
+$v_e8_p3_h = $_POST['v_e8_p3_h'];
+$v_e9_p3_h = $_POST['v_e9_p3_h'];
+$v_e10_p3_h = $_POST['v_e10_p3_h'];
+$v_e111_p3_h = $_POST['v_e111_p3_h'];
+
+#fila 4 panel 2
+$v_e6_p4_h = $_POST['v_e6_p4_h'];
+$v_e7_p4_h = $_POST['v_e7_p4_h'];
+$v_e8_p4_h = $_POST['v_e8_p4_h'];
+$v_e9_p4_h = $_POST['v_e9_p4_h'];
+$v_e10_p4_h = $_POST['v_e10_p4_h'];
+$v_e111_p4_h = $_POST['v_e111_p4_h'];
+
+#fila 5 panel 2
+$v_e6_p5_h = $_POST['v_e6_p5_h'];
+$v_e7_p5_h = $_POST['v_e7_p5_h'];
+$v_e8_p5_h = $_POST['v_e8_p5_h'];
+$v_e9_p5_h = $_POST['v_e9_p5_h'];
+$v_e10_p5_h = $_POST['v_e10_p5_h'];
+$v_e111_p5_h = $_POST['v_e111_p5_h'];
+
+#fila 6 panel 2
+$v_e6_gi_h = $_POST['v_e6_gi_h'];
+$v_e7_gi_h = $_POST['v_e7_gi_h'];
+$v_e8_gi_h = $_POST['v_e8_gi_h'];
+$v_e9_gi_h = $_POST['v_e9_gi_h'];
+$v_e10_gi_h = $_POST['v_e10_gi_h'];
+$v_e111_gi_h = $_POST['v_e111_gi_h'];
+
+#fila 7 panel 2
+$v_e6_gii_h = $_POST['v_e6_gii_h'];
+$v_e7_gii_h = $_POST['v_e7_gii_h'];
+$v_e8_gii_h = $_POST['v_e8_gii_h'];
+$v_e9_gii_h = $_POST['v_e9_gii_h'];
+$v_e10_gii_h = $_POST['v_e10_gii_h'];
+$v_e111_gii_h = $_POST['v_e111_gii_h'];
+
+#3
+
+#fila 1 panel 3
+$v_e12_p1_h = $_POST['v_e12_p1_h'];
+$v_e13_p1_h = $_POST['v_e13_p1_h'];
+$v_e14_p1_h = $_POST['v_e14_p1_h'];
+$v_e15_p1_h = $_POST['v_e15_p1_h'];
+$v_e16_p1_h = $_POST['v_e16_p1_h'];
+$v_e17_p1_h = $_POST['v_e17_p1_h'];
+
+#fila 2 panel 3
+$v_e12_p2_h = $_POST['v_e12_p2_h'];
+$v_e13_p2_h = $_POST['v_e13_p2_h'];
+$v_e14_p2_h = $_POST['v_e14_p2_h'];
+$v_e15_p2_h = $_POST['v_e15_p2_h'];
+$v_e16_p2_h = $_POST['v_e16_p2_h'];
+$v_e17_p2_h = $_POST['v_e17_p2_h'];
+
+#fila 3 panel 3
+$v_e12_p3_h = $_POST['v_e12_p3_h'];
+$v_e13_p3_h = $_POST['v_e13_p3_h'];
+$v_e14_p3_h = $_POST['v_e14_p3_h'];
+$v_e15_p3_h = $_POST['v_e15_p3_h'];
+$v_e16_p3_h = $_POST['v_e16_p3_h'];
+$v_e17_p3_h = $_POST['v_e17_p3_h'];
+
+
+#fila 4 panel 3
+$v_e12_p4_h = $_POST['v_e12_p4_h'];
+$v_e13_p4_h = $_POST['v_e13_p4_h'];
+$v_e14_p4_h = $_POST['v_e14_p4_h'];
+$v_e15_p4_h = $_POST['v_e15_p4_h'];
+$v_e16_p4_h = $_POST['v_e16_p4_h'];
+$v_e17_p4_h = $_POST['v_e17_p4_h'];
+
+#fila 5 panel 3
+$v_e12_p5_h = $_POST['v_e12_p5_h'];
+$v_e13_p5_h = $_POST['v_e13_p5_h'];
+$v_e14_p5_h = $_POST['v_e14_p5_h'];
+$v_e15_p5_h = $_POST['v_e15_p5_h'];
+$v_e16_p5_h = $_POST['v_e16_p5_h'];
+$v_e17_p5_h = $_POST['v_e17_p5_h'];
+
+#fila 6 panel 3
+$v_e12_gi_h = $_POST['v_e12_gi_h'];
+$v_e13_gi_h = $_POST['v_e13_gi_h'];
+$v_e14_gi_h = $_POST['v_e14_gi_h'];
+$v_e15_gi_h = $_POST['v_e15_gi_h'];
+$v_e16_gi_h = $_POST['v_e16_gi_h'];
+$v_e17_gi_h = $_POST['v_e17_gi_h'];
+
+#fila 7 panel 3
+$v_e12_gii_h = $_POST['v_e12_gii_h'];
+$v_e13_gii_h = $_POST['v_e13_gii_h'];
+$v_e14_gii_h = $_POST['v_e14_gii_h'];
+$v_e15_gii_h = $_POST['v_e15_gii_h'];
+$v_e16_gii_h = $_POST['v_e16_gii_h'];
+$v_e17_gii_h = $_POST['v_e17_gii_h'];
+
+#------TIEMPO DE PERMANENCIA VARONES (por filas)
+
+#fila 1 panel 1
+$t_5_p1_v = $_POST['t_5_p1_v'];
+$t_10_p1_v = $_POST['t_10_p1_v'];
+$t_15_p1_v = $_POST['t_15_p1_v'];
+$t_30_p1_v = $_POST['t_30_p1_v'];
+$t_2_p1_v = $_POST['t_2_p1_v'];
+$t_3_p1_v = $_POST['t_3_p1_v'];
+
+#fila 2 panel 1
+$t_5_p2_v = $_POST['t_5_p2_v'];
+$t_10_p2_v = $_POST['t_10_p2_v'];
+$t_15_p2_v = $_POST['t_15_p2_v'];
+$t_30_p2_v = $_POST['t_30_p2_v'];
+$t_2_p2_v = $_POST['t_2_p2_v'];
+$t_3_p2_v = $_POST['t_3_p2_v'];
+
+#fila 3 panel 1
+$t_5_p3_v = $_POST['t_5_p3_v'];
+$t_10_p3_v = $_POST['t_10_p3_v'];
+$t_15_p3_v = $_POST['t_15_p3_v'];
+$t_30_p3_v = $_POST['t_30_p3_v'];
+$t_2_p3_v = $_POST['t_2_p3_v'];
+$t_3_p3_v = $_POST['t_3_p3_v'];
+
+#fila 4 panel 1
+$t_5_p4_v = $_POST['t_5_p4_v'];
+$t_10_p4_v = $_POST['t_10_p4_v'];
+$t_15_p4_v = $_POST['t_15_p4_v'];
+$t_30_p4_v = $_POST['t_30_p4_v'];
+$t_2_p4_v = $_POST['t_2_p4_v'];
+$t_3_p4_v = $_POST['t_3_p4_v'];
+
+#fila 5 panel 1
+$t_5_p5_v = $_POST['t_5_p5_v'];
+$t_10_p5_v = $_POST['t_10_p5_v'];
+$t_15_p5_v = $_POST['t_15_p5_v'];
+$t_30_p5_v = $_POST['t_30_p5_v'];
+$t_2_p5_v = $_POST['t_2_p5_v'];
+$t_3_p5_v = $_POST['t_3_p5_v'];
+
+#fila 6 panel 1
+$t_5_gi_v = $_POST['t_5_gi_v'];
+$t_10_gi_v = $_POST['t_10_gi_v'];
+$t_15_gi_v = $_POST['t_15_gi_v'];
+$t_30_gi_v = $_POST['t_30_gi_v'];
+$t_2_gi_v = $_POST['t_2_gi_v'];
+$t_3_gi_v = $_POST['t_3_gi_v'];
+
+#fila 7 panel 1
+$t_5_gii_v = $_POST['t_5_gii_v'];
+$t_10_gii_v = $_POST['t_10_gii_v'];
+$t_15_gii_v = $_POST['t_15_gii_v'];
+$t_30_gii_v = $_POST['t_30_gii_v'];
+$t_2_gii_v = $_POST['t_2_gii_v'];
+$t_3_gii_v = $_POST['t_3_gii_v'];
+
+#fila 1 panel 3 LARGA ESTADIA
+$t_4_p1_v = $_POST['t_4_p1_v'];
+$t_4_p2_v = $_POST['t_4_p2_v'];
+$t_4_p3_v = $_POST['t_4_p3_v'];
+$t_4_p4_v = $_POST['t_4_p4_v'];
+$t_4_gi_v = $_POST['t_4_gi_v'];
+$t_4_gii_v = $_POST['t_4_gii_v'];
+
+
+#TIEMPO DE PERMANENCIA HEMBRAS
+
+#fila 1 panel 1
+$t_5_p1_h = $_POST['t_5_p1_h'];
+$t_10_p1_h = $_POST['t_10_p1_h'];
+$t_15_p1_h = $_POST['t_15_p1_h'];
+$t_30_p1_h = $_POST['t_30_p1_h'];
+$t_2_p1_h = $_POST['t_2_p1_h'];
+$t_3_p1_h = $_POST['t_3_p1_h'];
+
+#fila 2 panel 1
+$t_5_p2_h = $_POST['t_5_p2_h'];
+$t_10_p2_h = $_POST['t_10_p2_h'];
+$t_15_p2_h = $_POST['t_15_p2_h'];
+$t_30_p2_h = $_POST['t_30_p2_h'];
+$t_2_p2_h = $_POST['t_2_p2_h'];
+$t_3_p2_h = $_POST['t_3_p2_h'];
+
+#fila 3 panel 1
+$t_5_p3_h = $_POST['t_5_p3_h'];
+$t_10_p3_h = $_POST['t_10_p3_h'];
+$t_15_p3_h = $_POST['t_15_p3_h'];
+$t_30_p3_h = $_POST['t_30_p3_h'];
+$t_2_p3_h = $_POST['t_2_p3_h'];
+$t_3_p3_h = $_POST['t_3_p3_h'];
+
+#fila 4 panel 1
+$t_5_p4_h = $_POST['t_5_p4_h'];
+$t_10_p4_h = $_POST['t_10_p4_h'];
+$t_15_p4_h = $_POST['t_15_p4_h'];
+$t_30_p4_h = $_POST['t_30_p4_h'];
+$t_2_p4_h = $_POST['t_2_p4_h'];
+$t_3_p4_h = $_POST['t_3_p4_h'];
+
+#fila 5 panel 1
+$t_5_p5_h = $_POST['t_5_p5_h'];
+$t_10_p5_h = $_POST['t_10_p5_h'];
+$t_15_p5_h = $_POST['t_15_p5_h'];
+$t_30_p5_h = $_POST['t_30_p5_h'];
+$t_2_p5_h = $_POST['t_2_p5_h'];
+$t_3_p5_h = $_POST['t_3_p5_h'];
+
+#fila 6 panel 1
+$t_5_gi_h = $_POST['t_5_gi_h'];
+$t_10_gi_h = $_POST['t_10_gi_h'];
+$t_15_gi_h = $_POST['t_15_gi_h'];
+$t_30_gi_h = $_POST['t_30_gi_h'];
+$t_2_gi_h = $_POST['t_2_gi_h'];
+$t_3_gi_h = $_POST['t_3_gi_h'];
+
+#fila 7 panel 1
+$t_5_gii_h = $_POST['t_5_gii_h'];
+$t_10_gii_h = $_POST['t_10_gii_h'];
+$t_15_gii_h = $_POST['t_15_gii_h'];
+$t_30_gii_h = $_POST['t_30_gii_h'];
+$t_2_gii_h = $_POST['t_2_gii_h'];
+$t_3_gii_h = $_POST['t_3_gii_h'];
+
+#fila 1 panel 3
+$t_4_p1_h = $_POST['t_4_p1_h'];
+$t_4_p2_h = $_POST['t_4_p2_h'];
+$t_4_p3_h = $_POST['t_4_p3_h'];
+$t_4_p4_h = $_POST['t_4_p4_h'];
+$t_4_gi_h = $_POST['t_4_gi_h'];
+$t_4_gii_h = $_POST['t_4_gii_h'];
+
+
+#POBLACION REFERIDA
+
 
 
 
