@@ -3889,19 +3889,31 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2" name="t_3_p2_v">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_5_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2" name="t_3_p2_v">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_10_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                            <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2" name="t_3_p2_v">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_15_p2_v">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_30_p2_v">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_2_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
@@ -3913,145 +3925,139 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2" name="t_3_p2_v">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_5_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2" name="t_3_p2_v">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_10_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_3_p3_v">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_15_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_3_p3_v">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_30_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_3_p3_v">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_2_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_3_p3_v">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_3_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_3_p3_v">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_5_p4_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_3_p3_v">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_10_p4_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_3_p4_v">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_15_p4_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_3_p4_v">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_30_p4_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_3_p4_v">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_2_p4_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_3_p4_v">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_3_p4_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_3_p4_v">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_5_p5_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_3_p4_v">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_10_p5_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_3_p5_v">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_15_p5_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_3_p5_v">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_30_p5_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_3_p5_v">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_2_p5_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_3_p5_v">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_3_p5_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_3_p5_v">
+                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_5_gi_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_3_p5_v">
+                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_10_gi_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_3_gi_v">
+                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_15_gi_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_3_gi_v">
+                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_30_gi_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_3_gi_v">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_3_gi_v">
+                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_2_gi_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
@@ -4063,37 +4069,31 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_3_gi_v">
+                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_5_gii_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_3_gii_v">
+                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_10_gii_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_3_gii_v">
+                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_15_gii_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_3_gii_v">
+                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_30_gii_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_3_gii_v">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_3_gii_v">
+                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_2_gii_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
@@ -4162,19 +4162,31 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2" name="t_3_p2_h">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_5_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2" name="t_3_p2_h">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_10_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                            <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2" name="t_3_p2_h">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_15_p2_h">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_30_p2_h">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_2_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
@@ -4186,37 +4198,31 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2" name="t_3_p2_h">
+                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_5_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2" name="t_3_p2_h">
+                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_10_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_3_p3_h">
+                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_15_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_3_p3_h">
+                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_30_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_3_p3_h">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_3_p3_h">
+                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_2_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
@@ -4228,7 +4234,31 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 3" name="t_3_p3_h">
+                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_5_p4_h">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_10_p4_h">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_15_p4_h">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_30_p4_h">
+                                                                    </div><!-- .col-xs-3 -->
+                                                                    <div class="col-xs-2">
+                                                                        <center>
+                                                                            <label></label>
+                                                                        </center>
+                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_2_p4_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
@@ -4240,37 +4270,31 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_3_p4_h">
+                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_5_p5_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_3_p4_h">
+                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_10_p5_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_3_p4_h">
+                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_15_p5_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_3_p4_h">
+                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_30_p5_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 4" name="t_3_p4_h">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_3_p5_h">
+                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_2_p5_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
@@ -4282,37 +4306,31 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_3_p5_h">
+                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_5_gi_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_3_p5_h">
+                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_10_gi_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_3_p5_h">
+                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_15_gi_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Piso 5" name="t_3_p5_h">
+                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_30_gi_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_3_gi_h">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_3_gi_h">
+                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_2_gi_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
@@ -4324,49 +4342,31 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_3_gi_h">
+                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_5_gii_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_3_gi_h">
+                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_10_gii_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas I" name="t_3_gi_h">
+                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_15_gii_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_3_gii_h">
+                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_30_gii_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_3_gii_h">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_3_gii_h">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_3_gii_h">
-                                                                    </div><!-- .col-xs-3 -->
-                                                                    <div class="col-xs-2">
-                                                                        <center>
-                                                                            <label></label>
-                                                                        </center>
-                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_3_gii_h">
+                                                                        <input type="text" class="form-control" placeholder="Garzas II" name="t_2_gii_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
@@ -4804,7 +4804,7 @@ yphicon-calendar" aria-hidden="true"></span>
                                                 </div><!-- /.col-med-8 -->                                    
 
                                             </div> <!-- ./tab-pane-->
-<!-- inicio panel 3 -->
+<!--* inicio panel 3 -->
                                                         <div class="col-md-6">                                      
                                                             <div class="box box-success">
                                                                 <div class="box-header">
@@ -5630,10 +5630,10 @@ yphicon-calendar" aria-hidden="true"></span>
                                                             </div> <!-- ./box box-success-->
                                                         </div> <!-- /.col-med-6 -->         
                                 </div> <!-- cierre del tab 2 ??? buscar donde inicia -->
-<!-- INICIO TAB7 -->
+<!--* INICIO TAB7 -->
                                 <div class="tab-pane" id="tab7">
 
-                                            <div class="col-md-8">                                               
+<!--* INICIO TAB8 -->           <div class="col-md-8">                                               
                                                 <div class="box box-success">
                                                     <div class="box-header">
                                                          <h3 class="box-title">TIPO DE ATENCIÓN</h3>
@@ -5672,253 +5672,253 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label>Cirugia</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a1_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Trauma</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a2_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Orl</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a3_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Pediatría</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a4_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Neumo</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a5_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Cardio</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a6_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                      <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a1_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a2_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a3_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a4_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a5_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a6_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a1_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a2_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a3_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a4_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a5_p3_v">
                                                                     </div><!-- .col-xs-3 -->  
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a6_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a1_p4_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a2_p4_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a3_p4_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a4_p4_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a5_p4_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a6_p4_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a1_p5_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a2_p5_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a3_p5_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a4_p5_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a5_p5_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a6_p5_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a1_gi_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a2_gi_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a3_gi_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a4_gi_v">
                                                                     </div><!-- .col-xs-3 -->                             
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a5_gi_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a6_gi_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a1_gii_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a2_gii_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a3_gii_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a4_gii_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a5_gii_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a6_gii_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     
                                                                     
@@ -5928,7 +5928,7 @@ yphicon-calendar" aria-hidden="true"></span>
                                                 </div><!-- /.col-med-8 -->                                    
 
                                             </div> <!-- ./tab-pane-->
-<!-- inicio panel 3 -->
+<!--* inicio panel 3 -->
                                                         <div class="col-md-8">                                      
                                                             <div class="box box-success">
                                                                 <div class="box-header">
@@ -5948,253 +5948,253 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label>Nefro</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a7_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Urología</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a8_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Neuro</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a9_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Hermato</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a10_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Oncología</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a11_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Dermato</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a12_p1_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                      <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a7_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a8_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a9_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a10_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a11_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a12_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a7_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a8_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a9_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a10_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a11_p3_v">
                                                                     </div><!-- .col-xs-3 -->  
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a12_p3_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a7_p4_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a8_p4_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a9_p4_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a10_p4_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a11_p4_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a12_p4_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a7_p5_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a8_p5_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a9_p5_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a10_p5_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a11_p5_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a12_p5_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a7_gi_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a8_gi_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a9_gi_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a10_gi_v">
                                                                     </div><!-- .col-xs-3 -->                             
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a11_gi_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a12_gi_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a7_gii_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a8_gii_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a9_gii_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a10_gii_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a11_gii_v">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a12_gii_v">
                                                                     </div><!-- .col-xs-3 -->  
                                                                    
                                                                                          
@@ -6223,85 +6223,85 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                                 <center>
                                                                                     <label>Gastro</label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P1">
+                                                                                <input type="text" class="form-control" placeholder="P1" name="t_a13_p1_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label>Infecto</label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P1">
+                                                                                <input type="text" class="form-control" placeholder="P1" name="t_a14_p1_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P2">
+                                                                                <input type="text" class="form-control" placeholder="P2" name="t_a13_p2_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P2">
+                                                                                <input type="text" class="form-control" placeholder="P2" name="t_a14_p2_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P3">
+                                                                                <input type="text" class="form-control" placeholder="P3" name="t_a13_p3_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P3">
+                                                                                <input type="text" class="form-control" placeholder="P3" name="t_a14_p3_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P4">
+                                                                                <input type="text" class="form-control" placeholder="P4" name="t_a13_p4_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P4">
+                                                                                <input type="text" class="form-control" placeholder="P4" name="t_a14_p4_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P5">
+                                                                                <input type="text" class="form-control" placeholder="P5" name="t_a13_p5_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P5">
+                                                                                <input type="text" class="form-control" placeholder="P5" name="t_a14_p5_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="GI">
+                                                                                <input type="text" class="form-control" placeholder="GI" name="t_a13_gi_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="GI">
+                                                                                <input type="text" class="form-control" placeholder="GI" name="t_a14_gi_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="GII">
+                                                                                <input type="text" class="form-control" placeholder="GII" na name="t_a13_gii_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="GII">
+                                                                                <input type="text" class="form-control" placeholder="GII" na name="t_a14_gii_v">
                                                                             </div><!-- .col-xs-3 -->
                                                                      
                                                                    
@@ -6331,253 +6331,253 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label>Cirugia</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a1_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Trauma</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a2_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Orl</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a3_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Pediatría</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a4_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Neumo</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a5_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Cardio</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a6_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                      <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a1_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a2_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a3_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a4_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a5_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a6_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a1_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a2_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a3_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a4_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a5_p3_h">
                                                                     </div><!-- .col-xs-3 -->  
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a6_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a1_p4_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a2_p4_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a3_p4_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a4_p4_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a5_p4_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a6_p4_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a1_p5_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a2_p5_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a3_p5_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a4_p5_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a5_p5_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a6_p5_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a1_gi_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a2_gi_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a3_gi_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a4_gi_h">
                                                                     </div><!-- .col-xs-3 -->                             
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a5_gi_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a6_gi_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a1_gii_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a2_gii_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a3_gii_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a4_gii_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a5_gii_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a6_gii_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     
                                                                     
@@ -6588,7 +6588,7 @@ yphicon-calendar" aria-hidden="true"></span>
 
                                             </div> <!-- ./tab-pane-->
 
-                                            <div class="col-md-4">                                      
+<!--* -->                                            <div class="col-md-4">                                      
                                                             <div class="box box-success">
                                                                 <div class="box-header">
                                                                      <h3 class="box-title">TIPO DE ATENCIÓN</h3>
@@ -6607,85 +6607,85 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                                 <center>
                                                                                     <label>Gastro</label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P1">
+                                                                                <input type="text" class="form-control" placeholder="P1" name="t_a13_p1_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label>Infecto</label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P1">
+                                                                                <input type="text" class="form-control" placeholder="P1" name="t_a14_p1_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P2">
+                                                                                <input type="text" class="form-control" placeholder="P2" name="t_a13_p2_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P2">
+                                                                                <input type="text" class="form-control" placeholder="P2" name="t_a14_p2_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P3">
+                                                                                <input type="text" class="form-control" placeholder="P3" name="t_a13_p3_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P3">
+                                                                                <input type="text" class="form-control" placeholder="P3" name="t_a14_p3_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P4">
+                                                                                <input type="text" class="form-control" placeholder="P4" name="t_a13_p4_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P4">
+                                                                                <input type="text" class="form-control" placeholder="P4" name="t_a14_p4_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P5">
+                                                                                <input type="text" class="form-control" placeholder="P5" name="t_a13_p5_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="P5">
+                                                                                <input type="text" class="form-control" placeholder="P5" name="t_a14_p5_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="GI">
+                                                                                <input type="text" class="form-control" placeholder="GI" name="t_a13_gi_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="GI">
+                                                                                <input type="text" class="form-control" placeholder="GI" name="t_a14_gi_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="GII">
+                                                                                <input type="text" class="form-control" placeholder="GII" name="t_a13_gii_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                             <div class="col-md-6">                           
                                                                                 <center>
                                                                                     <label></label>
                                                                                 </center>
-                                                                                <input type="text" class="form-control" placeholder="GII">
+                                                                                <input type="text" class="form-control" placeholder="GII" name="t_a14_gii_h">
                                                                             </div><!-- .col-xs-3 -->
                                                                      
                                                                    
@@ -6695,7 +6695,7 @@ yphicon-calendar" aria-hidden="true"></span>
                                                             </div> <!-- ./box box-success-->
                                                         </div> <!-- /.col-med-6 -->
 
-<!-- inicio panel 3 -->
+<!--* inicio panel 3 -->
                                                         <div class="col-md-8">                                      
                                                             <div class="box box-success">
                                                                 <div class="box-header">
@@ -6715,253 +6715,253 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label>Nefro</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a7_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Urología</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a8_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Neuro</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a9_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Hermato</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a10_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Oncología</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a11_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label>Dermato</label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P1">
+                                                                        <input type="text" class="form-control" placeholder="P1" name="t_a12_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                      <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a7_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a8_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a9_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a10_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a11_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="t_a12_p2_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a7_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a8_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a9_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a10_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a11_p3_h">
                                                                     </div><!-- .col-xs-3 -->  
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P3">
+                                                                        <input type="text" class="form-control" placeholder="P3" name="t_a12_p3_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a7_p4_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a8_p4_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a9_p4_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a10_p4_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a11_p4_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P4">
+                                                                        <input type="text" class="form-control" placeholder="P4" name="t_a12_p4_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a7_p5_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a8_p5_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a9_p5_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a10_p5_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a11_p5_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P5">
+                                                                        <input type="text" class="form-control" placeholder="P5" name="t_a12_p5_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a7_gi_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a8_gi_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a9_gi_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a10_gi_h">
                                                                     </div><!-- .col-xs-3 -->                             
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a11_gi_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GI">
+                                                                        <input type="text" class="form-control" placeholder="GI" name="t_a12_gi_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a7_gii_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a8_gii_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a9_gii_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a10_gii_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a11_gii_h">
                                                                     </div><!-- .col-xs-3 --> 
                                                                     <div class="col-xs-2">
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="GII">
+                                                                        <input type="text" class="form-control" placeholder="GII" name="t_a12_gii_h">
                                                                     </div><!-- .col-xs-3 -->                               
                                                                 </div><!-- ./row -->
                                                                     </div><!-- /.box-body -->

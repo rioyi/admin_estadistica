@@ -1,12 +1,18 @@
  <?php
 
-require ("../control/conexion_bd.php");
+
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+ 
+
+require ("conexion_bd.php");
 
 
 
 #seccion de mes tab1 
 $periodo_e = $_POST['periodo_e'];
 $mes = $_POST['mes'];
+
 
 #vefificado el post
 
@@ -20,13 +26,9 @@ $maternal_p5_v = $_POST['maternal_p5_v'];
 $maternal_gi_v = $_POST['maternal_gi_v'];
 $maternal_gii_v = $_POST['maternal_gii_v'];
 
-echo "$maternal_p1_v";
-echo "$maternal_p2_v";
-echo "$maternal_p3_v";
-echo "$maternal_p4_v";
-echo "$maternal_p5_v";
-echo "$maternal_gi_v";
-echo "$maternal_gii_v";
+mysql_query ("INSERT INTO total_escolaridad (id_sexo,id_periodo_escolar,id_mes,id_tipo_escolaridad,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$maternal_p1_v','$maternal_p2_v','$maternal_p3_v','$maternal_p4_v','$maternal_p5_v','$maternal_gi_v','$maternal_gii_v')") or die (mysql_error());
+
+
 
 
 #NIVEL I
@@ -38,13 +40,6 @@ $nivel1_p5_v = $_POST['nivel1_p5_v'];
 $nivel1_gi_v = $_POST['nivel1_gi_v'];
 $nivel1_gii_v = $_POST['nivel1_gii_v'];
 
-echo "$nivel1_p1_v";
-echo "$nivel1_p2_v";
-echo "$nivel1_p3_v";
-echo "$nivel1_p4_v";
-echo "$nivel1_p5_v";
-echo "$nivel1_gi_v";
-echo "$nivel1_gii_v";
 
 #NIVEL II
 $nivel2_p1_v = $_POST['nivel2_p1_v'];
@@ -55,10 +50,7 @@ $nivel2_p5_v = $_POST['nivel2_p5_v'];
 $nivel2_gi_v = $_POST['nivel2_gi_v'];
 $nivel2_gii_v = $_POST['nivel2_gii_v'];
 
-echo "$nivel2_p1_v";
-echo "$nivel2_p2_v";
-echo "$nivel2_p3_v";
-echo "$nivel2_p4_v";
+
 
 #NIVEL III
 $nivel3_p1_v = $_POST['nivel3_p1_v'];
@@ -69,10 +61,6 @@ $nivel3_p5_v = $_POST['nivel3_p5_v'];
 $nivel3_gi_v = $_POST['nivel3_gi_v'];
 $nivel3_gii_v = $_POST['nivel3_gii_v'];
 
-echo "$nivel3_p1_v";
-echo "$nivel3_p2_v";
-echo "$nivel3_p3_v";
-echo "$nivel3_p4_v";
 
 #1 GRADO
 $g1_p1_v = $_POST['g1_p1_v'];
@@ -83,10 +71,7 @@ $g1_p5_v = $_POST['g1_p5_v'];
 $g1_gi_v = $_POST['g1_gi_v'];
 $g1_gii_v = $_POST['g1_gii_v'];
 
-echo "$g1_p1_v";
-echo "$g1_p2_v";
-echo "$g1_p3_v";
-echo "$g1_p4_v";
+
 
 #2 GRADO
 $g2_p1_v = $_POST['g2_p1_v'];
@@ -97,10 +82,7 @@ $g2_p5_v = $_POST['g2_p5_v'];
 $g2_gi_v = $_POST['g2_gi_v'];
 $g2_gii_v = $_POST['g2_gii_v'];
 
-echo "$g2_p1_v";
-echo "$g2_p2_v";
-echo "$g2_p3_v";
-echo "$g2_p4_v";
+
 
 #3 GRADO
 $g3_p1_v = $_POST['g3_p1_v'];
@@ -111,10 +93,7 @@ $g3_p5_v = $_POST['g3_p5_v'];
 $g3_gi_v = $_POST['g3_gi_v'];
 $g3_gii_v = $_POST['g3_gii_v'];
 
-echo "$g3_p1_v";
-echo "$g3_p2_v";
-echo "$g3_p3_v";
-echo "$g3_p4_v";
+
 
 #4 GRADO
 $g4_p1_v = $_POST['g4_p1_v'];
@@ -125,10 +104,7 @@ $g4_p5_v = $_POST['g4_p5_v'];
 $g4_gi_v = $_POST['g4_gi_v'];
 $g4_gii_v = $_POST['g4_gii_v'];
 
-echo "$g4_p1_v";
-echo "$g4_p2_v";
-echo "$g4_p3_v";
-echo "$g4_p4_v";
+
 
 #5 GRADO
 $g5_p1_v = $_POST['g5_p1_v'];
@@ -139,10 +115,6 @@ $g5_p5_v = $_POST['g5_p5_v'];
 $g5_gi_v = $_POST['g5_gi_v'];
 $g5_gii_v = $_POST['g5_gii_v'];
 
-echo "$g5_p1_v";
-echo "$g5_p2_v";
-echo "$g5_p3_v";
-echo "$g5_p4_v";
 
 #6 GRADO
 $g6_p1_v = $_POST['g6_p1_v'];
@@ -153,10 +125,6 @@ $g6_p5_v = $_POST['g6_p5_v'];
 $g6_gi_v = $_POST['g6_gi_v'];
 $g6_gii_v = $_POST['g6_gii_v'];
 
-echo "$g6_p1_v";
-echo "$g6_p2_v";
-echo "$g6_p3_v";
-echo "$g6_p4_v";
 
 #7 GRADO
 $g7_p1_v = $_POST['g7_p1_v'];
@@ -167,10 +135,6 @@ $g7_p5_v = $_POST['g7_p5_v'];
 $g7_gi_v = $_POST['g7_gi_v'];
 $g7_gii_v = $_POST['g7_gii_v'];
 
-echo "$g7_p1_v";
-echo "$g7_p2_v";
-echo "$g7_p3_v";
-echo "$g7_p4_v";
 
 #8 GRADO
 $g8_p1_v = $_POST['g8_p1_v'];
@@ -181,10 +145,6 @@ $g8_p5_v = $_POST['g8_p5_v'];
 $g8_gi_v = $_POST['g8_gi_v'];
 $g8_gii_v = $_POST['g8_gii_v'];
 
-echo "$g8_p1_v";
-echo "$g8_p2_v";
-echo "$g8_p3_v";
-echo "$g8_p4_v";
 
 #9 GRADO
 $g9_p1_v = $_POST['g9_p1_v'];
@@ -195,10 +155,7 @@ $g9_p5_v = $_POST['g9_p5_v'];
 $g9_gi_v = $_POST['g9_gi_v'];
 $g9_gii_v = $_POST['g9_gii_v'];
 
-echo "$g9_p1_v";
-echo "$g9_p2_v";
-echo "$g9_p3_v";
-echo "$g9_p4_v";
+
 
 #10 4to Año
 $g10_p1_v = $_POST['g10_p1_v'];
@@ -209,10 +166,7 @@ $g10_p5_v = $_POST['g10_p5_v'];
 $g10_gi_v = $_POST['g10_gi_v'];
 $g10_gii_v = $_POST['g10_gii_v'];
 
-echo "$g10_p1_v";
-echo "$g10_p2_v";
-echo "$g10_p3_v";
-echo "$g10_p4_v";
+
 
 #11 5to Año
 $g11_p1_v = $_POST['g11_p1_v'];
@@ -223,10 +177,7 @@ $g11_p5_v = $_POST['g11_p5_v'];
 $g11_gi_v = $_POST['g11_gi_v'];
 $g11_gii_v = $_POST['g11_gii_v'];
 
-echo "$g11_p1_v";
-echo "$g11_p2_v";
-echo "$g11_p3_v";
-echo "$g11_p4_v";
+
 
 #12 6to Año
 $g12_p1_v = $_POST['g12_p1_v'];
@@ -237,10 +188,7 @@ $g12_p5_v = $_POST['g12_p5_v'];
 $g12_gi_v = $_POST['g12_gi_v'];
 $g12_gii_v = $_POST['g12_gii_v'];
 
-echo "$g12_p1_v";
-echo "$g12_p2_v";
-echo "$g12_p3_v";
-echo "$g12_p4_v";
+
 
 #13 S/E
 $g13_p1_v = $_POST['g13_p1_v'];
@@ -251,10 +199,7 @@ $g13_p5_v = $_POST['g13_p5_v'];
 $g13_gi_v = $_POST['g13_gi_v'];
 $g13_gii_v = $_POST['g13_gii_v'];
 
-echo "$g12_p1_v";
-echo "$g12_p2_v";
-echo "$g12_p3_v";
-echo "$g12_p4_v";
+
 
 #14 E/E
 $g14_p1_v = $_POST['g14_p1_v'];
@@ -265,10 +210,6 @@ $g14_p5_v = $_POST['g14_p5_v'];
 $g14_gi_v = $_POST['g14_gi_v'];
 $g14_gii_v = $_POST['g14_gii_v'];
 
-echo "$g12_p1_v";
-echo "$g12_p2_v";
-echo "$g12_p3_v";
-echo "$g12_p4_v";        
 
 #seccion escolaridad hembras
 	#MATERNAL
@@ -319,10 +260,6 @@ $g1_p5_h = $_POST['g1_p5_h'];
 $g1_gi_h = $_POST['g1_gi_h'];
 $g1_gii_h = $_POST['g1_gii_h'];
 
-echo "$g1_p1_v";
-echo "$g1_p2_v";
-echo "$g1_p3_v";
-echo "$g1_p4_v";
 
 #2 GRADO
 $g2_p1_h = $_POST['g2_p1_h'];
@@ -333,10 +270,7 @@ $g2_p5_h = $_POST['g2_p5_h'];
 $g2_gi_h = $_POST['g2_gi_h'];
 $g2_gii_h = $_POST['g2_gii_h'];
 
-echo "$g2_p1_v";
-echo "$g2_p2_v";
-echo "$g2_p3_v";
-echo "$g2_p4_v";
+
 
 #3 GRADO
 $g3_p1_h = $_POST['g3_p1_h'];
@@ -347,10 +281,7 @@ $g3_p5_h = $_POST['g3_p5_h'];
 $g3_gi_h = $_POST['g3_gi_h'];
 $g3_gii_h = $_POST['g3_gii_h'];
 
-echo "$g3_p1_v";
-echo "$g3_p2_v";
-echo "$g3_p3_v";
-echo "$g3_p4_v";
+
 
 #4 GRADO
 $g4_p1_h = $_POST['g4_p1_h'];
@@ -361,10 +292,8 @@ $g4_p5_h = $_POST['g4_p5_h'];
 $g4_gi_h = $_POST['g4_gi_h'];
 $g4_gii_h = $_POST['g4_gii_h'];
 
-echo "$g4_p1_h";
-echo "$g4_p2_h";
-echo "$g4_p3_h";
-echo "$g4_p4_h";
+
+
 
 #5 GRADO
 $g5_p1_h = $_POST['g5_p1_h'];
@@ -375,10 +304,7 @@ $g5_p5_h = $_POST['g5_p5_h'];
 $g5_gi_h = $_POST['g5_gi_h'];
 $g5_gii_h = $_POST['g5_gii_h'];
 
-echo "$g5_p1_h";
-echo "$g5_p2_h";
-echo "$g5_p3_h";
-echo "$g5_p4_h";
+
 
 #6 GRADO
 $g6_p1_h = $_POST['g6_p1_h'];
@@ -389,10 +315,7 @@ $g6_p5_h = $_POST['g6_p5_h'];
 $g6_gi_h = $_POST['g6_gi_h'];
 $g6_gii_h = $_POST['g6_gii_h'];
 
-echo "$g6_p1_h";
-echo "$g6_p2_h";
-echo "$g6_p3_h";
-echo "$g6_p4_h";
+
 
 #7 GRADO
 $g7_p1_h = $_POST['g7_p1_h'];
@@ -403,10 +326,6 @@ $g7_p5_h = $_POST['g7_p5_h'];
 $g7_gi_h = $_POST['g7_gi_h'];
 $g7_gii_h = $_POST['g7_gii_h'];
 
-echo "$g7_p1_h";
-echo "$g7_p2_h";
-echo "$g7_p3_h";
-echo "$g7_p4_h";
 
 #8 GRADO
 $g8_p1_h = $_POST['g8_p1_h'];
@@ -417,10 +336,6 @@ $g8_p5_h = $_POST['g8_p5_h'];
 $g8_gi_h = $_POST['g8_gi_h'];
 $g8_gii_h = $_POST['g8_gii_h'];
 
-echo "$g8_p1_h";
-echo "$g8_p2_h";
-echo "$g8_p3_h";
-echo "$g8_p4_h";
 
 #9 GRADO
 $g9_p1_h = $_POST['g9_p1_h'];
@@ -431,10 +346,7 @@ $g9_p5_h = $_POST['g9_p5_h'];
 $g9_gi_h = $_POST['g9_gi_h'];
 $g9_gii_h = $_POST['g9_gii_h'];
 
-echo "$g9_p1_h";
-echo "$g9_p2_h";
-echo "$g9_p3_h";
-echo "$g9_p4_h";
+
 
 #10 4to Año
 $g10_p1_h = $_POST['g10_p1_h'];
@@ -445,10 +357,6 @@ $g10_p5_h = $_POST['g10_p5_h'];
 $g10_gi_h = $_POST['g10_gi_h'];
 $g10_gii_h = $_POST['g10_gii_h'];
 
-echo "$g10_p1_h";
-echo "$g10_p2_h";
-echo "$g10_p3_h";
-echo "$g10_p4_h";
 
 #11 5to Año
 $g11_p1_h = $_POST['g11_p1_h'];
@@ -459,10 +367,7 @@ $g11_p5_h = $_POST['g11_p5_h'];
 $g11_gi_h = $_POST['g11_gi_h'];
 $g11_gii_h = $_POST['g11_gii_h'];
 
-echo "$g11_p1_h";
-echo "$g11_p2_h";
-echo "$g11_p3_h";
-echo "$g11_p4_h";
+
 
 #12 6to Año
 $g12_p1_h = $_POST['g12_p1_h'];
@@ -473,10 +378,7 @@ $g12_p5_h = $_POST['g12_p5_h'];
 $g12_gi_h = $_POST['g12_gi_h'];
 $g12_gii_h = $_POST['g12_gii_h'];
 
-echo "$g12_p1_h";
-echo "$g12_p2_h";
-echo "$g12_p3_h";
-echo "$g12_p4_h";
+
 
 #13 S/E
 $g13_p1_h = $_POST['g13_p1_h'];
@@ -487,10 +389,7 @@ $g13_p5_h = $_POST['g13_p5_h'];
 $g13_gi_h = $_POST['g13_gi_h'];
 $g13_gii_h = $_POST['g13_gii_h'];
 
-echo "$g12_p1_h";
-echo "$g12_p2_h";
-echo "$g12_p3_h";
-echo "$g12_p4_h";
+
 
 #14 E/E
 $g14_p1_h = $_POST['g14_p1_h'];
@@ -501,10 +400,7 @@ $g14_p5_h = $_POST['g14_p5_h'];
 $g14_gi_h = $_POST['g14_gi_h'];
 $g14_gii_h = $_POST['g14_gii_h'];
 
-echo "$g12_p1_h";
-echo "$g12_p2_h";
-echo "$g12_p3_h";
-echo "$g12_p4_h";    
+
 
 
 
@@ -1309,6 +1205,342 @@ $pr_r12_gii_h = $_POST['pr_r12_gii_h'];
 #
 #
 #----- VARONES
+#fila 1 panel 1
+
+$t_a1_p1_v = $_POST['t_a1_p1_v'];
+$t_a2_p1_v = $_POST['t_a2_p1_v'];
+$t_a3_p1_v = $_POST['t_a3_p1_v'];
+$t_a4_p1_v = $_POST['t_a4_p1_v'];
+$t_a5_p1_v = $_POST['t_a5_p1_v'];
+$t_a6_p1_v = $_POST['t_a6_p1_v'];
+
+#fila 2 panel 1
+
+$t_a1_p2_v = $_POST['t_a1_p2_v'];
+$t_a2_p2_v = $_POST['t_a2_p2_v'];
+$t_a3_p2_v = $_POST['t_a3_p2_v'];
+$t_a4_p2_v = $_POST['t_a4_p2_v'];
+$t_a5_p2_v = $_POST['t_a5_p2_v'];
+$t_a6_p2_v = $_POST['t_a6_p2_v'];
+
+#fila 3 panel 1
+
+$t_a1_p3_v = $_POST['t_a1_p3_v'];
+$t_a2_p3_v = $_POST['t_a2_p3_v'];
+$t_a3_p3_v = $_POST['t_a3_p3_v'];
+$t_a4_p3_v = $_POST['t_a4_p3_v'];
+$t_a5_p3_v = $_POST['t_a5_p3_v'];
+$t_a6_p3_v = $_POST['t_a6_p3_v'];
+
+#fila 4 panel 1
+
+$t_a1_p4_v = $_POST['t_a1_p4_v'];
+$t_a2_p4_v = $_POST['t_a2_p4_v'];
+$t_a3_p4_v = $_POST['t_a3_p4_v'];
+$t_a4_p4_v = $_POST['t_a4_p4_v'];
+$t_a5_p4_v = $_POST['t_a5_p4_v'];
+$t_a6_p4_v = $_POST['t_a6_p4_v'];
+
+#fila 5 panel 1
+
+$t_a1_p5_v = $_POST['t_a1_p5_v'];
+$t_a2_p5_v = $_POST['t_a2_p5_v'];
+$t_a3_p5_v = $_POST['t_a3_p5_v'];
+$t_a4_p5_v = $_POST['t_a4_p5_v'];
+$t_a5_p5_v = $_POST['t_a5_p5_v'];
+$t_a6_p5_v = $_POST['t_a6_p5_v'];
+
+#fila 6 panel 1
+
+$t_a1_gi_v = $_POST['t_a1_gi_v'];
+$t_a2_gi_v = $_POST['t_a2_gi_v'];
+$t_a3_gi_v = $_POST['t_a3_gi_v'];
+$t_a4_gi_v = $_POST['t_a4_gi_v'];
+$t_a5_gi_v = $_POST['t_a5_gi_v'];
+$t_a6_gi_v = $_POST['t_a6_gi_v'];
+
+#fila 7 panel 1
+
+$t_a1_gii_v = $_POST['t_a1_gii_v'];
+$t_a2_gii_v = $_POST['t_a2_gii_v'];
+$t_a3_gii_v = $_POST['t_a3_gii_v'];
+$t_a4_gii_v = $_POST['t_a4_gii_v'];
+$t_a5_gii_v = $_POST['t_a5_gii_v'];
+$t_a6_gii_v = $_POST['t_a6_gii_v'];
+
+#fila 1 panel 2
+
+$t_a7_p1_v = $_POST['t_a7_p1_v'];
+$t_a8_p1_v = $_POST['t_a8_p1_v'];
+$t_a9_p1_v = $_POST['t_a9_p1_v'];
+$t_a10_p1_v = $_POST['t_a10_p1_v'];
+$t_a11_p1_v = $_POST['t_a11_p1_v'];
+$t_a12_p1_v = $_POST['t_a12_p1_v'];
+
+#fila 2 panel 2
+
+$t_a7_p2_v = $_POST['t_a7_p2_v'];
+$t_a8_p2_v = $_POST['t_a8_p2_v'];
+$t_a9_p2_v = $_POST['t_a9_p2_v'];
+$t_a10_p2_v = $_POST['t_a10_p2_v'];
+$t_a11_p2_v = $_POST['t_a11_p2_v'];
+$t_a12_p2_v = $_POST['t_a12_p2_v'];
+
+#fila 3 panel 2
+
+$t_a7_p3_v = $_POST['t_a7_p3_v'];
+$t_a8_p3_v = $_POST['t_a8_p3_v'];
+$t_a9_p3_v = $_POST['t_a9_p3_v'];
+$t_a10_p3_v = $_POST['t_a10_p3_v'];
+$t_a11_p3_v = $_POST['t_a11_p3_v'];
+$t_a12_p3_v = $_POST['t_a12_p3_v'];
+
+#fila 4 panel 2
+
+$t_a7_p4_v = $_POST['t_a7_p4_v'];
+$t_a8_p4_v = $_POST['t_a8_p4_v'];
+$t_a9_p4_v = $_POST['t_a9_p4_v'];
+$t_a10_p4_v = $_POST['t_a10_p4_v'];
+$t_a11_p4_v = $_POST['t_a11_p4_v'];
+$t_a12_p4_v = $_POST['t_a12_p4_v'];
+
+#fila 5 panel 2
+
+$t_a7_p5_v = $_POST['t_a7_p5_v'];
+$t_a8_p5_v = $_POST['t_a8_p5_v'];
+$t_a9_p5_v = $_POST['t_a9_p5_v'];
+$t_a10_p5_v = $_POST['t_a10_p5_v'];
+$t_a11_p5_v = $_POST['t_a11_p5_v'];
+$t_a12_p5_v = $_POST['t_a12_p5_v'];
+
+#fila 6 panel 2
+
+$t_a7_gi_v = $_POST['t_a7_gi_v'];
+$t_a8_gi_v = $_POST['t_a8_gi_v'];
+$t_a9_gi_v = $_POST['t_a9_gi_v'];
+$t_a10_gi_v = $_POST['t_a10_gi_v'];
+$t_a11_gi_v = $_POST['t_a11_gi_v'];
+$t_a12_gi_v = $_POST['t_a12_gi_v'];
+
+#fila 7 panel 2
+
+$t_a7_gii_v = $_POST['t_a7_gii_v'];
+$t_a8_gii_v = $_POST['t_a8_gii_v'];
+$t_a9_gii_v = $_POST['t_a9_gii_v'];
+$t_a10_gii_v = $_POST['t_a10_gii_v'];
+$t_a11_gii_v = $_POST['t_a11_gii_v'];
+$t_a12_gii_v = $_POST['t_a12_gii_v'];
+
+#fila 1 panel 3
+
+$t_a13_p1_v = $_POST['t_a13_p1_v'];
+$t_a14_p1_v = $_POST['t_a14_p1_v'];
+
+#fila 2 panel 3
+
+$t_a13_p2_v = $_POST['t_a13_p2_v'];
+$t_a14_p2_v = $_POST['t_a14_p2_v'];
+
+#fila 3 panel 3
+
+$t_a13_p3_v = $_POST['t_a13_p3_v'];
+$t_a14_p3_v = $_POST['t_a14_p3_v'];
+
+#fila 4 panel 3
+
+$t_a13_p4_v = $_POST['t_a13_p4_v'];
+$t_a14_p4_v = $_POST['t_a14_p4_v'];
+
+#fila 5 panel 3
+
+$t_a13_p5_v = $_POST['t_a13_p5_v'];
+$t_a14_p5_v = $_POST['t_a14_p5_v'];
+
+#fila 6 panel 3
+
+$t_a13_gi_v = $_POST['t_a13_gi_v'];
+$t_a14_gi_v = $_POST['t_a14_gi_v'];
+
+#fila 7 panel 3
+
+$t_a13_gii_v = $_POST['t_a13_gii_v'];
+$t_a14_gii_v = $_POST['t_a14_gii_v'];
+
+
+#----- HEMBRAS
+#fila 1 panel 1
+
+$t_a1_p1_h = $_POST['t_a1_p1_h'];
+$t_a2_p1_h = $_POST['t_a2_p1_h'];
+$t_a3_p1_h = $_POST['t_a3_p1_h'];
+$t_a4_p1_h = $_POST['t_a4_p1_h'];
+$t_a5_p1_h = $_POST['t_a5_p1_h'];
+$t_a6_p1_h = $_POST['t_a6_p1_h'];
+
+#fila 2 panel 1
+
+$t_a1_p2_h = $_POST['t_a1_p2_h'];
+$t_a2_p2_h = $_POST['t_a2_p2_h'];
+$t_a3_p2_h = $_POST['t_a3_p2_h'];
+$t_a4_p2_h = $_POST['t_a4_p2_h'];
+$t_a5_p2_h = $_POST['t_a5_p2_h'];
+$t_a6_p2_h = $_POST['t_a6_p2_h'];
+
+#fila 3 panel 1
+
+$t_a1_p3_h = $_POST['t_a1_p3_h'];
+$t_a2_p3_h = $_POST['t_a2_p3_h'];
+$t_a3_p3_h = $_POST['t_a3_p3_h'];
+$t_a4_p3_h = $_POST['t_a4_p3_h'];
+$t_a5_p3_h = $_POST['t_a5_p3_h'];
+$t_a6_p3_h = $_POST['t_a6_p3_h'];
+
+#fila 4 panel 1
+
+$t_a1_p4_h = $_POST['t_a1_p4_h'];
+$t_a2_p4_h = $_POST['t_a2_p4_h'];
+$t_a3_p4_h = $_POST['t_a3_p4_h'];
+$t_a4_p4_h = $_POST['t_a4_p4_h'];
+$t_a5_p4_h = $_POST['t_a5_p4_h'];
+$t_a6_p4_h = $_POST['t_a6_p4_h'];
+
+#fila 5 panel 1
+
+$t_a1_p5_h = $_POST['t_a1_p5_h'];
+$t_a2_p5_h = $_POST['t_a2_p5_h'];
+$t_a3_p5_h = $_POST['t_a3_p5_h'];
+$t_a4_p5_h = $_POST['t_a4_p5_h'];
+$t_a5_p5_h = $_POST['t_a5_p5_h'];
+$t_a6_p5_h = $_POST['t_a6_p5_h'];
+
+#fila 6 panel 1
+
+$t_a1_gi_h = $_POST['t_a1_gi_h'];
+$t_a2_gi_h = $_POST['t_a2_gi_h'];
+$t_a3_gi_h = $_POST['t_a3_gi_h'];
+$t_a4_gi_h = $_POST['t_a4_gi_h'];
+$t_a5_gi_h = $_POST['t_a5_gi_h'];
+$t_a6_gi_h = $_POST['t_a6_gi_h'];
+
+#fila 7 panel 1
+
+$t_a1_gii_h = $_POST['t_a1_gii_h'];
+$t_a2_gii_h = $_POST['t_a2_gii_h'];
+$t_a3_gii_h = $_POST['t_a3_gii_h'];
+$t_a4_gii_h = $_POST['t_a4_gii_h'];
+$t_a5_gii_h = $_POST['t_a5_gii_h'];
+$t_a6_gii_h = $_POST['t_a6_gii_h'];
+
+#fila 1 panel 2
+
+$t_a7_p1_h = $_POST['t_a7_p1_h'];
+$t_a8_p1_h = $_POST['t_a8_p1_h'];
+$t_a9_p1_h = $_POST['t_a9_p1_h'];
+$t_a10_p1_h = $_POST['t_a10_p1_h'];
+$t_a11_p1_h = $_POST['t_a11_p1_h'];
+$t_a12_p1_h = $_POST['t_a12_p1_h'];
+
+#fila 2 panel 2
+
+$t_a7_p2_h = $_POST['t_a7_p2_h'];
+$t_a8_p2_h = $_POST['t_a8_p2_h'];
+$t_a9_p2_h = $_POST['t_a9_p2_h'];
+$t_a10_p2_h = $_POST['t_a10_p2_h'];
+$t_a11_p2_h = $_POST['t_a11_p2_h'];
+$t_a12_p2_h = $_POST['t_a12_p2_h'];
+
+#fila 3 panel 2
+
+$t_a7_p3_h = $_POST['t_a7_p3_h'];
+$t_a8_p3_h = $_POST['t_a8_p3_h'];
+$t_a9_p3_h = $_POST['t_a9_p3_h'];
+$t_a10_p3_h = $_POST['t_a10_p3_h'];
+$t_a11_p3_h = $_POST['t_a11_p3_h'];
+$t_a12_p3_h = $_POST['t_a12_p3_h'];
+
+#fila 4 panel 2
+
+$t_a7_p4_h = $_POST['t_a7_p4_h'];
+$t_a8_p4_h = $_POST['t_a8_p4_h'];
+$t_a9_p4_h = $_POST['t_a9_p4_h'];
+$t_a10_p4_h = $_POST['t_a10_p4_h'];
+$t_a11_p4_h = $_POST['t_a11_p4_h'];
+$t_a12_p4_h = $_POST['t_a12_p4_h'];
+
+#fila 5 panel 2
+
+$t_a7_p5_h = $_POST['t_a7_p5_h'];
+$t_a8_p5_h = $_POST['t_a8_p5_h'];
+$t_a9_p5_h = $_POST['t_a9_p5_h'];
+$t_a10_p5_h = $_POST['t_a10_p5_h'];
+$t_a11_p5_h = $_POST['t_a11_p5_h'];
+$t_a12_p5_h = $_POST['t_a12_p5_h'];
+
+#fila 6 panel 2
+
+$t_a7_gi_h = $_POST['t_a7_gi_h'];
+$t_a8_gi_h = $_POST['t_a8_gi_h'];
+$t_a9_gi_h = $_POST['t_a9_gi_h'];
+$t_a10_gi_h = $_POST['t_a10_gi_h'];
+$t_a11_gi_h = $_POST['t_a11_gi_h'];
+$t_a12_gi_h = $_POST['t_a12_gi_h'];
+
+#fila 7 panel 2
+
+$t_a7_gii_h = $_POST['t_a7_gii_h'];
+$t_a8_gii_h = $_POST['t_a8_gii_h'];
+$t_a9_gii_h = $_POST['t_a9_gii_h'];
+$t_a10_gii_h = $_POST['t_a10_gii_h'];
+$t_a11_gii_h = $_POST['t_a11_gii_h'];
+$t_a12_gii_h = $_POST['t_a12_gii_h'];
+
+#fila 1 panel 3
+
+$t_a13_p1_h = $_POST['t_a13_p1_h'];
+$t_a14_p1_h = $_POST['t_a14_p1_h'];
+
+#fila 2 panel 3
+
+$t_a13_p2_h = $_POST['t_a13_p2_h'];
+$t_a14_p2_h = $_POST['t_a14_p2_h'];
+
+#fila 3 panel 3
+
+$t_a13_p3_h = $_POST['t_a13_p3_h'];
+$t_a14_p3_h = $_POST['t_a14_p3_h'];
+
+#fila 4 panel 3
+
+$t_a13_p4_h = $_POST['t_a13_p4_h'];
+$t_a14_p4_h = $_POST['t_a14_p4_h'];
+
+#fila 5 panel 3
+
+$t_a13_p5_h = $_POST['t_a13_p5_h'];
+$t_a14_p5_h = $_POST['t_a14_p5_h'];
+
+#fila 6 panel 3
+
+$t_a13_gi_h = $_POST['t_a13_gi_h'];
+$t_a14_gi_h = $_POST['t_a14_gi_h'];
+
+#fila 7 panel 3
+
+$t_a13_gii_h = $_POST['t_a13_gii_h'];
+$t_a14_gii_h = $_POST['t_a14_gii_h'];
+
+
+#
+#
+#
+#------ ASISTENCIA
+#
+#
+#
+#----- VARONES
+#fila 1 panel 1
+
+
 
 
 
@@ -1319,7 +1551,7 @@ $pr_r12_gii_h = $_POST['pr_r12_gii_h'];
 #consulta para corroborar no dublicidad de ci_escolar
 
 			#REGISTRO DOCENTE
-			##mysql_query("INSERT INTO usuario (nombre_usuario, email, clave, pregunta_secreta, respuesta_secreta) VALUES ('$nombre','$email','$clave','$pregunta','$respuesta')") or die (mysql_error());
+			#mysql_query("INSERT INTO usuario (nombre_usuario, email, clave, pregunta_secreta, respuesta_secreta) VALUES ('$nombre','$email','$clave','$pregunta','$respuesta')") or die (mysql_error());
 			
 			
 			
