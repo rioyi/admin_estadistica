@@ -1,3 +1,14 @@
+<?php
+session_start();
+//manejamos en sesion el nombre del usuario que se ha logeado
+if (!isset($_SESSION["nombre_usuario"])){
+    header("location:login.php");
+    
+}
+$_SESSION["nombre_usuario"];
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -71,8 +82,8 @@
                                     <div class="pull-left">
                                         <a href="#" class="btn btn-default btn-flat">Perfil</a>
                                     </div>
-                                    <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">Salir</a>
+                                    <div class="pull-right">                                    
+                                        <a href="logout.php" class="btn btn-default btn-flat">Salir</a>
                                     </div>
                                 </li>
                             </ul>
