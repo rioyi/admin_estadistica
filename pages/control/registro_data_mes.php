@@ -26,7 +26,7 @@ $maternal_p5_v = $_POST['maternal_p5_v'];
 $maternal_gi_v = $_POST['maternal_gi_v'];
 $maternal_gii_v = $_POST['maternal_gii_v'];
 
-mysql_query ("INSERT INTO total_escolaridad (id_sexo,id_periodo_escolar,id_mes,id_tipo_escolaridad,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$maternal_p1_v','$maternal_p2_v','$maternal_p3_v','$maternal_p4_v','$maternal_p5_v','$maternal_gi_v','$maternal_gii_v')") or die (mysql_error());
+
 
 
 
@@ -61,6 +61,19 @@ $nivel3_p5_v = $_POST['nivel3_p5_v'];
 $nivel3_gi_v = $_POST['nivel3_gi_v'];
 $nivel3_gii_v = $_POST['nivel3_gii_v'];
 
+
+mysql_query ("INSERT INTO total_escolaridad (id_sexo,id_periodo_escolar,id_mes,id_tipo_escolaridad,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$maternal_p1_v','$maternal_p2_v','$maternal_p3_v','$maternal_p4_v','$maternal_p5_v','$maternal_gi_v','$maternal_gii_v'),
+#nivel 1 
+	('1','$periodo_e','$mes','1','$nivel1_p1_v','$nivel1_p2_v','$nivel1_p3_v','$nivel1_p4_v','$nivel1_p5_v','$nivel1_gi_v','$nivel1_gii_v'),
+#nivel 2 
+	('1','$periodo_e','$mes','1','$nivel2_p1_v','$nivel2_p2_v','$nivel2_p3_v','$nivel2_p4_v','$nivel2_p5_v','$nivel2_gi_v','$nivel2_gii_v'),
+#nivel 3 
+	('1','$periodo_e','$mes','1','$nivel3_p1_v','$nivel3_p2_v','$nivel3_p3_v','$nivel3_p4_v','$nivel3_p5_v','$nivel3_gi_v','$nivel3_gii_v')
+
+	")
+
+
+or die (mysql_error());
 
 #1 GRADO
 $g1_p1_v = $_POST['g1_p1_v'];
