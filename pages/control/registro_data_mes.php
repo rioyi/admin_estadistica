@@ -62,18 +62,6 @@ $nivel3_gi_v = $_POST['nivel3_gi_v'];
 $nivel3_gii_v = $_POST['nivel3_gii_v'];
 
 
-mysql_query ("INSERT INTO total_escolaridad (id_sexo,id_periodo_escolar,id_mes,id_tipo_escolaridad,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$maternal_p1_v','$maternal_p2_v','$maternal_p3_v','$maternal_p4_v','$maternal_p5_v','$maternal_gi_v','$maternal_gii_v'),
-#nivel 1 
-	('1','$periodo_e','$mes','1','$nivel1_p1_v','$nivel1_p2_v','$nivel1_p3_v','$nivel1_p4_v','$nivel1_p5_v','$nivel1_gi_v','$nivel1_gii_v'),
-#nivel 2 
-	('1','$periodo_e','$mes','1','$nivel2_p1_v','$nivel2_p2_v','$nivel2_p3_v','$nivel2_p4_v','$nivel2_p5_v','$nivel2_gi_v','$nivel2_gii_v'),
-#nivel 3 
-	('1','$periodo_e','$mes','1','$nivel3_p1_v','$nivel3_p2_v','$nivel3_p3_v','$nivel3_p4_v','$nivel3_p5_v','$nivel3_gi_v','$nivel3_gii_v')
-
-	")
-
-
-or die (mysql_error());
 
 #1 GRADO
 $g1_p1_v = $_POST['g1_p1_v'];
@@ -222,6 +210,50 @@ $g14_p4_v = $_POST['g14_p4_v'];
 $g14_p5_v = $_POST['g14_p5_v'];
 $g14_gi_v = $_POST['g14_gi_v'];
 $g14_gii_v = $_POST['g14_gii_v'];
+
+#Registro de Escolaridad Varones
+
+mysql_query ("INSERT INTO total_escolaridad (id_sexo,id_periodo_escolar,id_mes,id_tipo_escolaridad,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$maternal_p1_v','$maternal_p2_v','$maternal_p3_v','$maternal_p4_v','$maternal_p5_v','$maternal_gi_v','$maternal_gii_v'),
+#nivel 1 
+	('1','$periodo_e','$mes','1','$nivel1_p1_v','$nivel1_p2_v','$nivel1_p3_v','$nivel1_p4_v','$nivel1_p5_v','$nivel1_gi_v','$nivel1_gii_v'),
+#nivel 2 
+	('1','$periodo_e','$mes','1','$nivel2_p1_v','$nivel2_p2_v','$nivel2_p3_v','$nivel2_p4_v','$nivel2_p5_v','$nivel2_gi_v','$nivel2_gii_v'),
+#nivel 3 
+	('1','$periodo_e','$mes','1','$nivel3_p1_v','$nivel3_p2_v','$nivel3_p3_v','$nivel3_p4_v','$nivel3_p5_v','$nivel3_gi_v','$nivel3_gii_v'),
+#Grado 1 
+	('1','$periodo_e','$mes','1','$g1_p1_v','$g1_p2_v','$g1_p3_v','$g1_p4_v','$g1_p5_v','$g1_gi_v','$g1_gii_v'),
+#Grado 2 
+	('1','$periodo_e','$mes','1','$g2_p1_v','$g2_p2_v','$g2_p3_v','$g2_p4_v','$g2_p5_v','$g2_gi_v','$g2_gii_v'),
+#Grado 3 
+	('1','$periodo_e','$mes','1','$g3_p1_v','$g3_p2_v','$g3_p3_v','$g3_p4_v','$g3_p5_v','$g3_gi_v','$g3_gii_v'),
+#Grado 4 
+	('1','$periodo_e','$mes','1','$g4_p1_v','$g4_p2_v','$g4_p3_v','$g4_p4_v','$g4_p5_v','$g4_gi_v','$g4_gii_v'),
+#Grado 5 
+	('1','$periodo_e','$mes','1','$g5_p1_v','$g5_p2_v','$g5_p3_v','$g5_p4_v','$g5_p5_v','$g5_gi_v','$g5_gii_v'),
+#Grado 6 
+	('1','$periodo_e','$mes','1','$g6_p1_v','$g6_p2_v','$g6_p3_v','$g6_p4_v','$g6_p5_v','$g6_gi_v','$g6_gii_v'),
+#Grado 7 
+	('1','$periodo_e','$mes','1','$g7_p1_v','$g7_p2_v','$g7_p3_v','$g7_p4_v','$g7_p5_v','$g7_gi_v','$g7_gii_v'),
+#Grado 8 
+	('1','$periodo_e','$mes','1','$g8_p1_v','$g8_p2_v','$g8_p3_v','$g8_p4_v','$g8_p5_v','$g8_gi_v','$g8_gii_v'),
+#Grado 9 
+	('1','$periodo_e','$mes','1','$g9_p1_v','$g9_p2_v','$g9_p3_v','$g9_p4_v','$g9_p5_v','$g9_gi_v','$g9_gii_v'),
+#Grado 10 
+	('1','$periodo_e','$mes','1','$g10_p1_v','$g10_p2_v','$g10_p3_v','$g10_p4_v','$g10_p5_v','$g10_gi_v','$g10_gii_v'),
+#Grado 11 
+	('1','$periodo_e','$mes','1','$g11_p1_v','$g11_p2_v','$g11_p3_v','$g11_p4_v','$g11_p5_v','$g11_gi_v','$g11_gii_v'),
+#Grado 12 
+	('1','$periodo_e','$mes','1','$g12_p1_v','$g12_p2_v','$g12_p3_v','$g12_p4_v','$g12_p5_v','$g12_gi_v','$g12_gii_v'),
+#Grado 13 
+	('1','$periodo_e','$mes','1','$g13_p1_v','$g13_p2_v','$g13_p3_v','$g13_p4_v','$g13_p5_v','$g13_gi_v','$g13_gii_v'),
+#Grado 14 
+	('1','$periodo_e','$mes','1','$g14_p1_v','$g14_p2_v','$g14_p3_v','$g14_p4_v','$g14_p5_v','$g14_gi_v','$g14_gii_v')
+	")
+
+or die (mysql_error());
+
+
+
 
 
 #seccion escolaridad hembras
@@ -413,7 +445,46 @@ $g14_p5_h = $_POST['g14_p5_h'];
 $g14_gi_h = $_POST['g14_gi_h'];
 $g14_gii_h = $_POST['g14_gii_h'];
 
+#Registro de Escolaridad Varones
 
+mysql_query ("INSERT INTO total_escolaridad (id_sexo,id_periodo_escolar,id_mes,id_tipo_escolaridad,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$maternal_p1_h','$maternal_p2_h','$maternal_p3_h','$maternal_p4_h','$maternal_p5_h','$maternal_gi_h','$maternal_gii_h'),
+#nihel 1 
+	('1','$periodo_e','$mes','1','$nihel1_p1_h','$nihel1_p2_h','$nihel1_p3_h','$nihel1_p4_h','$nihel1_p5_h','$nihel1_gi_h','$nihel1_gii_h'),
+#nihel 2 
+	('1','$periodo_e','$mes','1','$nihel2_p1_h','$nihel2_p2_h','$nihel2_p3_h','$nihel2_p4_h','$nihel2_p5_h','$nihel2_gi_h','$nihel2_gii_h'),
+#nihel 3 
+	('1','$periodo_e','$mes','1','$nihel3_p1_h','$nihel3_p2_h','$nihel3_p3_h','$nihel3_p4_h','$nihel3_p5_h','$nihel3_gi_h','$nihel3_gii_h'),
+#Grado 1 
+	('1','$periodo_e','$mes','1','$g1_p1_h','$g1_p2_h','$g1_p3_h','$g1_p4_h','$g1_p5_h','$g1_gi_h','$g1_gii_h'),
+#Grado 2 
+	('1','$periodo_e','$mes','1','$g2_p1_h','$g2_p2_h','$g2_p3_h','$g2_p4_h','$g2_p5_h','$g2_gi_h','$g2_gii_h'),
+#Grado 3 
+	('1','$periodo_e','$mes','1','$g3_p1_h','$g3_p2_h','$g3_p3_h','$g3_p4_h','$g3_p5_h','$g3_gi_h','$g3_gii_h'),
+#Grado 4 
+	('1','$periodo_e','$mes','1','$g4_p1_h','$g4_p2_h','$g4_p3_h','$g4_p4_h','$g4_p5_h','$g4_gi_h','$g4_gii_h'),
+#Grado 5 
+	('1','$periodo_e','$mes','1','$g5_p1_h','$g5_p2_h','$g5_p3_h','$g5_p4_h','$g5_p5_h','$g5_gi_h','$g5_gii_h'),
+#Grado 6 
+	('1','$periodo_e','$mes','1','$g6_p1_h','$g6_p2_h','$g6_p3_h','$g6_p4_h','$g6_p5_h','$g6_gi_h','$g6_gii_h'),
+#Grado 7 
+	('1','$periodo_e','$mes','1','$g7_p1_h','$g7_p2_h','$g7_p3_h','$g7_p4_h','$g7_p5_h','$g7_gi_h','$g7_gii_h'),
+#Grado 8 
+	('1','$periodo_e','$mes','1','$g8_p1_h','$g8_p2_h','$g8_p3_h','$g8_p4_h','$g8_p5_h','$g8_gi_h','$g8_gii_h'),
+#Grado 9 
+	('1','$periodo_e','$mes','1','$g9_p1_h','$g9_p2_h','$g9_p3_h','$g9_p4_h','$g9_p5_h','$g9_gi_h','$g9_gii_h'),
+#Grado 10 
+	('1','$periodo_e','$mes','1','$g10_p1_h','$g10_p2_h','$g10_p3_h','$g10_p4_h','$g10_p5_h','$g10_gi_h','$g10_gii_h'),
+#Grado 11 
+	('1','$periodo_e','$mes','1','$g11_p1_h','$g11_p2_h','$g11_p3_h','$g11_p4_h','$g11_p5_h','$g11_gi_h','$g11_gii_h'),
+#Grado 12 
+	('1','$periodo_e','$mes','1','$g12_p1_h','$g12_p2_h','$g12_p3_h','$g12_p4_h','$g12_p5_h','$g12_gi_h','$g12_gii_h'),
+#Grado 13 
+	('1','$periodo_e','$mes','1','$g13_p1_h','$g13_p2_h','$g13_p3_h','$g13_p4_h','$g13_p5_h','$g13_gi_h','$g13_gii_h'),
+#Grado 14 
+	('1','$periodo_e','$mes','1','$g14_p1_h','$g14_p2_h','$g14_p3_h','$g14_p4_h','$g14_p5_h','$g14_gi_h','$g14_gii_h')
+	")
+
+or die (mysql_error());
 
 
 
