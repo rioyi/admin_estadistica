@@ -1048,6 +1048,25 @@ $t_4_p4_v = $_POST['t_4_p4_v'];
 $t_4_gi_v = $_POST['t_4_gi_v'];
 $t_4_gii_v = $_POST['t_4_gii_v'];
 
+mysql_query ("INSERT INTO total_tiempo_permanencia (id_sexo,id_periodo_escolar,id_mes,id_tipo_permanencia,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$t_5_p1_v','$t_5_p2_v','$t_5_p3_v','$t_5_p4_v','$t_5_p5_v','$t_5_gi_v','$t_5_gii_v'),
+#0-5 D Timpo Permanencia 
+	('1','$periodo_e','$mes','2','$t_10_p1_v','$t_10_p2_v','$t_10_p3_v','$t_10_p4_v','$t_10_p10_v','$t_10_gi_v','$t_10_gii_v'),
+#0-5 D Timpo Permanencia 
+	('1','$periodo_e','$mes','3','$t_15_p1_v','$t_15_p2_v','$t_15_p3_v','$t_15_p4_v','$t_15_p15_v','$t_15_gi_v','$t_15_gii_v'),
+#0-5 D Timpo Permanencia 
+	('1','$periodo_e','$mes','4','$t_30_p1_v','$t_30_p2_v','$t_30_p3_v','$t_30_p4_v','$t_30_p30_v','$t_30_gi_v','$t_30_gii_v'),
+#0-5 D Timpo Permanencia 
+	('1','$periodo_e','$mes','5','$t_2_p1_v','$t_2_p2_v','$t_2_p3_v','$t_2_p4_v','$t_2_p2_v','$t_2_gi_v','$t_2_gii_v'),
+#0-5 D Timpo Permanencia 
+	('1','$periodo_e','$mes','6','$t_3_p1_v','$t_3_p2_v','$t_3_p3_v','$t_3_p4_v','$t_3_p3_v','$t_3_gi_v','$t_3_gii_v'),
+#0-5 D Timpo Permanencia 
+	('1','$periodo_e','$mes','7','$t_4_p1_v','$t_4_p2_v','$t_4_p3_v','$t_4_p4_v','$t_4_p4_v','$t_4_gi_v','$t_4_gii_v')
+	")
+
+or die (mysql_error());
+
+
+
 
 #TIEMPO DE PERMANENCIA HEMBRAS
 
@@ -1114,6 +1133,27 @@ $t_4_p3_h = $_POST['t_4_p3_h'];
 $t_4_p4_h = $_POST['t_4_p4_h'];
 $t_4_gi_h = $_POST['t_4_gi_h'];
 $t_4_gii_h = $_POST['t_4_gii_h'];
+
+mysql_query ("INSERT INTO total_tiempo_permanencia (id_sexo,id_periodo_escolar,id_mes,id_tipo_permanencia,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$t_5_p1_h','$t_5_p2_h','$t_5_p3_h','$t_5_p4_h','$t_5_p5_h','$t_5_gi_h','$t_5_gii_h'),
+#0-5 D Timpo Permanencia 
+	('1','$periodo_e','$mes','2','$t_10_p1_h','$t_10_p2_h','$t_10_p3_h','$t_10_p4_h','$t_10_p10_h','$t_10_gi_h','$t_10_gii_h'),
+#0-5 D Timpo Permanencia 
+	('1','$periodo_e','$mes','3','$t_15_p1_h','$t_15_p2_h','$t_15_p3_h','$t_15_p4_h','$t_15_p15_h','$t_15_gi_h','$t_15_gii_h'),
+#0-5 D Timpo Permanencia 
+	('1','$periodo_e','$mes','4','$t_30_p1_h','$t_30_p2_h','$t_30_p3_h','$t_30_p4_h','$t_30_p30_h','$t_30_gi_h','$t_30_gii_h'),
+#0-5 D Timpo Permanencia 
+	('1','$periodo_e','$mes','5','$t_2_p1_h','$t_2_p2_h','$t_2_p3_h','$t_2_p4_h','$t_2_p2_h','$t_2_gi_h','$t_2_gii_h'),
+#0-5 D Timpo Permanencia 
+	('1','$periodo_e','$mes','6','$t_3_p1_h','$t_3_p2_h','$t_3_p3_h','$t_3_p4_h','$t_3_p3_h','$t_3_gi_h','$t_3_gii_h'),
+#0-5 D Timpo Permanencia 
+	('1','$periodo_e','$mes','7','$t_4_p1_h','$t_4_p2_h','$t_4_p3_h','$t_4_p4_h','$t_4_p4_h','$t_4_gi_h','$t_4_gii_h')
+	")
+
+or die (mysql_error());
+
+
+
+
 
 #
 #
