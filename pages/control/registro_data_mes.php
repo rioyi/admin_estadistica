@@ -1293,25 +1293,25 @@ $pr_r12_gii_v = $_POST['pr_r12_gii_v'];
 mysql_query ("INSERT INTO total_referidos (id_sexo,id_periodo_escolar,id_mes,id_tipo_referido,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$pr_r1_p1_v','$pr_r1_p2_v','$pr_r1_p3_v','$pr_r1_p4_v','$pr_r1_p5_v','$pr_r1_gi_v','$pr_r1_gii_v'),
 #Referido CDI 
 	('1','$periodo_e','$mes','2','$pr_r2_p1_v','$pr_r2_p2_v','$pr_r2_p3_v','$pr_r2_p4_v','$pr_r2_p5_v','$pr_r2_gi_v','$pr_r2_gii_v'),
-#Referido Trauma 
+#Referido Seguro Social 
 	('1','$periodo_e','$mes','3','$pr_r3_p1_v','$pr_r3_p2_v','$pr_r3_p3_v','$pr_r3_p4_v','$pr_r3_p5_v','$pr_r3_gi_v','$pr_r3_gii_v'),
-#Referido Otorrino 
+#Referido Psicologia 
 	('1','$periodo_e','$mes','4','$pr_r4_p1_v','$pr_r4_p2_v','$pr_r4_p3_v','$pr_r4_p4_v','$pr_r4_p5_v','$pr_r4_gi_v','$pr_r4_gii_v'),
-#Referido caipa 
+#Referido CAIPA 
 	('1','$periodo_e','$mes','5','$pr_r5_p1_v','$pr_r5_p2_v','$pr_r5_p3_v','$pr_r5_p4_v','$pr_r5_p5_v','$pr_r5_gi_v','$pr_r5_gii_v'),
 #Referido integracion 
 	('1','$periodo_e','$mes','6','$pr_r6_p1_v','$pr_r6_p2_v','$pr_r6_p3_v','$pr_r6_p4_v','$pr_r6_p5_v','$pr_r6_gi_v','$pr_r6_gii_v'),
 #Referido A integral 
 	('1','$periodo_e','$mes','7','$pr_r7_p1_v','$pr_r7_p2_v','$pr_r7_p3_v','$pr_r7_p4_v','$pr_r7_p5_v','$pr_r7_gi_v','$pr_r7_gii_v'),
-#Referido Otorrino 
+#Referido CENDA 
 	('1','$periodo_e','$mes','8','$pr_r8_p1_v','$pr_r8_p2_v','$pr_r8_p3_v','$pr_r8_p4_v','$pr_r8_p5_v','$pr_r8_gi_v','$pr_r8_gii_v'),
-#Referido Otorrino 
+#Referido UPE 
 	('1','$periodo_e','$mes','9','$pr_r9_p1_v','$pr_r9_p2_v','$pr_r9_p3_v','$pr_r9_p4_v','$pr_r9_p5_v','$pr_r9_gi_v','$pr_r9_gii_v'),
-#Referido Otorrino 
+#Referido Articulacion 
 	('1','$periodo_e','$mes','10','$pr_r10_p1_v','$pr_r10_p2_v','$pr_r10_p3_v','$pr_r10_p4_v','$pr_r10_p5_v','$pr_r10_gi_v','$pr_r10_gii_v'),
-#Referido Otorrino 
+#Referido Otros 
 	('1','$periodo_e','$mes','11','$pr_r11_p1_v','$pr_r11_p2_v','$pr_r11_p3_v','$pr_r11_p4_v','$pr_r11_p5_v','$pr_r11_gi_v','$pr_r11_gii_v'),
-#Referido Otorrino 
+#Referido Otros 
 	('1','$periodo_e','$mes','12','$pr_12_p1_v','$pr_12_p2_v','$pr_12_p3_v','$pr_12_p4_v','$pr_12_p5_v','$pr_12_gi_v','$pr_12_gii_v')
 
 ")
@@ -1451,29 +1451,29 @@ $pr_r10_gii_h = $_POST['pr_r10_gii_h'];
 $pr_r11_gii_h = $_POST['pr_r11_gii_h'];
 $pr_r12_gii_h = $_POST['pr_r12_gii_h'];
 
-mysql_query ("INSERT INTO total_referidos (id_sexo,id_periodo_escolar,id_mes,id_tipo_referido,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$pr_r1_p1_h','$pr_r1_p2_h','$pr_r1_p3_h','$pr_r1_p4_h','$pr_r1_p5_h','$pr_r1_gi_h','$pr_r1_gii_h'),
+mysql_query ("INSERT INTO total_referidos (id_sexo,id_periodo_escolar,id_mes,id_tipo_referido,p1,p2,p3,p4,p5,gi,gii) values ('2','$periodo_e','$mes','1','$pr_r1_p1_h','$pr_r1_p2_h','$pr_r1_p3_h','$pr_r1_p4_h','$pr_r1_p5_h','$pr_r1_gi_h','$pr_r1_gii_h'),
 #Referido CDI 
-	('1','$periodo_e','$mes','2','$pr_r2_p1_h','$pr_r2_p2_h','$pr_r2_p3_h','$pr_r2_p4_h','$pr_r2_p5_h','$pr_r2_gi_h','$pr_r2_gii_h'),
-#Referido Trauma 
-	('1','$periodo_e','$mes','3','$pr_r3_p1_h','$pr_r3_p2_h','$pr_r3_p3_h','$pr_r3_p4_h','$pr_r3_p5_h','$pr_r3_gi_h','$pr_r3_gii_h'),
-#Referido Otorrino 
-	('1','$periodo_e','$mes','4','$pr_r4_p1_h','$pr_r4_p2_h','$pr_r4_p3_h','$pr_r4_p4_h','$pr_r4_p5_h','$pr_r4_gi_h','$pr_r4_gii_h'),
-#Referido caipa 
-	('1','$periodo_e','$mes','5','$pr_r5_p1_h','$pr_r5_p2_h','$pr_r5_p3_h','$pr_r5_p4_h','$pr_r5_p5_h','$pr_r5_gi_h','$pr_r5_gii_h'),
+	('2','$periodo_e','$mes','2','$pr_r2_p1_h','$pr_r2_p2_h','$pr_r2_p3_h','$pr_r2_p4_h','$pr_r2_p5_h','$pr_r2_gi_h','$pr_r2_gii_h'),
+#Referido Seguro Social 
+	('2','$periodo_e','$mes','3','$pr_r3_p1_h','$pr_r3_p2_h','$pr_r3_p3_h','$pr_r3_p4_h','$pr_r3_p5_h','$pr_r3_gi_h','$pr_r3_gii_h'),
+#Referido Psicologia
+	('2','$periodo_e','$mes','4','$pr_r4_p1_h','$pr_r4_p2_h','$pr_r4_p3_h','$pr_r4_p4_h','$pr_r4_p5_h','$pr_r4_gi_h','$pr_r4_gii_h'),
+#Referido CAIPA
+	('2','$periodo_e','$mes','5','$pr_r5_p1_h','$pr_r5_p2_h','$pr_r5_p3_h','$pr_r5_p4_h','$pr_r5_p5_h','$pr_r5_gi_h','$pr_r5_gii_h'),
 #Referido integracion 
-	('1','$periodo_e','$mes','6','$pr_r6_p1_h','$pr_r6_p2_h','$pr_r6_p3_h','$pr_r6_p4_h','$pr_r6_p5_h','$pr_r6_gi_h','$pr_r6_gii_h'),
+	('2','$periodo_e','$mes','6','$pr_r6_p1_h','$pr_r6_p2_h','$pr_r6_p3_h','$pr_r6_p4_h','$pr_r6_p5_h','$pr_r6_gi_h','$pr_r6_gii_h'),
 #Referido A integral 
-	('1','$periodo_e','$mes','7','$pr_r7_p1_h','$pr_r7_p2_h','$pr_r7_p3_h','$pr_r7_p4_h','$pr_r7_p5_h','$pr_r7_gi_h','$pr_r7_gii_h'),
-#Referido Otorrino 
-	('1','$periodo_e','$mes','8','$pr_r8_p1_h','$pr_r8_p2_h','$pr_r8_p3_h','$pr_r8_p4_h','$pr_r8_p5_h','$pr_r8_gi_h','$pr_r8_gii_h'),
-#Referido Otorrino 
-	('1','$periodo_e','$mes','9','$pr_r9_p1_h','$pr_r9_p2_h','$pr_r9_p3_h','$pr_r9_p4_h','$pr_r9_p5_h','$pr_r9_gi_h','$pr_r9_gii_h'),
-#Referido Otorrino 
-	('1','$periodo_e','$mes','10','$pr_r10_p1_h','$pr_r10_p2_h','$pr_r10_p3_h','$pr_r10_p4_h','$pr_r10_p5_h','$pr_r10_gi_h','$pr_r10_gii_h'),
-#Referido Otorrino 
-	('1','$periodo_e','$mes','11','$pr_r11_p1_h','$pr_r11_p2_h','$pr_r11_p3_h','$pr_r11_p4_h','$pr_r11_p5_h','$pr_r11_gi_h','$pr_r11_gii_h'),
-#Referido Otorrino 
-	('1','$periodo_e','$mes','12','$pr_12_p1_h','$pr_12_p2_h','$pr_12_p3_h','$pr_12_p4_h','$pr_12_p5_h','$pr_12_gi_h','$pr_12_gii_h')
+	('2','$periodo_e','$mes','7','$pr_r7_p1_h','$pr_r7_p2_h','$pr_r7_p3_h','$pr_r7_p4_h','$pr_r7_p5_h','$pr_r7_gi_h','$pr_r7_gii_h'),
+#Referido cenda 
+	('2','$periodo_e','$mes','8','$pr_r8_p1_h','$pr_r8_p2_h','$pr_r8_p3_h','$pr_r8_p4_h','$pr_r8_p5_h','$pr_r8_gi_h','$pr_r8_gii_h'),
+#Referido Upe 
+	('2','$periodo_e','$mes','9','$pr_r9_p1_h','$pr_r9_p2_h','$pr_r9_p3_h','$pr_r9_p4_h','$pr_r9_p5_h','$pr_r9_gi_h','$pr_r9_gii_h'),
+#Referido Articulacion 
+	('2','$periodo_e','$mes','10','$pr_r10_p1_h','$pr_r10_p2_h','$pr_r10_p3_h','$pr_r10_p4_h','$pr_r10_p5_h','$pr_r10_gi_h','$pr_r10_gii_h'),
+#Referido Otros 
+	('2','$periodo_e','$mes','11','$pr_r11_p1_h','$pr_r11_p2_h','$pr_r11_p3_h','$pr_r11_p4_h','$pr_r11_p5_h','$pr_r11_gi_h','$pr_r11_gii_h'),
+#Referido Otros 
+	('2','$periodo_e','$mes','12','$pr_12_p1_h','$pr_12_p2_h','$pr_12_p3_h','$pr_12_p4_h','$pr_12_p5_h','$pr_12_gi_h','$pr_12_gii_h')
 
 ")
 
@@ -1648,6 +1648,38 @@ $t_a14_gi_v = $_POST['t_a14_gi_v'];
 $t_a13_gii_v = $_POST['t_a13_gii_v'];
 $t_a14_gii_v = $_POST['t_a14_gii_v'];
 
+mysql_query ("INSERT INTO total_atencion (id_sexo,id_periodo_escolar,id_mes,id_tipo_atencion,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$t_a1_p1_v','$t_a1_p2_v','$t_a1_p3_v','$t_a1_p4_v','$t_a1_p5_v','$t_a1_gi_v','$t_a1_gii_v'),
+#Trauma 
+	('1','$periodo_e','$mes','2','$t_a2_p1_v','$t_a2_p2_v','$t_a2_p3_v','$t_a2_p4_v','$t_a2_p5_v','$t_a2_gi_v','$t_a2_gii_v'),
+#Otorrino 
+	('1','$periodo_e','$mes','3','$t_a3_p1_v','$t_a3_p2_v','$t_a3_p3_v','$t_a3_p4_v','$t_a3_p5_v','$t_a3_gi_v','$t_a3_gii_v'),
+#Pediatria 
+	('1','$periodo_e','$mes','4','$t_a4_p1_v','$t_a4_p2_v','$t_a4_p3_v','$t_a4_p4_v','$t_a4_p5_v','$t_a4_gi_v','$t_a4_gii_v'),
+#Neuro 
+	('1','$periodo_e','$mes','5','$t_a5_p1_v','$t_a5_p2_v','$t_a5_p3_v','$t_a5_p4_v','$t_a5_p5_v','$t_a5_gi_v','$t_a5_gii_v'),
+#Cardio
+	('1','$periodo_e','$mes','6','$t_a6_p1_v','$t_a6_p2_v','$t_a6_p3_v','$t_a6_p4_v','$t_a6_p5_v','$t_a6_gi_v','$t_a6_gii_v'),
+#Nefro
+	('1','$periodo_e','$mes','7','$t_a7_p1_v','$t_a7_p2_v','$t_a7_p3_v','$t_a7_p4_v','$t_a7_p5_v','$t_a7_gi_v','$t_a7_gii_v'),
+#Urolo
+	('1','$periodo_e','$mes','8','$t_a8_p1_v','$t_a8_p2_v','$t_a8_p3_v','$t_a8_p4_v','$t_a8_p5_v','$t_a8_gi_v','$t_a8_gii_v'),
+#Neumo
+	('1','$periodo_e','$mes','9','$t_a9_p1_v','$t_a9_p2_v','$t_a9_p3_v','$t_a9_p4_v','$t_a9_p5_v','$t_a9_gi_v','$t_a9_gii_v'),
+#Herma
+	('1','$periodo_e','$mes','10','$t_a10_p1_v','$t_a10_p2_v','$t_a10_p3_v','$t_a10_p4_v','$t_a10_p5_v','$t_a10_gi_v','$t_a10_gii_v'),
+#Onco
+	('1','$periodo_e','$mes','11','$t_a11_p1_v','$t_a11_p2_v','$t_a11_p3_v','$t_a11_p4_v','$t_a11_p5_v','$t_a11_gi_v','$t_a11_gii_v'),
+#Derma
+	('1','$periodo_e','$mes','12','$t_a12_p1_v','$t_a12_p2_v','$t_a12_p3_v','$t_a12_p4_v','$t_a12_p5_v','$t_a12_gi_v','$t_a12_gii_v'),
+#Gastro
+	('1','$periodo_e','$mes','13','$t_a13_p1_v','$t_a13_p2_v','$t_a13_p3_v','$t_a13_p4_v','$t_a13_p5_v','$t_a13_gi_v','$t_a13_gii_v'),
+#Infecto
+	('1','$periodo_e','$mes','14','$t_a14_p1_v','$t_a14_p2_v','$t_a14_p3_v','$t_a14_p4_v','$t_a14_p5_v','$t_a14_gi_v','$t_a14_gii_v')
+
+")
+
+or die (mysql_error());
+
 
 #----- HEMBRAS
 #fila 1 panel 1
@@ -1810,6 +1842,38 @@ $t_a14_gi_h = $_POST['t_a14_gi_h'];
 
 $t_a13_gii_h = $_POST['t_a13_gii_h'];
 $t_a14_gii_h = $_POST['t_a14_gii_h'];
+
+mysql_query ("INSERT INTO total_atencion (id_sexo,id_periodo_escolar,id_mes,id_tipo_atencion,p1,p2,p3,p4,p5,gi,gii) values ('2','$periodo_e','$mes','1','$t_a1_p1_h','$t_a1_p2_h','$t_a1_p3_h','$t_a1_p4_h','$t_a1_p5_h','$t_a1_gi_h','$t_a1_gii_h'),
+#Trauma 
+	('2','$periodo_e','$mes','2','$t_a2_p1_h','$t_a2_p2_h','$t_a2_p3_h','$t_a2_p4_h','$t_a2_p5_h','$t_a2_gi_h','$t_a2_gii_h'),
+#Otorrino 
+	('2','$periodo_e','$mes','3','$t_a3_p1_h','$t_a3_p2_h','$t_a3_p3_h','$t_a3_p4_h','$t_a3_p5_h','$t_a3_gi_h','$t_a3_gii_h'),
+#Pediatria 
+	('2','$periodo_e','$mes','4','$t_a4_p1_h','$t_a4_p2_h','$t_a4_p3_h','$t_a4_p4_h','$t_a4_p5_h','$t_a4_gi_h','$t_a4_gii_h'),
+#Neuro 
+	('2','$periodo_e','$mes','5','$t_a5_p1_h','$t_a5_p2_h','$t_a5_p3_h','$t_a5_p4_h','$t_a5_p5_h','$t_a5_gi_h','$t_a5_gii_h'),
+#Cardio
+	('2','$periodo_e','$mes','6','$t_a6_p1_h','$t_a6_p2_h','$t_a6_p3_h','$t_a6_p4_h','$t_a6_p5_h','$t_a6_gi_h','$t_a6_gii_h'),
+#Nefro
+	('2','$periodo_e','$mes','7','$t_a7_p1_h','$t_a7_p2_h','$t_a7_p3_h','$t_a7_p4_h','$t_a7_p5_h','$t_a7_gi_h','$t_a7_gii_h'),
+#Urolo
+	('2','$periodo_e','$mes','8','$t_a8_p1_h','$t_a8_p2_h','$t_a8_p3_h','$t_a8_p4_h','$t_a8_p5_h','$t_a8_gi_h','$t_a8_gii_h'),
+#Neumo
+	('2','$periodo_e','$mes','9','$t_a9_p1_h','$t_a9_p2_h','$t_a9_p3_h','$t_a9_p4_h','$t_a9_p5_h','$t_a9_gi_h','$t_a9_gii_h'),
+#Herma
+	('2','$periodo_e','$mes','10','$t_a10_p1_h','$t_a10_p2_h','$t_a10_p3_h','$t_a10_p4_h','$t_a10_p5_h','$t_a10_gi_h','$t_a10_gii_h'),
+#Onco
+	('2','$periodo_e','$mes','11','$t_a11_p1_h','$t_a11_p2_h','$t_a11_p3_h','$t_a11_p4_h','$t_a11_p5_h','$t_a11_gi_h','$t_a11_gii_h'),
+#Derma
+	('2','$periodo_e','$mes','12','$t_a12_p1_h','$t_a12_p2_h','$t_a12_p3_h','$t_a12_p4_h','$t_a12_p5_h','$t_a12_gi_h','$t_a12_gii_h'),
+#Gastro
+	('2','$periodo_e','$mes','13','$t_a13_p1_h','$t_a13_p2_h','$t_a13_p3_h','$t_a13_p4_h','$t_a13_p5_h','$t_a13_gi_h','$t_a13_gii_h'),
+#Infecto
+	('2','$periodo_e','$mes','14','$t_a14_p1_h','$t_a14_p2_h','$t_a14_p3_h','$t_a14_p4_h','$t_a14_p5_h','$t_a14_gi_h','$t_a14_gii_h')
+
+")
+
+or die (mysql_error());
 
 
 #
