@@ -558,6 +558,7 @@ $v_e3_p1_v = $_POST['v_e3_p1_v'];
 $v_e4_p1_v = $_POST['v_e4_p1_v'];
 $v_e5_p1_v = $_POST['v_e5_p1_v'];
 
+
 #fila 2 panel 1
 $v_e11_p2_v = $_POST['v_e11_p2_v'];
 $v_e1_p2_v = $_POST['v_e1_p2_v'];
@@ -599,12 +600,12 @@ $v_e4_gi_v = $_POST['v_e4_gi_v'];
 $v_e5_gi_v = $_POST['v_e5_gi_v'];
 
 #fila 7 panel 1
-$v_e11_p2_v = $_POST['v_e11_p2_v'];
-$v_e1_p2_v = $_POST['v_e1_p2_v'];
-$v_e2_p2_v = $_POST['v_e2_p2_v'];
-$v_e3_p2_v = $_POST['v_e3_p2_v'];
-$v_e4_p2_v = $_POST['v_e4_p2_v'];
-$v_e5_p2_v = $_POST['v_e5_p2_v'];
+$v_e11_gii_v = $_POST['v_e11_p2_v'];
+$v_e1_gii_v = $_POST['v_e1_p2_v'];
+$v_e2_gii_v = $_POST['v_e2_p2_v'];
+$v_e3_gii_v = $_POST['v_e3_p2_v'];
+$v_e4_gii_v = $_POST['v_e4_p2_v'];
+$v_e5_gii_v = $_POST['v_e5_p2_v'];
 
 #2
 
@@ -723,6 +724,46 @@ $v_e15_gii_v = $_POST['v_e15_gii_v'];
 $v_e16_gii_v = $_POST['v_e16_gii_v'];
 $v_e17_gii_v = $_POST['v_e17_gii_v'];
 
+mysql_query ("INSERT INTO total_visita_edad (id_sexo,id_periodo_escolar,id_mes,id_tipo_edad,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$v_e11_p1_v','$v_e11_p2_v','$v_e11_p3_v','$v_e11_p4_v','$v_e11_p5_v','$v_e11_gi_v','$v_e11_gii_v'),
+#1año varones
+	('1','$periodo_e','$mes','2','$v_e1_p1_v','$v_e1_p2_v','$v_e1_p3_v','$v_e1_p4_v','$v_e1_p5_v','$v_e1_gi_v','$v_e1_gii_v'),
+#2año varones
+	('1','$periodo_e','$mes','3','$v_e2_p1_v','$v_e2_p2_v','$v_e2_p3_v','$v_e2_p4_v','$v_e2_p5_v','$v_e2_gi_v','$v_e2_gii_v'),
+#3año varones
+	('1','$periodo_e','$mes','4','$v_e3_p1_v','$v_e3_p2_v','$v_e3_p3_v','$v_e3_p4_v','$v_e3_p5_v','$v_e3_gi_v','$v_e3_gii_v'),
+#4año varones
+	('1','$periodo_e','$mes','5','$v_e4_p1_v','$v_e4_p2_v','$v_e4_p3_v','$v_e4_p4_v','$v_e4_p5_v','$v_e4_gi_v','$v_e4_gii_v'),
+#5año varones
+	('1','$periodo_e','$mes','6','$v_e5_p1_v','$v_e5_p2_v','$v_e5_p3_v','$v_e5_p4_v','$v_e5_p5_v','$v_e5_gi_v','$v_e5_gii_v'),
+#6año varones
+	('1','$periodo_e','$mes','7','$v_e6_p1_v','$v_e6_p2_v','$v_e6_p3_v','$v_e6_p4_v','$v_e6_p5_v','$v_e6_gi_v','$v_e6_gii_v'),
+#7año varones
+	('1','$periodo_e','$mes','8','$v_e7_p1_v','$v_e7_p2_v','$v_e7_p3_v','$v_e7_p4_v','$v_e7_p5_v','$v_e7_gi_v','$v_e7_gii_v'),
+#8año varones
+	('1','$periodo_e','$mes','9','$v_e8_p1_v','$v_e8_p2_v','$v_e8_p3_v','$v_e8_p4_v','$v_e8_p5_v','$v_e8_gi_v','$v_e8_gii_v'),
+#9año varones
+	('1','$periodo_e','$mes','10','$v_e9_p1_v','$v_e9_p2_v','$v_e9_p3_v','$v_e9_p4_v','$v_e9_p5_v','$v_e9_gi_v','$v_e9_gii_v'),
+#10año varones
+	('1','$periodo_e','$mes','11','$v_e10_p1_v','$v_e10_p2_v','$v_e10_p3_v','$v_e10_p4_v','$v_e10_p5_v','$v_e10_gi_v','$v_e10_gii_v'),
+#11año varones
+	('1','$periodo_e','$mes','12','$v_e111_p1_v','$v_e111_p2_v','$v_e111_p3_v','$v_e111_p4_v','$v_e111_p5_v','$v_e111_gi_v','$v_e111_gii_v'),
+#12año varones
+	('1','$periodo_e','$mes','13','$v_e12_p1_v','$v_e12_p2_v','$v_e12_p3_v','$v_e12_p4_v','$v_e12_p5_v','$v_e12_gi_v','$v_e12_gii_v'),
+#13año varones
+	('1','$periodo_e','$mes','14','$v_e13_p1_v','$v_e13_p2_v','$v_e13_p3_v','$v_e13_p4_v','$v_e13_p5_v','$v_e13_gi_v','$v_e13_gii_v'),
+#14año varones
+	('1','$periodo_e','$mes','15','$v_e14_p1_v','$v_e14_p2_v','$v_e14_p3_v','$v_e14_p4_v','$v_e14_p5_v','$v_e14_gi_v','$v_e14_gii_v'),
+#15año varones
+	('1','$periodo_e','$mes','16','$v_e15_p1_v','$v_e15_p2_v','$v_e15_p3_v','$v_e15_p4_v','$v_e15_p5_v','$v_e15_gi_v','$v_e15_gii_v'),
+#16año varones
+	('1','$periodo_e','$mes','17','$v_e16_p1_v','$v_e16_p2_v','$v_e16_p3_v','$v_e16_p4_v','$v_e16_p5_v','$v_e16_gi_v','$v_e16_gii_v'),
+#17+año varones
+	('1','$periodo_e','$mes','18','$v_e17_p1_v','$v_e17_p2_v','$v_e17_p3_v','$v_e17_p4_v','$v_e17_p5_v','$v_e17_gi_v','$v_e17_gii_v')
+	")
+
+or die (mysql_error());
+
+
 #VISITA AGRUPADO POR EDAD HEMBRAS (por filas)
 
 #fila 1 panel 1
@@ -774,12 +815,12 @@ $v_e4_gi_h = $_POST['v_e4_gi_h'];
 $v_e5_gi_h = $_POST['v_e5_gi_h'];
 
 #fila 7 panel 1
-$v_e11_p2_h = $_POST['v_e11_p2_h'];
-$v_e1_p2_h = $_POST['v_e1_p2_h'];
-$v_e2_p2_h = $_POST['v_e2_p2_h'];
-$v_e3_p2_h = $_POST['v_e3_p2_h'];
-$v_e4_p2_h= $_POST['v_e4_p2_h'];
-$v_e5_p2_h = $_POST['v_e5_p2_h'];
+$v_e11_gii_h = $_POST['v_e11_p2_h'];
+$v_e1_gii_h = $_POST['v_e1_p2_h'];
+$v_e2_gii_h = $_POST['v_e2_p2_h'];
+$v_e3_gii_h = $_POST['v_e3_p2_h'];
+$v_e4_gii_h= $_POST['v_e4_p2_h'];
+$v_e5_gii_h = $_POST['v_e5_p2_h'];
 
 #2
 #fila 1 panel 2
@@ -896,6 +937,50 @@ $v_e14_gii_h = $_POST['v_e14_gii_h'];
 $v_e15_gii_h = $_POST['v_e15_gii_h'];
 $v_e16_gii_h = $_POST['v_e16_gii_h'];
 $v_e17_gii_h = $_POST['v_e17_gii_h'];
+
+mysql_query ("INSERT INTO total_visita_edad (id_sexo,id_periodo_escolar,id_mes,id_tipo_edad,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$v_e11_p1_h','$v_e11_p2_h','$v_e11_p3_h','$v_e11_p4_h','$v_e11_p5_h','$v_e11_gi_h','$v_e11_gii_h'),
+#1año varones
+	('2','$periodo_e','$mes','2','$v_e1_p1_h','$v_e1_p2_h','$v_e1_p3_h','$v_e1_p4_h','$v_e1_p5_h','$v_e1_gi_h','$v_e1_gii_h'),
+#2año varones
+	('2','$periodo_e','$mes','3','$v_e2_p1_h','$v_e2_p2_h','$v_e2_p3_h','$v_e2_p4_h','$v_e2_p5_h','$v_e2_gi_h','$v_e2_gii_h'),
+#3año varones
+	('2','$periodo_e','$mes','4','$v_e3_p1_h','$v_e3_p2_h','$v_e3_p3_h','$v_e3_p4_h','$v_e3_p5_h','$v_e3_gi_h','$v_e3_gii_h'),
+#4año varones
+	('2','$periodo_e','$mes','5','$v_e4_p1_h','$v_e4_p2_h','$v_e4_p3_h','$v_e4_p4_h','$v_e4_p5_h','$v_e4_gi_h','$v_e4_gii_h'),
+#5año varones
+	('2','$periodo_e','$mes','6','$v_e5_p1_h','$v_e5_p2_h','$v_e5_p3_h','$v_e5_p4_h','$v_e5_p5_h','$v_e5_gi_h','$v_e5_gii_h'),
+#6año varones
+	('2','$periodo_e','$mes','7','$v_e6_p1_h','$v_e6_p2_h','$v_e6_p3_h','$v_e6_p4_h','$v_e6_p5_h','$v_e6_gi_h','$v_e6_gii_h'),
+#7año varones
+	('2','$periodo_e','$mes','8','$v_e7_p1_h','$v_e7_p2_h','$v_e7_p3_h','$v_e7_p4_h','$v_e7_p5_h','$v_e7_gi_h','$v_e7_gii_h'),
+#8año varones
+	('2','$periodo_e','$mes','9','$v_e8_p1_h','$v_e8_p2_h','$v_e8_p3_h','$v_e8_p4_h','$v_e8_p5_h','$v_e8_gi_h','$v_e8_gii_h'),
+#9año varones
+	('2','$periodo_e','$mes','10','$v_e9_p1_h','$v_e9_p2_h','$v_e9_p3_h','$v_e9_p4_h','$v_e9_p5_h','$v_e9_gi_h','$v_e9_gii_h'),
+#10año varones
+	('2','$periodo_e','$mes','11','$v_e10_p1_h','$v_e10_p2_h','$v_e10_p3_h','$v_e10_p4_h','$v_e10_p5_h','$v_e10_gi_h','$v_e10_gii_h'),
+#11año varones
+	('2','$periodo_e','$mes','12','$v_e111_p1_h','$v_e111_p2_h','$v_e111_p3_h','$v_e111_p4_h','$v_e111_p5_h','$v_e111_gi_h','$v_e111_gii_h'),
+#12año varones
+	('2','$periodo_e','$mes','13','$v_e12_p1_h','$v_e12_p2_h','$v_e12_p3_h','$v_e12_p4_h','$v_e12_p5_h','$v_e12_gi_h','$v_e12_gii_h'),
+#13año varones
+	('2','$periodo_e','$mes','14','$v_e13_p1_h','$v_e13_p2_h','$v_e13_p3_h','$v_e13_p4_h','$v_e13_p5_h','$v_e13_gi_h','$v_e13_gii_h'),
+#14año varones
+	('2','$periodo_e','$mes','15','$v_e14_p1_h','$v_e14_p2_h','$v_e14_p3_h','$v_e14_p4_h','$v_e14_p5_h','$v_e14_gi_h','$v_e14_gii_h'),
+#15año varones
+	('2','$periodo_e','$mes','16','$v_e15_p1_h','$v_e15_p2_h','$v_e15_p3_h','$v_e15_p4_h','$v_e15_p5_h','$v_e15_gi_h','$v_e15_gii_h'),
+#16año varones
+	('2','$periodo_e','$mes','17','$v_e16_p1_h','$v_e16_p2_h','$v_e16_p3_h','$v_e16_p4_h','$v_e16_p5_h','$v_e16_gi_h','$v_e16_gii_h'),
+#17+año varones
+	('2','$periodo_e','$mes','18','$v_e17_p1_h','$v_e17_p2_h','$v_e17_p3_h','$v_e17_p4_h','$v_e17_p5_h','$v_e17_gi_h','$v_e17_gii_h')
+	")
+
+or die (mysql_error());
+
+
+
+
+
 
 #------TIEMPO DE PERMANENCIA VARONES (por filas)
 
