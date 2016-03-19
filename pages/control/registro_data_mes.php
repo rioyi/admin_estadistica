@@ -486,7 +486,6 @@ mysql_query ("INSERT INTO total_escolaridad (id_sexo,id_periodo_escolar,id_mes,i
 
 or die (mysql_error());
 
-*/
 
 #Seccion de POBLACION ATENDIDA
 
@@ -551,8 +550,9 @@ mysql_query ("INSERT INTO total_poblacion_atendida (id_sexo,id_periodo_escolar,i
 	")
 
 or die (mysql_error());
+*/
 
-/*
+
 
 #VISITA AGRUPADO POR EDAD VARONES (por filas)
 
@@ -944,7 +944,7 @@ $v_e15_gii_h = $_POST['v_e15_gii_h'];
 $v_e16_gii_h = $_POST['v_e16_gii_h'];
 $v_e17_gii_h = $_POST['v_e17_gii_h'];
 
-mysql_query ("INSERT INTO total_visita_edad (id_sexo,id_periodo_escolar,id_mes,id_tipo_edad,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$v_e11_p1_h','$v_e11_p2_h','$v_e11_p3_h','$v_e11_p4_h','$v_e11_p5_h','$v_e11_gi_h','$v_e11_gii_h'),
+mysql_query ("INSERT INTO total_visita_edad (id_sexo,id_periodo_escolar,id_mes,id_tipo_edad,p1,p2,p3,p4,p5,gi,gii) values ('2','$periodo_e','$mes','1','$v_e11_p1_h','$v_e11_p2_h','$v_e11_p3_h','$v_e11_p4_h','$v_e11_p5_h','$v_e11_gi_h','$v_e11_gii_h'),
 #1año varones
 	('2','$periodo_e','$mes','2','$v_e1_p1_h','$v_e1_p2_h','$v_e1_p3_h','$v_e1_p4_h','$v_e1_p5_h','$v_e1_gi_h','$v_e1_gii_h'),
 #2año varones
@@ -986,7 +986,7 @@ or die (mysql_error());
 
 
 
-
+/*
 
 #------TIEMPO DE PERMANENCIA VARONES (por filas)
 
