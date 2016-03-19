@@ -1885,6 +1885,472 @@ or die (mysql_error());
 #
 #----- VARONES
 #fila 1 panel 1
+#----- VARONES
+#semana 1 dia 1
+
+$a_s1_d1_v = $_POST['a_s1_d1_v'];
+$a_s1_d1_p1_v = $_POST['a_s1_d1_p1_v'];
+$a_s1_d1_p2_v = $_POST['a_s1_d1_p2_v'];
+$a_s1_d1_p3_v = $_POST['a_s1_d1_p3_v'];
+$a_s1_d1_p4_v = $_POST['a_s1_d1_p4_v'];
+$a_s1_d1_p5_v = $_POST['a_s1_d1_p5_v'];
+$a_s1_d1_gi_v = $_POST['a_s1_d1_gi_v'];
+$a_s1_d1_gii_v = $_POST['a_s1_d1_gii_v'];
+
+#semana 1 dia 2
+
+$a_s1_d2_v = $_POST['a_s1_d2_v'];
+$a_s1_d2_p1_v = $_POST['a_s1_d2_p1_v'];
+$a_s1_d2_p2_v = $_POST['a_s1_d2_p2_v'];
+$a_s1_d2_p3_v = $_POST['a_s1_d2_p3_v'];
+$a_s1_d2_p4_v = $_POST['a_s1_d2_p4_v'];
+$a_s1_d2_p5_v = $_POST['a_s1_d2_p5_v'];
+$a_s1_d2_gi_v = $_POST['a_s1_d2_gi_v'];
+$a_s1_d2_gii_v = $_POST['a_s1_d2_gii_v'];
+
+#semana 1 dia 3
+
+$a_s1_d3_v = $_POST['a_s1_d3_v'];
+$a_s1_d3_p1_v = $_POST['a_s1_d3_p1_v'];
+$a_s1_d3_p2_v = $_POST['a_s1_d3_p2_v'];
+$a_s1_d3_p3_v = $_POST['a_s1_d3_p3_v'];
+$a_s1_d3_p4_v = $_POST['a_s1_d3_p4_v'];
+$a_s1_d3_p5_v = $_POST['a_s1_d3_p5_v'];
+$a_s1_d3_gi_v = $_POST['a_s1_d3_gi_v'];
+$a_s1_d3_gii_v = $_POST['a_s1_d3_gii_v'];
+
+#semana 1 dia 4
+
+$a_s1_d4_v = $_POST['a_s1_d4_v'];
+$a_s1_d4_p1_v = $_POST['a_s1_d4_p1_v'];
+$a_s1_d4_p2_v = $_POST['a_s1_d4_p2_v'];
+$a_s1_d4_p3_v = $_POST['a_s1_d4_p3_v'];
+$a_s1_d4_p4_v = $_POST['a_s1_d4_p4_v'];
+$a_s1_d4_p5_v = $_POST['a_s1_d4_p5_v'];
+$a_s1_d4_gi_v = $_POST['a_s1_d4_gi_v'];
+$a_s1_d4_gii_v = $_POST['a_s1_d4_gii_v'];
+
+#semana 1 dia 5
+
+$a_s1_d5_v = $_POST['a_s1_d5_v'];
+$a_s1_d5_p1_v = $_POST['a_s1_d5_p1_v'];
+$a_s1_d5_p2_v = $_POST['a_s1_d5_p2_v'];
+$a_s1_d5_p3_v = $_POST['a_s1_d5_p3_v'];
+$a_s1_d5_p4_v = $_POST['a_s1_d5_p4_v'];
+$a_s1_d5_p5_v = $_POST['a_s1_d5_p5_v'];
+$a_s1_d5_gi_v = $_POST['a_s1_d5_gi_v'];
+$a_s1_d5_gii_v = $_POST['a_s1_d5_gii_v'];
+
+
+#----- Hembras SEMANA 1
+
+
+#semana 1 dia 1
+$a_s1_d1_h = $_POST['a_s1_d1_h'];
+$a_s1_d1_p1_h = $_POST['a_s1_d1_p1_h'];
+$a_s1_d1_p2_h = $_POST['a_s1_d1_p2_h'];
+$a_s1_d1_p3_h = $_POST['a_s1_d1_p3_h'];
+$a_s1_d1_p4_h = $_POST['a_s1_d1_p4_h'];
+$a_s1_d1_p5_h = $_POST['a_s1_d1_p5_h'];
+$a_s1_d1_gi_h = $_POST['a_s1_d1_gi_h'];
+$a_s1_d1_gii_h = $_POST['a_s1_d1_gii_h'];
+
+#semana 1 dia 2
+
+$a_s1_d2_h = $_POST['a_s1_d2_h'];
+$a_s1_d2_p1_h = $_POST['a_s1_d2_p1_h'];
+$a_s1_d2_p2_h = $_POST['a_s1_d2_p2_h'];
+$a_s1_d2_p3_h = $_POST['a_s1_d2_p3_h'];
+$a_s1_d2_p4_h = $_POST['a_s1_d2_p4_h'];
+$a_s1_d2_p5_h = $_POST['a_s1_d2_p5_h'];
+$a_s1_d2_gi_h = $_POST['a_s1_d2_gi_h'];
+$a_s1_d2_gii_h = $_POST['a_s1_d2_gii_h'];
+
+#semana 1 dia 3
+
+$a_s1_d3_h = $_POST['a_s1_d3_h'];
+$a_s1_d3_p1_h = $_POST['a_s1_d3_p1_h'];
+$a_s1_d3_p2_h = $_POST['a_s1_d3_p2_h'];
+$a_s1_d3_p3_h = $_POST['a_s1_d3_p3_h'];
+$a_s1_d3_p4_h = $_POST['a_s1_d3_p4_h'];
+$a_s1_d3_p5_h = $_POST['a_s1_d3_p5_h'];
+$a_s1_d3_gi_h = $_POST['a_s1_d3_gi_h'];
+$a_s1_d3_gii_h = $_POST['a_s1_d3_gii_h'];
+
+#semana 1 dia 4
+
+$a_s1_d4_h = $_POST['a_s1_d4_h'];
+$a_s1_d4_p1_h = $_POST['a_s1_d4_p1_h'];
+$a_s1_d4_p2_h = $_POST['a_s1_d4_p2_h'];
+$a_s1_d4_p3_h = $_POST['a_s1_d4_p3_h'];
+$a_s1_d4_p4_h = $_POST['a_s1_d4_p4_h'];
+$a_s1_d4_p5_h = $_POST['a_s1_d4_p5_h'];
+$a_s1_d4_gi_h = $_POST['a_s1_d4_gi_h'];
+$a_s1_d4_gii_h = $_POST['a_s1_d4_gii_h'];
+
+#semana 1 dia 5
+
+$a_s1_d5_h = $_POST['a_s1_d5_h'];
+$a_s1_d5_p1_h = $_POST['a_s1_d5_p1_h'];
+$a_s1_d5_p2_h = $_POST['a_s1_d5_p2_h'];
+$a_s1_d5_p3_h = $_POST['a_s1_d5_p3_h'];
+$a_s1_d5_p4_h = $_POST['a_s1_d5_p4_h'];
+$a_s1_d5_p5_h = $_POST['a_s1_d5_p5_h'];
+$a_s1_d5_gi_h = $_POST['a_s1_d5_gi_h'];
+$a_s1_d5_gii_h = $_POST['a_s1_d5_gii_h'];
+
+
+
+
+# SEMANA 2
+
+#----- VARONES
+#semana 2 dia 1
+
+$a_s2_d1_v = $_POST['a_s2_d1_v'];
+$a_s2_d1_p1_v = $_POST['a_s2_d1_p1_v'];
+$a_s2_d1_p2_v = $_POST['a_s2_d1_p2_v'];
+$a_s2_d1_p3_v = $_POST['a_s2_d1_p3_v'];
+$a_s2_d1_p4_v = $_POST['a_s2_d1_p4_v'];
+$a_s2_d1_p5_v = $_POST['a_s2_d1_p5_v'];
+$a_s2_d1_gi_v = $_POST['a_s2_d1_gi_v'];
+$a_s2_d1_gii_v = $_POST['a_s2_d1_gii_v'];
+
+#semana 2 dia 2
+
+$a_s2_d2_v = $_POST['a_s2_d2_v'];
+$a_s2_d2_p1_v = $_POST['a_s2_d2_p1_v'];
+$a_s2_d2_p2_v = $_POST['a_s2_d2_p2_v'];
+$a_s2_d2_p3_v = $_POST['a_s2_d2_p3_v'];
+$a_s2_d2_p4_v = $_POST['a_s2_d2_p4_v'];
+$a_s2_d2_p5_v = $_POST['a_s2_d2_p5_v'];
+$a_s2_d2_gi_v = $_POST['a_s2_d2_gi_v'];
+$a_s2_d2_gii_v = $_POST['a_s2_d2_gii_v'];
+
+#semana 2 dia 3
+
+$a_s2_d3_v = $_POST['a_s2_d3_v'];
+$a_s2_d3_p1_v = $_POST['a_s2_d3_p1_v'];
+$a_s2_d3_p2_v = $_POST['a_s2_d3_p2_v'];
+$a_s2_d3_p3_v = $_POST['a_s2_d3_p3_v'];
+$a_s2_d3_p4_v = $_POST['a_s2_d3_p4_v'];
+$a_s2_d3_p5_v = $_POST['a_s2_d3_p5_v'];
+$a_s2_d3_gi_v = $_POST['a_s2_d3_gi_v'];
+$a_s2_d3_gii_v = $_POST['a_s2_d3_gii_v'];
+
+#semana 2 dia 4
+
+$a_s2_d4_v = $_POST['a_s2_d4_v'];
+$a_s2_d4_p1_v = $_POST['a_s2_d4_p1_v'];
+$a_s2_d4_p2_v = $_POST['a_s2_d4_p2_v'];
+$a_s2_d4_p3_v = $_POST['a_s2_d4_p3_v'];
+$a_s2_d4_p4_v = $_POST['a_s2_d4_p4_v'];
+$a_s2_d4_p5_v = $_POST['a_s2_d4_p5_v'];
+$a_s2_d4_gi_v = $_POST['a_s2_d4_gi_v'];
+$a_s2_d4_gii_v = $_POST['a_s2_d4_gii_v'];
+
+#semana 2 dia 5
+
+$a_s2_d5_v = $_POST['a_s2_d5_v'];
+$a_s2_d5_p1_v = $_POST['a_s2_d5_p1_v'];
+$a_s2_d5_p2_v = $_POST['a_s2_d5_p2_v'];
+$a_s2_d5_p3_v = $_POST['a_s2_d5_p3_v'];
+$a_s2_d5_p4_v = $_POST['a_s2_d5_p4_v'];
+$a_s2_d5_p5_v = $_POST['a_s2_d5_p5_v'];
+$a_s2_d5_gi_v = $_POST['a_s2_d5_gi_v'];
+$a_s2_d5_gii_v = $_POST['a_s2_d5_gii_v'];
+
+
+#----- Hembras SEMANA 2
+
+
+#semana 2 dia 1
+$a_s2_d1_h = $_POST['a_s2_d1_h'];
+$a_s2_d1_p1_h = $_POST['a_s2_d1_p1_h'];
+$a_s2_d1_p2_h = $_POST['a_s2_d1_p2_h'];
+$a_s2_d1_p3_h = $_POST['a_s2_d1_p3_h'];
+$a_s2_d1_p4_h = $_POST['a_s2_d1_p4_h'];
+$a_s2_d1_p5_h = $_POST['a_s2_d1_p5_h'];
+$a_s2_d1_gi_h = $_POST['a_s2_d1_gi_h'];
+$a_s2_d1_gii_h = $_POST['a_s2_d1_gii_h'];
+
+#semana 2 dia 2
+
+$a_s2_d2_h = $_POST['a_s2_d2_h'];
+$a_s2_d2_p1_h = $_POST['a_s2_d2_p1_h'];
+$a_s2_d2_p2_h = $_POST['a_s2_d2_p2_h'];
+$a_s2_d2_p3_h = $_POST['a_s2_d2_p3_h'];
+$a_s2_d2_p4_h = $_POST['a_s2_d2_p4_h'];
+$a_s2_d2_p5_h = $_POST['a_s2_d2_p5_h'];
+$a_s2_d2_gi_h = $_POST['a_s2_d2_gi_h'];
+$a_s2_d2_gii_h = $_POST['a_s2_d2_gii_h'];
+
+#semana 2 dia 3
+
+$a_s2_d3_h = $_POST['a_s2_d3_h'];
+$a_s2_d3_p1_h = $_POST['a_s2_d3_p1_h'];
+$a_s2_d3_p2_h = $_POST['a_s2_d3_p2_h'];
+$a_s2_d3_p3_h = $_POST['a_s2_d3_p3_h'];
+$a_s2_d3_p4_h = $_POST['a_s2_d3_p4_h'];
+$a_s2_d3_p5_h = $_POST['a_s2_d3_p5_h'];
+$a_s2_d3_gi_h = $_POST['a_s2_d3_gi_h'];
+$a_s2_d3_gii_h = $_POST['a_s2_d3_gii_h'];
+
+#semana 2 dia 4
+
+$a_s2_d4_h = $_POST['a_s2_d4_h'];
+$a_s2_d4_p1_h = $_POST['a_s2_d4_p1_h'];
+$a_s2_d4_p2_h = $_POST['a_s2_d4_p2_h'];
+$a_s2_d4_p3_h = $_POST['a_s2_d4_p3_h'];
+$a_s2_d4_p4_h = $_POST['a_s2_d4_p4_h'];
+$a_s2_d4_p5_h = $_POST['a_s2_d4_p5_h'];
+$a_s2_d4_gi_h = $_POST['a_s2_d4_gi_h'];
+$a_s2_d4_gii_h = $_POST['a_s2_d4_gii_h'];
+
+#semana 2 dia 5
+
+$a_s2_d5_h = $_POST['a_s2_d5_h'];
+$a_s2_d5_p1_h = $_POST['a_s2_d5_p1_h'];
+$a_s2_d5_p2_h = $_POST['a_s2_d5_p2_h'];
+$a_s2_d5_p3_h = $_POST['a_s2_d5_p3_h'];
+$a_s2_d5_p4_h = $_POST['a_s2_d5_p4_h'];
+$a_s2_d5_p5_h = $_POST['a_s2_d5_p5_h'];
+$a_s2_d5_gi_h = $_POST['a_s2_d5_gi_h'];
+$a_s2_d5_gii_h = $_POST['a_s2_d5_gii_h'];
+
+# SEMANA 3
+
+#----- VARONES
+#Semana 3 dia 1
+
+$a_s3_d1_v = $_POST['a_s3_d1_v'];
+$a_s3_d1_p1_v = $_POST['a_s3_d1_p1_v'];
+$a_s3_d1_p2_v = $_POST['a_s3_d1_p2_v'];
+$a_s3_d1_p3_v = $_POST['a_s3_d1_p3_v'];
+$a_s3_d1_p4_v = $_POST['a_s3_d1_p4_v'];
+$a_s3_d1_p5_v = $_POST['a_s3_d1_p5_v'];
+$a_s3_d1_gi_v = $_POST['a_s3_d1_gi_v'];
+$a_s3_d1_gii_v = $_POST['a_s3_d1_gii_v'];
+
+#Semana 3 dia 2
+
+$a_s3_d2_v = $_POST['a_s3_d2_v'];
+$a_s3_d2_p1_v = $_POST['a_s3_d2_p1_v'];
+$a_s3_d2_p2_v = $_POST['a_s3_d2_p2_v'];
+$a_s3_d2_p3_v = $_POST['a_s3_d2_p3_v'];
+$a_s3_d2_p4_v = $_POST['a_s3_d2_p4_v'];
+$a_s3_d2_p5_v = $_POST['a_s3_d2_p5_v'];
+$a_s3_d2_gi_v = $_POST['a_s3_d2_gi_v'];
+$a_s3_d2_gii_v = $_POST['a_s3_d2_gii_v'];
+
+#Semana 3 dia 3
+
+$a_s3_d3_v = $_POST['a_s3_d3_v'];
+$a_s3_d3_p1_v = $_POST['a_s3_d3_p1_v'];
+$a_s3_d3_p2_v = $_POST['a_s3_d3_p2_v'];
+$a_s3_d3_p3_v = $_POST['a_s3_d3_p3_v'];
+$a_s3_d3_p4_v = $_POST['a_s3_d3_p4_v'];
+$a_s3_d3_p5_v = $_POST['a_s3_d3_p5_v'];
+$a_s3_d3_gi_v = $_POST['a_s3_d3_gi_v'];
+$a_s3_d3_gii_v = $_POST['a_s3_d3_gii_v'];
+
+#Semana 3 dia 4
+
+$a_s3_d4_v = $_POST['a_s3_d4_v'];
+$a_s3_d4_p1_v = $_POST['a_s3_d4_p1_v'];
+$a_s3_d4_p2_v = $_POST['a_s3_d4_p2_v'];
+$a_s3_d4_p3_v = $_POST['a_s3_d4_p3_v'];
+$a_s3_d4_p4_v = $_POST['a_s3_d4_p4_v'];
+$a_s3_d4_p5_v = $_POST['a_s3_d4_p5_v'];
+$a_s3_d4_gi_v = $_POST['a_s3_d4_gi_v'];
+$a_s3_d4_gii_v = $_POST['a_s3_d4_gii_v'];
+
+#Semana 3 dia 5
+
+$a_s3_d5_v = $_POST['a_s3_d5_v'];
+$a_s3_d5_p1_v = $_POST['a_s3_d5_p1_v'];
+$a_s3_d5_p2_v = $_POST['a_s3_d5_p2_v'];
+$a_s3_d5_p3_v = $_POST['a_s3_d5_p3_v'];
+$a_s3_d5_p4_v = $_POST['a_s3_d5_p4_v'];
+$a_s3_d5_p5_v = $_POST['a_s3_d5_p5_v'];
+$a_s3_d5_gi_v = $_POST['a_s3_d5_gi_v'];
+$a_s3_d5_gii_v = $_POST['a_s3_d5_gii_v'];
+
+
+#----- Hembras Semana 3
+
+
+#Semana 3 dia 1
+$a_s3_d1_h = $_POST['a_s3_d1_h'];
+$a_s3_d1_p1_h = $_POST['a_s3_d1_p1_h'];
+$a_s3_d1_p2_h = $_POST['a_s3_d1_p2_h'];
+$a_s3_d1_p3_h = $_POST['a_s3_d1_p3_h'];
+$a_s3_d1_p4_h = $_POST['a_s3_d1_p4_h'];
+$a_s3_d1_p5_h = $_POST['a_s3_d1_p5_h'];
+$a_s3_d1_gi_h = $_POST['a_s3_d1_gi_h'];
+$a_s3_d1_gii_h = $_POST['a_s3_d1_gii_h'];
+
+#Semana 3 dia 2
+
+$a_s3_d2_h = $_POST['a_s3_d2_h'];
+$a_s3_d2_p1_h = $_POST['a_s3_d2_p1_h'];
+$a_s3_d2_p2_h = $_POST['a_s3_d2_p2_h'];
+$a_s3_d2_p3_h = $_POST['a_s3_d2_p3_h'];
+$a_s3_d2_p4_h = $_POST['a_s3_d2_p4_h'];
+$a_s3_d2_p5_h = $_POST['a_s3_d2_p5_h'];
+$a_s3_d2_gi_h = $_POST['a_s3_d2_gi_h'];
+$a_s3_d2_gii_h = $_POST['a_s3_d2_gii_h'];
+
+#Semana 3 dia 3
+
+$a_s3_d3_h = $_POST['a_s3_d3_h'];
+$a_s3_d3_p1_h = $_POST['a_s3_d3_p1_h'];
+$a_s3_d3_p2_h = $_POST['a_s3_d3_p2_h'];
+$a_s3_d3_p3_h = $_POST['a_s3_d3_p3_h'];
+$a_s3_d3_p4_h = $_POST['a_s3_d3_p4_h'];
+$a_s3_d3_p5_h = $_POST['a_s3_d3_p5_h'];
+$a_s3_d3_gi_h = $_POST['a_s3_d3_gi_h'];
+$a_s3_d3_gii_h = $_POST['a_s3_d3_gii_h'];
+
+#Semana 3 dia 4
+
+$a_s3_d4_h = $_POST['a_s3_d4_h'];
+$a_s3_d4_p1_h = $_POST['a_s3_d4_p1_h'];
+$a_s3_d4_p2_h = $_POST['a_s3_d4_p2_h'];
+$a_s3_d4_p3_h = $_POST['a_s3_d4_p3_h'];
+$a_s3_d4_p4_h = $_POST['a_s3_d4_p4_h'];
+$a_s3_d4_p5_h = $_POST['a_s3_d4_p5_h'];
+$a_s3_d4_gi_h = $_POST['a_s3_d4_gi_h'];
+$a_s3_d4_gii_h = $_POST['a_s3_d4_gii_h'];
+
+#Semana 3 dia 5
+
+$a_s3_d5_h = $_POST['a_s3_d5_h'];
+$a_s3_d5_p1_h = $_POST['a_s3_d5_p1_h'];
+$a_s3_d5_p2_h = $_POST['a_s3_d5_p2_h'];
+$a_s3_d5_p3_h = $_POST['a_s3_d5_p3_h'];
+$a_s3_d5_p4_h = $_POST['a_s3_d5_p4_h'];
+$a_s3_d5_p5_h = $_POST['a_s3_d5_p5_h'];
+$a_s3_d5_gi_h = $_POST['a_s3_d5_gi_h'];
+$a_s3_d5_gii_h = $_POST['a_s3_d5_gii_h'];
+
+
+#------------
+# SEMANA 4
+
+#----- VARONES
+#Semana 4 dia 1
+
+$a_s4_d1_v = $_POST['a_s4_d1_v'];
+$a_s4_d1_p1_v = $_POST['a_s4_d1_p1_v'];
+$a_s4_d1_p2_v = $_POST['a_s4_d1_p2_v'];
+$a_s4_d1_p3_v = $_POST['a_s4_d1_p3_v'];
+$a_s4_d1_p4_v = $_POST['a_s4_d1_p4_v'];
+$a_s4_d1_p5_v = $_POST['a_s4_d1_p5_v'];
+$a_s4_d1_gi_v = $_POST['a_s4_d1_gi_v'];
+$a_s4_d1_gii_v = $_POST['a_s4_d1_gii_v'];
+
+#Semana 4 dia 2
+
+$a_s4_d2_v = $_POST['a_s4_d2_v'];
+$a_s4_d2_p1_v = $_POST['a_s4_d2_p1_v'];
+$a_s4_d2_p2_v = $_POST['a_s4_d2_p2_v'];
+$a_s4_d2_p3_v = $_POST['a_s4_d2_p3_v'];
+$a_s4_d2_p4_v = $_POST['a_s4_d2_p4_v'];
+$a_s4_d2_p5_v = $_POST['a_s4_d2_p5_v'];
+$a_s4_d2_gi_v = $_POST['a_s4_d2_gi_v'];
+$a_s4_d2_gii_v = $_POST['a_s4_d2_gii_v'];
+
+#Semana 4 dia 3
+
+$a_s4_d3_v = $_POST['a_s4_d3_v'];
+$a_s4_d3_p1_v = $_POST['a_s4_d3_p1_v'];
+$a_s4_d3_p2_v = $_POST['a_s4_d3_p2_v'];
+$a_s4_d3_p3_v = $_POST['a_s4_d3_p3_v'];
+$a_s4_d3_p4_v = $_POST['a_s4_d3_p4_v'];
+$a_s4_d3_p5_v = $_POST['a_s4_d3_p5_v'];
+$a_s4_d3_gi_v = $_POST['a_s4_d3_gi_v'];
+$a_s4_d3_gii_v = $_POST['a_s4_d3_gii_v'];
+
+#Semana 4 dia 4
+
+$a_s4_d4_v = $_POST['a_s4_d4_v'];
+$a_s4_d4_p1_v = $_POST['a_s4_d4_p1_v'];
+$a_s4_d4_p2_v = $_POST['a_s4_d4_p2_v'];
+$a_s4_d4_p3_v = $_POST['a_s4_d4_p3_v'];
+$a_s4_d4_p4_v = $_POST['a_s4_d4_p4_v'];
+$a_s4_d4_p5_v = $_POST['a_s4_d4_p5_v'];
+$a_s4_d4_gi_v = $_POST['a_s4_d4_gi_v'];
+$a_s4_d4_gii_v = $_POST['a_s4_d4_gii_v'];
+
+#Semana 4 dia 5
+
+$a_s4_d5_v = $_POST['a_s4_d5_v'];
+$a_s4_d5_p1_v = $_POST['a_s4_d5_p1_v'];
+$a_s4_d5_p2_v = $_POST['a_s4_d5_p2_v'];
+$a_s4_d5_p3_v = $_POST['a_s4_d5_p3_v'];
+$a_s4_d5_p4_v = $_POST['a_s4_d5_p4_v'];
+$a_s4_d5_p5_v = $_POST['a_s4_d5_p5_v'];
+$a_s4_d5_gi_v = $_POST['a_s4_d5_gi_v'];
+$a_s4_d5_gii_v = $_POST['a_s4_d5_gii_v'];
+
+
+#----- Hembras Semana 4
+
+
+#Semana 4 dia 1
+$a_s4_d1_h = $_POST['a_s4_d1_h'];
+$a_s4_d1_p1_h = $_POST['a_s4_d1_p1_h'];
+$a_s4_d1_p2_h = $_POST['a_s4_d1_p2_h'];
+$a_s4_d1_p3_h = $_POST['a_s4_d1_p3_h'];
+$a_s4_d1_p4_h = $_POST['a_s4_d1_p4_h'];
+$a_s4_d1_p5_h = $_POST['a_s4_d1_p5_h'];
+$a_s4_d1_gi_h = $_POST['a_s4_d1_gi_h'];
+$a_s4_d1_gii_h = $_POST['a_s4_d1_gii_h'];
+
+#Semana 4 dia 2
+
+$a_s4_d2_h = $_POST['a_s4_d2_h'];
+$a_s4_d2_p1_h = $_POST['a_s4_d2_p1_h'];
+$a_s4_d2_p2_h = $_POST['a_s4_d2_p2_h'];
+$a_s4_d2_p3_h = $_POST['a_s4_d2_p3_h'];
+$a_s4_d2_p4_h = $_POST['a_s4_d2_p4_h'];
+$a_s4_d2_p5_h = $_POST['a_s4_d2_p5_h'];
+$a_s4_d2_gi_h = $_POST['a_s4_d2_gi_h'];
+$a_s4_d2_gii_h = $_POST['a_s4_d2_gii_h'];
+
+#Semana 4 dia 3
+
+$a_s4_d3_h = $_POST['a_s4_d3_h'];
+$a_s4_d3_p1_h = $_POST['a_s4_d3_p1_h'];
+$a_s4_d3_p2_h = $_POST['a_s4_d3_p2_h'];
+$a_s4_d3_p3_h = $_POST['a_s4_d3_p3_h'];
+$a_s4_d3_p4_h = $_POST['a_s4_d3_p4_h'];
+$a_s4_d3_p5_h = $_POST['a_s4_d3_p5_h'];
+$a_s4_d3_gi_h = $_POST['a_s4_d3_gi_h'];
+$a_s4_d3_gii_h = $_POST['a_s4_d3_gii_h'];
+
+#Semana 4 dia 4
+
+$a_s4_d4_h = $_POST['a_s4_d4_h'];
+$a_s4_d4_p1_h = $_POST['a_s4_d4_p1_h'];
+$a_s4_d4_p2_h = $_POST['a_s4_d4_p2_h'];
+$a_s4_d4_p3_h = $_POST['a_s4_d4_p3_h'];
+$a_s4_d4_p4_h = $_POST['a_s4_d4_p4_h'];
+$a_s4_d4_p5_h = $_POST['a_s4_d4_p5_h'];
+$a_s4_d4_gi_h = $_POST['a_s4_d4_gi_h'];
+$a_s4_d4_gii_h = $_POST['a_s4_d4_gii_h'];
+
+#Semana 4 dia 5
+
+$a_s4_d5_h = $_POST['a_s4_d5_h'];
+$a_s4_d5_p1_h = $_POST['a_s4_d5_p1_h'];
+$a_s4_d5_p2_h = $_POST['a_s4_d5_p2_h'];
+$a_s4_d5_p3_h = $_POST['a_s4_d5_p3_h'];
+$a_s4_d5_p4_h = $_POST['a_s4_d5_p4_h'];
+$a_s4_d5_p5_h = $_POST['a_s4_d5_p5_h'];
+$a_s4_d5_gi_h = $_POST['a_s4_d5_gi_h'];
+$a_s4_d5_gii_h = $_POST['a_s4_d5_gii_h'];
 
 
 
