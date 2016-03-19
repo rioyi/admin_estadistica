@@ -13,7 +13,7 @@ require ("conexion_bd.php");
 $periodo_e = $_POST['periodo_e'];
 $mes = $_POST['mes'];
 
-
+/*
 #vefificado el post
 
 #seccion escolaridad varones
@@ -486,7 +486,7 @@ mysql_query ("INSERT INTO total_escolaridad (id_sexo,id_periodo_escolar,id_mes,i
 
 or die (mysql_error());
 
-/*
+*/
 
 #Seccion de POBLACION ATENDIDA
 
@@ -500,6 +500,13 @@ $p_a_a_p5_v = $_POST['p_a_a_p5_v'];
 $p_a_a_gi_v = $_POST['p_a_a_gi_v'];
 $p_a_a_gii_v = $_POST['p_a_a_gii_v'];
 
+echo "$p_a_a_p1_v";
+echo "$p_a_a_p2_v";
+echo "$p_a_a_p3_v";
+echo "$p_a_a_p4_v";
+echo "$p_a_a_p5_v";
+echo "$p_a_a_gi_v";
+echo "$p_a_a_gii_v";
 
 #EN HABITACION VARONES
 
@@ -538,15 +545,14 @@ $p_a_h_p5_h = $_POST['p_a_h_p5_h'];
 $p_a_h_gi_h = $_POST['p_a_h_gi_h'];
 $p_a_h_gii_h = $_POST['p_a_h_gii_h'];
 
-
-mysql_query ("INSERT INTO total_poblacion_atendida (id_sexo,id_periodo_escolar,id_mes,id_tipo_poblacion_atendida,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','1','$p_a_a_p1_h','$p_a_a_p2_h','$p_a_a_p3_h','$p_a_a_p4_h','$p_a_a_p5_h','$p_a_a_gi_h','$p_a_a_gii_h'),
+mysql_query ("INSERT INTO total_poblacion_atendida (id_sexo,id_periodo_escolar,id_mes,id_tipo_poblacion_atendida,p1,p2,p3,p4,p5,gi,gii) values ('2','$periodo_e','$mes','1','$p_a_a_p1_h','$p_a_a_p2_h','$p_a_a_p3_h','$p_a_a_p4_h','$p_a_a_p5_h','$p_a_a_gi_h','$p_a_a_gii_h'),
 #En habitación
-	('1','$periodo_e','$mes','1','$p_a_h_p1_h','$p_a_h_p2_h','$p_a_h_p3_h','$p_a_h_p4_h','$p_a_h_p5_h','$p_a_h_gi_h','$p_a_h_gii_h')
+	('2','$periodo_e','$mes','2','$p_a_h_p1_h','$p_a_h_p2_h','$p_a_h_p3_h','$p_a_h_p4_h','$p_a_h_p5_h','$p_a_h_gi_h','$p_a_h_gii_h')
 	")
 
 or die (mysql_error());
 
-
+/*
 
 #VISITA AGRUPADO POR EDAD VARONES (por filas)
 
