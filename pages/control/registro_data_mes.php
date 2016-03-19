@@ -449,7 +449,7 @@ $g14_gii_h = $_POST['g14_gii_h'];
 
 mysql_query ("INSERT INTO total_escolaridad (id_sexo,id_periodo_escolar,id_mes,id_tipo_escolaridad,p1,p2,p3,p4,p5,gi,gii) values ('2','$periodo_e','$mes','1','$maternal_p1_h','$maternal_p2_h','$maternal_p3_h','$maternal_p4_h','$maternal_p5_h','$maternal_gi_h','$maternal_gii_h'),
 #nivel 1 
-	('2','$periodo_e','$mes','2','$nivel1_p1_v','$nivel1_p2_v','$nivel1_p3_v','$nivel1_p4_v','$nivel1_p5_v','$nivel1_gi_v','$nivel1_gii_v'),
+	('2','$periodo_e','$mes','2','$nivel1_p1_h','$nivel1_p2_h','$nivel1_p3_h','$nivel1_p4_h','$nivel1_p5_h','$nivel1_gi_h','$nivel1_gii_h'),
 #nivel 2 
 	('2','$periodo_e','$mes','3','$nivel2_p1_h','$nivel2_p2_h','$nivel2_p3_h','$nivel2_p4_h','$nivel2_p5_h','$nivel2_gi_h','$nivel2_gii_h'),
 #nivel 3 
@@ -486,7 +486,7 @@ mysql_query ("INSERT INTO total_escolaridad (id_sexo,id_periodo_escolar,id_mes,i
 
 or die (mysql_error());
 
-
+/*
 
 #Seccion de POBLACION ATENDIDA
 
@@ -2438,17 +2438,15 @@ mysql_query ("INSERT INTO total_atencion (id_sexo,id_periodo_escolar,id_mes,id_t
 	('1','$periodo_e','$mes','$a_s4_d4_h','$a_s4_d4_p1_h','$a_s4_d4_p2_h','$a_s4_d4_p3_h','$a_s4_d4_p4_h','$a_s4_d4_p5_h','$a_s4_d4_gi_h','$a_s4_d4_gii_h'),
 # Semana 4 dia 5 HEMBRAS 
 	('1','$periodo_e','$mes','$a_s4_d5_h','$a_s4_d5_p1_h','$a_s4_d5_p2_h','$a_s4_d5_p3_h','$a_s4_d5_p4_h','$a_s4_d5_p5_h','$a_s4_d5_gi_h','$a_s4_d5_gii_h')
-
 ")
 
-
-
-
 or die (mysql_error());
+*/
+
 
 #conexion la base de datos
 
-##require("../control/conexion_bd.php");
+
 
 #consulta para corroborar no dublicidad de ci_escolar
 
@@ -2457,9 +2455,9 @@ or die (mysql_error());
 			
 			
 			
-			##mysql_close($link);
+			mysql_close($link);
 			#header('location: emergente/registro_alumno.php');
-			##echo "Se a Registrado el usuario";
+			echo "Se a Registrado la estadistica";
 			##echo "<html><br><html>";
 			##echo "<html><a href='../../index.html'>inicio</a><html>";
 
