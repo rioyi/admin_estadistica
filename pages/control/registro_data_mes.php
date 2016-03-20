@@ -983,7 +983,7 @@ mysql_query ("INSERT INTO total_visita_edad (id_sexo,id_periodo_escolar,id_mes,i
 
 or die (mysql_error());
 
-*/
+
 
 
 
@@ -1159,8 +1159,8 @@ mysql_query ("INSERT INTO total_tiempo_permanencia (id_sexo,id_periodo_escolar,i
 
 or die (mysql_error());
 
+*/
 
-/*
 
 
 #
@@ -1320,7 +1320,7 @@ mysql_query ("INSERT INTO total_referidos (id_sexo,id_periodo_escolar,id_mes,id_
 #Referido Otros 
 	('1','$periodo_e','$mes','11','$pr_r11_p1_v','$pr_r11_p2_v','$pr_r11_p3_v','$pr_r11_p4_v','$pr_r11_p5_v','$pr_r11_gi_v','$pr_r11_gii_v'),
 #Referido Otros 
-	('1','$periodo_e','$mes','12','$pr_12_p1_v','$pr_12_p2_v','$pr_12_p3_v','$pr_12_p4_v','$pr_12_p5_v','$pr_12_gi_v','$pr_12_gii_v')
+	('1','$periodo_e','$mes','12','$pr_r12_p1_v','$pr_r12_p2_v','$pr_r12_p3_v','$pr_r12_p4_v','$pr_r12_p5_v','$pr_r12_gi_v','$pr_r12_gii_v')
 
 ")
 
@@ -1481,12 +1481,12 @@ mysql_query ("INSERT INTO total_referidos (id_sexo,id_periodo_escolar,id_mes,id_
 #Referido Otros 
 	('2','$periodo_e','$mes','11','$pr_r11_p1_h','$pr_r11_p2_h','$pr_r11_p3_h','$pr_r11_p4_h','$pr_r11_p5_h','$pr_r11_gi_h','$pr_r11_gii_h'),
 #Referido Otros 
-	('2','$periodo_e','$mes','12','$pr_12_p1_h','$pr_12_p2_h','$pr_12_p3_h','$pr_12_p4_h','$pr_12_p5_h','$pr_12_gi_h','$pr_12_gii_h')
+	('2','$periodo_e','$mes','12','$pr_r12_p1_h','$pr_r12_p2_h','$pr_r12_p3_h','$pr_r12_p4_h','$pr_r12_p5_h','$pr_r12_gi_h','$pr_r12_gii_h')
 
 ")
 
 or die (mysql_error());
-
+/*
 #
 #
 #
