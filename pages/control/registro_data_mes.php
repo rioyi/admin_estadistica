@@ -1486,7 +1486,7 @@ mysql_query ("INSERT INTO total_referidos (id_sexo,id_periodo_escolar,id_mes,id_
 ")
 
 or die (mysql_error());
-*/
+
 #
 #
 #
@@ -1882,8 +1882,8 @@ mysql_query ("INSERT INTO total_atencion (id_sexo,id_periodo_escolar,id_mes,id_t
 ")
 
 or die (mysql_error());
+*/
 
-/*
 #
 #
 #
@@ -1904,6 +1904,16 @@ $a_s1_d1_p4_v = $_POST['a_s1_d1_p4_v'];
 $a_s1_d1_p5_v = $_POST['a_s1_d1_p5_v'];
 $a_s1_d1_gi_v = $_POST['a_s1_d1_gi_v'];
 $a_s1_d1_gii_v = $_POST['a_s1_d1_gii_v'];
+
+echo "$a_s1_d1_v 
+$a_s1_d1_p1_v 
+$a_s1_d1_p2_v, 
+$a_s1_d1_p3_v, 
+$a_s1_d1_p4_v, 
+$a_s1_d1_p5_v, 
+$a_s1_d1_gi_v, 
+$a_s1_d1_gii_v";
+
 
 #semana 1 dia 2
 
@@ -2360,7 +2370,12 @@ $a_s4_d5_p5_h = $_POST['a_s4_d5_p5_h'];
 $a_s4_d5_gi_h = $_POST['a_s4_d5_gi_h'];
 $a_s4_d5_gii_h = $_POST['a_s4_d5_gii_h'];
 
-mysql_query ("INSERT INTO total_atencion (id_sexo,id_periodo_escolar,id_mes,id_tipo_atencion,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','$a_s1_d1_v','$a_s1_d1_p1_v','$a_s1_d1_p2_v','$a_s1_d1_p3_v','$a_s1_d1_p4_v','$a_s1_d1_p5_v','$a_s1_d1_gi_v','$a_s1_d1_gii_v'),
+
+
+
+/*
+
+mysql_query ("INSERT INTO total_asistencia (id_sexo,id_periodo_escolar,id_mes,dia,p1,p2,p3,p4,p5,gi,gii) values ('1','$periodo_e','$mes','$a_s1_d1_v','$a_s1_d1_p1_v','$a_s1_d1_p2_v','$a_s1_d1_p3_v','$a_s1_d1_p4_v','$a_s1_d1_p5_v','$a_s1_d1_gi_v','$a_s1_d1_gii_v'),
 # Semana 1 dia 2 Varones 
 	('1','$periodo_e','$mes','$a_s1_d2_v','$a_s1_d2_p1_v','$a_s1_d2_p2_v','$a_s1_d2_p3_v','$a_s1_d2_p4_v','$a_s1_d2_p5_v','$a_s1_d2_gi_v','$a_s1_d2_gii_v'),
 # Semana 1 dia 3 Varones 
@@ -2384,7 +2399,7 @@ mysql_query ("INSERT INTO total_atencion (id_sexo,id_periodo_escolar,id_mes,id_t
 # Semana 3 dia 1 Varones 
 	('1','$periodo_e','$mes','$a_s3_d1_v','$a_s3_d1_p1_v','$a_s3_d1_p2_v','$a_s3_d1_p3_v','$a_s3_d1_p4_v','$a_s3_d1_p5_v','$a_s3_d1_gi_v','$a_s3_d1_gii_v'),
 # Semana 3 dia 2 Varones 
-	('1','$periodo_e','$mes','$a_s3_s2_v','$a_s3_s2_p1_v','$a_s3_s2_p2_v','$a_s3_s2_p3_v','$a_s3_s2_p4_v','$a_s3_s2_p5_v','$a_s3_s2_gi_v','$a_s3_s2_gii_v'),
+	('1','$periodo_e','$mes','$a_s3_d2_v','$a_s3_d2_p1_v','$a_s3_d2_p2_v','$a_s3_d2_p3_v','$a_s3_d2_p4_v','$a_s3_d2_p5_v','$a_s3_d2_gi_v','$a_s3_d2_gii_v'),
 # Semana 3 dia 3 Varones 
 	('1','$periodo_e','$mes','$a_s3_d3_v','$a_s3_d3_p1_v','$a_s3_d3_p2_v','$a_s3_d3_p3_v','$a_s3_d3_p4_v','$a_s3_d3_p5_v','$a_s3_d3_gi_v','$a_s3_d3_gii_v'),
 # Semana 3 dia 4 Varones 
@@ -2428,7 +2443,7 @@ mysql_query ("INSERT INTO total_atencion (id_sexo,id_periodo_escolar,id_mes,id_t
 # Semana 3 dia 1 HEMBRAS 
 	('1','$periodo_e','$mes','$a_s3_d1_h','$a_s3_d1_p1_h','$a_s3_d1_p2_h','$a_s3_d1_p3_h','$a_s3_d1_p4_h','$a_s3_d1_p5_h','$a_s3_d1_gi_h','$a_s3_d1_gii_h'),
 # Semana 3 dia 2 HEMBRAS 
-	('1','$periodo_e','$mes','$a_s3_s2_h','$a_s3_s2_p1_h','$a_s3_s2_p2_h','$a_s3_s2_p3_h','$a_s3_s2_p4_h','$a_s3_s2_p5_h','$a_s3_s2_gi_h','$a_s3_s2_gii_h'),
+	('1','$periodo_e','$mes','$a_s3_d2_h','$a_s3_d2_p1_h','$a_s3_d2_p2_h','$a_s3_d2_p3_h','$a_s3_d2_p4_h','$a_s3_d2_p5_h','$a_s3_d2_gi_h','$a_s3_d2_gii_h'),
 # Semana 3 dia 3 HEMBRAS 
 	('1','$periodo_e','$mes','$a_s3_d3_h','$a_s3_d3_p1_h','$a_s3_d3_p2_h','$a_s3_d3_p3_h','$a_s3_d3_p4_h','$a_s3_d3_p5_h','$a_s3_d3_gi_h','$a_s3_d3_gii_h'),
 # Semana 3 dia 4 HEMBRAS 
@@ -2449,7 +2464,7 @@ mysql_query ("INSERT INTO total_atencion (id_sexo,id_periodo_escolar,id_mes,id_t
 ")
 
 or die (mysql_error());
-*/
+
 
 
 #conexion la base de datos
