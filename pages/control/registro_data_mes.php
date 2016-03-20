@@ -1159,7 +1159,7 @@ mysql_query ("INSERT INTO total_tiempo_permanencia (id_sexo,id_periodo_escolar,i
 
 or die (mysql_error());
 
-*/
+
 
 
 
@@ -1486,7 +1486,7 @@ mysql_query ("INSERT INTO total_referidos (id_sexo,id_periodo_escolar,id_mes,id_
 ")
 
 or die (mysql_error());
-/*
+*/
 #
 #
 #
@@ -1883,7 +1883,7 @@ mysql_query ("INSERT INTO total_atencion (id_sexo,id_periodo_escolar,id_mes,id_t
 
 or die (mysql_error());
 
-
+/*
 #
 #
 #
