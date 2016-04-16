@@ -1,0 +1,15 @@
+Cambiar archvivo php.ini
+
+$sudo nano /etc/php5/apache2/php.ini
+
+; How many GET/POST/COOKIE input variables may be accepted
+ max_input_vars = 1000
+
+ a 
+
+ max_input_vars = 
+
+
+ y por ultimo reiniciar el servidor
+
+ $sudo service apache2 restart

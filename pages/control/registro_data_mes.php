@@ -1905,14 +1905,24 @@ $a_s1_d1_p5_v = $_POST['a_s1_d1_p5_v'];
 $a_s1_d1_gi_v = $_POST['a_s1_d1_gi_v'];
 $a_s1_d1_gii_v = $_POST['a_s1_d1_gii_v'];
 
-echo "$a_s1_d1_v 
-$a_s1_d1_p1_v 
-$a_s1_d1_p2_v, 
-$a_s1_d1_p3_v, 
-$a_s1_d1_p4_v, 
-$a_s1_d1_p5_v, 
-$a_s1_d1_gi_v, 
-$a_s1_d1_gii_v";
+echo "a_s1_d1_v";
+echo "a_s1_d1_p1_v";
+echo "a_s1_d1_p2_v";
+echo "a_s1_d1_p3_v";
+echo "a_s1_d1_p4_v";
+echo "a_s1_d1_p5_v";
+echo "a_s1_d1_gi_v";
+echo "a_s1_d1_gii_v";
+
+
+
+
+
+
+
+
+
+
 
 
 #semana 1 dia 2

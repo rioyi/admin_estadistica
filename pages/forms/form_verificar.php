@@ -4608,7 +4608,7 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-control" placeholder="P2" name="pr_r5_p2_v">
+                                                                        <input type="text" class="form-controfl" placeholder="P2" name="pr_r5_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
