@@ -13,3 +13,34 @@ $sudo nano /etc/php5/apache2/php.ini
  y por ultimo reiniciar el servidor
 
  $sudo service apache2 restart
+
+///////////////// Mostrar error de php en apache2 ///////////////////////////////////
+En este corto TIP vamos a ver como mostrar los errores en PHP. Si has instalado Apache y  PHP5, y no aparecen los errores que generas en PHP tienes que hacer lo siguiente:
+
+Abrir el siguiente archivo:
+
+$sudo nano /etc/php5/apache2/php.ini
+1
+	
+$sudo nano /etc/php5/apache2/php.ini
+
+Buscar (ctrl+w) la línea:
+
+display_errors = Off
+
+	
+display_errors = Off
+
+Sustituirla por:
+
+display_errors = On
+
+	
+display_errors = On
+
+Guardar el archivo y reiniciar Apache:
+
+sudo /etc/init.d/apache2 restart
+
+	
+sudo /etc/init.d/apache2 restart

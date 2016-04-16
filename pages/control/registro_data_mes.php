@@ -13,7 +13,6 @@ require ("conexion_bd.php");
 $periodo_e = $_POST['periodo_e'];
 $mes = $_POST['mes'];
 
-/*
 #vefificado el post
 
 #seccion escolaridad varones
@@ -1882,7 +1881,7 @@ mysql_query ("INSERT INTO total_atencion (id_sexo,id_periodo_escolar,id_mes,id_t
 ")
 
 or die (mysql_error());
-*/
+
 
 #
 #
