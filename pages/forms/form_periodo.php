@@ -57,7 +57,7 @@
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
-                                    <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                                    <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
                                         Nombre Usuario - Maestra Piso 1
                                         
@@ -87,7 +87,7 @@
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="../img/avatar3.png" class="img-circle" alt="User Image" />
+                            <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
                             <p>Hola, Usuario</p>                            
@@ -241,7 +241,7 @@ require ("../control/conexion_bd.php");
                                   <td>
                                   <a href="ver_alumno.php?id=<?php echo $renglon['id_periodo_escolar']?>"> <button class="btn btn-success btn-xs"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button></a>
                                   <!--<a href="inscripcion.php?id=<?php echo $renglon['ci_escolar']?>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> MODIFICAR</button> -->
-                                  <a href="../emergente/borrar_periodo.php?id=<?php echo $renglon['id_periodo_escolar']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button>   
+                                  <a href="../emergente/borrar_periodo.php?id=<?php echo $renglon['id_periodo_escolar']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button></a>   
                                     
                                   </td>
                                 </tr>
