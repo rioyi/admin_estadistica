@@ -1,3 +1,13 @@
+
+<?php
+require ("../control/conexion_bd.php");
+
+
+$mes = $_POST['mes'];
+$periodo_escolar = $_POST['periodo_escolar'];
+$sexo = $_POST['sexo'];
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -106,15 +116,10 @@
                     <!-- /.formulario del buscado -->
                     <!-- sidebar del menu: el estilo puedeo ser encontrado en sidebar.less -->
 <?php 
-    include("menu_form.php")
+    include("menu_reporte.php")
 ?>
 
-<!----------------------
-
-                      
-
-
--------------------->                        
+                     
                     </ul>
                 </section>
                 <!-- /.sidebar -->
@@ -125,121 +130,154 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Consulta de registros mensuales
-                        <small>Consulta - Vista</small>
+                        Sección Pisos o Departamentos
+                        <small>Registro - Vista</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
                         <li><a href="#">Formularios</a></li>
-                        <li class="active">Formulario Consulta Registros Mensuales</li>
+                        <li class="active">Formulario Pisos/Departamento</li>
                     </ol>
                 </section>
 
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
 
                             <div class="box box-info">
                                 <div class="box-header">
-                                    <h3 class="box-title">Busquedad de registro mensual</h3>
+                                    <h3 class="box-title">Resultado de consulta del mes</h3>
                                 </div>
                             <!-- inicio de form -->
-                            <form action="../reporte/reporte_mes.php" method="post" >
+                            <form action="../control/registro_piso.php" method="post" >
+
 
                                 <div class="box-body">
-                                    <!-- Nombre -->
-                                    <div class="form-group">
-                                        <label>Indique los datos para la consulta:</label>
-                                        <div class="form-group">
-                                                        <h3>SELECCIONAR SEXO</h3>
-                                                        <select class="form-control" name="sexo">           
-                                                            <option>SELECCIONE UN SEXO</option>
-                                                            <option value="1">VARONES</option>
-                                                            <option value="2">HEMBRAS</option>             
-                                                        </select>
-                                        </div>  <!-- /.form-group   Select Dinamico -->
+                                   
+                                    <label>Total Asistencia</label>
+                                        <?php
+                                
+                                    
+                                $query = mysql_query("SELECT SUM(p1) FROM total_asistencia WHERE id_sexo = '$sexo'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado = mysql_result($query, 0);
+                                echo "Total: $resultado";
+
+                                $query = mysql_query("SELECT SUM(p2) FROM total_asistencia WHERE id_sexo = '$sexo'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado = mysql_result($query, 0);
+                                echo "<br>";
+                                echo "total: ";
+                                echo "$resultado";
+
+                               
+
+
+
+                                ?>
+
+
                                     </div><!-- /.form group -->
 
-                                    <div class="form-group">
-                                        <label>Indique el Mes a aconsultar:</label>
-                                        <div class="form-group">
-                                                        <h3>SELECCIONAR PERIODO ESCOLAR</h3>
-                                                        <select class="form-control" name="periodo_escolar">
-                                                        <OPTION>SELECCIONE EL PERIODO ESCOLAR</OPTION>
-                                                        
-<?php
-require ("../control/conexion_bd.php");
-$query = 'SELECT * FROM periodo_escolar';
-$result= mysql_query($query, $link);
- 
-?>
-
-    <?php
-    while ( $row = mysql_fetch_array($result) )
-    {
-        ?>
- 
-        <option value=" <?php echo $row['id_periodo_escolar'] ?> " >
-        <?php echo $row['inicio']; echo "-"; echo $row['fin']; ?>
-        </option>
- 
-        <?php
-    }
-    ?>
-</select>
-
-                                                    </div>  <!-- /.form-group   Select Dinamico -->
-                                    </div><!-- /.form group -->
-
-                                    <div class="form-group">
-                                        <label>Indique el Mes a aconsultar:</label>
-                                        <div class="form-group">
-                                                        <h3>SELECCIONAR MES</h3>
-                                                        <select class="form-control" name="mes">
-                                                        <option>SELECCIONE UN MES</option>
-                                                            <option value="1">Enero</option>
-                                                            <option value="2">Febrero</option>
-                                                            <option value="3">Marzo</option>
-                                                            <option value="4">Abril</option>
-                                                            <option value="5">Mayo</option>
-                                                            <option value="6">Junio</option>
-                                                            <option value="7">Julio</option>
-                                                            <option value="8">Agosto</option>
-                                                            <option value="9">Septiembre</option>
-                                                            <option value="10">Octubre</option>
-                                                            <option value="11">Noviembre</option>
-                                                            <option value="12">Diciembre</option>                       
-                                                        </select>
-                                                    </div>  <!-- /.form-group   Select Dinamico -->
-                                    </div><!-- /.form group -->
-                                    <button  type="submit" class="btn btn-primary btn-lg btn-block">
-                                                                        <H1>
-                                                                            <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> CONSULTAR
-                                                                        </H1>
-                                                                    </button> 
                                     <!-- Apellido -->
-                                                                       
+                                    <h2>TOTAL ASISTENCIA</h2>
+                                    
+                                       
+
+                                <div class="box-body table-responsive">
+                                    <table id="example1" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>DÍA</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><?php $query = mysql_query("SELECT SUM(p1) FROM total_asistencia WHERE id_sexo = '$sexo'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado = mysql_result($query, 0);
+                                echo "$resultado";   ?></td>
+                                                <td>Win 95+</td>
+                                                <td> 4</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><?php $query = mysql_query("SELECT SUM(p2) FROM total_asistencia WHERE id_sexo = '$sexo'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado = mysql_result($query, 0); echo "$resultado";  ?></td>
+                                                <td>Win 95+</td>
+                                                <td>5</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><?php $query = mysql_query("SELECT SUM(p3) FROM total_asistencia WHERE id_sexo = '$sexo'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado = mysql_result($query, 0); echo "$resultado";  ?></td>
+                                                <td><?php $query = mysql_query("SELECT SUM(p2) FROM total_asistencia WHERE id_sexo = '$sexo'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?></td>
+                                                <td><?php $res = $resultado + $resultado_h; echo "$res";  ?></td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Trident</td>
+                                                <td>Internet
+                                                    Explorer 6</td>
+                                                <td>Win 98+</td>
+                                                <td>6</td>
+                                                
+                                            </tr>
+                                          
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Rendering engine</th>
+                                                <th>Browser</th>
+                                                <th>Platform(s)</th>
+                                                <th>Engine version</th>
+                                                
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <button type="submit" class="btn btn-primary">REGISTRAR</button>
+
+                                   
 
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                             </form>
                            
                         </div><!-- /.col (left) -->
-                        <div class="col-md-6">
-                            <div class="box box-success">
-                                <div class="box-header">
-                                     <h3 class="box-title">Informació sobre la consulta</h3>
-                                </div><!-- /.box-header -->
-                                <div class="box-body">
-                                <div class="alert alert-info" role="alert">
-                                    <CENTER>
-                                        <H2>PERIODO ESCOLAR ACTUAL</H2>                         
-                                    </CENTER>    
-                                </div><!-- /.box-body -->
-                                
-                            </div><!-- /.form group -->
 
+
+
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+
+                            
+                        </div><!-- /.col (right) -->
                     </div><!-- /.row -->                    
 
                 </section><!-- /.content -->
