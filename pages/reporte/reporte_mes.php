@@ -143,48 +143,58 @@ $sexo = $_POST['sexo'];
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
+                     <section class="content">
+                    <div class="row">
                         <div class="col-md-12">
-
                             <div class="box box-info">
                                 <div class="box-header">
-                                    <h3 class="box-title">Resultado de consulta del mes</h3>
+                                    <h3 class="box-title">Menú Registro Periodo Escolar</h3>
+                                </div>                                                        
+                                <div class="box-body">                                
+                                
+                                    <!-- inicio div pills nav -->
+                                    <ul class="nav nav-pills">
+                                      <li role="presentation" class="active"><a href="#tab1" data-toggle="tab"> PERIODO Y MES ESCOLAR</a></li>
+                                      <li role="presentation"><a href="#tab2" data-toggle="tab">ESCOLARIDAD</a></li>
+                                      <li role="presentation"><a href="#tab3" data-toggle="tab">POBLACIÓN ATENDIDA</a></li>
+                                      <li role="presentation"><a href="#tab4" data-toggle="tab"> VISITA POR EDADES</a></li>
+                                      <li role="presentation"><a href="#tab5" data-toggle="tab">TIEMPO DE PERMANENCIA</a></li>
+                                      <li role="presentation"><a href="#tab6" data-toggle="tab">POBLACIÓN REFERIDA</a></li>
+                                      <li role="presentation"><a href="#tab7" data-toggle="tab"> TIPO DE ATENCIÓN</a></li>
+                                      <li role="presentation"><a href="#tab8" data-toggle="tab">ASISTENCIA</a></li>
+                                    </ul>                                   
+                                    <!-- cierre del div container-->                                    
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->                       
+                        </div><!-- /.col (left) -->
+                        <div class="col-md-12">                            
+                            <div class="box box-info">
+                                <div class="box-header">
+                                    <p><h3 class="box-title">Resultado de consulta del mes</h3></p>                                    
                                 </div>
+                                
                             <!-- inicio de form -->
                             <form action="../control/registro_piso.php" method="post" >
 
 
                                 <div class="box-body">
                                    
-                                    <label>Total Asistencia</label>
-                                        <?php
-                                
-                                    
-                                $query = mysql_query("SELECT SUM(p1) FROM total_asistencia WHERE id_sexo = '$sexo'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
-                                $resultado = mysql_result($query, 0);
-                                echo "Total: $resultado";
-
-                                $query = mysql_query("SELECT SUM(p2) FROM total_asistencia WHERE id_sexo = '$sexo'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
-                                $resultado = mysql_result($query, 0);
-                                echo "<br>";
-                                echo "total: ";
-                                echo "$resultado";
-
-                               
-
-
-
-                                ?>
+                                    <label>Datos consultados</label>
+                                    <p>
+                                      Periodo Escolar consultado: <?php  echo $periodo_escolar; ?></p>
+                                      <p>Mes consultado: <?php  echo $mes; ?></p>
 
 
                                     </div><!-- /.form group -->
-
+<!-- Semana 1-->
                                     <!-- Apellido -->
                                     <h2>TOTAL ASISTENCIA</h2>
+                                    <h3>SEMANA <span class="label label-info">1</span></h3>
                                     
                                        
 
                                 <div class="box-body table-responsive">
-                                    <table id="example1" class="table table-bordered table-striped">
+                                    <table id="example2" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
                                                 <th>DÍA</th>
@@ -195,51 +205,81 @@ $sexo = $_POST['sexo'];
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>1</td>
-                                                <td><?php $query = mysql_query("SELECT SUM(p1) FROM total_asistencia WHERE id_sexo = '$sexo'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                                <td>Piso 1</td>
+                                                <td><?php $query = mysql_query("SELECT SUM(p1) FROM total_asistencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
                                 $resultado = mysql_result($query, 0);
                                 echo "$resultado";   ?></td>
-                                                <td>Win 95+</td>
-                                                <td> 4</td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td><?php $query = mysql_query("SELECT SUM(p2) FROM total_asistencia WHERE id_sexo = '$sexo'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
-                                $resultado = mysql_result($query, 0); echo "$resultado";  ?></td>
-                                                <td>Win 95+</td>
-                                                <td>5</td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td><?php $query = mysql_query("SELECT SUM(p3) FROM total_asistencia WHERE id_sexo = '$sexo'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
-                                $resultado = mysql_result($query, 0); echo "$resultado";  ?></td>
-                                                <td><?php $query = mysql_query("SELECT SUM(p2) FROM total_asistencia WHERE id_sexo = '$sexo'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                                 <td><?php $query = mysql_query("SELECT SUM(p1) FROM total_asistencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
                                 $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?></td>
                                                 <td><?php $res = $resultado + $resultado_h; echo "$res";  ?></td>
                                                 
                                             </tr>
                                             <tr>
-                                                <td>Trident</td>
-                                                <td>Internet
-                                                    Explorer 6</td>
-                                                <td>Win 98+</td>
-                                                <td>6</td>
+                                                <td>Piso 2</td>
+                                                <td><?php $query = mysql_query("SELECT SUM(p2) FROM total_asistencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado = mysql_result($query, 0); echo "$resultado";  ?></td>
+                                                 <td><?php $query = mysql_query("SELECT SUM(p2) FROM total_asistencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?></td>
+                                                <td><?php $res = $resultado + $resultado_h; echo "$res";  ?></td>
                                                 
+                                            </tr>
+                                            <tr>
+                                                <td>Piso 3</td>
+                                                <td><?php $query = mysql_query("SELECT SUM(p3) FROM total_asistencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado = mysql_result($query, 0); echo "$resultado";  ?></td>
+                                                <td><?php $query = mysql_query("SELECT SUM(p3) FROM total_asistencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?></td>
+                                                <td><?php $res = $resultado + $resultado_h; echo "$res";  ?></td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Piso 4</td>
+                                                <td><?php $query = mysql_query("SELECT SUM(p4) FROM total_asistencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado = mysql_result($query, 0); echo "$resultado";  ?></td>
+                                                <td><?php $query = mysql_query("SELECT SUM(p4) FROM total_asistencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?></td>
+                                                <td><?php $res = $resultado + $resultado_h; echo "$res";  ?></td>             
+                                            </tr>
+
+                                            <tr>
+                                                <td>Piso5</td>
+                                                <td><?php $query = mysql_query("SELECT SUM(p5) FROM total_asistencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado = mysql_result($query, 0); echo "$resultado";  ?></td>
+                                                <td><?php $query = mysql_query("SELECT SUM(p5) FROM total_asistencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?></td>
+                                                <td><?php $res = $resultado + $resultado_h; echo "$res";  ?></td>             
+                                            </tr>
+
+                                            <tr>
+                                                <td>Garzas I</td>
+                                                <td><?php $query = mysql_query("SELECT SUM(gi) FROM total_asistencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado = mysql_result($query, 0); echo "$resultado";  ?></td>
+                                                <td><?php $query = mysql_query("SELECT SUM(gi) FROM total_asistencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?></td>
+                                                <td><?php $res = $resultado + $resultado_h; echo "$res";  ?></td>             
+                                            </tr>
+
+                                            <tr>
+                                                <td>Garzas II</td>
+                                                <td><?php $query = mysql_query("SELECT SUM(gii) FROM total_asistencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado = mysql_result($query, 0); echo "$resultado";  ?></td>
+                                                <td><?php $query = mysql_query("SELECT SUM(gii) FROM total_asistencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'");
+                                $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?></td>
+                                                <td><?php $res = $resultado + $resultado_h; echo "$res";  ?></td>             
                                             </tr>
                                           
                                         </tbody>
                                         <tfoot>
                                             <tr>
-                                                <th>Rendering engine</th>
-                                                <th>Browser</th>
-                                                <th>Platform(s)</th>
-                                                <th>Engine version</th>
-                                                
+                                                <th>DÍA</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
                                             </tr>
                                         </tfoot>
                                     </table>
+                                    <!-- Semana 2-->
+                                    
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
 

@@ -13,7 +13,7 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="form_verificar.php"><i class="fa fa-angle-double-right"></i>Registro Estadistica del Mes </a></li>                                
+                                <li><a href="pages/forms/form_verificar.php"><i class="fa fa-angle-double-right"></i>Registro Estadistica del Mes </a></li>                                
                             </ul>
                         </li>
 
@@ -24,10 +24,10 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="form_periodo.php"><i class="fa fa-angle-double-right"></i> Periodo Escolar </a></li>
+                                <li><a href="pages/forms/form_periodo.php"><i class="fa fa-angle-double-right"></i> Periodo Escolar </a></li>
                                 
-                                <li><a href="form_docente.php"><i class="fa fa-angle-double-right"></i> Docente </a></li>
-                                <li><a href="form_usuario.php"><i class="fa fa-angle-double-right"></i> Usuario </a></li>
+                                <li><a href="pages/forms/form_docente.php"><i class="fa fa-angle-double-right"></i> Docente </a></li>
+                                <li><a href="pages/forms/form_usuario.php"><i class="fa fa-angle-double-right"></i> Usuario </a></li>
                             </ul>
                         </li>
 
