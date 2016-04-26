@@ -149,17 +149,7 @@
 
                                 <div class="box-body">
                                     <!-- Nombre -->
-                                    <div class="form-group">
-                                        <label>Indique los datos para la consulta:</label>
-                                        <div class="form-group">
-                                                        <h3>SELECCIONAR SEXO</h3>
-                                                        <select class="form-control" name="sexo">           
-                                                            <option>SELECCIONE UN SEXO</option>
-                                                            <option value="1">VARONES</option>
-                                                            <option value="2">HEMBRAS</option>             
-                                                        </select>
-                                        </div>  <!-- /.form-group   Select Dinamico -->
-                                    </div><!-- /.form group -->
+                                    
 
                                     <div class="form-group">
                                         <label>Indique el Mes a aconsultar:</label>

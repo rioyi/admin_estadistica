@@ -5,7 +5,7 @@ require ("../control/conexion_bd.php");
 
 $mes = $_POST['mes'];
 $periodo_escolar = $_POST['periodo_escolar'];
-$sexo = $_POST['sexo'];
+
 
 ?>
 <!DOCTYPE html>
@@ -150,21 +150,7 @@ $sexo = $_POST['sexo'];
                                 <div class="box-header">
                                     <h3 class="box-title">Menú Registro Periodo Escolar</h3>
                                 </div>                                                        
-                                <div class="box-body">                                
                                 
-                                    <!-- inicio div pills nav -->
-                                    <ul class="nav nav-pills">
-                                      <li role="presentation" class="active"><a href="#tab1" data-toggle="tab"> PERIODO Y MES ESCOLAR</a></li>
-                                      <li role="presentation"><a href="#tab2" data-toggle="tab">ESCOLARIDAD</a></li>
-                                      <li role="presentation"><a href="#tab3" data-toggle="tab">POBLACIÓN ATENDIDA</a></li>
-                                      <li role="presentation"><a href="#tab4" data-toggle="tab"> VISITA POR EDADES</a></li>
-                                      <li role="presentation"><a href="#tab5" data-toggle="tab">TIEMPO DE PERMANENCIA</a></li>
-                                      <li role="presentation"><a href="#tab6" data-toggle="tab">POBLACIÓN REFERIDA</a></li>
-                                      <li role="presentation"><a href="#tab7" data-toggle="tab"> TIPO DE ATENCIÓN</a></li>
-                                      <li role="presentation"><a href="#tab8" data-toggle="tab">ASISTENCIA</a></li>
-                                    </ul>                                   
-                                    <!-- cierre del div container-->                                    
-                                </div><!-- /.box-body -->
                             </div><!-- /.box -->                       
                         </div><!-- /.col (left) -->
                         <div class="col-md-12">                            
@@ -185,19 +171,1172 @@ $sexo = $_POST['sexo'];
                                       <p>Mes consultado: <?php  echo $mes; ?></p>
 
 
-                                    </div><!-- /.form group -->
-<!-- Semana 1-->
-                                    <!-- Apellido -->
-                                    <h2>TOTAL ASISTENCIA</h2>
-                                    <h3>SEMANA <span class="label label-info">1</span></h3>
-                                    
-                                       
+                                   
 
+                                    <!-- Apellido -->
+                                    
+                                <div class="page-header">
+                                  <h1>TOTAL POR EDAD <small>Niños, niñas y adolencentes vistados en las habitaciones, agrupados por edad</small></h1>
+                                </div>
+                                    
+                                <!-- Inicio Tabale Por edad -->
                                 <div class="box-body table-responsive">
                                     <table id="example2" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <th>DÍA</th>
+                                                <th>EDAD</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0 - 11 Meses</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='1'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='1'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>1 Año</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='2'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='2'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>2 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='3'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='3'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>3 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='4'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='4'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>4 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='5'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='5'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>5 años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='6'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='6'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>6 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='7'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='7'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>7 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='8'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='8'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>8 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='9'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='9'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>9 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='10'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='10'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>10 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='11'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='11'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>11 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='12'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='12'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>12 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='13'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='13'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>13 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='14'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='14'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>14 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='15'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='15'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>15 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='16'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='16'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>16 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='17'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='17'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>17 Años</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='18'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_edad='18'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            
+                                          
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>EDAD</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <!-- /Table Por edad-->
+
+                                    <!-- Inicio tabla escolaridad  -->
+                                    <div class="page-header">
+                                        <h1>TOTAL ESCOLARIDAD 
+                                            <small>Agrupados por grado de estudio</small>
+                                        </h1>
+                                    </div>                        
+                                <div class="box-body table-responsive">
+                                    <table id="example2" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>ESCOLARIDAD</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>MATERNAL</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='1'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='1'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>I NIVEL</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='2'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='2'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>II NIVEL</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='3'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='3'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>III NIVEL</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='4'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='4'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>1° GRADO</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='5'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='5'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>2° GRADO</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='6'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='6'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>3° GRADO</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='7'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='7'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>4° GRADO</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='8'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='8'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>5° GRADO</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='9'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='9'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>6° GRADO</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='10'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='10'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>1er AÑO</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='11'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='11'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>2do AÑO</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='12'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='12'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>3er AÑO</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='13'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='13'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>4to AÑO</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='14'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='14'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>5 AÑO</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='15'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='15'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>S/E</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='16'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='16'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>E/E</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='17'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='17'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>6to AÑO</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_escolaridad='18'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_escolaridad WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_escolaridad='18'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>                                  
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>ESCOLARIDAD</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+
+                                    <!-- / Escolaridad  -->
+
+                                    <!-- Inicio tabla tiempo de permanencia  -->
+                                    <div class="page-header">
+                                        <h1>TOTAL TIEMPO DE PERMANENCIA 
+                                            <small>Agrupados por días y meses</small>
+                                        </h1>
+                                    </div>                        
+                                <div class="box-body table-responsive">
+                                    <table id="example2" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>TIEMPO DE PERMANENCIA</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>0 - 5 Días</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_permanencia='1'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_permanencia='1'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>6 - 10 Días</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_permanencia='2'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_permanencia='2'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>11 - 15 Días</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_permanencia='3'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_permanencia='3'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>16 - 30 Días</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_permanencia='4'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_permanencia='4'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>2 Meses</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_permanencia='5'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_permanencia='5'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>3 Meses</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_permanencia='6'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_permanencia='6'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>+ de 3 Meses</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_permanencia='7'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_tiempo_permanencia WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_permanencia='7'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>                                                      
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>TIEMPO DE PERMANENCIA</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+
+                                    <!-- / Tiempo de permanencia  -->
+
+
+                                    <!-- Inicio tabla Poblacion Atendida  -->
+                                    <div class="page-header">
+                                        <h1>TOTAL POBLACION ATENDIDA 
+                                            <small>Agrupados por Aulas y Habitación</small>
+                                        </h1>
+                                    </div>                        
+                                <div class="box-body table-responsive">
+                                    <table id="example2" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>LUGAR DE ATENCIÓN</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>En Aula</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_poblacion_atendida WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_poblacion_atendida='1'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_poblacion_atendida WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_poblacion_atendida='1'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>En Habitación</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_poblacion_atendida WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_poblacion_atendida='2'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_poblacion_atendida WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_poblacion_atendida='2'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>                                                                                    
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>TIEMPO DE PERMANENCIA</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+
+                                    <!-- / Tabla Poblacion Atendida  -->
+
+                                <!-- Inicio tabla Poblacion Referida  -->
+                                    <div class="page-header">
+                                        <h1>TOTAL POBLACION REFERIDA 
+                                            <small>Agrupados por Servicios</small>
+                                        </h1>
+                                    </div>                        
+                                <div class="box-body table-responsive">
+                                    <table id="example2" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>SERVICIO DE REFERENCIA</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Defensoria</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_referido='1'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_referido='1'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>CDI</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_referido='2'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_referido='2'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Seguro Social</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_referido='3'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_referido='3'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Psicologia</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_referido='4'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_referido='4'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Psicologia</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_referido='5'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_referido='5'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>CAIPA</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_referido='6'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_referido='6'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>Integración</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_referido='7'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_referido='7'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>  
+
+                                            <tr>
+                                                <td>A. Integral</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_referido='8'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_referido='8'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>  
+
+                                            <tr>
+                                                <td>CENDA</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_referido='9'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_referido='9'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>UPE</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_referido='10'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_referido='10'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>Articulación</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_referido='11'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_referido='11'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>Otros</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_referido='12'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_referidos WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_referido='12'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>                                                                                      
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>SERVICIO DE REFERENCIA</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+
+                                    <!-- / Tabla Poblacion Referida  -->
+
+                                <!-- Inicio Tabla tipo de atención  -->
+                                    <div class="page-header">
+                                        <h1>TOTAL TIPO DE ATENCIÓN 
+                                            <small>Agrupados por Servicios</small>
+                                        </h1>
+                                    </div>                        
+                                <div class="box-body table-responsive">
+                                    <table id="example2" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>SERVICIO DE ATENCIÓN</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Cirugía</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion  ='1'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='1'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Traumatología</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion='2'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='2'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Otorrinolaringologo</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion='3'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='3'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Pediatría</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion='4'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='4'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Nerología</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion='5'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='5'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Cadiología</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion='6'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='6'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>Nefrología</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion='7'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='7'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>  
+
+                                            <tr>
+                                                <td>Urología</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion='8'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='8'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>  
+
+                                            <tr>
+                                                <td>Neumonología</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion='9'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='9'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>Hermatología</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion='10'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='10'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>Oncología</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion='11'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='11'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>Dermatología</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion='12'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='12'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>Gastrología</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion='13'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='13'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>
+
+                                            <tr>
+                                                <td>Infectología</td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '1'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar' AND  id_tipo_atencion='14'");
+                                                    $resultado = mysql_result($query, 0);
+                                                    echo "$resultado";   ?>
+                                                </td>
+                                                <td><?php $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_atencion WHERE id_sexo = '2'AND id_mes='$mes' AND id_periodo_escolar='$periodo_escolar'  AND id_tipo_atencion='14'");
+                                                    $resultado_h = mysql_result($query, 0); echo "$resultado_h";  ?>
+                                                </td>
+                                                <td>
+                                                    <?php $res = $resultado + $resultado_h; echo "$res";  ?>
+                                                </td>                                                
+                                            </tr>                                                                                      
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>SERVICIO DE ATENCIÓN</th>
+                                                <th>VARONES</th>
+                                                <th>HEMBRAS</th>
+                                                <th>TOTAL</th>                                                
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+
+                                    <!-- / Tabla tipo de atención  -->
+
+
+
+                                <!-- Inicio total asistencia -->
+                                <div class="page-header">
+                                  <h1>TOTAL ASISTENCIA <small>Agrupado el total del todo el mes</small></h1>
+                                </div>
+                                <!-- Inicio Tabale asistencia   -->
+                                
+                                    <table id="example2" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>PISO</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
                                                 <th>TOTAL</th>                                                
@@ -271,14 +1410,14 @@ $sexo = $_POST['sexo'];
                                         </tbody>
                                         <tfoot>
                                             <tr>
-                                                <th>DÍA</th>
+                                                <th>PISO</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
                                                 <th>TOTAL</th>                                                
                                             </tr>
                                         </tfoot>
                                     </table>
-                                    <!-- Semana 2-->
+                                    <!-- /Table asistencia-->
                                     
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
