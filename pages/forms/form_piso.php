@@ -58,7 +58,7 @@
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
-                                    <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                                    <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
                                         Nombre Usuario - Maestra Piso 1
                                         
@@ -88,7 +88,7 @@
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="../img/avatar3.png" class="img-circle" alt="User Image" />
+                            <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
                             <p>Hola, Usuario</p>                            
@@ -111,80 +111,7 @@
 
 <!----------------------
 
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-bar-chart-o"></i>
-                                <span>Charts</span>
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="pages/charts/morris.html"><i class="fa fa-angle-double-right"></i> Morris</a></li>
-                                <li><a href="pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Flot</a></li>
-                                <li><a href="pages/charts/inline.html"><i class="fa fa-angle-double-right"></i> Inline charts</a></li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-laptop"></i>
-                                <span>UI Elements</span>
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="pages/UI/general.html"><i class="fa fa-angle-double-right"></i> General</a></li>
-                                <li><a href="pages/UI/icons.html"><i class="fa fa-angle-double-right"></i> Icons</a></li>
-                                <li><a href="pages/UI/buttons.html"><i class="fa fa-angle-double-right"></i> Buttons</a></li>
-                                <li><a href="pages/UI/sliders.html"><i class="fa fa-angle-double-right"></i> Sliders</a></li>
-                                <li><a href="pages/UI/timeline.html"><i class="fa fa-angle-double-right"></i> Timeline</a></li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-edit"></i> <span>Forms</span>
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="pages/forms/general.html"><i class="fa fa-angle-double-right"></i> General Elements</a></li>
-                                <li><a href="pages/forms/advanced.html"><i class="fa fa-angle-double-right"></i> Advanced Elements</a></li>
-                                <li><a href="pages/forms/editors.html"><i class="fa fa-angle-double-right"></i> Editors</a></li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-table"></i> <span>Tables</span>
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="pages/tables/simple.html"><i class="fa fa-angle-double-right"></i> Simple tables</a></li>
-                                <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> Data tables</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="pages/calendar.html">
-                                <i class="fa fa-calendar"></i> <span>Calendar</span>
-                                <small class="badge pull-right bg-red">3</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="pages/mailbox.html">
-                                <i class="fa fa-envelope"></i> <span>Mailbox</span>
-                                <small class="badge pull-right bg-yellow">12</small>
-                            </a>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-folder"></i> <span>Examples</span>
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="pages/examples/invoice.html"><i class="fa fa-angle-double-right"></i> Invoice</a></li>
-                                <li><a href="pages/examples/login.html"><i class="fa fa-angle-double-right"></i> Login</a></li>
-                                <li><a href="pages/examples/register.html"><i class="fa fa-angle-double-right"></i> Register</a></li>
-                                <li><a href="pages/examples/lockscreen.html"><i class="fa fa-angle-double-right"></i> Lockscreen</a></li>
-                                <li><a href="pages/examples/404.html"><i class="fa fa-angle-double-right"></i> 404 Error</a></li>
-                                <li><a href="pages/examples/500.html"><i class="fa fa-angle-double-right"></i> 500 Error</a></li>
-                                <li><a href="pages/examples/blank.html"><i class="fa fa-angle-double-right"></i> Blank Page</a></li>
-                            </ul>
-                        </li>
+                      
 
 
 -------------------->                        
@@ -198,13 +125,13 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Sección Pisos o Departamentos
-                        <small>Registro - Vista</small>
+                        Consulta de registros mensuales
+                        <small>Consulta - Vista</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
                         <li><a href="#">Formularios</a></li>
-                        <li class="active">Formulario Pisos/Departamento</li>
+                        <li class="active">Formulario Consulta Registros Mensuales</li>
                     </ol>
                 </section>
 
@@ -215,115 +142,94 @@
 
                             <div class="box box-info">
                                 <div class="box-header">
-                                    <h3 class="box-title">Registrar Piso/Departamento</h3>
+                                    <h3 class="box-title">Busquedad de registro mensual</h3>
                                 </div>
                             <!-- inicio de form -->
-                            <form action="../control/registro_piso.php" method="post" >
+                            <form action="../reporte/reporte_mes.php" method="post" >
 
                                 <div class="box-body">
                                     <!-- Nombre -->
+                                    
+
                                     <div class="form-group">
-                                        <label>Número de Piso:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="glyphicon glyphicon-sort"></i>
-                                            </div>
-                                            <input type="text" name="piso" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
-                                        </div><!-- /.input group -->
+                                        <label>Indique el Mes a aconsultar:</label>
+                                        <div class="form-group">
+                                                        <h3>SELECCIONAR PERIODO ESCOLAR</h3>
+                                                        <select class="form-control" name="periodo_escolar">
+                                                        <OPTION>SELECCIONE EL PERIODO ESCOLAR</OPTION>
+                                                        
+<?php
+require ("../control/conexion_bd.php");
+$query = 'SELECT * FROM periodo_escolar';
+$result= mysql_query($query, $link);
+ 
+?>
+
+    <?php
+    while ( $row = mysql_fetch_array($result) )
+    {
+        ?>
+ 
+        <option value=" <?php echo $row['id_periodo_escolar'] ?> " >
+        <?php echo $row['inicio']; echo "-"; echo $row['fin']; ?>
+        </option>
+ 
+        <?php
+    }
+    ?>
+</select>
+
+                                                    </div>  <!-- /.form-group   Select Dinamico -->
                                     </div><!-- /.form group -->
 
+                                    <div class="form-group">
+                                        <label>Indique el Mes a aconsultar:</label>
+                                        <div class="form-group">
+                                                        <h3>SELECCIONAR MES</h3>
+                                                        <select class="form-control" name="mes">
+                                                        <option>SELECCIONE UN MES</option>
+                                                            <option value="1">Enero</option>
+                                                            <option value="2">Febrero</option>
+                                                            <option value="3">Marzo</option>
+                                                            <option value="4">Abril</option>
+                                                            <option value="5">Mayo</option>
+                                                            <option value="6">Junio</option>
+                                                            <option value="7">Julio</option>
+                                                            <option value="8">Agosto</option>
+                                                            <option value="9">Septiembre</option>
+                                                            <option value="10">Octubre</option>
+                                                            <option value="11">Noviembre</option>
+                                                            <option value="12">Diciembre</option>                       
+                                                        </select>
+                                                    </div>  <!-- /.form-group   Select Dinamico -->
+                                    </div><!-- /.form group -->
+                                    <button  type="submit" class="btn btn-primary btn-lg btn-block">
+                                                                        <H1>
+                                                                            <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> CONSULTAR
+                                                                        </H1>
+                                                                    </button> 
                                     <!-- Apellido -->
-                                    <label>Descripción</label>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="glyphicon glyphicon-list"></i>
-                                            </div>
-                                            <input type="textarea" name="descripcion" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask/>
-                                        </div><!-- /.input group -->
-
-                                    </div><!-- /.form group -->
-
-                                    <button type="submit" class="btn btn-primary">REGISTRAR</button>
-
-                                   
+                                                                       
 
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                             </form>
                            
                         </div><!-- /.col (left) -->
-
-<?php
-#$consulta = $_POST['consulta'];
-#echo "<h3>Su Consulta es: $consulta</h3>";
-
-require ("../control/conexion_bd.php");
-  
-  $sql="SELECT * FROM piso";
-  $datos=mysql_query($sql,$link);
-  $contador = mysql_num_rows($datos);
-    if ($contador == 0)
-      {
-        echo "<center><h1><font color='#E74C3C'>NO SE ENCONTRO RESULTADOS :-( </font></h1></center>";
-      }
-    else
-      {
-                    
-?>
-
-
                         <div class="col-md-6">
                             <div class="box box-success">
                                 <div class="box-header">
-                                     <h3 class="box-title">Lista de Pisos</h3>
+                                     <h3 class="box-title">Informació sobre la consulta</h3>
                                 </div><!-- /.box-header -->
                                 <div class="box-body">
-                                    <table class="table table-bordered">
-                                        <tr>
-                                            <th style="width: 10px">Piso</th>
-                                            <th> <center> Descripción </center></th>
-                                            <th> <center> Acción </center> </th>
-                                            
-                                            
-<?php
-                              while ($renglon=mysql_fetch_array($datos)) 
-                                {
-                                  ?>
-                              <tbody>
-                                <tr>                                
-                                  <td><?php echo $renglon['numero_piso']; ?></td>
-                                  <td><?php echo $renglon['descripcion_piso']; ?></td>
-                                  <td>
-                                  <a href="ver_alumno.php?id=<?php echo $renglon['ci_escolar']?>"> <button class="btn btn-success btn-xs"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button></a>
-                                  <!--<a href="inscripcion.php?id=<?php echo $renglon['ci_escolar']?>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> MODIFICAR</button> -->
-                                  <a href="../emergente/borrar_piso.php?id=<?php echo $renglon['id_piso']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button>   
-                                    
-                                  </td>
-                                </tr>
-
-                                 
-                              </tbody>
-                              <?php } }?>
-                                        
-                                    </table>
+                                <div class="alert alert-info" role="alert">
+                                    <CENTER>
+                                        <H2>PERIODO ESCOLAR ACTUAL</H2>                         
+                                    </CENTER>    
                                 </div><!-- /.box-body -->
-                                <div class="box-footer clearfix">
-                                    <ul class="pagination pagination-sm no-margin pull-right">
-                                        <li><a href="#">&laquo;</a></li>
-                                        <li><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">&raquo;</a></li>
-                                    </ul>
-                                </div>
+                                
                             </div><!-- /.form group -->
 
-                                </div><!-- /.box-body -->
-                            </div><!-- /.box -->
-
-                            
-                        </div><!-- /.col (right) -->
                     </div><!-- /.row -->                    
 
                 </section><!-- /.content -->

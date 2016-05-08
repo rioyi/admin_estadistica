@@ -2,10 +2,10 @@
 -- version 4.0.10deb1
 -- http://www.phpmyadmin.net
 --
--- Servidor: localhost
--- Tiempo de generación: 23-03-2016 a las 11:42:40
--- Versión del servidor: 5.5.47-0ubuntu0.14.04.1
--- Versión de PHP: 5.5.9-1ubuntu4.14
+-- Host: localhost
+-- Generation Time: May 07, 2016 at 07:58 AM
+-- Server version: 5.5.49-0ubuntu0.14.04.1
+-- PHP Version: 5.5.9-1ubuntu4.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `estadistica_hospital`
+-- Database: `estadistica_hospital`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `docente`
+-- Table structure for table `docente`
 --
 
 CREATE TABLE IF NOT EXISTS `docente` (
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `docente` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
--- Volcado de datos para la tabla `docente`
+-- Dumping data for table `docente`
 --
 
 INSERT INTO `docente` (`id_docente`, `nombre_docente`, `apellido_docente`, `email`, `direccion`, `telefono`, `piso`) VALUES
@@ -50,7 +50,7 @@ INSERT INTO `docente` (`id_docente`, `nombre_docente`, `apellido_docente`, `emai
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `mes`
+-- Table structure for table `mes`
 --
 
 CREATE TABLE IF NOT EXISTS `mes` (
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `mes` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
--- Volcado de datos para la tabla `mes`
+-- Dumping data for table `mes`
 --
 
 INSERT INTO `mes` (`id_mes`, `mes`) VALUES
@@ -80,7 +80,7 @@ INSERT INTO `mes` (`id_mes`, `mes`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `periodo_escolar`
+-- Table structure for table `periodo_escolar`
 --
 
 CREATE TABLE IF NOT EXISTS `periodo_escolar` (
@@ -88,21 +88,23 @@ CREATE TABLE IF NOT EXISTS `periodo_escolar` (
   `inicio` int(4) NOT NULL,
   `fin` int(4) NOT NULL,
   PRIMARY KEY (`id_periodo_escolar`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
--- Volcado de datos para la tabla `periodo_escolar`
+-- Dumping data for table `periodo_escolar`
 --
 
 INSERT INTO `periodo_escolar` (`id_periodo_escolar`, `inicio`, `fin`) VALUES
 (3, 66666, 0),
 (6, 2132, 2314),
-(7, 2015, 2016);
+(7, 2015, 2016),
+(8, 6666, 6667),
+(9, 2000, 2001);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `sexo`
+-- Table structure for table `sexo`
 --
 
 CREATE TABLE IF NOT EXISTS `sexo` (
@@ -112,7 +114,7 @@ CREATE TABLE IF NOT EXISTS `sexo` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Volcado de datos para la tabla `sexo`
+-- Dumping data for table `sexo`
 --
 
 INSERT INTO `sexo` (`id_sexo`, `nombre`) VALUES
@@ -123,7 +125,7 @@ INSERT INTO `sexo` (`id_sexo`, `nombre`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tipo_atencion`
+-- Table structure for table `tipo_atencion`
 --
 
 CREATE TABLE IF NOT EXISTS `tipo_atencion` (
@@ -133,12 +135,12 @@ CREATE TABLE IF NOT EXISTS `tipo_atencion` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
--- Volcado de datos para la tabla `tipo_atencion`
+-- Dumping data for table `tipo_atencion`
 --
 
 INSERT INTO `tipo_atencion` (`id_tipo_atencion`, `tipo_atencion`) VALUES
 (1, 'cirugia'),
-(2, 'Traumatolog'),
+(2, 'Traumatología'),
 (3, 'Otorrinolaringologo'),
 (4, 'Pediatría'),
 (5, 'Nerología'),
@@ -155,7 +157,7 @@ INSERT INTO `tipo_atencion` (`id_tipo_atencion`, `tipo_atencion`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tipo_edad`
+-- Table structure for table `tipo_edad`
 --
 
 CREATE TABLE IF NOT EXISTS `tipo_edad` (
@@ -165,7 +167,7 @@ CREATE TABLE IF NOT EXISTS `tipo_edad` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
 
 --
--- Volcado de datos para la tabla `tipo_edad`
+-- Dumping data for table `tipo_edad`
 --
 
 INSERT INTO `tipo_edad` (`id_tipo_edad`, `tipo_edad`) VALUES
@@ -179,20 +181,20 @@ INSERT INTO `tipo_edad` (`id_tipo_edad`, `tipo_edad`) VALUES
 (8, 7),
 (9, 8),
 (10, 9),
-(11, 2),
-(12, 3),
-(13, 4),
-(14, 5),
-(15, 6),
-(16, 7),
-(17, 8),
-(18, 9),
-(19, 10);
+(11, 10),
+(12, 111),
+(13, 12),
+(14, 13),
+(15, 14),
+(16, 15),
+(17, 16),
+(18, 17),
+(19, 18);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tipo_escolaridad`
+-- Table structure for table `tipo_escolaridad`
 --
 
 CREATE TABLE IF NOT EXISTS `tipo_escolaridad` (
@@ -202,7 +204,7 @@ CREATE TABLE IF NOT EXISTS `tipo_escolaridad` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
 
 --
--- Volcado de datos para la tabla `tipo_escolaridad`
+-- Dumping data for table `tipo_escolaridad`
 --
 
 INSERT INTO `tipo_escolaridad` (`id_tipo_escolaridad`, `escolaridad`) VALUES
@@ -228,7 +230,7 @@ INSERT INTO `tipo_escolaridad` (`id_tipo_escolaridad`, `escolaridad`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tipo_permanencia`
+-- Table structure for table `tipo_permanencia`
 --
 
 CREATE TABLE IF NOT EXISTS `tipo_permanencia` (
@@ -238,7 +240,7 @@ CREATE TABLE IF NOT EXISTS `tipo_permanencia` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
--- Volcado de datos para la tabla `tipo_permanencia`
+-- Dumping data for table `tipo_permanencia`
 --
 
 INSERT INTO `tipo_permanencia` (`id_tipo_permanencia`, `tiempo`) VALUES
@@ -253,7 +255,7 @@ INSERT INTO `tipo_permanencia` (`id_tipo_permanencia`, `tiempo`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tipo_poblacion_atendida`
+-- Table structure for table `tipo_poblacion_atendida`
 --
 
 CREATE TABLE IF NOT EXISTS `tipo_poblacion_atendida` (
@@ -263,7 +265,7 @@ CREATE TABLE IF NOT EXISTS `tipo_poblacion_atendida` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Volcado de datos para la tabla `tipo_poblacion_atendida`
+-- Dumping data for table `tipo_poblacion_atendida`
 --
 
 INSERT INTO `tipo_poblacion_atendida` (`id_tipo_poblacion_atendida`, `poblacion_atendida`) VALUES
@@ -273,7 +275,7 @@ INSERT INTO `tipo_poblacion_atendida` (`id_tipo_poblacion_atendida`, `poblacion_
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tipo_referido`
+-- Table structure for table `tipo_referido`
 --
 
 CREATE TABLE IF NOT EXISTS `tipo_referido` (
@@ -283,7 +285,7 @@ CREATE TABLE IF NOT EXISTS `tipo_referido` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
--- Volcado de datos para la tabla `tipo_referido`
+-- Dumping data for table `tipo_referido`
 --
 
 INSERT INTO `tipo_referido` (`id_tipo_referido`, `tipo_referido`) VALUES
@@ -303,7 +305,7 @@ INSERT INTO `tipo_referido` (`id_tipo_referido`, `tipo_referido`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `total_asistencia`
+-- Table structure for table `total_asistencia`
 --
 
 CREATE TABLE IF NOT EXISTS `total_asistencia` (
@@ -323,57 +325,58 @@ CREATE TABLE IF NOT EXISTS `total_asistencia` (
   KEY `id_periodo_escolar` (`id_periodo_escolar`),
   KEY `id_mes` (`id_mes`),
   KEY `id_sexo` (`id_sexo`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=79 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=356 ;
 
 --
--- Volcado de datos para la tabla `total_asistencia`
+-- Dumping data for table `total_asistencia`
 --
 
 INSERT INTO `total_asistencia` (`id_asistencia`, `id_periodo_escolar`, `id_mes`, `id_sexo`, `dia`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
-(40, 7, 1, 1, 1, 1, 2, 3, 0, 0, 0, 0),
-(41, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(42, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(43, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(44, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(45, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(46, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(47, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(48, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(49, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(50, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(51, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(52, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(53, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(54, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(55, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(56, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(57, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(58, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(59, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(60, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(61, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(62, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(63, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(64, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(65, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(66, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(67, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(68, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(69, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(70, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(71, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(72, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(73, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(74, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(75, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(76, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(77, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
-(78, 7, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0);
+(316, 7, 6, 1, 1, 1, 2, 3, 4, 5, 6, 7),
+(317, 7, 6, 1, 2, 1, 2, 3, 4, 5, 6, 7),
+(318, 7, 6, 1, 3, 1, 2, 3, 4, 5, 6, 7),
+(319, 7, 6, 1, 4, 1, 2, 3, 4, 5, 6, 7),
+(320, 7, 6, 1, 5, 1, 2, 3, 4, 5, 6, 7),
+(321, 7, 6, 1, 6, 1, 2, 3, 4, 5, 6, 7),
+(322, 7, 6, 1, 7, 1, 2, 3, 4, 5, 6, 7),
+(323, 7, 6, 1, 8, 1, 2, 3, 4, 5, 6, 7),
+(324, 7, 6, 1, 9, 1, 2, 3, 4, 5, 6, 7),
+(325, 7, 6, 1, 10, 1, 2, 3, 4, 5, 6, 7),
+(326, 7, 6, 1, 11, 1, 2, 3, 4, 5, 6, 7),
+(327, 7, 6, 1, 12, 1, 2, 3, 4, 5, 6, 7),
+(328, 7, 6, 1, 13, 1, 2, 3, 4, 5, 6, 7),
+(329, 7, 6, 1, 14, 1, 2, 3, 4, 5, 6, 7),
+(330, 7, 6, 1, 15, 1, 2, 3, 4, 5, 6, 7),
+(331, 7, 6, 1, 16, 1, 2, 3, 4, 5, 6, 7),
+(332, 7, 6, 1, 17, 1, 2, 3, 4, 5, 6, 7),
+(333, 7, 6, 1, 18, 1, 2, 3, 4, 5, 6, 7),
+(334, 7, 6, 1, 19, 1, 2, 3, 4, 5, 6, 7),
+(335, 7, 6, 1, 20, 1, 2, 3, 4, 5, 6, 7),
+(336, 7, 6, 2, 1, 1, 2, 3, 4, 5, 6, 7),
+(337, 7, 6, 2, 2, 1, 2, 3, 4, 5, 6, 7),
+(338, 7, 6, 2, 3, 1, 2, 3, 4, 5, 6, 7),
+(339, 7, 6, 2, 4, 1, 2, 3, 4, 5, 6, 7),
+(340, 7, 6, 2, 5, 1, 2, 3, 4, 5, 6, 7),
+(341, 7, 6, 2, 6, 1, 2, 3, 4, 5, 6, 7),
+(342, 7, 6, 2, 7, 1, 2, 3, 4, 5, 6, 7),
+(343, 7, 6, 2, 8, 1, 2, 3, 4, 5, 6, 7),
+(344, 7, 6, 2, 9, 1, 2, 3, 4, 5, 6, 7),
+(345, 7, 6, 2, 10, 1, 2, 3, 4, 5, 6, 7),
+(346, 7, 6, 2, 11, 1, 2, 3, 4, 5, 6, 7),
+(347, 7, 6, 2, 12, 1, 2, 3, 4, 5, 6, 7),
+(348, 7, 6, 2, 13, 1, 2, 3, 4, 5, 6, 7),
+(349, 7, 6, 2, 14, 1, 2, 3, 4, 5, 6, 7),
+(350, 7, 6, 2, 15, 1, 2, 3, 4, 5, 6, 7),
+(351, 7, 6, 2, 16, 1, 2, 3, 4, 5, 6, 7),
+(352, 7, 6, 2, 17, 1, 2, 3, 4, 5, 6, 7),
+(353, 7, 6, 2, 18, 1, 2, 3, 4, 5, 6, 7),
+(354, 7, 6, 2, 19, 1, 2, 3, 4, 5, 6, 7),
+(355, 7, 6, 2, 20, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `total_atencion`
+-- Table structure for table `total_atencion`
 --
 
 CREATE TABLE IF NOT EXISTS `total_atencion` (
@@ -394,46 +397,46 @@ CREATE TABLE IF NOT EXISTS `total_atencion` (
   KEY `id_mes` (`id_mes`),
   KEY `id_sexo` (`id_sexo`),
   KEY `id_tipo_atencion` (`id_tipo_atencion`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=61 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=89 ;
 
 --
--- Volcado de datos para la tabla `total_atencion`
+-- Dumping data for table `total_atencion`
 --
 
 INSERT INTO `total_atencion` (`id_atencion`, `id_periodo_escolar`, `id_mes`, `id_sexo`, `id_tipo_atencion`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
-(33, 7, 1, 1, 1, 1, 2, 3, 4, 5, 6, 7),
-(34, 7, 1, 1, 2, 1, 2, 3, 4, 5, 6, 7),
-(35, 7, 1, 1, 3, 1, 2, 3, 4, 5, 6, 7),
-(36, 7, 1, 1, 4, 1, 2, 3, 4, 5, 6, 7),
-(37, 7, 1, 1, 5, 1, 2, 3, 4, 5, 6, 7),
-(38, 7, 1, 1, 6, 1, 2, 3, 4, 5, 6, 7),
-(39, 7, 1, 1, 7, 1, 2, 3, 4, 5, 6, 7),
-(40, 7, 1, 1, 8, 1, 2, 3, 4, 5, 6, 7),
-(41, 7, 1, 1, 9, 1, 2, 3, 4, 5, 6, 7),
-(42, 7, 1, 1, 10, 1, 2, 3, 4, 5, 6, 7),
-(43, 7, 1, 1, 11, 1, 2, 3, 4, 5, 6, 7),
-(44, 7, 1, 1, 12, 1, 2, 3, 4, 5, 6, 7),
-(45, 7, 1, 1, 13, 1, 2, 3, 4, 5, 6, 7),
-(46, 7, 1, 1, 14, 1, 2, 3, 4, 5, 6, 7),
-(47, 7, 1, 2, 1, 1, 2, 3, 4, 5, 6, 7),
-(48, 7, 1, 2, 2, 1, 2, 3, 4, 5, 6, 7),
-(49, 7, 1, 2, 3, 1, 2, 3, 4, 5, 6, 7),
-(50, 7, 1, 2, 4, 1, 2, 3, 4, 5, 6, 7),
-(51, 7, 1, 2, 5, 1, 2, 3, 4, 5, 6, 7),
-(52, 7, 1, 2, 6, 1, 2, 3, 4, 5, 6, 7),
-(53, 7, 1, 2, 7, 1, 2, 3, 4, 5, 6, 7),
-(54, 7, 1, 2, 8, 1, 2, 3, 4, 5, 6, 7),
-(55, 7, 1, 2, 9, 1, 2, 3, 4, 5, 6, 7),
-(56, 7, 1, 2, 10, 1, 2, 3, 4, 5, 6, 7),
-(57, 7, 1, 2, 11, 1, 2, 3, 4, 5, 6, 7),
-(58, 7, 1, 2, 12, 1, 2, 3, 4, 5, 6, 7),
-(59, 7, 1, 2, 13, 1, 2, 3, 4, 5, 6, 7),
-(60, 7, 1, 2, 14, 1, 2, 3, 4, 5, 6, 7);
+(61, 7, 6, 1, 1, 1, 2, 3, 4, 5, 6, 7),
+(62, 7, 6, 1, 2, 1, 2, 3, 4, 5, 6, 7),
+(63, 7, 6, 1, 3, 1, 2, 3, 4, 5, 6, 7),
+(64, 7, 6, 1, 4, 1, 2, 3, 4, 5, 6, 7),
+(65, 7, 6, 1, 5, 1, 2, 3, 4, 5, 6, 7),
+(66, 7, 6, 1, 6, 1, 2, 3, 4, 5, 6, 7),
+(67, 7, 6, 1, 7, 1, 2, 3, 4, 5, 6, 7),
+(68, 7, 6, 1, 8, 1, 2, 3, 4, 5, 6, 7),
+(69, 7, 6, 1, 9, 1, 2, 3, 4, 5, 6, 7),
+(70, 7, 6, 1, 10, 1, 2, 3, 4, 5, 6, 7),
+(71, 7, 6, 1, 11, 1, 2, 3, 4, 5, 6, 7),
+(72, 7, 6, 1, 12, 1, 2, 3, 4, 5, 6, 7),
+(73, 7, 6, 1, 13, 1, 2, 3, 4, 5, 6, 7),
+(74, 7, 6, 1, 14, 1, 2, 3, 4, 5, 6, 7),
+(75, 7, 6, 2, 1, 1, 2, 3, 4, 5, 6, 7),
+(76, 7, 6, 2, 2, 1, 2, 3, 4, 5, 6, 7),
+(77, 7, 6, 2, 3, 1, 2, 3, 4, 5, 6, 7),
+(78, 7, 6, 2, 4, 1, 2, 3, 4, 5, 6, 7),
+(79, 7, 6, 2, 5, 1, 2, 3, 4, 5, 6, 7),
+(80, 7, 6, 2, 6, 1, 2, 3, 4, 5, 6, 7),
+(81, 7, 6, 2, 7, 1, 2, 3, 4, 5, 6, 7),
+(82, 7, 6, 2, 8, 1, 2, 3, 4, 5, 6, 7),
+(83, 7, 6, 2, 9, 1, 2, 3, 4, 5, 6, 7),
+(84, 7, 6, 2, 10, 1, 2, 3, 4, 5, 6, 7),
+(85, 7, 6, 2, 11, 1, 2, 3, 4, 5, 6, 7),
+(86, 7, 6, 2, 12, 1, 2, 3, 4, 5, 6, 7),
+(87, 7, 6, 2, 13, 1, 2, 3, 4, 5, 6, 7),
+(88, 7, 6, 2, 14, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `total_escolaridad`
+-- Table structure for table `total_escolaridad`
 --
 
 CREATE TABLE IF NOT EXISTS `total_escolaridad` (
@@ -454,54 +457,54 @@ CREATE TABLE IF NOT EXISTS `total_escolaridad` (
   KEY `id_periodo_escolar` (`id_periodo_escolar`),
   KEY `id_mes` (`id_mes`),
   KEY `id_tipo_escolaridad` (`id_tipo_escolaridad`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=143 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=179 ;
 
 --
--- Volcado de datos para la tabla `total_escolaridad`
+-- Dumping data for table `total_escolaridad`
 --
 
 INSERT INTO `total_escolaridad` (`id_escolaridad`, `id_sexo`, `id_periodo_escolar`, `id_mes`, `id_tipo_escolaridad`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
-(107, 1, 7, 3, 1, 1, 2, 3, 4, 5, 6, 7),
-(108, 1, 7, 3, 2, 1, 2, 3, 4, 5, 6, 7),
-(109, 1, 7, 3, 3, 1, 2, 3, 4, 5, 6, 7),
-(110, 1, 7, 3, 4, 1, 2, 3, 4, 5, 6, 7),
-(111, 1, 7, 3, 5, 1, 2, 3, 4, 5, 6, 7),
-(112, 1, 7, 3, 6, 1, 2, 3, 4, 5, 6, 7),
-(113, 1, 7, 3, 7, 1, 2, 3, 4, 5, 6, 7),
-(114, 1, 7, 3, 8, 1, 2, 3, 4, 5, 6, 7),
-(115, 1, 7, 3, 9, 1, 2, 3, 4, 5, 6, 7),
-(116, 1, 7, 3, 10, 1, 2, 3, 4, 5, 6, 7),
-(117, 1, 7, 3, 11, 1, 2, 3, 4, 5, 6, 7),
-(118, 1, 7, 3, 12, 1, 2, 3, 4, 5, 6, 7),
-(119, 1, 7, 3, 13, 1, 2, 3, 4, 5, 6, 7),
-(120, 1, 7, 3, 14, 1, 2, 3, 4, 5, 6, 7),
-(121, 1, 7, 3, 15, 1, 2, 3, 4, 5, 6, 7),
-(122, 1, 7, 3, 16, 1, 2, 3, 4, 5, 6, 7),
-(123, 1, 7, 3, 17, 1, 2, 3, 4, 5, 6, 7),
-(124, 1, 7, 3, 18, 1, 2, 3, 4, 5, 6, 7),
-(125, 2, 7, 3, 1, 1, 2, 3, 4, 5, 6, 7),
-(126, 2, 7, 3, 2, 1, 2, 3, 4, 5, 6, 7),
-(127, 2, 7, 3, 3, 1, 2, 3, 4, 5, 6, 7),
-(128, 2, 7, 3, 4, 1, 2, 3, 4, 5, 6, 7),
-(129, 2, 7, 3, 5, 1, 2, 3, 4, 5, 6, 7),
-(130, 2, 7, 3, 6, 1, 2, 3, 4, 5, 6, 7),
-(131, 2, 7, 3, 7, 1, 2, 3, 4, 5, 6, 7),
-(132, 2, 7, 3, 8, 1, 2, 3, 4, 5, 6, 7),
-(133, 2, 7, 3, 9, 1, 2, 3, 4, 5, 6, 7),
-(134, 2, 7, 3, 10, 1, 2, 3, 4, 5, 6, 7),
-(135, 2, 7, 3, 11, 1, 2, 3, 4, 5, 6, 7),
-(136, 2, 7, 3, 12, 1, 2, 3, 4, 5, 6, 7),
-(137, 2, 7, 3, 13, 1, 2, 3, 4, 5, 6, 7),
-(138, 2, 7, 3, 14, 1, 2, 3, 4, 5, 6, 7),
-(139, 2, 7, 3, 15, 1, 2, 3, 4, 5, 6, 7),
-(140, 2, 7, 3, 16, 1, 2, 3, 4, 5, 6, 7),
-(141, 2, 7, 3, 17, 1, 2, 3, 4, 5, 6, 7),
-(142, 2, 7, 3, 18, 1, 2, 3, 4, 5, 6, 7);
+(143, 1, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(144, 1, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(145, 1, 7, 6, 3, 1, 2, 3, 4, 5, 6, 7),
+(146, 1, 7, 6, 4, 1, 2, 3, 4, 5, 6, 7),
+(147, 1, 7, 6, 5, 1, 2, 3, 4, 5, 6, 7),
+(148, 1, 7, 6, 6, 1, 2, 3, 4, 5, 6, 7),
+(149, 1, 7, 6, 7, 1, 2, 3, 4, 5, 6, 7),
+(150, 1, 7, 6, 8, 1, 2, 33, 4, 5, 6, 7),
+(151, 1, 7, 6, 9, 1, 2, 3, 4, 5, 6, 7),
+(152, 1, 7, 6, 10, 1, 2, 3, 4, 5, 6, 7),
+(153, 1, 7, 6, 11, 1, 2, 3, 4, 5, 6, 7),
+(154, 1, 7, 6, 12, 1, 2, 3, 4, 5, 6, 7),
+(155, 1, 7, 6, 13, 1, 2, 3, 4, 5, 6, 7),
+(156, 1, 7, 6, 14, 1, 2, 3, 4, 5, 6, 7),
+(157, 1, 7, 6, 15, 1, 2, 3, 4, 5, 6, 7),
+(158, 1, 7, 6, 16, 1, 2, 3, 4, 5, 6, 7),
+(159, 1, 7, 6, 17, 1, 2, 3, 4, 5, 6, 7),
+(160, 1, 7, 6, 18, 1, 2, 3, 4, 5, 6, 7),
+(161, 2, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(162, 2, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(163, 2, 7, 6, 3, 1, 2, 3, 4, 5, 6, 7),
+(164, 2, 7, 6, 4, 1, 2, 3, 4, 5, 6, 7),
+(165, 2, 7, 6, 5, 1, 2, 3, 4, 5, 6, 7),
+(166, 2, 7, 6, 6, 1, 2, 3, 4, 5, 6, 7),
+(167, 2, 7, 6, 7, 1, 2, 3, 4, 5, 6, 7),
+(168, 2, 7, 6, 8, 1, 2, 3, 4, 5, 6, 7),
+(169, 2, 7, 6, 9, 1, 2, 3, 4, 5, 6, 7),
+(170, 2, 7, 6, 10, 1, 2, 3, 4, 5, 6, 7),
+(171, 2, 7, 6, 11, 1, 2, 3, 4, 5, 6, 7),
+(172, 2, 7, 6, 12, 1, 2, 3, 4, 5, 6, 7),
+(173, 2, 7, 6, 13, 1, 2, 3, 4, 5, 6, 7),
+(174, 2, 7, 6, 14, 1, 2, 3, 4, 5, 6, 7),
+(175, 2, 7, 6, 15, 1, 2, 3, 4, 5, 6, 7),
+(176, 2, 7, 6, 16, 1, 2, 3, 4, 5, 6, 7),
+(177, 2, 7, 6, 17, 1, 2, 3, 4, 5, 6, 7),
+(178, 2, 7, 6, 18, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `total_poblacion_atendida`
+-- Table structure for table `total_poblacion_atendida`
 --
 
 CREATE TABLE IF NOT EXISTS `total_poblacion_atendida` (
@@ -522,26 +525,22 @@ CREATE TABLE IF NOT EXISTS `total_poblacion_atendida` (
   KEY `id_periodo_escolar` (`id_periodo_escolar`),
   KEY `id_mes` (`id_mes`),
   KEY `id_tipo_poblacion_atendida` (`id_tipo_poblacion_atendida`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
--- Volcado de datos para la tabla `total_poblacion_atendida`
+-- Dumping data for table `total_poblacion_atendida`
 --
 
 INSERT INTO `total_poblacion_atendida` (`id_poblacion_atendida`, `id_sexo`, `id_periodo_escolar`, `id_mes`, `id_tipo_poblacion_atendida`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
-(1, 1, 7, 3, 1, 1, 2, 3, 4, 5, 6, 7),
-(2, 1, 7, 3, 2, 1, 2, 3, 4, 5, 6, 7),
-(3, 1, 7, 3, 1, 1, 2, 3, 4, 5, 6, 7),
-(4, 1, 7, 3, 1, 1, 2, 3, 4, 5, 6, 7),
-(5, 1, 7, 3, 1, 1, 2, 3, 4, 5, 6, 7),
-(6, 1, 7, 3, 2, 1, 2, 3, 4, 5, 6, 7),
-(7, 2, 7, 3, 1, 1, 2, 3, 4, 5, 6, 7),
-(8, 2, 7, 3, 2, 1, 2, 3, 4, 5, 6, 7);
+(9, 1, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(10, 1, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(11, 2, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(12, 2, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `total_referidos`
+-- Table structure for table `total_referidos`
 --
 
 CREATE TABLE IF NOT EXISTS `total_referidos` (
@@ -562,42 +561,42 @@ CREATE TABLE IF NOT EXISTS `total_referidos` (
   KEY `id_periodo_escolar` (`id_periodo_escolar`),
   KEY `id_mes` (`id_mes`),
   KEY `id_tipo_referido` (`id_tipo_referido`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=73 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=97 ;
 
 --
--- Volcado de datos para la tabla `total_referidos`
+-- Dumping data for table `total_referidos`
 --
 
 INSERT INTO `total_referidos` (`id_referido`, `id_sexo`, `id_periodo_escolar`, `id_mes`, `id_tipo_referido`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
-(49, 1, 7, 1, 1, 1, 2, 3, 4, 5, 6, 7),
-(50, 1, 7, 1, 2, 1, 2, 3, 4, 5, 6, 7),
-(51, 1, 7, 1, 3, 1, 2, 3, 4, 5, 6, 7),
-(52, 1, 7, 1, 4, 1, 2, 3, 4, 5, 6, 7),
-(53, 1, 7, 1, 5, 1, 2, 3, 4, 5, 6, 7),
-(54, 1, 7, 1, 6, 1, 2, 3, 4, 5, 6, 7),
-(55, 1, 7, 1, 7, 1, 2, 3, 4, 5, 6, 7),
-(56, 1, 7, 1, 8, 1, 2, 3, 4, 5, 6, 7),
-(57, 1, 7, 1, 9, 1, 2, 3, 4, 5, 6, 7),
-(58, 1, 7, 1, 10, 1, 2, 3, 4, 5, 6, 7),
-(59, 1, 7, 1, 11, 1, 2, 3, 4, 5, 6, 7),
-(60, 1, 7, 1, 12, 1, 2, 3, 4, 5, 6, 7),
-(61, 2, 7, 1, 1, 1, 2, 3, 4, 5, 6, 7),
-(62, 2, 7, 1, 2, 1, 2, 3, 4, 5, 6, 7),
-(63, 2, 7, 1, 3, 1, 2, 3, 4, 5, 6, 7),
-(64, 2, 7, 1, 4, 1, 2, 3, 4, 5, 6, 7),
-(65, 2, 7, 1, 5, 1, 2, 3, 4, 5, 6, 7),
-(66, 2, 7, 1, 6, 1, 2, 3, 4, 5, 6, 7),
-(67, 2, 7, 1, 7, 1, 2, 3, 4, 5, 6, 7),
-(68, 2, 7, 1, 8, 1, 2, 3, 4, 5, 6, 7),
-(69, 2, 7, 1, 9, 1, 2, 3, 4, 5, 6, 7),
-(70, 2, 7, 1, 10, 1, 2, 3, 4, 5, 6, 7),
-(71, 2, 7, 1, 11, 1, 2, 3, 4, 5, 6, 7),
-(72, 2, 7, 1, 12, 1, 2, 3, 4, 5, 6, 7);
+(73, 1, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(74, 1, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(75, 1, 7, 6, 3, 1, 2, 3, 4, 5, 6, 7),
+(76, 1, 7, 6, 4, 1, 2, 3, 4, 5, 6, 7),
+(77, 1, 7, 6, 5, 1, 2, 3, 4, 5, 6, 7),
+(78, 1, 7, 6, 6, 1, 2, 3, 4, 5, 6, 7),
+(79, 1, 7, 6, 7, 1, 2, 3, 4, 5, 6, 7),
+(80, 1, 7, 6, 8, 1, 2, 3, 4, 5, 6, 7),
+(81, 1, 7, 6, 9, 1, 2, 3, 4, 5, 6, 7),
+(82, 1, 7, 6, 10, 1, 2, 3, 4, 5, 6, 7),
+(83, 1, 7, 6, 11, 1, 2, 3, 4, 5, 6, 7),
+(84, 1, 7, 6, 12, 1, 2, 3, 4, 5, 6, 7),
+(85, 2, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(86, 2, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(87, 2, 7, 6, 3, 1, 2, 3, 4, 5, 6, 7),
+(88, 2, 7, 6, 4, 1, 2, 3, 4, 5, 6, 7),
+(89, 2, 7, 6, 5, 1, 2, 3, 4, 5, 6, 7),
+(90, 2, 7, 6, 6, 1, 2, 3, 4, 5, 6, 7),
+(91, 2, 7, 6, 7, 1, 2, 3, 4, 5, 6, 7),
+(92, 2, 7, 6, 8, 1, 2, 3, 4, 5, 6, 7),
+(93, 2, 7, 6, 9, 1, 2, 3, 4, 5, 6, 7),
+(94, 2, 7, 6, 10, 1, 2, 3, 4, 5, 6, 7),
+(95, 2, 7, 6, 11, 1, 2, 3, 4, 5, 6, 7),
+(96, 2, 7, 6, 12, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `total_tiempo_permanencia`
+-- Table structure for table `total_tiempo_permanencia`
 --
 
 CREATE TABLE IF NOT EXISTS `total_tiempo_permanencia` (
@@ -620,32 +619,32 @@ CREATE TABLE IF NOT EXISTS `total_tiempo_permanencia` (
   KEY `id_periodo_escolar` (`id_periodo_escolar`),
   KEY `id_mes` (`id_mes`),
   KEY `id_tipo_permanencia_2` (`id_tipo_permanencia`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=57 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=71 ;
 
 --
--- Volcado de datos para la tabla `total_tiempo_permanencia`
+-- Dumping data for table `total_tiempo_permanencia`
 --
 
 INSERT INTO `total_tiempo_permanencia` (`id_tiempo_permanencia`, `id_sexo`, `id_periodo_escolar`, `id_mes`, `id_tipo_permanencia`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
-(43, 1, 7, 1, 1, 1, 2, 3, 4, 5, 6, 7),
-(44, 1, 7, 1, 2, 1, 2, 3, 4, 5, 6, 7),
-(45, 1, 7, 1, 3, 1, 2, 3, 4, 5, 6, 7),
-(46, 1, 7, 1, 4, 1, 2, 3, 4, 5, 6, 7),
-(47, 1, 7, 1, 5, 1, 2, 3, 4, 5, 6, 7),
-(48, 1, 7, 1, 6, 1, 2, 3, 4, 5, 6, 7),
-(49, 1, 7, 1, 7, 1, 2, 3, 4, 5, 6, 7),
-(50, 2, 7, 1, 1, 1, 2, 3, 4, 5, 6, 7),
-(51, 2, 7, 1, 2, 1, 2, 3, 4, 5, 6, 7),
-(52, 2, 7, 1, 3, 1, 2, 3, 4, 5, 6, 7),
-(53, 2, 7, 1, 4, 1, 2, 3, 4, 5, 6, 7),
-(54, 2, 7, 1, 5, 1, 2, 3, 4, 5, 6, 7),
-(55, 2, 7, 1, 6, 1, 2, 3, 4, 5, 6, 7),
-(56, 2, 7, 1, 7, 1, 2, 3, 4, 5, 6, 7);
+(57, 1, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(58, 1, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(59, 1, 7, 6, 3, 1, 2, 3, 4, 5, 6, 7),
+(60, 1, 7, 6, 4, 1, 2, 3, 4, 5, 6, 7),
+(61, 1, 7, 6, 5, 1, 2, 3, 4, 5, 6, 7),
+(62, 1, 7, 6, 6, 1, 2, 3, 4, 5, 6, 7),
+(63, 1, 7, 6, 7, 1, 2, 3, 4, 5, 6, 7),
+(64, 2, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(65, 2, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(66, 2, 7, 6, 3, 1, 2, 3, 4, 5, 6, 7),
+(67, 2, 7, 6, 4, 1, 2, 3, 4, 5, 6, 7),
+(68, 2, 7, 6, 5, 1, 2, 3, 4, 5, 6, 7),
+(69, 2, 7, 6, 6, 1, 2, 3, 4, 5, 6, 7),
+(70, 2, 7, 6, 7, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `total_visita_edad`
+-- Table structure for table `total_visita_edad`
 --
 
 CREATE TABLE IF NOT EXISTS `total_visita_edad` (
@@ -666,54 +665,54 @@ CREATE TABLE IF NOT EXISTS `total_visita_edad` (
   KEY `id_mes` (`id_mes`),
   KEY `id_sexo` (`id_sexo`),
   KEY `id_tipo_edad` (`id_tipo_edad`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=73 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=109 ;
 
 --
--- Volcado de datos para la tabla `total_visita_edad`
+-- Dumping data for table `total_visita_edad`
 --
 
 INSERT INTO `total_visita_edad` (`id_visita_edad`, `id_periodo_escolar`, `id_mes`, `id_sexo`, `id_tipo_edad`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
-(37, 7, 3, 1, 1, 1, 2, 3, 4, 5, 6, 2),
-(38, 7, 3, 1, 2, 1, 2, 3, 4, 5, 6, 2),
-(39, 7, 3, 1, 3, 1, 2, 3, 4, 5, 6, 2),
-(40, 7, 3, 1, 4, 1, 2, 3, 4, 5, 6, 2),
-(41, 7, 3, 1, 5, 1, 2, 3, 4, 5, 6, 2),
-(42, 7, 3, 1, 6, 1, 2, 3, 4, 5, 6, 2),
-(43, 7, 3, 1, 7, 1, 2, 3, 4, 5, 6, 7),
-(44, 7, 3, 1, 8, 1, 2, 3, 4, 5, 6, 7),
-(45, 7, 3, 1, 9, 1, 2, 3, 4, 5, 6, 7),
-(46, 7, 3, 1, 10, 1, 2, 3, 4, 5, 6, 7),
-(47, 7, 3, 1, 11, 1, 2, 3, 4, 5, 6, 7),
-(48, 7, 3, 1, 12, 1, 2, 3, 4, 5, 6, 7),
-(49, 7, 3, 1, 13, 1, 2, 3, 4, 5, 6, 7),
-(50, 7, 3, 1, 14, 1, 2, 3, 4, 5, 6, 7),
-(51, 7, 3, 1, 15, 1, 2, 3, 4, 5, 6, 7),
-(52, 7, 3, 1, 16, 1, 2, 3, 4, 5, 6, 7),
-(53, 7, 3, 1, 17, 1, 2, 3, 4, 5, 6, 7),
-(54, 7, 3, 1, 18, 1, 2, 3, 4, 5, 6, 7),
-(55, 7, 3, 1, 1, 1, 2, 3, 4, 5, 6, 2),
-(56, 7, 3, 2, 2, 1, 2, 3, 4, 5, 6, 2),
-(57, 7, 3, 2, 3, 1, 2, 3, 4, 5, 6, 2),
-(58, 7, 3, 2, 4, 1, 2, 3, 4, 5, 6, 2),
-(59, 7, 3, 2, 5, 1, 2, 3, 4, 5, 6, 2),
-(60, 7, 3, 2, 6, 1, 2, 3, 4, 5, 6, 2),
-(61, 7, 3, 2, 7, 1, 2, 3, 4, 5, 6, 7),
-(62, 7, 3, 2, 8, 1, 2, 3, 4, 5, 6, 7),
-(63, 7, 3, 2, 9, 1, 2, 3, 4, 5, 6, 7),
-(64, 7, 3, 2, 10, 1, 2, 3, 4, 5, 6, 7),
-(65, 7, 3, 2, 11, 1, 2, 3, 4, 5, 6, 7),
-(66, 7, 3, 2, 12, 12, 2, 3, 4, 5, 6, 7),
-(67, 7, 3, 2, 13, 1, 2, 3, 4, 5, 6, 7),
-(68, 7, 3, 2, 14, 1, 2, 3, 4, 5, 6, 7),
-(69, 7, 3, 2, 15, 1, 2, 3, 4, 5, 6, 7),
-(70, 7, 3, 2, 16, 1, 2, 3, 4, 5, 6, 7),
-(71, 7, 3, 2, 17, 1, 2, 3, 4, 5, 6, 7),
-(72, 7, 3, 2, 18, 1, 2, 3, 4, 5, 6, 7);
+(73, 7, 6, 1, 1, 1, 2, 3, 4, 5, 6, 2),
+(74, 7, 6, 1, 2, 1, 2, 3, 4, 5, 6, 2),
+(75, 7, 6, 1, 3, 1, 2, 3, 4, 5, 6, 2),
+(76, 7, 6, 1, 4, 1, 2, 3, 4, 5, 6, 2),
+(77, 7, 6, 1, 5, 1, 2, 3, 4, 5, 6, 2),
+(78, 7, 6, 1, 6, 1, 2, 3, 4, 5, 6, 2),
+(79, 7, 6, 1, 7, 1, 2, 3, 4, 5, 6, 7),
+(80, 7, 6, 1, 8, 1, 2, 3, 4, 5, 6, 7),
+(81, 7, 6, 1, 9, 1, 2, 3, 4, 5, 6, 7),
+(82, 7, 6, 1, 10, 1, 2, 3, 4, 5, 6, 7),
+(83, 7, 6, 1, 11, 1, 2, 3, 4, 5, 6, 7),
+(84, 7, 6, 1, 12, 1, 2, 3, 4, 5, 6, 7),
+(85, 7, 6, 1, 13, 1, 2, 3, 4, 5, 6, 7),
+(86, 7, 6, 1, 14, 1, 2, 3, 4, 5, 6, 7),
+(87, 7, 6, 1, 15, 1, 2, 3, 4, 5, 6, 7),
+(88, 7, 6, 1, 16, 1, 2, 3, 4, 5, 6, 7),
+(89, 7, 6, 1, 17, 1, 2, 3, 4, 5, 6, 7),
+(90, 7, 6, 1, 18, 1, 2, 3, 4, 5, 6, 7),
+(91, 7, 6, 2, 1, 1, 2, 3, 4, 5, 6, 2),
+(92, 7, 6, 2, 2, 1, 2, 3, 4, 5, 6, 2),
+(93, 7, 6, 2, 3, 1, 2, 3, 4, 5, 6, 2),
+(94, 7, 6, 2, 4, 1, 2, 3, 4, 5, 6, 2),
+(95, 7, 6, 2, 5, 1, 2, 3, 4, 5, 6, 2),
+(96, 7, 6, 2, 6, 1, 2, 3, 4, 5, 6, 2),
+(97, 7, 6, 2, 7, 1, 2, 3, 4, 5, 6, 7),
+(98, 7, 6, 2, 8, 1, 2, 3, 4, 5, 6, 7),
+(99, 7, 6, 2, 9, 1, 2, 3, 4, 5, 6, 7),
+(100, 7, 6, 2, 10, 1, 2, 3, 4, 5, 6, 7),
+(101, 7, 6, 2, 11, 1, 2, 3, 4, 5, 6, 7),
+(102, 7, 6, 2, 12, 1, 2, 3, 4, 5, 6, 7),
+(103, 7, 6, 2, 13, 1, 2, 3, 4, 5, 6, 7),
+(104, 7, 6, 2, 14, 1, 2, 3, 4, 5, 6, 7),
+(105, 7, 6, 2, 15, 1, 2, 3, 4, 5, 6, 7),
+(106, 7, 6, 2, 16, 1, 2, 3, 4, 5, 6, 7),
+(107, 7, 6, 2, 17, 1, 2, 3, 4, 5, 6, 7),
+(108, 7, 6, 2, 18, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuario`
+-- Table structure for table `usuario`
 --
 
 CREATE TABLE IF NOT EXISTS `usuario` (
@@ -727,21 +726,21 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
--- Volcado de datos para la tabla `usuario`
+-- Dumping data for table `usuario`
 --
 
 INSERT INTO `usuario` (`id_usuario`, `email`, `clave`, `pregunta_secreta`, `nombre_usuario`, `respuesta_secreta`) VALUES
 (1, 'wilbert@gmail.com', '123', 'home', 'Wilbert Angarita', ''),
 (2, 'marita@marraida', '123', 'color_favorito', 'Maria Angarita', 'azul'),
 (3, 'virginia', '123', 'color_favorito', 'Virginia Lusinchi', 'rojo'),
-(4, 'root', 'root', '', '', '');
+(4, 'root', 'root', '', 'Root', '');
 
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `total_asistencia`
+-- Constraints for table `total_asistencia`
 --
 ALTER TABLE `total_asistencia`
   ADD CONSTRAINT `total_asistencia_ibfk_1` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON UPDATE CASCADE,
@@ -749,7 +748,7 @@ ALTER TABLE `total_asistencia`
   ADD CONSTRAINT `total_asistencia_ibfk_3` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE;
 
 --
--- Filtros para la tabla `total_atencion`
+-- Constraints for table `total_atencion`
 --
 ALTER TABLE `total_atencion`
   ADD CONSTRAINT `total_atencion_ibfk_1` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON UPDATE CASCADE,
@@ -758,7 +757,7 @@ ALTER TABLE `total_atencion`
   ADD CONSTRAINT `total_atencion_ibfk_4` FOREIGN KEY (`id_tipo_atencion`) REFERENCES `tipo_atencion` (`id_tipo_atencion`) ON UPDATE CASCADE;
 
 --
--- Filtros para la tabla `total_escolaridad`
+-- Constraints for table `total_escolaridad`
 --
 ALTER TABLE `total_escolaridad`
   ADD CONSTRAINT `total_escolaridad_ibfk_1` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
@@ -767,7 +766,7 @@ ALTER TABLE `total_escolaridad`
   ADD CONSTRAINT `total_escolaridad_ibfk_4` FOREIGN KEY (`id_tipo_escolaridad`) REFERENCES `tipo_escolaridad` (`id_tipo_escolaridad`) ON UPDATE CASCADE;
 
 --
--- Filtros para la tabla `total_poblacion_atendida`
+-- Constraints for table `total_poblacion_atendida`
 --
 ALTER TABLE `total_poblacion_atendida`
   ADD CONSTRAINT `total_poblacion_atendida_ibfk_1` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
@@ -776,7 +775,7 @@ ALTER TABLE `total_poblacion_atendida`
   ADD CONSTRAINT `total_poblacion_atendida_ibfk_4` FOREIGN KEY (`id_tipo_poblacion_atendida`) REFERENCES `tipo_poblacion_atendida` (`id_tipo_poblacion_atendida`) ON UPDATE CASCADE;
 
 --
--- Filtros para la tabla `total_referidos`
+-- Constraints for table `total_referidos`
 --
 ALTER TABLE `total_referidos`
   ADD CONSTRAINT `total_referidos_ibfk_1` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
@@ -785,7 +784,7 @@ ALTER TABLE `total_referidos`
   ADD CONSTRAINT `total_referidos_ibfk_4` FOREIGN KEY (`id_tipo_referido`) REFERENCES `tipo_referido` (`id_tipo_referido`) ON UPDATE CASCADE;
 
 --
--- Filtros para la tabla `total_tiempo_permanencia`
+-- Constraints for table `total_tiempo_permanencia`
 --
 ALTER TABLE `total_tiempo_permanencia`
   ADD CONSTRAINT `total_tiempo_permanencia_ibfk_1` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
@@ -794,7 +793,7 @@ ALTER TABLE `total_tiempo_permanencia`
   ADD CONSTRAINT `total_tiempo_permanencia_ibfk_4` FOREIGN KEY (`id_tipo_permanencia`) REFERENCES `tipo_permanencia` (`id_tipo_permanencia`) ON UPDATE CASCADE;
 
 --
--- Filtros para la tabla `total_visita_edad`
+-- Constraints for table `total_visita_edad`
 --
 ALTER TABLE `total_visita_edad`
   ADD CONSTRAINT `total_visita_edad_ibfk_1` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON UPDATE CASCADE,
