@@ -218,20 +218,67 @@ yphicon-calendar" aria-hidden="true"></span>
 
                                             <div class="col-md-8">                                               
                                                 <div class="box box-success">
-                                                    <div class="box-header">
-                                                         <h3 class="box-title">ESCOLARIDAD</h3>
-                                                    </div><!-- /.box-header -->
-                                                        <div class="box-body">                                       
+                                                    <div class="box-body">                                       
                                                             <div class="alert alert-success" role="alert">          
                                                                 <CENTER>
                                                                     <H2>
-                                                                        <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-                                                                        Escolaridad                                  
+                                                                        <span class="glyphicon glyphicon-book" aria-hidden="true">
+                                                                        Escolaridad
+                                                                        </span>                            
                                                                     </H2>
                                                                 </CENTER>
-                                                                </div>
-                                                                
-                                                            </div> <!-- /.alert -->                                      
+                                                            </div>
+                                                            <div class="alert alert-warning" role="alert">
+                                                                <p>
+                                                                    <strong>
+                                                                        <h3>
+                                                                        <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                                                                        Leyenda del formulario
+                                                                        </h3>
+                                                                    </strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > P1
+                                                                    </strong>
+                                                                    = Piso 1,
+                                                                    <strong>
+                                                                    P2
+                                                                    </strong>
+                                                                    = Piso 2,
+                                                                    <strong>
+                                                                    P3
+                                                                    </strong>
+                                                                    = Piso 3,
+                                                                    <strong>
+                                                                    P4
+                                                                    </strong>
+                                                                    = Piso 4,
+                                                                    <strong>
+                                                                    P5
+                                                                    </strong>
+                                                                    = Piso 5,
+                                                                    <strong>
+                                                                    GI
+                                                                    </strong>
+                                                                    = Garzas I,
+                                                                    <strong>
+                                                                    GII
+                                                                    </strong>
+                                                                    = Garzas II.
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > S/E
+                                                                    </strong>
+                                                                    = Sin Escolaridad,
+                                                                    <strong>
+                                                                    EE
+                                                                    </strong>
+                                                                    = Educación Especial.                      
+                                                                </p>
+                                                            </div>        
+                                                        </div> <!-- /.alert -->                                      
                                                         </div><!-- /.box-body -->
                                                 </div> <!-- ./box box-success-->
                                                 <!-- inicio panel 2 -->
@@ -523,10 +570,10 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                             <CENTER>
                                                                                 <H3>
                                                                                     <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
-                                                                                    VARONES                             
-                                                                                </H3>
+                                                                                    VARONES                          
+                                                                                </H3>                      
                                                                             </CENTER>                                
-                                                                        </div> <!-- /.alert -->
+                                                                        </div> <!-- /.alert -->                                                                  
                                                                         <div class="row">
                                                                    <div class="col-xs-2">                           
                                                                         <center>
@@ -1899,26 +1946,76 @@ yphicon-calendar" aria-hidden="true"></span>
                                             <div class="col-md-8">                                               
                                                 <div class="box box-success">
                                                     <div class="box-header">
-                                                         <h3 class="box-title">ATENCIÓN</h3>
+                                                      
                                                     </div><!-- /.box-header -->
                                                         <div class="box-body">                                       
                                                             <div class="alert alert-success" role="alert">          
                                                                 <CENTER>
                                                                     <H2>
                                                                         <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-                                                                        Atención                                  
+                                                                        <br>
+                                                                        POBLACIÓN ATENDIDA                                  
                                                                     </H2>
                                                                 </CENTER>
                                                                 </div>
-                                                                
+                                                                <div class="alert alert-warning" role="alert">
+                                                                <p>
+                                                                    <strong>
+                                                                        <h3>
+                                                                        <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                                                                        Leyenda del formulario
+                                                                        </h3>
+                                                                    </strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > P1
+                                                                    </strong>
+                                                                    = Piso 1,
+                                                                    <strong>
+                                                                    P2
+                                                                    </strong>
+                                                                    = Piso 2,
+                                                                    <strong>
+                                                                    P3
+                                                                    </strong>
+                                                                    = Piso 3,
+                                                                    <strong>
+                                                                    P4
+                                                                    </strong>
+                                                                    = Piso 4,
+                                                                    <strong>
+                                                                    P5
+                                                                    </strong>
+                                                                    = Piso 5,
+                                                                    <strong>
+                                                                    GI
+                                                                    </strong>
+                                                                    = Garzas I,
+                                                                    <strong>
+                                                                    GII
+                                                                    </strong>
+                                                                    = Garzas II.
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > En Aula
+                                                                    </strong>
+                                                                    = Son las atenciones y asiganacion de activades en el aula.                           
+                                                                </p>
+                                                                <p>                                        
+                                                                    <strong>
+                                                                    > En Habitación
+                                                                    </strong>
+                                                                    = Son las atenciones y asignaciones de actividades realizadas en la habitacion.                      
+                                                                </p>
+                                                                <br>
+                                                                <br>
+                                                            </div>       
+                                                            <br>
+                                                            <br>
                                                             </div> <!-- /.alert -->             
-                                                            <img src="../../img/demo.jpg">
-                                                            <br>
-                                                            <br>
-                                                            <br>
-                                                            <br>
-                                                            <br>
-                                                            <br>                         
+                                                                             
                                                         </div><!-- /.box-body -->
                                                 </div> <!-- ./box box-success-->
                                                 <!-- inicio panel 2 -->
@@ -2152,7 +2249,58 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                     </H2>
                                                                 </CENTER>
                                                                 </div>
-                                                                
+                                                                <div class="alert alert-warning" role="alert">
+                                                                <p>
+                                                                    <strong>
+                                                                        <h3>
+                                                                        <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                                                                        Leyenda del formulario
+                                                                        </h3>
+                                                                    </strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > P1
+                                                                    </strong>
+                                                                    = Piso 1,
+                                                                    <strong>
+                                                                    P2
+                                                                    </strong>
+                                                                    = Piso 2,
+                                                                    <strong>
+                                                                    P3
+                                                                    </strong>
+                                                                    = Piso 3,
+                                                                    <strong>
+                                                                    P4
+                                                                    </strong>
+                                                                    = Piso 4,
+                                                                    <strong>
+                                                                    P5
+                                                                    </strong>
+                                                                    = Piso 5,
+                                                                    <strong>
+                                                                    GI
+                                                                    </strong>
+                                                                    = Garzas I,
+                                                                    <strong>
+                                                                    GII
+                                                                    </strong>
+                                                                    = Garzas II.
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > M
+                                                                    </strong>
+                                                                    = Es Meses.                           
+                                                                </p>
+                                                                <p>                                        
+                                                                    <strong>
+                                                                    > A
+                                                                    </strong>
+                                                                    = Es Años.                      
+                                                                </p>                                     
+                                                            </div>
                                                             </div> <!-- /.alert -->                                      
                                                         </div><!-- /.box-body -->
                                                 </div> <!-- ./box box-success-->
@@ -3000,37 +3148,37 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <div class="row">
                                                                    <div class="col-xs-2">                           
                                                                         <center>
-                                                                            <label>11 Meses</label>
+                                                                            <label>0-11 M</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e11_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>1 Año</label>
+                                                                            <label>1 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e1_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>2 Años</label>
+                                                                            <label>2 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e2_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>3 Años</label>
+                                                                            <label>3 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e3_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>4 Años</label>
+                                                                            <label>4 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e4_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>5 Años</label>
+                                                                            <label>5 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e5_p1_h">
                                                                     </div><!-- .col-xs-3 -->
@@ -3274,37 +3422,37 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <div class="row">
                                                                    <div class="col-xs-2">                           
                                                                         <center>
-                                                                            <label>6 Años</label>
+                                                                            <label>6 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e6_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>7 Años</label>
+                                                                            <label>7 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e7_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>8 Años</label>
+                                                                            <label>8 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e8_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>9 Años</label>
+                                                                            <label>9 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e9_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>10 Años</label>
+                                                                            <label>10 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e10_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>11 Años</label>
+                                                                            <label>11 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e111_p1_h">
                                                                     </div><!-- .col-xs-3 -->
@@ -3548,37 +3696,37 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <div class="row">
                                                                    <div class="col-xs-2">                           
                                                                         <center>
-                                                                            <label>12 Años</label>
+                                                                            <label>12 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e12_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>13 Años</label>
+                                                                            <label>13 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e13_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>2° Año</label>
+                                                                            <label>14 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e14_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>14 Años</label>
+                                                                            <label>15 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e15_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>15 Años</label>
+                                                                            <label>16 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e16_p1_h">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
-                                                                            <label>+16 Años</label>
+                                                                            <label>+17 A</label>
                                                                         </center>
                                                                         <input type="text" class="form-control" placeholder="P1" name="v_e17_p1_h">
                                                                     </div><!-- .col-xs-3 -->
@@ -3821,15 +3969,62 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                     </H2>
                                                                 </CENTER>
                                                                 </div>
-                                                                
+                                                                <div class="alert alert-warning" role="alert">
+                                                                <p>
+                                                                    <strong>
+                                                                        <h3>
+                                                                        <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                                                                        Leyenda del formulario
+                                                                        </h3>
+                                                                    </strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > P1
+                                                                    </strong>
+                                                                    = Piso 1,
+                                                                    <strong>
+                                                                    P2
+                                                                    </strong>
+                                                                    = Piso 2,
+                                                                    <strong>
+                                                                    P3
+                                                                    </strong>
+                                                                    = Piso 3,
+                                                                    <strong>
+                                                                    P4
+                                                                    </strong>
+                                                                    = Piso 4,
+                                                                    <strong>
+                                                                    P5
+                                                                    </strong>
+                                                                    = Piso 5,
+                                                                    <strong>
+                                                                    GI
+                                                                    </strong>
+                                                                    = Garzas I,
+                                                                    <strong>
+                                                                    GII
+                                                                    </strong>
+                                                                    = Garzas II.
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > M
+                                                                    </strong>
+                                                                    = Es Meses.                           
+                                                                </p>
+                                                                <p>                                        
+                                                                    <strong>
+                                                                    > D
+                                                                    </strong>
+                                                                    = Es Días.                      
+                                                                </p>
+                                                                <br>
+                                                                <br>                                                                                                     
+                                                            </div>
                                                             </div> <!-- /.alert -->             
-                                                            <img src="../../img/demo.jpg">
-                                                            <br>
-                                                            <br>
-                                                            <br>
-                                                            <br>
-                                                            <br>
-                                                            <br>                         
+                                                                                  
                                                         </div><!-- /.box-body -->
                                                 </div> <!-- ./box box-success-->
                                                 <!-- inicio panel 2 -->
@@ -4523,7 +4718,59 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                     </H2>
                                                                 </CENTER>
                                                                 </div>
+                                                                <div class="alert alert-warning" role="alert">
+                                                                <p>
+                                                                    <strong>
+                                                                        <h3>
+                                                                        <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                                                                        Leyenda del formulario
+                                                                        </h3>
+                                                                    </strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > P1
+                                                                    </strong>
+                                                                    = Piso 1,
+                                                                    <strong>
+                                                                    P2
+                                                                    </strong>
+                                                                    = Piso 2,
+                                                                    <strong>
+                                                                    P3
+                                                                    </strong>
+                                                                    = Piso 3,
+                                                                    <strong>
+                                                                    P4
+                                                                    </strong>
+                                                                    = Piso 4,
+                                                                    <strong>
+                                                                    P5
+                                                                    </strong>
+                                                                    = Piso 5,
+                                                                    <strong>
+                                                                    GI
+                                                                    </strong>
+                                                                    = Garzas I,
+                                                                    <strong>
+                                                                    GII
+                                                                    </strong>
+                                                                    = Garzas II.
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > AI
+                                                                    </strong>
+                                                                    = Es Asistencia Itegral.                           
+                                                                </p>
+                                                                <p>                                        
+                                                                    <strong>
+                                                                    > Integr
+                                                                    </strong>
+                                                                    = Es Integración.                      
+                                                                </p>
                                                                 
+                                                            </div>
                                                             </div> <!-- /.alert -->                                      
                                                         </div><!-- /.box-body -->
                                                 </div> <!-- ./box box-success-->
@@ -4532,7 +4779,9 @@ yphicon-calendar" aria-hidden="true"></span>
                                                     <div class="box box-success">
                                                         <div class="box-header">
                                                              <h3 class="box-title">Población Referida </h3>
-                                                        </div><!-- /.box-header -->
+                                                        </div>
+
+                                                        <!-- /.box-header -->
                                                             <div class="box-body">
                                                                 <div class="alert alert-info" role="alert">
                                                                     <CENTER>
@@ -4608,7 +4857,7 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                         <center>
                                                                             <label></label>
                                                                         </center>
-                                                                        <input type="text" class="form-controfl" placeholder="P2" name="pr_r5_p2_v">
+                                                                        <input type="text" class="form-control" placeholder="P2" name="pr_r5_p2_v">
                                                                     </div><!-- .col-xs-3 -->
                                                                     <div class="col-xs-2">
                                                                         <center>
@@ -5648,6 +5897,98 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                 </CENTER>
                                                                 </div>
                                                                 
+                                                                <div class="alert alert-warning" role="alert">
+                                                                <p>
+                                                                    <strong>
+                                                                        <h3>
+                                                                        <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                                                                        Leyenda del formulario
+                                                                        </h3>
+                                                                    </strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > P1
+                                                                    </strong>
+                                                                    = Piso 1,
+                                                                    <strong>
+                                                                    P2
+                                                                    </strong>
+                                                                    = Piso 2,
+                                                                    <strong>
+                                                                    P3
+                                                                    </strong>
+                                                                    = Piso 3,
+                                                                    <strong>
+                                                                    P4
+                                                                    </strong>
+                                                                    = Piso 4,
+                                                                    <strong>
+                                                                    P5
+                                                                    </strong>
+                                                                    = Piso 5,
+                                                                    <strong>
+                                                                    GI
+                                                                    </strong>
+                                                                    = Garzas I,
+                                                                    <strong>
+                                                                    GII
+                                                                    </strong>
+                                                                    = Garzas II.
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > Tipos de Atenciones:
+                                                                    </strong>
+                                                                    <strong>
+                                                                    Trauma
+                                                                    </strong>
+                                                                    = Traumatología,
+                                                                    <strong>
+                                                                    Orl
+                                                                    </strong>
+                                                                    = ????? I,
+                                                                    <strong>
+                                                                    Neumo
+                                                                    </strong>
+                                                                    = Neumonología.
+                                                                    <strong>
+                                                                    Cardio
+                                                                    </strong>
+                                                                    = Cardiología. 
+                                                                    <strong>
+                                                                    Nefro
+                                                                    </strong>
+                                                                    = Nefrología. 
+                                                                    <strong>
+                                                                    Neumo
+                                                                    </strong>
+                                                                    = Neumonología. 
+                                                                    <strong>
+                                                                    Neuro
+                                                                    </strong>
+                                                                    = Neurología.
+                                                                    <strong>
+                                                                    Hermato
+                                                                    </strong>
+                                                                    = Hermatología. 
+                                                                    <strong>
+                                                                    Neumo
+                                                                    </strong>
+                                                                    = Dermatología. 
+                                                                    <strong>
+                                                                    Gatro
+                                                                    </strong>
+                                                                    = Gatrología.
+                                                                    <strong>
+                                                                    Infecto
+                                                                    </strong>
+                                                                    = Infectología.   
+
+                                                                </p>
+                                                                
+                                                                
+                                                            </div>
                                                             </div> <!-- /.alert -->                                      
                                                         </div><!-- /.box-body -->
                                                 </div> <!-- ./box box-success-->
@@ -6975,7 +7316,7 @@ yphicon-calendar" aria-hidden="true"></span>
                                             <div class="col-md-8">                                               
                                                 <div class="box box-success">
                                                     <div class="box-header">
-                                                         <h3 class="box-title">Asitencia</h3>
+                                                         
                                                     </div><!-- /.box-header -->
                                                         <div class="box-body">                                       
                                                             <div class="alert alert-success" role="alert">          
@@ -6986,17 +7327,102 @@ yphicon-calendar" aria-hidden="true"></span>
                                                                     </H2>
                                                                 </CENTER>
                                                                 </div>
+                                                            <br>
+                                                                <div class="alert alert-warning" role="alert">
+                                                                <p>
+                                                                    <strong>
+                                                                        <h3>
+                                                                        <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                                                                        Leyenda del formulario
+                                                                        </h3>
+                                                                    </strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > P1
+                                                                    </strong>
+                                                                    = Piso 1,
+                                                                    <strong>
+                                                                    P2
+                                                                    </strong>
+                                                                    = Piso 2,
+                                                                    <strong>
+                                                                    P3
+                                                                    </strong>
+                                                                    = Piso 3,
+                                                                    <strong>
+                                                                    P4
+                                                                    </strong>
+                                                                    = Piso 4,
+                                                                    <strong>
+                                                                    P5
+                                                                    </strong>
+                                                                    = Piso 5,
+                                                                    <strong>
+                                                                    GI
+                                                                    </strong>
+                                                                    = Garzas I,
+                                                                    <strong>
+                                                                    GII
+                                                                    </strong>
+                                                                    = Garzas II.
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                    > Tipos de Atenciones:
+                                                                    </strong>
+                                                                    <strong>
+                                                                    Trauma
+                                                                    </strong>
+                                                                    = Traumatología,
+                                                                    <strong>
+                                                                    Orl
+                                                                    </strong>
+                                                                    = ????? I,
+                                                                    <strong>
+                                                                    Neumo
+                                                                    </strong>
+                                                                    = Neumonología.
+                                                                    <strong>
+                                                                    Cardio
+                                                                    </strong>
+                                                                    = Cardiología. 
+                                                                    <strong>
+                                                                    Nefro
+                                                                    </strong>
+                                                                    = Nefrología. 
+                                                                    <strong>
+                                                                    Neumo
+                                                                    </strong>
+                                                                    = Neumonología. 
+                                                                    <strong>
+                                                                    Neuro
+                                                                    </strong>
+                                                                    = Neurología.
+                                                                    <strong>
+                                                                    Hermato
+                                                                    </strong>
+                                                                    = Hermatología. 
+                                                                    <strong>
+                                                                    Neumo
+                                                                    </strong>
+                                                                    = Dermatología. 
+                                                                    <strong>
+                                                                    Gatro
+                                                                    </strong>
+                                                                    = Gatrología.
+                                                                    <strong>
+                                                                    Infecto
+                                                                    </strong>
+                                                                    = Infectología.   
+
+                                                                </p>
                                                                 <br>
-                                                                <br>
-                                                                <br>
-                                                                <br>
-                                                                <br>
-                                                                <br>
-                                                                <br>
-                                                                <br>
-                                                                <br>
-                                                                <br>
-                                                                <br>
+                                                                
+                                                            </div>
+                                                            <br>
+                                                            <br>
+
                                                             </div> <!-- /.alert -->                                      
                                                         </div><!-- /.box-body -->
                                                 </div> <!-- ./box box-success-->
