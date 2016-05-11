@@ -1,7 +1,7 @@
 <!-- sidebar del menu: el estilo puedeo ser encontrado en sidebar.less -->
                     <ul class="sidebar-menu">
                         <li class="active">
-                            <a href="../../index.php">
+                            <a href="index.php">
                                 <i class="fa fa-dashboard"></i> <span>Menu Principal</span>
                             </a>
                         </li>

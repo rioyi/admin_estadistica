@@ -202,7 +202,10 @@ $_SESSION["nombre_usuario"];
                 <!-- /.sidebar -->
             </aside>
 
-            <!-- Right side column. Contains the navbar and content of the page -->
+            <!-- Contenido de los paneles -->
+            <!-- Realizar consulta de la base de datos -->
+            
+            <!-- Finalizado la consulta de la base de datos -->
             <aside class="right-side">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
@@ -226,36 +229,47 @@ $_SESSION["nombre_usuario"];
                             <div class="small-box bg-aqua">
                                 <div class="inner">
                                     <h3>
-                                        151
+                                       FECHA
                                     </h3>
                                     <p>
-                                        Niños Registrados
-                                    </p>
+                                        PERIODO ESCOLAR
                                 </div>
                                 <div class="icon">
                                     <i class="ion ion-person-add"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">
-                                    Más Información <i class="fa fa-arrow-circle-right"></i>
+                                <a class="small-box-footer">
+                                    Periodo Escolar Actualmente <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
                         </div><!-- ./col -->
+
+
+                        <?php 
+				            require ("pages/control/conexion_bd.php"); 
+				            $ultimo = "SELECT * FROM periodo_escolar ORDER BY id_periodo_escolar DESC LIMIT 1";
+				            $res_ultimo = mysql_query($ultimo,$link);
+				            $renglon = mysql_fetch_array($res_ultimo);
+
+				        ?>
                         <div class="col-lg-3 col-xs-6">
                             <!-- small box -->
                             <div class="small-box bg-red">
                                 <div class="inner">
                                     <h3>
-                                        53<sup style="font-size: 20px"></sup>
+                                        <?php
+                                        	echo $renglon['inicio'];
+                                        	echo " - ";
+                                        	echo $renglon['fin'];
+                                        ?>
                                     </h3>
                                     <p>
-                                        Niñas Registradas
-                                    </p>
+                                        PERIODO ESCOLAR
                                 </div>
                                 <div class="icon">
                                     <i class="ion ion-person-add"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">
-                                    Más información <i class="fa fa-arrow-circle-right"></i>
+                                <a class="small-box-footer">
+                                    Trabajando en este periodos Escolar <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
                         </div><!-- ./col -->
