@@ -182,7 +182,7 @@ $(function() {
                 title: 'Click for Google',
                 start: new Date(y, m, 28),
                 end: new Date(y, m, 29),
-                url: 'http://google.com/',
+               
                 backgroundColor: "#f56954", //red
                 borderColor: "#f56954" //red
             }

@@ -23,21 +23,21 @@ $_SESSION["nombre_usuario"];
         <title>Sistema | Estadistico</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
-        <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- font Awesome -->
-        <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <!-- Ionicons -->
-        <link href="../../css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
         <!-- daterange picker -->
-        <link href="../../css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+        <link href="css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
         <!-- iCheck for checkboxes and radio inputs -->
-        <link href="../../css/iCheck/all.css" rel="stylesheet" type="text/css" />
+        <link href="css/iCheck/all.css" rel="stylesheet" type="text/css" />
         <!-- Bootstrap Color Picker -->
-        <link href="../../css/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet"/>
+        <link href="css/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet"/>
         <!-- Bootstrap time Picker -->
-        <link href="../../css/timepicker/bootstrap-timepicker.min.css" rel="stylesheet"/>
+        <link href="css/timepicker/bootstrap-timepicker.min.css" rel="stylesheet"/>
         <!-- Theme style -->
-        <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
+        <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -105,7 +105,7 @@ $_SESSION["nombre_usuario"];
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
+                            <img src="img/avatar3.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
                             <p>Hola, Usuario</p>                            
@@ -320,21 +320,21 @@ require ("../control/conexion_bd.php");
 
         <!-- jQuery 2.0.2 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -->
-        <script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
         <!-- Bootstrap -->
-        <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <!-- InputMask -->
-        <script src="../../js/plugins/input-mask/jquery.inputmask.js" type="text/javascript"></script>
-        <script src="../../js/plugins/input-mask/jquery.inputmask.date.extensions.js" type="text/javascript"></script>
-        <script src="../../js/plugins/input-mask/jquery.inputmask.extensions.js" type="text/javascript"></script>
+        <script src="js/plugins/input-mask/jquery.inputmask.js" type="text/javascript"></script>
+        <script src="js/plugins/input-mask/jquery.inputmask.date.extensions.js" type="text/javascript"></script>
+        <script src="js/plugins/input-mask/jquery.inputmask.extensions.js" type="text/javascript"></script>
         <!-- date-range-picker -->
-        <script src="../../js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+        <script src="js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
         <!-- bootstrap color picker -->
-        <script src="../../js/plugins/colorpicker/bootstrap-colorpicker.min.js" type="text/javascript"></script>
+        <script src="js/plugins/colorpicker/bootstrap-colorpicker.min.js" type="text/javascript"></script>
         <!-- bootstrap time picker -->
-        <script src="../../js/plugins/timepicker/bootstrap-timepicker.min.js" type="text/javascript"></script>
+        <script src="js/plugins/timepicker/bootstrap-timepicker.min.js" type="text/javascript"></script>
         <!-- AdminLTE App -->
-        <script src="../../js/AdminLTE/app.js" type="text/javascript"></script>
+        <script src="js/AdminLTE/app.js" type="text/javascript"></script>
        
 
     </body>
