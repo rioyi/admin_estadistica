@@ -142,7 +142,7 @@
                                     <!-- inicio div pills nav -->
                                    
                                          <ul class="nav nav-pills nav-stacked">
-                                            <li role="presentation" class="active"><a href="#tab1" data-toggle="tab"> PERIODO Y MES ESCOLAR</a></li>
+                                            <li role="presentation" class="active"><a href="#tab1" data-toggle="tab"> PERIODO Y MES ESCOLARRR</a></li>
                                             <li class="divider" role="presentation"><a href="#tab2" data-toggle="tab">ESCOLARIDAD</a></li>
                                             <li role="presentation" ><a href="#tab3" data-toggle="tab">POBLACIÓN ATENDIDA</a></li>
                                             <li role="presentation"><a href="#tab4" data-toggle="tab"> VISITA POR EDADES</a></li>
