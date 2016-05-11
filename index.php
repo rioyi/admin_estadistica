@@ -226,7 +226,7 @@ $_SESSION["nombre_usuario"];
                             <div class="small-box bg-aqua">
                                 <div class="inner">
                                     <h3>
-                                        150
+                                        151
                                     </h3>
                                     <p>
                                         Niños Registrados
@@ -301,7 +301,7 @@ $_SESSION["nombre_usuario"];
 
                     
                    
-                    <h1>----------------------- POR DEFINIR perra ------------------------------</h1>
+                    <h1>----------------------- POR DEFINIR------------------------------</h1>
                     
 
                 </section><!-- /.content -->
