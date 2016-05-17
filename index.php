@@ -1,4 +1,6 @@
 <?php
+
+
 session_start();
 //manejamos en sesion el nombre del usuario que se ha logeado
 if (!isset($_SESSION["nombre_usuario"])){
@@ -32,12 +34,28 @@ $_SESSION["nombre_usuario"];
         <!-- Theme style -->
         <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
 
+        
+
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
+
+        <!-- lo necesario para char.js -->
+        <script src="Chartjs/dist/Chart.bundle.js"></script>
+        
+        <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+        </style>
+
+
+
     </head>
     <body class="skin-blue">
         <!-- header logo: style can be found in header.less -->
@@ -56,9 +74,7 @@ $_SESSION["nombre_usuario"];
                     <span class="icon-bar"></span>
                 </a>
                 <div class="navbar-right">
-                    <ul class="nav navbar-nav">
-                                                
-                        
+                    <ul class="nav navbar-nav">              
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -70,8 +86,7 @@ $_SESSION["nombre_usuario"];
                                 <li class="user-header bg-light-blue">
                                     <img src="img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
-                                        Nombre Usuario - Maestra Piso 1
-                                        
+                                        Nombre Usuario - Maestra Piso 1                                        
                                     </p>
                                 </li>
                                 
@@ -222,38 +237,43 @@ $_SESSION["nombre_usuario"];
                 <!-- Main content -->
                 <section class="content">
 
-                    <!-- Small boxes (Stat box) -->
+                    <!-- Small boxes (Fecha) -->
                     <div class="row">
                         <div class="col-lg-3 col-xs-6">
                             <!-- small box -->
-                            <div class="small-box bg-aqua">
+                            <div class="small-box bg-green">
                                 <div class="inner">
                                     <h3>
-                                       FECHA
+                                       <?php
+                                       	$fecha =  date("d-m-Y");
+                                       	echo "$fecha"; 
+                                       ?>
                                     </h3>
-                                    <p>
-                                        PERIODO ESCOLAR
+                                    <p>                                   	
+                                        FECHA DE HOY                                        
+                                    </p>    
                                 </div>
                                 <div class="icon">
                                     <i class="ion ion-person-add"></i>
                                 </div>
                                 <a class="small-box-footer">
-                                    Periodo Escolar Actualmente <i class="fa fa-arrow-circle-right"></i>
+                                    Fecha Actual <i class="fa fa-calendar"></i>
                                 </a>
                             </div>
                         </div><!-- ./col -->
 
-
+                        <!-- Consulta de la db del ultimo perio registrado "Periodo escolar Actual"-->
                         <?php 
 				            require ("pages/control/conexion_bd.php"); 
 				            $ultimo = "SELECT * FROM periodo_escolar ORDER BY id_periodo_escolar DESC LIMIT 1";
 				            $res_ultimo = mysql_query($ultimo,$link);
 				            $renglon = mysql_fetch_array($res_ultimo);
+                            $periodo_escolar = $renglon['id_periodo_escolar'];
 
 				        ?>
-                        <div class="col-lg-3 col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-red">
+                        <div class="col-lg-3 col-xs-6">										
+                            <!-- small box (Mostrar año escolar actual)-->
+                            <div class="small-box bg-yellow">
                                 <div class="inner">
                                     <h3>
                                         <?php
@@ -264,58 +284,403 @@ $_SESSION["nombre_usuario"];
                                     </h3>
                                     <p>
                                         PERIODO ESCOLAR
+                                    </p>
                                 </div>
                                 <div class="icon">
                                     <i class="ion ion-person-add"></i>
                                 </div>
-                                <a class="small-box-footer">
-                                    Trabajando en este periodos Escolar <i class="fa fa-arrow-circle-right"></i>
+                                <a href="pages/forms/form_periodo.php" class="small-box-footer">
+                                    Periodo escolar actual <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
                         </div><!-- ./col -->
                         <div class="col-lg-3 col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-yellow">
+                        <!--Consulta y sumatorio de niños por edad para calcular el total del año escolar -->
+                            <?php 
+                                
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='1'");
+
+                                $resultado1 = mysql_result($query,0);
+                                                     
+                                
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='2'");
+                                $resultado2 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='3'");
+                                $resultado3 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='4'");
+                                $resultado4 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='5'");
+                                $resultado5 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='6'");
+                                $resultado6 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='7'");
+                                $resultado7 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='8'");
+                                $resultado8 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='9'");
+                                $resultado9 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='10'");
+                                $resultado10 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='11'");
+                                $resultado11 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='12'");
+                                $resultado12 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='13'");
+                                $resultado13 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='14'");
+                                $resultado14 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='15'");
+                                $resultado15 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='16'");
+                                $resultado16 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='17'");
+                                $resultado17 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='18'");
+                                $resultado18 = mysql_result($query,0);
+
+                                
+
+                                $sum = $resultado1 + $resultado2 + $resultado3 + $resultado4 + $resultado5 + $resultado6 + $resultado7 + $resultado8 + $resultado9 + $resultado10 + $resultado11 + $resultado12 + $resultado13 + $resultado14 + $resultado15 + $resultado16 + $resultado17 + $resultado18;
+
+                            ?>
+                            
+                            <!-- small box (Mostrar cantidad NIÑOS registrado periodo escolar)-->
+                        <div class="small-box bg-aqua">
                                 <div class="inner">
                                     <h3>
-                                        44
+                                        <?php
+                                            echo "$sum";
+                                            
+                                        ?>
                                     </h3>
                                     <p>
-                                        Por definir
+                                        VARONES REGISTRADOS
                                     </p>
                                 </div>
                                 <div class="icon">
                                     <i class="ion ion-person-add"></i>
                                 </div>
                                 <a href="#" class="small-box-footer">
-                                    Más información <i class="fa fa-arrow-circle-right"></i>
+                                    Varones en este Periodo Escolar <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
                         </div><!-- ./col -->
                         <div class="col-lg-3 col-xs-6">
+                        <!--Consulta y sumatorio de niños por edad para calcular el total del año escolar -->
+                            <?php 
+                                
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='1'");
+
+                                $resultado1 = mysql_result($query,0);
+                                                     
+                                
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='2'");
+                                $resultado2 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='3'");
+                                $resultado3 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='4'");
+                                $resultado4 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='5'");
+                                $resultado5 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='6'");
+                                $resultado6 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='7'");
+                                $resultado7 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='8'");
+                                $resultado8 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='9'");
+                                $resultado9 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='10'");
+                                $resultado10 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='11'");
+                                $resultado11 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='12'");
+                                $resultado12 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='13'");
+                                $resultado13 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='14'");
+                                $resultado14 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='15'");
+                                $resultado15 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='16'");
+                                $resultado16 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='17'");
+                                $resultado17 = mysql_result($query,0);
+
+                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='18'");
+                                $resultado18 = mysql_result($query,0);
+
+                                
+
+                                $sum2 = $resultado1 + $resultado2 + $resultado3 + $resultado4 + $resultado5 + $resultado6 + $resultado7 + $resultado8 + $resultado9 + $resultado10 + $resultado11 + $resultado12 + $resultado13 + $resultado14 + $resultado15 + $resultado16 + $resultado17 + $resultado18;
+
+                            ?>
                             <!-- small box -->
-                            <div class="small-box bg-green">
+                            <div class="small-box bg-red">
                                 <div class="inner">
                                     <h3>
-                                        65
+                                        <?php 
+                                            echo "$sum2";
+                                        ?>
                                     </h3>
                                     <p>
-                                        Por definir
+                                        HEMBRAS REGISTRADAS
                                     </p>
                                 </div>
                                 <div class="icon">
                                     <i class="ion ion-pie-graph"></i>
                                 </div>
                                 <a href="#" class="small-box-footer">
-                                    Más información <i class="fa fa-arrow-circle-right"></i>
+                                    Hembras en este Periodo Escolar <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
                         </div><!-- ./col -->
                     </div><!-- /.row -->
 
-                    
-                   
-                    <h1>----------------------- POR DEFINIR------------------------------</h1>
+                                       
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="box box-info">
+                                <div class="box-header">
+                                    <h3 class="box-title">Grafico de proporcion de Niños y Niñas</h3>
+                                </div>
+                            <!-- inicio de form -->
+                        <div>
+                             
+                             <div id="canvas-holder" style="width:110%">
+        <canvas id="chart-area" />
+    </div>
+    
+    <script>
+
+    var sumav ="<?php echo $sum; ?>";
+    var sumah ="<?php echo $sum2; ?>"; 
+
+    var randomScalingFactor = function() {
+        return Math.round(Math.random() * 100);
+    };
+    var randomColorFactor = function() {
+        return Math.round(Math.random() * 255);
+    };
+    var randomColor = function(opacity) {
+        return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',' + (opacity || '.3') + ')';
+    };
+
+    var config = {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    sumah,sumav,
+                ],
+                backgroundColor: [
+                    "#F7464A",
+                    "#46BFBD",
+                    "#FDB45C",
+                    "#949FB1",
+                    "#4D5360",
+                ],
+                label: 'Dataset 1'
+            }],
+            labels: [
+                "Hembras",
+                "Varones",
+                
+            ]
+        },
+        options: {
+            responsive: true,
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'GRAFICA POR GENERO'
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true
+            }
+        }
+    };
+
+    window.onload = function() {
+        var ctx = document.getElementById("chart-area").getContext("2d");
+        window.myDoughnut = new Chart(ctx, config);
+    };
+
+    $('#randomizeData').click(function() {
+        $.each(config.data.datasets, function(i, dataset) {
+            dataset.data = dataset.data.map(function() {
+                return randomScalingFactor();
+            });
+
+            dataset.backgroundColor = dataset.backgroundColor.map(function() {
+                return randomColor(0.7);
+            });
+        });
+
+        window.myDoughnut.update();
+    });
+
+    $('#addDataset').click(function() {
+        var newDataset = {
+            backgroundColor: [],
+            data: [],
+            label: 'New dataset ' + config.data.datasets.length,
+        };
+
+        for (var index = 0; index < config.data.labels.length; ++index) {
+            newDataset.data.push(randomScalingFactor());
+            newDataset.backgroundColor.push(randomColor(0.7));
+        }
+
+        config.data.datasets.push(newDataset);
+        window.myDoughnut.update();
+    });
+
+    $('#addData').click(function() {
+        if (config.data.datasets.length > 0) {
+            config.data.labels.push('data #' + config.data.labels.length);
+
+            $.each(config.data.datasets, function(index, dataset) {
+                dataset.data.push(randomScalingFactor());
+                dataset.backgroundColor.push(randomColor(0.7));
+            });
+
+            window.myDoughnut.update();
+        }
+    });
+
+    $('#removeDataset').click(function() {
+        config.data.datasets.splice(0, 1);
+        window.myDoughnut.update();
+    });
+
+    $('#removeData').click(function() {
+        config.data.labels.splice(-1, 1); // remove the label first
+
+        config.data.datasets.forEach(function(dataset, datasetIndex) {
+            dataset.data.pop();
+            dataset.backgroundColor.pop();
+        });
+
+        window.myDoughnut.update();
+    });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div><!-- /.box-body -->
+                           
+                           
+                        </div><!-- /.col (left) -->
+
+
+
+
+                        <div class="col-md-6">
+                            <div class="box box-success">
+                                <div class="box-header">
+                                     <h3 class="box-title">Accesos directos</h3>
+                                </div><!-- /.box-header -->
+                                <div class="box-body">
+                                
+<!--INICIO OJO!!!!! CONSULTAR ULTIMO REGISTRO DEL PERIODO ESCOLAR-->
+                             
+<!--FIN OJO!!!!! CONSULTAR ULTIMO REGISTRO DEL PERIODO ESCOLAR-->
+
+
+                        <p>
+                            <button type="button" class="btn btn-info btn-lg btn-block">
+                            <span class="glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span> Registro Estadistico del Mes</button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> Consulta De información Mensual</button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-warning btn-lg btn-block"><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Registro de Docentes</button>
+                        </p>
+                        <button type="button" class="btn btn-danger btn-lg btn-block"><span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span> Registro de Usuarios</button>
+                        
+
+
+
+                            
+                            
+
+
+
+
+                            
+
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+
+                            
+                        </div><!-- /.col (right) -->
                     
 
                 </section><!-- /.content -->
