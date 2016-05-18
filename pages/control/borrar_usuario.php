@@ -17,7 +17,7 @@ mysql_close($link);
 
 if (!$sql == 0){
 	echo "Se borro correctamente";
-	#header('Location: ../emergente/borrar_usuario_exitoso.php');
+	header('Location: ../emergente/borrar_usuario_exitoso.php');
 }else{ 
 	echo "error en borrado";}
 
