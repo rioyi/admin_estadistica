@@ -7,19 +7,23 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>Sistema Estadistico</title>
+    <title>Borrado de Docente</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <!--external css-->
-    <link href="../assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link rel="../stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
-    <link rel="../stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
-    <link rel="../stylesheet" type="text/css" href="assets/lineicons/style.css">    
-    
-    <!-- Custom styles for this template -->
-    <link href="../assets/css/style.css" rel="stylesheet">
-    <link href="../assets/css/style-responsive.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- font Awesome -->
+        <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="../../css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- daterange picker -->
+        <link href="../../css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+        <!-- iCheck for checkboxes and radio inputs -->
+        <link href="../../css/iCheck/all.css" rel="stylesheet" type="text/css" />
+        <!-- Bootstrap Color Picker -->
+        <link href="../../css/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet"/>
+        <!-- Bootstrap time Picker -->
+        <link href="../../css/timepicker/bootstrap-timepicker.min.css" rel="stylesheet"/>
+        <!-- Theme style -->
+        <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />>
 
     <script src="../assets/js/chart-master/Chart.js"></script>
     
@@ -49,9 +53,9 @@ echo "$id";
   BORRAR</font>
 </div>
 
-         <h2><b>LOS DATOS DE UN USUARIO</b></h2></p>        
+         <h2><b>LOS DATOS DE UN DOCENTE</b></h2></p>        
       </font>
-      <div class="alert alert-warning" role="alert">¡BORRAR LOS DATOS IMPLICA PERDER TODA LA INFORMACION DEL DOCENTE!</div>
+      <div class="alert alert-warning" role="alert">¡BORRAR LOS DATOS IMPLICA PERDER TODA LA INFORMACIÓN DEL DOCENTE!</div>
       
 
 
