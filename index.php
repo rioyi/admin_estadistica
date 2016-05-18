@@ -603,21 +603,6 @@ $_SESSION["nombre_usuario"];
     </script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         </div>
 
 
@@ -655,15 +640,18 @@ $_SESSION["nombre_usuario"];
 
                         <p>
                             <button type="button" class="btn btn-info btn-lg btn-block">
-                            <span class="glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span> Registro Estadistico del Mes</button>
+                            <h4><span class="glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span> Registro Estadistico del Mes</h4></button>
                         </p>
                         <p>
-                            <button type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> Consulta De información Mensual</button>
+                            <button type="button" class="btn btn-success btn-lg btn-block">
+                            <h4><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> Consulta De información Mensual</h4></button>
                         </p>
                         <p>
-                            <button type="button" class="btn btn-warning btn-lg btn-block"><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Registro de Docentes</button>
+                            <button type="button" class="btn btn-warning btn-lg btn-block">
+                            <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Registro de Docentes</h4></button>
                         </p>
-                        <button type="button" class="btn btn-danger btn-lg btn-block"><span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span> Registro de Usuarios</button>
+                        <button type="button" class="btn btn-danger btn-lg btn-block">
+                        <h4><span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span> Registro de Usuarios</h4></button>
                         
 
 

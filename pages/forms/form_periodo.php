@@ -152,7 +152,7 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="inicio" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" name="inicio" class="form-control" required="es requerido" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -211,6 +211,8 @@ require ("../control/conexion_bd.php");
                                 <div class="box-body">
                                 <div class="alert alert-info" role="alert"><CENTER><H2>PERIODO ESCOLAR ACTUAL
 <!--INICIO OJO!!!!! CONSULTAR ULTIMO REGISTRO DEL PERIODO ESCOLAR-->
+                                <p>
+                                <strong>
                                 <?php
                                 $ultimo="SELECT * FROM periodo_escolar order by id_periodo_escolar desc limit 1";
                                 $res_ultimo = mysql_query($ultimo,$link);
@@ -220,30 +222,38 @@ require ("../control/conexion_bd.php");
                                 echo "-";
                                 echo $renglon['fin'];
                                 ?>
+                                </strong>
+                                </p>
 <!--FIN OJO!!!!! CONSULTAR ULTIMO REGISTRO DEL PERIODO ESCOLAR-->
                                 </H2></CENTER></div>
                                     <table class="table table-bordered">
                                         <tr>
                                             <th style="width: 10px">ID</th>
                                             <th> <center> PERIODO ESCOLAR </center></th>
-                                            <th>OPCIONES</th>
+                                            <th>ACCIÓN</th>
                                             
                                             
                                         </tr>
                                         <?php
                               while ($renglon=mysql_fetch_array($datos)) 
                                 {
-?>
+                            ?>
                               <tbody>
                                 <tr>                                
-                                  <td><?php echo $renglon['id_periodo_escolar']; ?></td>
-                                  <td><center><?php echo $renglon['inicio']; echo " - "; echo $renglon['fin']?></center></td>
-                                  <td>
-                                  <a href="ver_alumno.php?id=<?php echo $renglon['id_periodo_escolar']?>"> <button class="btn btn-success btn-xs"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button></a>
-                                  <!--<a href="inscripcion.php?id=<?php echo $renglon['ci_escolar']?>"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> MODIFICAR</button> -->
-                                  <a href="../emergente/borrar_periodo.php?id=<?php echo $renglon['id_periodo_escolar']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button></a>   
-                                    
-                                  </td>
+                                    <td><?php echo $renglon['id_periodo_escolar']; ?></td>
+                                    <td><center><?php echo $renglon['inicio']; echo " - "; echo $renglon['fin']?></center></td>
+                                    <td>
+                                        <center>
+                                            <a href="../emergente/borrar_periodo.php?id=<?php echo $renglon['id_periodo_escolar']?>" >
+                                                <button class="btn btn-danger">
+                                                    <b>
+                                                        <span class="glyphicon glyphicon-trash" aria-hidden="true">                                                    
+                                                        </span> ELIMINAR
+                                                    </b>
+                                                </button>
+                                            </a>
+                                        </center>
+                                    </td>          
                                 </tr>
 
                                  

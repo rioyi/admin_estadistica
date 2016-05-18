@@ -167,6 +167,7 @@ display_errors = Off
 Comando para reiniciar el apache
 
 /etc/init.d/apache2 restart
+sudo /etc/init.d/apache2 restart
 
 funcion para ver los error
 // Activar errores
