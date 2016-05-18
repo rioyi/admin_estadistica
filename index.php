@@ -561,23 +561,23 @@ $_SESSION["nombre_usuario"];
 
 
                         <p>
-                            <a href="">
+                            <a href="pages/forms/form_verificar.php">
                                 <button type="button" class="btn btn-info btn-lg btn-block">
                                 <h4><span class="glyphicon glyphicon glyphicon-calendar" aria-hidden="true"></span> Registro Estadistico del Mes</h4></button>
                             </a>
                         </p>
-                        <p> <a href="">
+                        <p> <a href="pages/forms/form_piso.php">
                                 <button type="button" class="btn btn-success btn-lg btn-block">
                                 <h4><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> Consulta De información Mensual</h4></button>
                             </a>
                         </p>
-                        <p> <a href="">
+                        <p> <a href="pages/forms/form_docente.php">
                                 <button type="button" class="btn btn-warning btn-lg btn-block">
                                 <h4><span class="glyphicon glyphicon glyphicon-briefcase" aria-hidden="true"></span> Registro de Docentes</h4></button>
                             </a>
                         </p>
                         <p>
-                            <a href="">
+                            <a href="pages/forms/form_usuario.php">
                                 <button type="button" class="btn btn-danger btn-lg btn-block">
                                 <h4><span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span> Registro de Usuarios</h4></button>
                             </a>
