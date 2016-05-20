@@ -13,9 +13,22 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="form_verificar.php"><i class="fa fa-angle-double-right"></i>Registro Estadistica del Mes </a></li>                                
+                                <li><a href="../forms/form_verificar.php"><i class="fa fa-angle-double-right"></i>Registro Estadistica del Mes </a></li>                                
                             </ul>
                         </li>
+
+
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-th"></i>
+                                <span>Reportes</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="../forms/form_piso.php"><i class="fa fa-angle-double-right"></i> Consulta por mes </a></li>                             
+                            </ul>
+                        </li>
+
 
                         <li class="treeview">
                             <a href="#">
@@ -28,17 +41,6 @@
                                 
                                 <li><a href="form_docente.php"><i class="fa fa-angle-double-right"></i> Docente </a></li>
                                 <li><a href="form_usuario.php"><i class="fa fa-angle-double-right"></i> Usuario </a></li>
-                            </ul>
-                        </li>
-
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-th"></i>
-                                <span>Reportes</span>
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="form_piso.php"><i class="fa fa-angle-double-right"></i> Consulta por mes </a></li>                             
                             </ul>
                         </li>
 

@@ -1,9 +1,6 @@
-
 <!DOCTYPE html>
 <html>
     <head>
-
-
         <meta charset="UTF-8">
         <title>Sistema | Estadistico</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -30,8 +27,17 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
+        <script language="JavaScript"> 
+function pregunta(){ 
+    if (confirm('¿Estas seguro de enviar este formulario?')){ 
+       document.tuformulario.submit() 
+    } 
+} 
+</script>
     </head>
      <body class="skin-blue">
+
+     
         <!-- header logo: style can be found in header.less -->
         <header class="header">
             <a href="index.html" class="logo">
@@ -60,7 +66,7 @@
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
-                                    <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                                    <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
                                         Nombre Usuario - Maestra Piso 1
                                         
@@ -108,8 +114,15 @@
                     <!-- /.formulario del buscado -->
                     <!-- sidebar del menu: el estilo puedeo ser encontrado en sidebar.less -->
 <?php 
-    include("menu_form.php")
-?>
+
+$id=$_GET['id'];
+
+    include("menu_form.php");
+    require ("../control/conexion_bd.php");
+    $sql="SELECT * FROM docente where id_docente = '$id'";
+    $datos=mysql_query($sql,$link);
+    $arreglo = mysql_fetch_array($datos);
+?>                  
 
 
                     </ul>
@@ -122,14 +135,13 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Sección Docentes
-                        <small>Registro - Vista</small>
+                        Sección Docente                     <small>Edición - Vista</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
                         <li><a href="#">Formularios</a></li>
-                        <li class="active">Formulario Docente</li>
-                    </ol>
+                        <li class="active">Formulario Periodo Escolar</li>
+                    </ol>                    
                 </section>
 
                 <!-- Main content -->
@@ -139,84 +151,84 @@
 
                             <div class="box box-info">
                                 <div class="box-header">
-                                    <h3 class="box-title">Registrar Docente</h3>
+                                    <h3 class="box-title">Ver y Modificar Información del Usuario</h3>
                                 </div>
                             <!-- inicio de form -->
-                            <form action="../control/registro_docente.php" method="post" >
+                            <form name=tuformulario action="../control/editar_docente.php" method="post" >
 
                                 <div class="box-body">
                                     <!-- Nombre -->
                                     <div class="form-group">
-                                        <label>NOMBRE:</label>
+                                    <input type="hidden" name="id_usuario" value="<?php echo "$id"; ?>">
+                                    
+                                        <label>Nombre:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-user"></i>
+                                                <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="nombre" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" name="nombre" class="form-control" value="<?php echo $arreglo['nombre_docente']?>" />
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    <!-- Apellido -->
-                                    <label>APELLLIDO</label>
                                     <div class="form-group">
+                                        <label>Apellido:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-user"></i>
+                                                <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="apellido" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask/>
+                                            <input type="text" name="apellido" class="form-control" value="<?php echo $arreglo['apellido_docente'];?>" />
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    <!-- phone mask -->
                                     <div class="form-group">
-                                        <label>TELÉFONO:</label>
+                                        <label>Email:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-phone"></i>
+                                                <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="telefono" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask/>
+                                            <input type="text" name="email" class="form-control" value="<?php echo $arreglo['email'];?>"/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    <!-- phone mask -->
                                     <div class="form-group">
-                                        <label>DIRECCIÓN</label>
+                                        <label>Dirección:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="glyphicon glyphicon-home"></i>
+                                                <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text-area" name="direccion" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask/>
+                                            <input type="text" name="direccion" class="form-control" value="<?php echo $arreglo['direccion']; ?>" />
+                                        </div><!-- /.input group -->
+                                    </div><!-- /.form group -->
+                                    
+
+                                    <div class="form-group">
+                                        <label>Teléfono:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" name="telefono" class="form-control" value="<?php echo $arreglo['telefono']; ?>"/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    <!-- phone mask -->
                                     <div class="form-group">
                                             <label>Piso</label>
+                                            <strong>Piso Actual:</strong><?php echo $arreglo['piso']; ?>
                                             <select class="form-control" name="piso">
-                                                <option value="">Seleccionar</option>
-                                                <option value="1" >Piso 1</option>
-                                                <option value="2">Piso 2</option>
-                                                <option value="3">Piso 3</option>
-                                                <option value="4">Piso 4</option>
-                                                <option value="5">Piso 5</option>
+                                                <option value="<?php echo $arreglo['piso'];  ?>"><?php echo $arreglo['piso'];  ?></option>
+                                                <option value="P1">Piso 1</option>
+                                                <option value="P2" >Piso 2</option>
+                                                <option value="P3">Piso 3</option>
+                                                <option value="P4">Piso 4</option>
+                                                <option value="P5">Piso 5</option>
                                                 <option value="GI">Garzas I</option>
-                                                <option value="GII">Garzas II</option>
+                                                <option value="GII">Garzas II</option>                    
                                             </select>
                                     </div>
 
-                                    <!-- phone mask -->
-                                    <div class="form-group">
-                                        <label>EMAIL:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="glyphicon glyphicon-envelope"></i>
-                                            </div>
-                                            <input type="text" naome="email" class="form-control"/>
-                                        </div><!-- /.input group -->
-                                        <div class="box-footer">
-                                        <center><button type="submit" class="btn-lg btn-primary">REGISTRAR</button></center>
-                                    </div>
-                                    </div><!-- /.form group -->
+                                    
+
+                                    <button type="submit" class="btn btn-primary">GUARDAR CAMBIOS</button>
 
                                    
 
@@ -325,66 +337,7 @@ require ("../control/conexion_bd.php");
         <!-- AdminLTE App -->
         <script src="../../js/AdminLTE/app.js" type="text/javascript"></script>
 
-        <!-- Page script -->
-        <script type="text/javascript">
-            $(function() {
-                //Datemask dd/mm/yyyy
-                $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
-                //Datemask2 mm/dd/yyyy
-                $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
-                //Money Euro
-                $("[data-mask]").inputmask();
-
-                //Date range picker
-                $('#reservation').daterangepicker();
-                //Date range picker with time picker
-                $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
-                //Date range as a button
-                $('#daterange-btn').daterangepicker(
-                        {
-                            ranges: {
-                                'Today': [moment(), moment()],
-                                'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
-                                'Last 7 Days': [moment().subtract('days', 6), moment()],
-                                'Last 30 Days': [moment().subtract('days', 29), moment()],
-                                'This Month': [moment().startOf('month'), moment().endOf('month')],
-                                'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
-                            },
-                            startDate: moment().subtract('days', 29),
-                            endDate: moment()
-                        },
-                function(start, end) {
-                    $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-                }
-                );
-
-                //iCheck for checkbox and radio inputs
-                $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
-                    checkboxClass: 'icheckbox_minimal',
-                    radioClass: 'iradio_minimal'
-                });
-                //Red color scheme for iCheck
-                $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
-                    checkboxClass: 'icheckbox_minimal-red',
-                    radioClass: 'iradio_minimal-red'
-                });
-                //Flat red color scheme for iCheck
-                $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
-                    checkboxClass: 'icheckbox_flat-red',
-                    radioClass: 'iradio_flat-red'
-                });
-
-                //Colorpicker
-                $(".my-colorpicker1").colorpicker();
-                //color picker with addon
-                $(".my-colorpicker2").colorpicker();
-
-                //Timepicker
-                $(".timepicker").timepicker({
-                    showInputs: false
-                });
-            });
-        </script>
+       
 
     </body>
 </html>
