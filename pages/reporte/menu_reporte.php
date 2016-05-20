@@ -37,7 +37,7 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="form_periodo.php"><i class="fa fa-angle-double-right"></i> Periodo Escolar </a></li>
+                                <li><a href="../forms/form_periodo.php"><i class="fa fa-angle-double-right"></i> Periodo Escolar </a></li>
                                 
                                 <li><a href="form_docente.php"><i class="fa fa-angle-double-right"></i> Docente </a></li>
                                 <li><a href="form_usuario.php"><i class="fa fa-angle-double-right"></i> Usuario </a></li>
@@ -46,4 +46,4 @@
 
 
 
-                        </ul>
+                       

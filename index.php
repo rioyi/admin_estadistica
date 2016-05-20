@@ -7,7 +7,12 @@ if (!isset($_SESSION["nombre_usuario"])){
     header("location:login.php");
     
 }
-$_SESSION["nombre_usuario"];
+$id_user = $_SESSION["nombre_usuario"];
+require ("pages/control/conexion_bd.php");
+$consulta = "SELECT * FROM usuario WHERE id_usuario ='$id_user'";
+$query = mysql_query($consulta,$link);
+$arreglo = mysql_fetch_array($query);
+
 ?>
 
 
@@ -79,14 +84,14 @@ $_SESSION["nombre_usuario"];
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
-                                <span>Nombre Usuario <i class="caret"></i></span>
+                                <span>BIENVENIDO <?php echo $arreglo['nombre_usuario']  ?> <i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
                                     <img src="img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
-                                        Nombre Usuario - Maestra Piso 1                                        
+                                        <?php echo $arreglo['nombre_usuario']  ?> - Tipo de Cuenta <?php echo $arreglo['roles'] ?>                                       
                                     </p>
                                 </li>
                                 
@@ -116,7 +121,8 @@ $_SESSION["nombre_usuario"];
                             <img src="img/avatar3.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
-                            <p>Hola, Usuario</p>                            
+                            <p>Hola, <?php echo $arreglo['nombre_usuario'];  ?></p>
+                            <p><?php echo $arreglo['roles'];  ?></p>                            
                         </div>
                     </div>
                     <!-- formulario del Buscador -->

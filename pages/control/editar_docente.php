@@ -14,13 +14,6 @@ $telefono = $_POST['telefono'];
 $piso = $_POST['piso'];
 
 
-echo "$id";
-echo "$nombre";
-echo "$apellido";
-echo "$email";
-echo "$direccion";
-echo "$telefono";
-echo "$piso";
 
 
 $sql=mysql_query("UPDATE docente SET nombre_docente='$nombre', apellido_docente='$apellido', email='$email', direccion='$direccion', telefono='$telefono', piso='$piso' WHERE id_docente='$id'");
