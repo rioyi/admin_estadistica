@@ -164,7 +164,7 @@ $id=$_GET['id'];
                                         <label>Nombre Usuario:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
+                                                <i class="glyphicon glyphicon-user"></i>
                                             </div>
                                             <input type="text" name="nombre" class="form-control" value="<?php echo $arreglo['nombre_usuario']?>" />
                                         </div><!-- /.input group -->
@@ -174,7 +174,7 @@ $id=$_GET['id'];
                                         <label>Email:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
+                                                <i class="glyphicon glyphicon-envelope"></i>
                                             </div>
                                             <input type="text" name="email" class="form-control" value="<?php echo $arreglo['email'];?>" />
                                         </div><!-- /.input group -->
@@ -184,7 +184,7 @@ $id=$_GET['id'];
                                         <label>Clave:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
+                                                <i class="glyphicon glyphicon-lock"></i>
                                             </div>
                                             <input type="password" name="clave" class="form-control" value="<?php echo $arreglo['clave'];?>"/>
                                         </div><!-- /.input group -->
@@ -194,7 +194,7 @@ $id=$_GET['id'];
                                         <label>Confirmar Clave:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
+                                                <i class="glyphicon glyphicon-lock"></i>
                                             </div>
                                             <input type="password" name="clave_confirmada" class="form-control"/>
                                         </div><!-- /.input group -->
@@ -215,7 +215,7 @@ $id=$_GET['id'];
                                         <label>Respuesta Secreta:</label>
                                         <div class="input-group">
                                             <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
+                                                <i class="glyphicon glyphicon-ok-sign"></i>
                                             </div>
                                             <input type="text" name="respuesta" class="form-control" value="<?php echo $arreglo['respuesta_secreta']; ?>"/>
                                         </div><!-- /.input group -->

@@ -105,7 +105,15 @@
                     <!-- /.formulario del buscado -->
                     <!-- sidebar del menu: el estilo puedeo ser encontrado en sidebar.less -->
 <?php 
-    include("menu_form.php")
+    include("menu_form.php");
+
+    $id_periodo = $_GET['id'];
+    require ("../control/conexion_bd.php");
+  
+  $sql="SELECT * FROM periodo_escolar WHERE id_periodo_escolar = '$id_periodo'";
+  $datos=mysql_query($sql,$link);
+  $arreglo = mysql_fetch_array($datos);
+  
 ?>
 
 
@@ -142,7 +150,7 @@
                                     <h3 class="box-title">Registrar Periodo Escolar</h3>
                                 </div>
                             <!-- inicio de form -->
-                            <form action="../control/registro_periodo.php" method="post" >
+                            
 
                                 <div class="box-body">
                                     <!-- Nombre -->
@@ -152,7 +160,7 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="inicio" class="form-control" required="es requerido" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" name="inicio" class="form-control" required="es requerido" value="<?php echo $arreglo['inicio']; ?>" />
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -162,13 +170,173 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="final" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" name="final" class="form-control" value="<?php echo $arreglo['fin']; ?>"/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
+                                    <center>
+                                    <?php
+                                    $consulta ="SELECT * FROM total_poblacion_atendida WHERE id_periodo_escolar = '$id_periodo' AND id_mes = '1'";
+                                    $query = mysql_query($consulta,$link);
+                                    $list_mes= mysql_num_rows($query);
+
+                                    echo "<p>";
+                                    if ($list_mes > 0){
+                                        echo "<button class='btn btn-success'><strong>ENERO</strong> Registrado</button>  ";
+                                        
+                                    }else{
+                                        echo "<button class='btn btn-danger'><strong>ENERO</strong> no Registrado</button>  ";
+                                        
+                                    }
+                                    $consulta ="SELECT * FROM total_poblacion_atendida WHERE id_periodo_escolar = '$id_periodo' AND id_mes = '2'";
+                                    $query = mysql_query($consulta,$link);
+                                    $list_mes= mysql_num_rows($query);
 
                                     
+                                    if ($list_mes > 0){
+                                        echo "<button class='btn btn-success'><strong>FEBRERO</strong> Registrado</button>  ";
+                                        
+                                    }else{
+                                        echo "<button class='btn btn-danger'><strong>FEBRERO</strong> no Registrado</button>  ";
+                                        
+                                    }
+                                    echo "</p>";
+                                    $consulta ="SELECT * FROM total_poblacion_atendida WHERE id_periodo_escolar = '$id_periodo' AND id_mes = '3'";
+                                    $query = mysql_query($consulta,$link);
+                                    $list_mes= mysql_num_rows($query);
 
-                                    <button type="submit" class="btn btn-primary">REGISTRAR</button>
+                                    echo "<p>";
+                                    if ($list_mes > 0){
+                                        echo "<button class='btn btn-success'><strong>MARZO</strong> Registrado</button>  ";
+                                        
+                                    }else{
+                                        echo "<button class='btn btn-danger'><strong>MARZO</strong> no Registrado</button>  ";
+                                        
+                                    }
+                                    
+                                    $consulta ="SELECT * FROM total_poblacion_atendida WHERE id_periodo_escolar = '$id_periodo' AND id_mes = '4'";
+                                    $query = mysql_query($consulta,$link);
+                                    $list_mes= mysql_num_rows($query);
+                                    
+                                    
+                                    if ($list_mes > 0){
+                                        echo "<button class='btn btn-success'><strong>ABRIL</strong> Registrado</button>  ";
+                                        
+                                    }else{
+                                        echo "<button class='btn btn-danger'><strong>ABRIL</strong> no Registrado</button>  ";
+                                        
+                                    }
+                                    echo "</p>";
+                                    $consulta ="SELECT * FROM total_poblacion_atendida WHERE id_periodo_escolar = '$id_periodo' AND id_mes = '5'";
+                                    $query = mysql_query($consulta,$link);
+                                    $list_mes= mysql_num_rows($query);
+
+                                    echo "<p>";
+                                    if ($list_mes > 0){
+                                        echo "<button class='btn btn-success'><strong>MAYO</strong> Registrado</button>  ";
+                                        
+                                    }else{
+                                        echo "<button class='btn btn-danger'><strong>MAYO</strong> no Registrado</button>  ";
+                                        
+                                    }
+
+                                    $consulta ="SELECT * FROM total_poblacion_atendida WHERE id_periodo_escolar = '$id_periodo' AND id_mes = '6'";
+                                    $query = mysql_query($consulta,$link);
+                                    $list_mes= mysql_num_rows($query);
+
+                                    
+                                    if ($list_mes > 0){
+                                        echo "<button class='btn btn-success'><strong>JUNIO</strong> Registrado</button>  ";
+                                        
+                                    }else{
+                                        echo "<button class='btn btn-danger'><strong>JUNIO</strong> no Registrado</button>  ";
+                                        
+                                    }
+                                    echo "</p>";
+                                    $consulta ="SELECT * FROM total_poblacion_atendida WHERE id_periodo_escolar = '$id_periodo' AND id_mes = '7'";
+                                    $query = mysql_query($consulta,$link);
+                                    $list_mes= mysql_num_rows($query);
+                                    echo "<p>";
+                                    
+                                    if ($list_mes > 0){
+                                        echo "<button class='btn btn-success'><strong>JULIO</strong> Registrado</button> ";
+                                        
+                                    }else{
+                                        echo "<button class='btn btn-danger'><strong>JULIO</strong> no Registrado</button>  ";
+                                        
+                                    }
+
+                                    $consulta ="SELECT * FROM total_poblacion_atendida WHERE id_periodo_escolar = '$id_periodo' AND id_mes = '8'";
+                                    $query = mysql_query($consulta,$link);
+                                    $list_mes= mysql_num_rows($query);
+
+                                    
+                                    if ($list_mes > 0){
+                                        echo "<button class='btn btn-success'><strong>AGOSTO</strong> Registrado</button>  ";
+                                        
+                                    }else{
+                                        echo "<button class='btn btn-danger'><strong>AGOSTO</strong> no Registrado</button>  ";
+                                        
+                                    }
+                                    echo "</p>";
+                                    $consulta ="SELECT * FROM total_poblacion_atendida WHERE id_periodo_escolar = '$id_periodo' AND id_mes = '9'";
+                                    $query = mysql_query($consulta,$link);
+                                    $list_mes= mysql_num_rows($query);
+                                    echo "<p>";
+                                    
+                                    if ($list_mes > 0){
+                                        echo "<button class='btn btn-success'><strong>SEPTIEMBRE</strong> Registrado</button>  ";
+                                        
+                                    }else{
+                                        echo "<button class='btn btn-danger'><strong>SEPTIEMBRE</strong> no Registrado</button>  ";
+                                        
+                                    }
+                                    
+                                    $consulta ="SELECT * FROM total_poblacion_atendida WHERE id_periodo_escolar = '$id_periodo' AND id_mes = '10'";
+                                    $query = mysql_query($consulta,$link);
+                                    $list_mes= mysql_num_rows($query);
+
+                                    
+                                    if ($list_mes > 0){
+                                        echo "<button class='btn btn-success'><strong>OCTUBRE</strong> Registrado</button>  ";
+                                        
+                                    }else{
+                                        echo "<button class='btn btn-danger'><strong>OCTUBRE</strong> no Registrado</button>  ";
+                                        
+                                    }
+                                    echo "</p>";
+                                    $consulta ="SELECT * FROM total_poblacion_atendida WHERE id_periodo_escolar = '$id_periodo' AND id_mes = '11'";
+                                    $query = mysql_query($consulta,$link);
+                                    $list_mes= mysql_num_rows($query);
+                                    echo "<p>";
+                                    
+                                    if ($list_mes > 0){
+                                        echo "<button class='btn btn-success'><strong>NOVIMEBRE</strong> Registrado</button>  ";
+                                        
+                                    }else{
+                                        echo "<button class='btn btn-danger'><strong>NOVIMEBRE</strong> no Registrado</button>  ";
+                                        
+                                    }
+
+                                    $consulta ="SELECT * FROM total_poblacion_atendida WHERE id_periodo_escolar = '$id_periodo' AND id_mes = '12'";
+                                    $query = mysql_query($consulta,$link);
+                                    $list_mes= mysql_num_rows($query);
+
+                                    
+                                    if ($list_mes > 0){ 
+                                        echo "<button class='btn btn-success'><strong>DICIEMBRE</strong> Registrado</button>  ";
+                                        
+                                    }else{
+                                        echo "<button class='btn btn-danger'><strong>DICIEMBRE</strong> no Registrado</button>  ";
+                                        
+                                    }
+                                    echo "</p>";
+
+
+
+                                    ?>
+                                    </center>
+
+                                  
 
                                    
 
@@ -182,12 +350,9 @@
 <?php
 #$consulta = $_POST['consulta'];
 #echo "<h3>Su Consulta es: $consulta</h3>";
-
-require ("../control/conexion_bd.php");
-  
-  $sql="SELECT * FROM periodo_escolar";
+$sql="SELECT * FROM periodo_escolar";
   $datos=mysql_query($sql,$link);
-  $contador = mysql_num_rows($datos);
+$contador = mysql_num_rows($datos);
     if ($contador == 0)
       {
         echo "<center><h1><font color='#E74C3C'>NO SE ENCONTRO RESULTADOS :-( </font></h1></center>";
