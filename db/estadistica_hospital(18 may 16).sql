@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 29, 2016 at 05:15 PM
--- Server version: 5.5.47-0ubuntu0.14.04.1
--- PHP Version: 5.5.9-1ubuntu4.14
+-- Generation Time: May 18, 2016 at 11:41 AM
+-- Server version: 5.5.49-0ubuntu0.14.04.1
+-- PHP Version: 5.5.9-1ubuntu4.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -33,19 +33,20 @@ CREATE TABLE IF NOT EXISTS `docente` (
   `email` varchar(20) NOT NULL,
   `direccion` varchar(40) DEFAULT NULL,
   `telefono` varchar(12) DEFAULT NULL,
-  `piso` int(2) NOT NULL,
+  `piso` varchar(3) NOT NULL,
   PRIMARY KEY (`id_docente`),
   KEY `piso` (`piso`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `docente`
 --
 
 INSERT INTO `docente` (`id_docente`, `nombre_docente`, `apellido_docente`, `email`, `direccion`, `telefono`, `piso`) VALUES
-(1, 'maria', 'angarita', 'dasd@sdsadas.com', 'su casa', '3432432', 1),
-(5, '1111', 'DSFDSF', '', 'DSFDSFD', 'DSFSDFSDF', 0),
-(9, 'Marilyn', 'Monroe', '', 'USA', '5555555', 2);
+(1, 'maria', 'angarita', 'dasd@sdsadas.com', 'su casa', '3432432', '1'),
+(9, 'Marilyn', 'Monroe', '', 'USA', '5555555', '2'),
+(10, 'Carmen', 'Angarita', '', 'ccs', '042324324', '0'),
+(11, 'Maria', 'Gelvez', '', 'efsdfsdf', '4534543', 'GI');
 
 -- --------------------------------------------------------
 
@@ -57,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `mes` (
   `id_mes` int(2) NOT NULL AUTO_INCREMENT,
   `mes` varchar(10) NOT NULL,
   PRIMARY KEY (`id_mes`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `mes`
@@ -88,15 +89,13 @@ CREATE TABLE IF NOT EXISTS `periodo_escolar` (
   `inicio` int(4) NOT NULL,
   `fin` int(4) NOT NULL,
   PRIMARY KEY (`id_periodo_escolar`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `periodo_escolar`
 --
 
 INSERT INTO `periodo_escolar` (`id_periodo_escolar`, `inicio`, `fin`) VALUES
-(3, 66666, 0),
-(6, 2132, 2314),
 (7, 2015, 2016);
 
 -- --------------------------------------------------------
@@ -130,7 +129,7 @@ CREATE TABLE IF NOT EXISTS `tipo_atencion` (
   `id_tipo_atencion` int(4) NOT NULL AUTO_INCREMENT,
   `tipo_atencion` varchar(20) NOT NULL,
   PRIMARY KEY (`id_tipo_atencion`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `tipo_atencion`
@@ -138,7 +137,7 @@ CREATE TABLE IF NOT EXISTS `tipo_atencion` (
 
 INSERT INTO `tipo_atencion` (`id_tipo_atencion`, `tipo_atencion`) VALUES
 (1, 'cirugia'),
-(2, 'Traumatolog'),
+(2, 'Traumatología'),
 (3, 'Otorrinolaringologo'),
 (4, 'Pediatría'),
 (5, 'Nerología'),
@@ -162,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `tipo_edad` (
   `id_tipo_edad` int(4) NOT NULL AUTO_INCREMENT,
   `tipo_edad` int(2) NOT NULL,
   PRIMARY KEY (`id_tipo_edad`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=38 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
 
 --
 -- Dumping data for table `tipo_edad`
@@ -179,15 +178,15 @@ INSERT INTO `tipo_edad` (`id_tipo_edad`, `tipo_edad`) VALUES
 (8, 7),
 (9, 8),
 (10, 9),
-(11, 2),
-(12, 3),
-(13, 4),
-(14, 5),
-(15, 6),
-(16, 7),
-(17, 8),
-(18, 9),
-(19, 10);
+(11, 10),
+(12, 111),
+(13, 12),
+(14, 13),
+(15, 14),
+(16, 15),
+(17, 16),
+(18, 17),
+(19, 18);
 
 -- --------------------------------------------------------
 
@@ -323,7 +322,53 @@ CREATE TABLE IF NOT EXISTS `total_asistencia` (
   KEY `id_periodo_escolar` (`id_periodo_escolar`),
   KEY `id_mes` (`id_mes`),
   KEY `id_sexo` (`id_sexo`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=356 ;
+
+--
+-- Dumping data for table `total_asistencia`
+--
+
+INSERT INTO `total_asistencia` (`id_asistencia`, `id_periodo_escolar`, `id_mes`, `id_sexo`, `dia`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
+(316, 7, 6, 1, 1, 1, 2, 3, 4, 5, 6, 7),
+(317, 7, 6, 1, 2, 1, 2, 3, 4, 5, 6, 7),
+(318, 7, 6, 1, 3, 1, 2, 3, 4, 5, 6, 7),
+(319, 7, 6, 1, 4, 1, 2, 3, 4, 5, 6, 7),
+(320, 7, 6, 1, 5, 1, 2, 3, 4, 5, 6, 7),
+(321, 7, 6, 1, 6, 1, 2, 3, 4, 5, 6, 7),
+(322, 7, 6, 1, 7, 1, 2, 3, 4, 5, 6, 7),
+(323, 7, 6, 1, 8, 1, 2, 3, 4, 5, 6, 7),
+(324, 7, 6, 1, 9, 1, 2, 3, 4, 5, 6, 7),
+(325, 7, 6, 1, 10, 1, 2, 3, 4, 5, 6, 7),
+(326, 7, 6, 1, 11, 1, 2, 3, 4, 5, 6, 7),
+(327, 7, 6, 1, 12, 1, 2, 3, 4, 5, 6, 7),
+(328, 7, 6, 1, 13, 1, 2, 3, 4, 5, 6, 7),
+(329, 7, 6, 1, 14, 1, 2, 3, 4, 5, 6, 7),
+(330, 7, 6, 1, 15, 1, 2, 3, 4, 5, 6, 7),
+(331, 7, 6, 1, 16, 1, 2, 3, 4, 5, 6, 7),
+(332, 7, 6, 1, 17, 1, 2, 3, 4, 5, 6, 7),
+(333, 7, 6, 1, 18, 1, 2, 3, 4, 5, 6, 7),
+(334, 7, 6, 1, 19, 1, 2, 3, 4, 5, 6, 7),
+(335, 7, 6, 1, 20, 1, 2, 3, 4, 5, 6, 7),
+(336, 7, 6, 2, 1, 1, 2, 3, 4, 5, 6, 7),
+(337, 7, 6, 2, 2, 1, 2, 3, 4, 5, 6, 7),
+(338, 7, 6, 2, 3, 1, 2, 3, 4, 5, 6, 7),
+(339, 7, 6, 2, 4, 1, 2, 3, 4, 5, 6, 7),
+(340, 7, 6, 2, 5, 1, 2, 3, 4, 5, 6, 7),
+(341, 7, 6, 2, 6, 1, 2, 3, 4, 5, 6, 7),
+(342, 7, 6, 2, 7, 1, 2, 3, 4, 5, 6, 7),
+(343, 7, 6, 2, 8, 1, 2, 3, 4, 5, 6, 7),
+(344, 7, 6, 2, 9, 1, 2, 3, 4, 5, 6, 7),
+(345, 7, 6, 2, 10, 1, 2, 3, 4, 5, 6, 7),
+(346, 7, 6, 2, 11, 1, 2, 3, 4, 5, 6, 7),
+(347, 7, 6, 2, 12, 1, 2, 3, 4, 5, 6, 7),
+(348, 7, 6, 2, 13, 1, 2, 3, 4, 5, 6, 7),
+(349, 7, 6, 2, 14, 1, 2, 3, 4, 5, 6, 7),
+(350, 7, 6, 2, 15, 1, 2, 3, 4, 5, 6, 7),
+(351, 7, 6, 2, 16, 1, 2, 3, 4, 5, 6, 7),
+(352, 7, 6, 2, 17, 1, 2, 3, 4, 5, 6, 7),
+(353, 7, 6, 2, 18, 1, 2, 3, 4, 5, 6, 7),
+(354, 7, 6, 2, 19, 1, 2, 3, 4, 5, 6, 7),
+(355, 7, 6, 2, 20, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
@@ -349,14 +394,41 @@ CREATE TABLE IF NOT EXISTS `total_atencion` (
   KEY `id_mes` (`id_mes`),
   KEY `id_sexo` (`id_sexo`),
   KEY `id_tipo_atencion` (`id_tipo_atencion`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=89 ;
 
 --
 -- Dumping data for table `total_atencion`
 --
 
 INSERT INTO `total_atencion` (`id_atencion`, `id_periodo_escolar`, `id_mes`, `id_sexo`, `id_tipo_atencion`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
-(4, 3, 3, 2, 3, 10, 10, 10, 10, 10, 10, 10);
+(61, 7, 6, 1, 1, 1, 2, 3, 4, 5, 6, 7),
+(62, 7, 6, 1, 2, 1, 2, 3, 4, 5, 6, 7),
+(63, 7, 6, 1, 3, 1, 2, 3, 4, 5, 6, 7),
+(64, 7, 6, 1, 4, 1, 2, 3, 4, 5, 6, 7),
+(65, 7, 6, 1, 5, 1, 2, 3, 4, 5, 6, 7),
+(66, 7, 6, 1, 6, 1, 2, 3, 4, 5, 6, 7),
+(67, 7, 6, 1, 7, 1, 2, 3, 4, 5, 6, 7),
+(68, 7, 6, 1, 8, 1, 2, 3, 4, 5, 6, 7),
+(69, 7, 6, 1, 9, 1, 2, 3, 4, 5, 6, 7),
+(70, 7, 6, 1, 10, 1, 2, 3, 4, 5, 6, 7),
+(71, 7, 6, 1, 11, 1, 2, 3, 4, 5, 6, 7),
+(72, 7, 6, 1, 12, 1, 2, 3, 4, 5, 6, 7),
+(73, 7, 6, 1, 13, 1, 2, 3, 4, 5, 6, 7),
+(74, 7, 6, 1, 14, 1, 2, 3, 4, 5, 6, 7),
+(75, 7, 6, 2, 1, 1, 2, 3, 4, 5, 6, 7),
+(76, 7, 6, 2, 2, 1, 2, 3, 4, 5, 6, 7),
+(77, 7, 6, 2, 3, 1, 2, 3, 4, 5, 6, 7),
+(78, 7, 6, 2, 4, 1, 2, 3, 4, 5, 6, 7),
+(79, 7, 6, 2, 5, 1, 2, 3, 4, 5, 6, 7),
+(80, 7, 6, 2, 6, 1, 2, 3, 4, 5, 6, 7),
+(81, 7, 6, 2, 7, 1, 2, 3, 4, 5, 6, 7),
+(82, 7, 6, 2, 8, 1, 2, 3, 4, 5, 6, 7),
+(83, 7, 6, 2, 9, 1, 2, 3, 4, 5, 6, 7),
+(84, 7, 6, 2, 10, 1, 2, 3, 4, 5, 6, 7),
+(85, 7, 6, 2, 11, 1, 2, 3, 4, 5, 6, 7),
+(86, 7, 6, 2, 12, 1, 2, 3, 4, 5, 6, 7),
+(87, 7, 6, 2, 13, 1, 2, 3, 4, 5, 6, 7),
+(88, 7, 6, 2, 14, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
@@ -382,7 +454,49 @@ CREATE TABLE IF NOT EXISTS `total_escolaridad` (
   KEY `id_periodo_escolar` (`id_periodo_escolar`),
   KEY `id_mes` (`id_mes`),
   KEY `id_tipo_escolaridad` (`id_tipo_escolaridad`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=179 ;
+
+--
+-- Dumping data for table `total_escolaridad`
+--
+
+INSERT INTO `total_escolaridad` (`id_escolaridad`, `id_sexo`, `id_periodo_escolar`, `id_mes`, `id_tipo_escolaridad`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
+(143, 1, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(144, 1, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(145, 1, 7, 6, 3, 1, 2, 3, 4, 5, 6, 7),
+(146, 1, 7, 6, 4, 1, 2, 3, 4, 5, 6, 7),
+(147, 1, 7, 6, 5, 1, 2, 3, 4, 5, 6, 7),
+(148, 1, 7, 6, 6, 1, 2, 3, 4, 5, 6, 7),
+(149, 1, 7, 6, 7, 1, 2, 3, 4, 5, 6, 7),
+(150, 1, 7, 6, 8, 1, 2, 33, 4, 5, 6, 7),
+(151, 1, 7, 6, 9, 1, 2, 3, 4, 5, 6, 7),
+(152, 1, 7, 6, 10, 1, 2, 3, 4, 5, 6, 7),
+(153, 1, 7, 6, 11, 1, 2, 3, 4, 5, 6, 7),
+(154, 1, 7, 6, 12, 1, 2, 3, 4, 5, 6, 7),
+(155, 1, 7, 6, 13, 1, 2, 3, 4, 5, 6, 7),
+(156, 1, 7, 6, 14, 1, 2, 3, 4, 5, 6, 7),
+(157, 1, 7, 6, 15, 1, 2, 3, 4, 5, 6, 7),
+(158, 1, 7, 6, 16, 1, 2, 3, 4, 5, 6, 7),
+(159, 1, 7, 6, 17, 1, 2, 3, 4, 5, 6, 7),
+(160, 1, 7, 6, 18, 1, 2, 3, 4, 5, 6, 7),
+(161, 2, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(162, 2, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(163, 2, 7, 6, 3, 1, 2, 3, 4, 5, 6, 7),
+(164, 2, 7, 6, 4, 1, 2, 3, 4, 5, 6, 7),
+(165, 2, 7, 6, 5, 1, 2, 3, 4, 5, 6, 7),
+(166, 2, 7, 6, 6, 1, 2, 3, 4, 5, 6, 7),
+(167, 2, 7, 6, 7, 1, 2, 3, 4, 5, 6, 7),
+(168, 2, 7, 6, 8, 1, 2, 3, 4, 5, 6, 7),
+(169, 2, 7, 6, 9, 1, 2, 3, 4, 5, 6, 7),
+(170, 2, 7, 6, 10, 1, 2, 3, 4, 5, 6, 7),
+(171, 2, 7, 6, 11, 1, 2, 3, 4, 5, 6, 7),
+(172, 2, 7, 6, 12, 1, 2, 3, 4, 5, 6, 7),
+(173, 2, 7, 6, 13, 1, 2, 3, 4, 5, 6, 7),
+(174, 2, 7, 6, 14, 1, 2, 3, 4, 5, 6, 7),
+(175, 2, 7, 6, 15, 1, 2, 3, 4, 5, 6, 7),
+(176, 2, 7, 6, 16, 1, 2, 3, 4, 5, 6, 7),
+(177, 2, 7, 6, 17, 1, 2, 3, 4, 5, 6, 7),
+(178, 2, 7, 6, 18, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
@@ -408,7 +522,17 @@ CREATE TABLE IF NOT EXISTS `total_poblacion_atendida` (
   KEY `id_periodo_escolar` (`id_periodo_escolar`),
   KEY `id_mes` (`id_mes`),
   KEY `id_tipo_poblacion_atendida` (`id_tipo_poblacion_atendida`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+
+--
+-- Dumping data for table `total_poblacion_atendida`
+--
+
+INSERT INTO `total_poblacion_atendida` (`id_poblacion_atendida`, `id_sexo`, `id_periodo_escolar`, `id_mes`, `id_tipo_poblacion_atendida`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
+(9, 1, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(10, 1, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(11, 2, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(12, 2, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
@@ -434,7 +558,37 @@ CREATE TABLE IF NOT EXISTS `total_referidos` (
   KEY `id_periodo_escolar` (`id_periodo_escolar`),
   KEY `id_mes` (`id_mes`),
   KEY `id_tipo_referido` (`id_tipo_referido`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=97 ;
+
+--
+-- Dumping data for table `total_referidos`
+--
+
+INSERT INTO `total_referidos` (`id_referido`, `id_sexo`, `id_periodo_escolar`, `id_mes`, `id_tipo_referido`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
+(73, 1, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(74, 1, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(75, 1, 7, 6, 3, 1, 2, 3, 4, 5, 6, 7),
+(76, 1, 7, 6, 4, 1, 2, 3, 4, 5, 6, 7),
+(77, 1, 7, 6, 5, 1, 2, 3, 4, 5, 6, 7),
+(78, 1, 7, 6, 6, 1, 2, 3, 4, 5, 6, 7),
+(79, 1, 7, 6, 7, 1, 2, 3, 4, 5, 6, 7),
+(80, 1, 7, 6, 8, 1, 2, 3, 4, 5, 6, 7),
+(81, 1, 7, 6, 9, 1, 2, 3, 4, 5, 6, 7),
+(82, 1, 7, 6, 10, 1, 2, 3, 4, 5, 6, 7),
+(83, 1, 7, 6, 11, 1, 2, 3, 4, 5, 6, 7),
+(84, 1, 7, 6, 12, 1, 2, 3, 4, 5, 6, 7),
+(85, 2, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(86, 2, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(87, 2, 7, 6, 3, 1, 2, 3, 4, 5, 6, 7),
+(88, 2, 7, 6, 4, 1, 2, 3, 4, 5, 6, 7),
+(89, 2, 7, 6, 5, 1, 2, 3, 4, 5, 6, 7),
+(90, 2, 7, 6, 6, 1, 2, 3, 4, 5, 6, 7),
+(91, 2, 7, 6, 7, 1, 2, 3, 4, 5, 6, 7),
+(92, 2, 7, 6, 8, 1, 2, 3, 4, 5, 6, 7),
+(93, 2, 7, 6, 9, 1, 2, 3, 4, 5, 6, 7),
+(94, 2, 7, 6, 10, 1, 2, 3, 4, 5, 6, 7),
+(95, 2, 7, 6, 11, 1, 2, 3, 4, 5, 6, 7),
+(96, 2, 7, 6, 12, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
@@ -462,7 +616,27 @@ CREATE TABLE IF NOT EXISTS `total_tiempo_permanencia` (
   KEY `id_periodo_escolar` (`id_periodo_escolar`),
   KEY `id_mes` (`id_mes`),
   KEY `id_tipo_permanencia_2` (`id_tipo_permanencia`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=71 ;
+
+--
+-- Dumping data for table `total_tiempo_permanencia`
+--
+
+INSERT INTO `total_tiempo_permanencia` (`id_tiempo_permanencia`, `id_sexo`, `id_periodo_escolar`, `id_mes`, `id_tipo_permanencia`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
+(57, 1, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(58, 1, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(59, 1, 7, 6, 3, 1, 2, 3, 4, 5, 6, 7),
+(60, 1, 7, 6, 4, 1, 2, 3, 4, 5, 6, 7),
+(61, 1, 7, 6, 5, 1, 2, 3, 4, 5, 6, 7),
+(62, 1, 7, 6, 6, 1, 2, 3, 4, 5, 6, 7),
+(63, 1, 7, 6, 7, 1, 2, 3, 4, 5, 6, 7),
+(64, 2, 7, 6, 1, 1, 2, 3, 4, 5, 6, 7),
+(65, 2, 7, 6, 2, 1, 2, 3, 4, 5, 6, 7),
+(66, 2, 7, 6, 3, 1, 2, 3, 4, 5, 6, 7),
+(67, 2, 7, 6, 4, 1, 2, 3, 4, 5, 6, 7),
+(68, 2, 7, 6, 5, 1, 2, 3, 4, 5, 6, 7),
+(69, 2, 7, 6, 6, 1, 2, 3, 4, 5, 6, 7),
+(70, 2, 7, 6, 7, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
@@ -488,7 +662,49 @@ CREATE TABLE IF NOT EXISTS `total_visita_edad` (
   KEY `id_mes` (`id_mes`),
   KEY `id_sexo` (`id_sexo`),
   KEY `id_tipo_edad` (`id_tipo_edad`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=109 ;
+
+--
+-- Dumping data for table `total_visita_edad`
+--
+
+INSERT INTO `total_visita_edad` (`id_visita_edad`, `id_periodo_escolar`, `id_mes`, `id_sexo`, `id_tipo_edad`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
+(73, 7, 6, 1, 1, 1, 2, 3, 4, 5, 6, 2),
+(74, 7, 6, 1, 2, 1, 2, 3, 4, 5, 6, 2),
+(75, 7, 6, 1, 3, 1, 2, 3, 4, 5, 6, 2),
+(76, 7, 6, 1, 4, 1, 2, 3, 4, 5, 6, 2),
+(77, 7, 6, 1, 5, 1, 2, 3, 4, 5, 6, 2),
+(78, 7, 6, 1, 6, 1, 2, 3, 4, 5, 6, 2),
+(79, 7, 6, 1, 7, 1, 2, 3, 4, 5, 6, 7),
+(80, 7, 6, 1, 8, 1, 2, 3, 4, 5, 6, 7),
+(81, 7, 6, 1, 9, 1, 2, 3, 4, 5, 6, 7),
+(82, 7, 6, 1, 10, 1, 2, 3, 4, 5, 6, 7),
+(83, 7, 6, 1, 11, 1, 2, 3, 4, 5, 6, 7),
+(84, 7, 6, 1, 12, 1, 2, 3, 4, 5, 6, 7),
+(85, 7, 6, 1, 13, 1, 2, 3, 4, 5, 6, 7),
+(86, 7, 6, 1, 14, 1, 2, 3, 4, 5, 6, 7),
+(87, 7, 6, 1, 15, 1, 2, 3, 4, 5, 6, 7),
+(88, 7, 6, 1, 16, 1, 2, 3, 4, 5, 6, 7),
+(89, 7, 6, 1, 17, 1, 2, 3, 4, 5, 6, 7),
+(90, 7, 6, 1, 18, 1, 2, 3, 4, 5, 6, 7),
+(91, 7, 6, 2, 1, 1, 2, 3, 4, 5, 6, 2),
+(92, 7, 6, 2, 2, 1, 2, 3, 4, 5, 6, 2),
+(93, 7, 6, 2, 3, 1, 2, 3, 4, 5, 6, 2),
+(94, 7, 6, 2, 4, 1, 2, 3, 4, 5, 6, 2),
+(95, 7, 6, 2, 5, 1, 2, 3, 4, 5, 6, 2),
+(96, 7, 6, 2, 6, 1, 2, 3, 4, 5, 6, 2),
+(97, 7, 6, 2, 7, 1, 2, 3, 4, 5, 6, 7),
+(98, 7, 6, 2, 8, 1, 2, 3, 4, 5, 6, 7),
+(99, 7, 6, 2, 9, 1, 2, 3, 4, 5, 6, 7),
+(100, 7, 6, 2, 10, 1, 2, 3, 4, 5, 6, 7),
+(101, 7, 6, 2, 11, 1, 2, 3, 4, 5, 6, 7),
+(102, 7, 6, 2, 12, 1, 2, 3, 4, 5, 6, 7),
+(103, 7, 6, 2, 13, 1, 2, 3, 4, 5, 6, 7),
+(104, 7, 6, 2, 14, 1, 2, 3, 4, 5, 6, 7),
+(105, 7, 6, 2, 15, 1, 2, 3, 4, 5, 6, 7),
+(106, 7, 6, 2, 16, 1, 2, 3, 4, 5, 6, 7),
+(107, 7, 6, 2, 17, 1, 2, 3, 4, 5, 6, 7),
+(108, 7, 6, 2, 18, 1, 2, 3, 4, 5, 6, 7);
 
 -- --------------------------------------------------------
 
@@ -503,18 +719,23 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `pregunta_secreta` varchar(20) NOT NULL,
   `nombre_usuario` varchar(20) NOT NULL,
   `respuesta_secreta` varchar(20) NOT NULL,
+  `roles` varchar(15) NOT NULL,
   PRIMARY KEY (`id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `usuario`
 --
 
-INSERT INTO `usuario` (`id_usuario`, `email`, `clave`, `pregunta_secreta`, `nombre_usuario`, `respuesta_secreta`) VALUES
-(1, 'wilbert@gmail.com', '123', 'home', 'Wilbert Angarita', ''),
-(2, 'marita@marraida', '123', 'color_favorito', 'Maria Angarita', 'azul'),
-(3, 'virginia', '123', 'color_favorito', 'Virginia Lusinchi', 'rojo'),
-(4, '', '123', '', '', '');
+INSERT INTO `usuario` (`id_usuario`, `email`, `clave`, `pregunta_secreta`, `nombre_usuario`, `respuesta_secreta`, `roles`) VALUES
+(1, 'wilbert@gmail.com', '123', 'home', 'Wilbert Angarita', '', 'Adiministrador'),
+(2, 'marita@marraida', '123', 'color_favorito', 'Maria Angarita', 'azul', 'Estandar'),
+(3, 'virginia', '123', 'color_favorito', 'Virginia Lusinchi', 'rojo', 'Estandar'),
+(4, 'root', 'root', '', 'Root', '', 'Administrador'),
+(5, 'rioyi_kaji@hotmail.c', '123', 'animal_favorito', 'rioyi', 'pikachu', 'Estandar'),
+(6, 'rioyi_kaji@hotmail.c', '123', 'animal_favorito', 'rioyi', 'pikachu', 'Estandar'),
+(7, 'rioyi_kaji@hotmail.c', '123', 'animal_favorito', 'rioyi', 'pikachu', 'Estandar'),
+(9, 'misato_katsuragui@ho', '123', '', 'Misato', 'dsad', 'Estandar');
 
 --
 -- Constraints for dumped tables

@@ -10,12 +10,22 @@
     <title>Sistema Estadistico</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <!--external css-->
-    <link href="../assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link rel="../stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
-    <link rel="../stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
-    <link rel="../stylesheet" type="text/css" href="assets/lineicons/style.css">    
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- font Awesome -->
+        <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="../../css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- daterange picker -->
+        <link href="../../css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+        <!-- iCheck for checkboxes and radio inputs -->
+        <link href="../../css/iCheck/all.css" rel="stylesheet" type="text/css" />
+        <!-- Bootstrap Color Picker -->
+        <link href="../../css/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet"/>
+        <!-- Bootstrap time Picker -->
+        <link href="../../css/timepicker/bootstrap-timepicker.min.css" rel="stylesheet"/>
+        <!-- Theme style -->
+        <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
+   
     
     <!-- Custom styles for this template -->
     <link href="../assets/css/style.css" rel="stylesheet">
@@ -44,14 +54,14 @@ echo "$id";
       <font color="#2c3e50">
         <p><h2><b>ESTA A PUNTO DE</b> </h2>
 <div class="alert alert-danger" role="alert">
-  <font size="9"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  <font size="9"><span class="glyphicon glyphicon-floppy-remove" aria-hidden="true"></span>
   <span class="sr-only"></span>
   BORRAR</font>
 </div>
 
-         <h2><b>LOS DATOS DE UN USUARIO</b></h2></p>        
+         <h2><b>LOS DATOS DE UN PERIODO ESCOLAR</b></h2></p>        
       </font>
-      <div class="alert alert-warning" role="alert">¡BORRAR LOS DATOS IMPLICA PERDER TODA LA INFORMACION DEL DOCENTE!</div>
+      <div class="alert alert-warning" role="alert"><strong>¡BORRAR LOS DATOS IMPLICA PERDER TODA LA INFORMACIÓN PERMANENTEMENTE!</strong></div>
       
 
 

@@ -7,8 +7,9 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>Borrar Docente</title>
+    <title>Modificar Exitoso</title>
 
+    <!-- Bootstrap core CSS -->
     <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- font Awesome -->
         <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -24,6 +25,7 @@
         <link href="../../css/timepicker/bootstrap-timepicker.min.css" rel="stylesheet"/>
         <!-- Theme style -->
         <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
+
     <script src="../assets/js/chart-master/Chart.js"></script>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -39,30 +41,30 @@
  <br>
         <br>
         <br>
-        <center><font size="8px" color="#e74c3c"><span class="glyphicon glyphicon glyphicon glyphicon-trash" aria-hidden="true"></span></font>
+        <center><font size="15px" color="#1abc9c"><span class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></span></font>
         <br>
       <font color="#2c3e50">       
 <div class="alert alert-success" role="alert">
   <font size="9"><span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span>
   <span class="sr-only"></span>
-  SE HA BORRADO EXITOSAMENTE</font>
+  SE HA MODIFICADO EXITOSAMENTE</font>
 </div>
 
-         <h2><b>LOS DATOS DEL DOCENTE</b></h2></p>        
+         <h2><b>LOS DATOS DEL USUARIO</b></h2></p>        
       </font>
-      <div class="alert alert-warning" role="alert">¡BORRAR LOS DATOS IMPLICA PERDER TODA LA INFORMACIÓN DEL DOCENTE!</div>
+      <div class="alert alert-warning" role="alert">¡ESTA INFORMACIÓN PODRA CONSULTARLA EN LA SECCIÓN DE USUARIOS!</div>
       
 
 
 
-       <a href="../../index.php">
+      <a href="../../index.php">
         <button type="button" class="btn btn-primary  btn-lg">
           <span class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></span> IR A INICIO
         </button>
       </a>
-      <a href="../forms/form_docente.php">
+      <a href="../forms/form_usuario.php">
         <button type="button" class="btn btn-success  btn-lg">
-          <span class="glyphicon glyphicon-user" aria-hidden="true"></span> IR A DOCENTES
+          <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> IR A USUARIOS
         </button>
       </a>
 

@@ -27,7 +27,7 @@ require("../control/conexion_bd.php");
 			
 			
 			mysql_close($link);
-			#header('location: emergente/registro_alumno.php');
+			header('location: ../emergente/registro_docente_exitoso.php');
 			echo "Se a Registrado el DOCENTE";
 			echo "<html><br><html>";
 			echo "<html><a href='../../index.html'>inicio</a><html>";

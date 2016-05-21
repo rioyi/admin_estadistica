@@ -7,7 +7,7 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>Borrar Docente</title>
+    <title>Sistema Estadistico</title>
 
     <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- font Awesome -->
@@ -24,7 +24,6 @@
         <link href="../../css/timepicker/bootstrap-timepicker.min.css" rel="stylesheet"/>
         <!-- Theme style -->
         <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
-    <script src="../assets/js/chart-master/Chart.js"></script>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,37 +33,55 @@
 
 	</head>
 <body>
-
+<?php
+$id=$_GET['id'];
+echo "$id";
+?>
 
  <br>
         <br>
         <br>
-        <center><font size="8px" color="#e74c3c"><span class="glyphicon glyphicon glyphicon glyphicon-trash" aria-hidden="true"></span></font>
+        <center><font size="8px" color="#f39c12"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span></font>
         <br>
-      <font color="#2c3e50">       
+      <font color="#2c3e50">
+        <p><h2><b>ESTA A PUNTO DE</b> </h2>
 <div class="alert alert-success" role="alert">
-  <font size="9"><span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span>
+  <font size="9"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
   <span class="sr-only"></span>
-  SE HA BORRADO EXITOSAMENTE</font>
+  MODIFICAR</font>
 </div>
 
-         <h2><b>LOS DATOS DEL DOCENTE</b></h2></p>        
+         <h2><b>LOS DATOS DE UN USUARIO</b></h2></p>        
       </font>
-      <div class="alert alert-warning" role="alert">¡BORRAR LOS DATOS IMPLICA PERDER TODA LA INFORMACIÓN DEL DOCENTE!</div>
+      <div class="alert alert-warning" role="alert">MODIFICAR LOS DATOS IMPLICA QUE AFECTA LA INFORMACION DEL USUARIO REGISTRADA!</div>
       
 
 
+<form class="contact_form" action="../control/borrar_usuario.php" method="post">
+  <input type="hidden" name="id_usuario" value= <?php echo "$id"; ?> />
+      <button type="submit" class="btn btn-success  btn-lg">
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> GUARDAR CAMBIOS
+      </button>
 
-       <a href="../../index.php">
-        <button type="button" class="btn btn-primary  btn-lg">
-          <span class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></span> IR A INICIO
-        </button>
-      </a>
-      <a href="../forms/form_docente.php">
-        <button type="button" class="btn btn-success  btn-lg">
-          <span class="glyphicon glyphicon-user" aria-hidden="true"></span> IR A DOCENTES
-        </button>
-      </a>
+      <a href="javascript:history.go(-1)">
+      <button type="button" class="btn btn-primary  btn-lg">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> NO CAMBIAR
+      </button></a>
+
+</form>
+
+      
+
+
+       <br>
+       <br>
+       </center>
+
+       
+
+
+
+
 
 </body>
 </html>
