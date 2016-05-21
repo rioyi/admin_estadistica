@@ -171,12 +171,19 @@ $arreglo = mysql_fetch_array($query);
                             <!-- small box -->
                             <div class="small-box bg-green">
                                 <div class="inner">
-                                    <h3>
+                                    
                                        <?php
-                                       	$fecha =  date("d-m-Y");
-                                       	echo "$fecha"; 
+                                       	$dia =  date("d");
+                                        $mes =  date("m");
+                                        $año = date ("Y");                                       	
                                        ?>
-                                    </h3>
+                                    
+                                        <h3>
+                                            <?php echo "$dia"; ?>
+                                            <?php echo "$mes"; ?>
+                                            <?php echo "$año"; ?>
+                                        </h3>
+                                   
                                     <p>                                   	
                                         FECHA DE HOY                                        
                                     </p>    
@@ -226,60 +233,60 @@ $arreglo = mysql_fetch_array($query);
                         <!--Consulta y sumatorio de niños por edad para calcular el total del año escolar -->
                             <?php 
                                 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='1'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='1'");
 
                                 $resultado1 = mysql_result($query,0);
                                                      
                                 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='2'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='2'");
                                 $resultado2 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='3'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='3'");
                                 $resultado3 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='4'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='4'");
                                 $resultado4 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='5'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='5'");
                                 $resultado5 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='6'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='6'");
                                 $resultado6 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='7'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='7'");
                                 $resultado7 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='8'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='8'");
                                 $resultado8 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='9'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='9'");
                                 $resultado9 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='10'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='10'");
                                 $resultado10 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='11'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='11'");
                                 $resultado11 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='12'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='12'");
                                 $resultado12 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='13'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='13'");
                                 $resultado13 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='14'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='14'");
                                 $resultado14 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='15'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='15'");
                                 $resultado15 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='16'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='16'");
                                 $resultado16 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='17'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='17'");
                                 $resultado17 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='18'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='18'");
                                 $resultado18 = mysql_result($query,0);
 
                                 
@@ -293,8 +300,7 @@ $arreglo = mysql_fetch_array($query);
                                 <div class="inner">
                                     <h3>
                                         <?php
-                                            echo "$sum";
-                                            
+                                            echo "$sum";                                            
                                         ?>
                                     </h3>
                                     <p>
@@ -313,60 +319,60 @@ $arreglo = mysql_fetch_array($query);
                         <!--Consulta y sumatorio de niños por edad para calcular el total del año escolar -->
                             <?php 
                                 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='1'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='1'");
 
                                 $resultado1 = mysql_result($query,0);
                                                      
                                 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='2'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='2'");
                                 $resultado2 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='3'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='3'");
                                 $resultado3 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='4'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='4'");
                                 $resultado4 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='5'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='5'");
                                 $resultado5 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='6'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='6'");
                                 $resultado6 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='7'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='7'");
                                 $resultado7 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='8'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='8'");
                                 $resultado8 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='9'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='9'");
                                 $resultado9 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='10'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='10'");
                                 $resultado10 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '1'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='11'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='11'");
                                 $resultado11 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='12'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='12'");
                                 $resultado12 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='13'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='13'");
                                 $resultado13 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='14'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='14'");
                                 $resultado14 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='15'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='15'");
                                 $resultado15 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='16'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='16'");
                                 $resultado16 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='17'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='17'");
                                 $resultado17 = mysql_result($query,0);
 
-                                $query = mysql_query("SELECT p1+p2+p3+p4+p5+gi+gii FROM total_visita_edad WHERE id_sexo = '2'AND id_mes='6' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='18'");
+                                $query = mysql_query("SELECT SUM(p1+p2+p3+p4+p5+gi+gii) FROM total_visita_edad WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar' AND id_tipo_edad='18'");
                                 $resultado18 = mysql_result($query,0);
 
                                 
@@ -377,6 +383,7 @@ $arreglo = mysql_fetch_array($query);
                             <!-- small box -->
                             <div class="small-box bg-red">
                                 <div class="inner">
+                                    <p>
                                     <h3>
                                         <?php 
                                             echo "$sum2";
