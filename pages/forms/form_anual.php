@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <meta charset="UTF-8">
         <title>Sistema | Estadistico</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
@@ -27,17 +28,8 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-        <script language="JavaScript"> 
-function pregunta(){ 
-    if (confirm('¿Estas seguro de enviar este formulario?')){ 
-       document.tuformulario.submit() 
-    } 
-} 
-</script>
     </head>
      <body class="skin-blue">
-
-     
         <!-- header logo: style can be found in header.less -->
         <header class="header">
             <a href="index.html" class="logo">
@@ -61,7 +53,7 @@ function pregunta(){
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
-                                <span>Nombre Usuario <i class="caret"></i></span>
+                                <span>Nombre Usuariooooo <i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
@@ -114,17 +106,10 @@ function pregunta(){
                     <!-- /.formulario del buscado -->
                     <!-- sidebar del menu: el estilo puedeo ser encontrado en sidebar.less -->
 <?php 
+    include("menu_form.php")
+?>
 
-$id=$_GET['id'];
-
-    include("menu_form.php");
-    require ("../control/conexion_bd.php");
-    $sql="SELECT * FROM docente where id_docente = '$id'";
-    $datos=mysql_query($sql,$link);
-    $arreglo = mysql_fetch_array($datos);
-?>                  
-
-
+                   
                     </ul>
                 </section>
                 <!-- /.sidebar -->
@@ -135,13 +120,14 @@ $id=$_GET['id'];
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        Sección Docente                     <small>Edición - Vista</small>
+                        Consulta de registros mensuales
+                        <small>Consulta - Vista</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
                         <li><a href="#">Formularios</a></li>
-                        <li class="active">Formulario Periodo Escolar</li>
-                    </ol>                    
+                        <li class="active">Formulario Consulta Registros Mensuales</li>
+                    </ol>
                 </section>
 
                 <!-- Main content -->
@@ -151,167 +137,74 @@ $id=$_GET['id'];
 
                             <div class="box box-info">
                                 <div class="box-header">
-                                    <h3 class="box-title">Ver y Modificar Información del Usuario</h3>
+                                    <h3 class="box-title">Busquedad de registro mensual</h3>
                                 </div>
                             <!-- inicio de form -->
-                            <form name=tuformulario action="../control/editar_docente.php" method="post" >
+                            <form action="../reporte/reporte_anual.php" method="post" >
 
                                 <div class="box-body">
                                     <!-- Nombre -->
-                                    <div class="form-group">
-                                    <input type="hidden" name="id_usuario" value="<?php echo "$id"; ?>">
-                                    
-                                        <label>Nombre:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
-                                            </div>
-                                            <input type="text" name="nombre" class="form-control" value="<?php echo $arreglo['nombre_docente']?>" />
-                                        </div><!-- /.input group -->
-                                    </div><!-- /.form group -->
-
-                                    <div class="form-group">
-                                        <label>Apellido:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
-                                            </div>
-                                            <input type="text" name="apellido" class="form-control" value="<?php echo $arreglo['apellido_docente'];?>" />
-                                        </div><!-- /.input group -->
-                                    </div><!-- /.form group -->
-
-                                    <div class="form-group">
-                                        <label>Email:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
-                                            </div>
-                                            <input type="text" name="email" class="form-control" value="<?php echo $arreglo['email'];?>"/>
-                                        </div><!-- /.input group -->
-                                    </div><!-- /.form group -->
-
-                                    <div class="form-group">
-                                        <label>Dirección:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
-                                            </div>
-                                            <input type="text" name="direccion" class="form-control" value="<?php echo $arreglo['direccion']; ?>" />
-                                        </div><!-- /.input group -->
-                                    </div><!-- /.form group -->
                                     
 
                                     <div class="form-group">
-                                        <label>Teléfono:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
-                                            </div>
-                                            <input type="text" name="telefono" class="form-control" value="<?php echo $arreglo['telefono']; ?>"/>
-                                        </div><!-- /.input group -->
+                                        <label>Indique el Mes a aconsultar:</label>
+                                        <div class="form-group">
+                                                        <h3>SELECCIONAR PERIODO ESCOLAR</h3>
+                                                        <select class="form-control" name="periodo_escolar">
+                                                        <OPTION>SELECCIONE EL PERIODO ESCOLAR</OPTION>
+                                                        
+<?php
+require ("../control/conexion_bd.php");
+$query = 'SELECT * FROM periodo_escolar';
+$result= mysql_query($query, $link);
+ 
+?>
+
+    <?php
+    while ( $row = mysql_fetch_array($result) )
+    {
+        ?>
+ 
+        <option value=" <?php echo $row['id_periodo_escolar'] ?> " >
+        <?php echo $row['inicio']; echo "-"; echo $row['fin']; ?>
+        </option>
+ 
+        <?php
+    }
+    ?>
+</select>
+
+                                                    </div>  <!-- /.form-group   Select Dinamico -->
                                     </div><!-- /.form group -->
 
-                                    <div class="form-group">
-                                            <label>Piso</label>
-                                            <strong>Piso Actual:</strong><?php echo $arreglo['piso']; ?>
-                                            <select class="form-control" name="piso">
-                                                <option value="<?php echo $arreglo['piso'];  ?>"><?php echo $arreglo['piso'];  ?></option>
-                                                <option value="P1">Piso 1</option>
-                                                <option value="P2" >Piso 2</option>
-                                                <option value="P3">Piso 3</option>
-                                                <option value="P4">Piso 4</option>
-                                                <option value="P5">Piso 5</option>
-                                                <option value="GI">Garzas I</option>
-                                                <option value="GII">Garzas II</option>                    
-                                            </select>
-                                    </div>
-
                                     
-
-                                    <button type="submit" class="btn btn-primary">GUARDAR CAMBIOS</button>
-
-                                   
+                                    <button  type="submit" class="btn btn-primary btn-lg btn-block">
+                                                                        <H1>
+                                                                            <span class="glyphicon glyphicon-send" aria-hidden="true"></span> CONSULTAR
+                                                                        </H1>
+                                                                    </button> 
+                                    <!-- Apellido -->
+                                                                       
 
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                             </form>
                            
                         </div><!-- /.col (left) -->
-
-
-<?php
-#$consulta = $_POST['consulta'];
-#echo "<h3>Su Consulta es: $consulta</h3>";
-
-require ("../control/conexion_bd.php");
-  
-  $sql="SELECT * FROM docente";
-  $datos=mysql_query($sql,$link);
-  $contador = mysql_num_rows($datos);
-    if ($contador == 0)
-      {
-        echo "<center><h1><font color='#E74C3C'>NO SE ENCONTRO RESULTADOS :-( </font></h1></center>";
-      }
-    else
-      {
-                    
-?>
-
-
-
-
                         <div class="col-md-6">
                             <div class="box box-success">
                                 <div class="box-header">
-                                     <h3 class="box-title">Lista de Docentes</h3>
+                                     <h3 class="box-title">Informació sobre la consulta</h3>
                                 </div><!-- /.box-header -->
                                 <div class="box-body">
-                                    <table class="table table-bordered">
-                                        <tr>
-                                        
-                                            <th style="width: 10px">PISO</th>
-                                            <th><center>NOMBRE Y APELLIDO</center></th>
-                                            <th>  OPCIONES</th>
-                                        
-                                        </tr>
-<?php
-                              while ($renglon=mysql_fetch_array($datos)) 
-                                {
-?>
-                              <tbody>
-                                <tr>                                
-                                  <td><?php echo $renglon['piso']; ?></td>
-                                  <td><?php echo $renglon['nombre_docente']; echo "  "; echo $renglon['apellido_docente']?></td>
-                                  <td>
-                                  <a href="../forms/form_docente_editar.php?id=<?php echo $renglon['id_docente']?>"> <button class="btn btn-success btn-xs"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button></a>
-                                  
-                                  <a href="../emergente/borrar_docente.php?id=<?php echo $renglon['id_docente']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button></a>   
-                                    
-                                  </td>
-                                </tr>
-
-                                 
-                              </tbody>
-                              <?php } }?>
-                                        
-                                    </table>
+                                <div class="alert alert-info" role="alert">
+                                    <CENTER>
+                                        <H2>PERIODO ESCOLAR ACTUAL</H2>                         
+                                    </CENTER>    
                                 </div><!-- /.box-body -->
-                                <div class="box-footer clearfix">
-                                    <ul class="pagination pagination-sm no-margin pull-right">
-                                        <li><a href="#">&laquo;</a></li>
-                                        <li><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">&raquo;</a></li>
-                                    </ul>
-                                </div>
+                                
                             </div><!-- /.form group -->
 
-                                </div><!-- /.box-body -->
-                            </div><!-- /.box -->
-
-                            
-                        </div><!-- /.col (right) -->
                     </div><!-- /.row -->                    
 
                 </section><!-- /.content -->
@@ -319,9 +212,10 @@ require ("../control/conexion_bd.php");
         </div><!-- ./wrapper -->
 
 
-        <!-- jQuery 2.0.2 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -->
+        <!-- jQuery 2.0.2 -->
         <script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <!-- Bootstrap -->
+        <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
         <!-- Bootstrap -->
         <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
         <!-- InputMask -->
@@ -337,7 +231,66 @@ require ("../control/conexion_bd.php");
         <!-- AdminLTE App -->
         <script src="../../js/AdminLTE/app.js" type="text/javascript"></script>
 
-       
+        <!-- Page script -->
+        <script type="text/javascript">
+            $(function() {
+                //Datemask dd/mm/yyyy
+                $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+                //Datemask2 mm/dd/yyyy
+                $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
+                //Money Euro
+                $("[data-mask]").inputmask();
+
+                //Date range picker
+                $('#reservation').daterangepicker();
+                //Date range picker with time picker
+                $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
+                //Date range as a button
+                $('#daterange-btn').daterangepicker(
+                        {
+                            ranges: {
+                                'Today': [moment(), moment()],
+                                'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
+                                'Last 7 Days': [moment().subtract('days', 6), moment()],
+                                'Last 30 Days': [moment().subtract('days', 29), moment()],
+                                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                                'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
+                            },
+                            startDate: moment().subtract('days', 29),
+                            endDate: moment()
+                        },
+                function(start, end) {
+                    $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+                }
+                );
+
+                //iCheck for checkbox and radio inputs
+                $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+                    checkboxClass: 'icheckbox_minimal',
+                    radioClass: 'iradio_minimal'
+                });
+                //Red color scheme for iCheck
+                $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+                    checkboxClass: 'icheckbox_minimal-red',
+                    radioClass: 'iradio_minimal-red'
+                });
+                //Flat red color scheme for iCheck
+                $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+                    checkboxClass: 'icheckbox_flat-red',
+                    radioClass: 'iradio_flat-red'
+                });
+
+                //Colorpicker
+                $(".my-colorpicker1").colorpicker();
+                //color picker with addon
+                $(".my-colorpicker2").colorpicker();
+
+                //Timepicker
+                $(".timepicker").timepicker({
+                    showInputs: false
+                });
+            });
+        </script>
 
     </body>
 </html>

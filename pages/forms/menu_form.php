@@ -33,6 +33,9 @@
                 <a href="../../pages/forms/form_piso.php">
                     <i class="fa fa-angle-double-right"></i> Consulta por mes 
                 </a>
+                <a href="../../pages/forms/form_anual.php">
+                    <i class="fa fa-angle-double-right"></i> Consulta Anual 
+                </a>
             </li>                             
         </ul>
     </li>
