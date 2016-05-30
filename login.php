@@ -29,79 +29,63 @@ $valido=true;
              header("location:index.php?login=true");
          }               
       }
-
-
-
-
-
 ?>
-
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Iniciar Sesion</title>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login screen</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+</head>
+
+<body>
     
-    <link rel="stylesheet" href="css/style.css">
-     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <!-- font Awesome -->
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <!-- Ionicons -->
-        <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
-        <!-- Morris chart -->
-        <link href="css/morris/morris.css" rel="stylesheet" type="text/css" />
-        <!-- jvectormap -->
-        <link href="css/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
-        <!-- fullCalendar -->
-        <link href="css/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
-        <!-- Daterange picker -->
-        <link href="css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
-        <!-- bootstrap wysihtml5 - text editor -->
-        <link href="css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
-        <!-- Theme style -->
-        <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />   
+    <div class="container custom-container">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                
+                <h3 class="text-center">Hola, Bienvenido</h3>
+                <br>
+                <form class="form" role="form" method="POST" action="login.php">
+                
+                    <div class="form-group custom-elem">
+                        <label class="placeholder">E-mail</label>
+                        <input id="username" name="email" type="text" class="form-control material-input" autocomplete="off">
+                            <span class="bottom-liner"></span>
+                            <span class="highlight"></span>
+                    </div>
+                    <div class="form-group custom-elem">
+                        <label class="placeholder">Clave</label>
+                        <input id="password" name="clave" type="password" class="form-control material-input" autocomplete="off">
+                            <span class="bottom-liner"></span>
+                            <span class="highlight"></span>
+                            
+                    </div>
+                <?php if ($valido==false) {
+                                
+                                echo '<div class="alert alert-danger" role="alert"><center>Clave o Email equivocado <br> Intente de nuevo</center></div>';
+                                }?> 
+                
+                <p class="text-center"><small><b><a href="#">¿Olvido su Clave?</a></b></small></p>
+            </div>
+        </div>
+        <button id="flow-button" name="enviado" type="submit" class="btn btn-custom btn-block not-visible">ENTRAR</button>
+    </div>
     
-  </head>
-
-
-
-    <body>
-	<div class="login">
-		<div class="login-screen">
-			<div class="app-title">
-				<h1>Inciar Sesión</h1>
-			</div>
-			<form action="login.php" method="POST">
-			<div class="login-form">
-				
-					<div class="control-group">
-						<input type="text" class="login-field" name="email" placeholder="E-mail" id="login-name">
-						<label class="login-field-icon fui-user" for="login-name"></label>
-					</div>
-
-					<div class="control-group">
-						<input type="password" class="login-field" name="clave" placeholder="Clave" id="login-pass">
-						<label class="login-field-icon fui-lock" for="login-pass"></label>
-					</div>
-					
-					
-					<button class="btn btn-primary btn-large btn-block" type="submit" name="enviado">ENTRAR</button>
-					<a class="login-link" href="#">Perdite tu clave?</a>
-
-					<?php if ($valido==false) {
-                				
-                                echo '<div class="alert alert-danger" role="alert">Los datos ingresados no se reconocen, por favor inténtelo de nuevo.</div>';
-            					}?>
-				
-			</div>
-			</form>
-		</div>
-	</div>
+    </form>
+    <!-- Bootstrap.min.js was deleted since it wasn't used in this example -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
-    
-    
-    
-    
-    
-  </body>
+
 </html>
