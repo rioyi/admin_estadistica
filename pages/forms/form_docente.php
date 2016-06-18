@@ -141,8 +141,8 @@
                                 <div class="box-header">
                                     <h3 class="box-title">Registrar Docente</h3>
                                 </div>
-                            <!-- inicio de form -->
-                            <form action="../control/registro_docente.php" method="post" >
+                            <!-- inicio de form  action="../control/registro_docente.php" -->
+                            <form action="#" method="post" id="formulario" >
 
                                 <div class="box-body">
                                     <!-- Nombre -->
@@ -152,7 +152,7 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-user"></i>
                                             </div>
-                                            <input type="text" name="nombre" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" id="nombre" name="nombre" class="form-control"/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -163,7 +163,7 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-user"></i>
                                             </div>
-                                            <input type="text" name="apellido" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask/>
+                                            <input type="text" name="apellido" class="form-control" id="apellido" />
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -174,7 +174,7 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-phone"></i>
                                             </div>
-                                            <input type="text" name="telefono" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask/>
+                                            <input type="text" name="telefono" class="form-control" id="telefono" />
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -185,7 +185,7 @@
                                             <div class="input-group-addon">
                                                 <i class="glyphicon glyphicon-home"></i>
                                             </div>
-                                            <input type="text-area" name="direccion" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask/>
+                                            <input type="text-area" name="direccion" class="form-control" id="direccion" />
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -211,10 +211,10 @@
                                             <div class="input-group-addon">
                                                 <i class="glyphicon glyphicon-envelope"></i>
                                             </div>
-                                            <input type="text" naome="email" class="form-control"/>
+                                            <input type="text" name="email" id="email" class="form-control"/>
                                         </div><!-- /.input group -->
                                         <div class="box-footer">
-                                        <center><button type="submit" class="btn-lg btn-primary">REGISTRAR</button></center>
+                                        <center><button type="submit" id="btn" class="btn-lg btn-primary">REGISTRAR</button></center>
                                     </div>
                                     </div><!-- /.form group -->
 
@@ -305,11 +305,54 @@ require ("../control/conexion_bd.php");
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
+        <script type="text/javascript" src="../../js/valida/lib/jquery-1.11.1.js"></script>
+        <script src="../../js/valida/lib/jquery.js"></script>
+        <script src="../../js/valida/lib/jquery.mockjax.js"></script>
+        <script src="../../js/valida/lib/jquery.form.js"></script>
+        <script src="../../js/valida/dist/jquery.validate.js"></script>
+        <script src="../../js/valida/lib/jquery-1.11.1.js"></script>
+        <script src="../../js/valida/dist/jquery.validate.js"></script>
+         <script>
+        $(function(){
+            $.validator.addMethod('latino',function(value, element){
+                return this.optional(element) || /^[a-záéóóúàèìòùäëïöüñ\s]+$/i.test(value);
+            });
+            $("#btn").on("click", function(){
+                $("#formulario").validate 
+                    ({
+                    rules:
+                        {
+                        nombre: {required:true,latino: true ,minlength:3, maxlength:14},
+                        apellido: {required:true, latino: true, minlength:3, maxlength:14},
+                        telefono: {required:true, digits:true, minlength:11, maxlength:11},
+                        direccion: {required:true, minlength:8, maxlength:25},
+                        email: {required:true, email: true, maxlength:18},
 
+
+                        inicio:{required: true,digits: true, minlength: 4, maxlength: 4},
+                        final:{required: true, digits: true, minlength: 4, maxlength: 4}
+                        },
+                        messages:
+                        {
+                            nombre:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 14</font>',latino:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo letras</font>'},
+                            apellido:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 14</font>',latino:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo letras</font>'},
+                            telefono: {required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 11</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 11</font>',digits:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo Números</font>'},
+                            direccion:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 5</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 25</font>'},
+                            email:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', email:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Debe ser un formato de email correcto</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 18</font>'},
+                        }
+                    
+                });
+            });
+        });
+
+    </script>
 
         <!-- jQuery 2.0.2 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -
         <script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+        -->
+        
         <!-- Bootstrap -->
         <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
         <!-- InputMask -->
@@ -325,66 +368,6 @@ require ("../control/conexion_bd.php");
         <!-- AdminLTE App -->
         <script src="../../js/AdminLTE/app.js" type="text/javascript"></script>
 
-        <!-- Page script -->
-        <script type="text/javascript">
-            $(function() {
-                //Datemask dd/mm/yyyy
-                $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
-                //Datemask2 mm/dd/yyyy
-                $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
-                //Money Euro
-                $("[data-mask]").inputmask();
-
-                //Date range picker
-                $('#reservation').daterangepicker();
-                //Date range picker with time picker
-                $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
-                //Date range as a button
-                $('#daterange-btn').daterangepicker(
-                        {
-                            ranges: {
-                                'Today': [moment(), moment()],
-                                'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
-                                'Last 7 Days': [moment().subtract('days', 6), moment()],
-                                'Last 30 Days': [moment().subtract('days', 29), moment()],
-                                'This Month': [moment().startOf('month'), moment().endOf('month')],
-                                'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
-                            },
-                            startDate: moment().subtract('days', 29),
-                            endDate: moment()
-                        },
-                function(start, end) {
-                    $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-                }
-                );
-
-                //iCheck for checkbox and radio inputs
-                $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
-                    checkboxClass: 'icheckbox_minimal',
-                    radioClass: 'iradio_minimal'
-                });
-                //Red color scheme for iCheck
-                $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
-                    checkboxClass: 'icheckbox_minimal-red',
-                    radioClass: 'iradio_minimal-red'
-                });
-                //Flat red color scheme for iCheck
-                $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
-                    checkboxClass: 'icheckbox_flat-red',
-                    radioClass: 'iradio_flat-red'
-                });
-
-                //Colorpicker
-                $(".my-colorpicker1").colorpicker();
-                //color picker with addon
-                $(".my-colorpicker2").colorpicker();
-
-                //Timepicker
-                $(".timepicker").timepicker({
-                    showInputs: false
-                });
-            });
-        </script>
 
     </body>
 </html>
