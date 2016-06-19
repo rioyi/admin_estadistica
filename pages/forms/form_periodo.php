@@ -21,6 +21,34 @@
         <!-- Theme style -->
         <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
         
+        <script type="text/javascript" src="../../js/valida/lib/jquery-1.11.1.js"></script>
+        <script src="../../js/valida/lib/jquery.js"></script>
+        <script src="../../js/valida/lib/jquery.mockjax.js"></script>
+        <script src="../../js/valida/lib/jquery.form.js"></script>
+        <script src="../../js/valida/dist/jquery.validate.js"></script>
+        <script src="../../js/valida/lib/jquery-1.11.1.js"></script>
+        <script src="../../js/valida/dist/jquery.validate.js"></script>
+       <script>
+        $(function(){
+            $("#btn").on("click", function(){
+                $("#formulario").validate 
+                    ({
+                    rules:
+                        {
+                        inicio:{required: true,digits: true, minlength: 4, maxlength: 4},
+                        final:{required: true, digits: true, minlength: 4, maxlength: 4}
+                        },
+                        messages:
+                        {
+                            inicio:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 4</font>',digits:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo Números</font>'},
+                            final:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 4</font>',digits:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo Números</font>'}
+                        }
+                    
+                });
+            });
+        });
+
+    </script>
 
 
 
@@ -286,35 +314,7 @@ require ("../control/conexion_bd.php");
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
-        <script type="text/javascript" src="../../js/valida/lib/jquery-1.11.1.js"></script>
-		<script src="../../js/valida/lib/jquery.js"></script>
-		<script src="../../js/valida/lib/jquery.mockjax.js"></script>
-		<script src="../../js/valida/lib/jquery.form.js"></script>
-		<script src="../../js/valida/dist/jquery.validate.js"></script>
-		<script src="../../js/valida/lib/jquery-1.11.1.js"></script>
-		<script src="../../js/valida/dist/jquery.validate.js"></script>
-       <script>
-		$(function(){
-			$("#btn").on("click", function(){
-				$("#formulario").validate 
-					({
-					rules:
-						{
-						inicio:{required: true,digits: true, minlength: 4, maxlength: 4},
-						final:{required: true, digits: true, minlength: 4, maxlength: 4}
-						},
-						messages:
-						{
-							inicio:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 4</font>',digits:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo Números</font>'},
-							final:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 4</font>',digits:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo Números</font>'}
-						}
-					
-				});
-			});
-		});
-
-	</script>
-
+        
         <!-- jQuery 2.0.2 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> 
 		<script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>
