@@ -27,6 +27,51 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
+        <script type="text/javascript" src="../../js/valida/lib/jquery-1.11.1.js"></script>
+        <script src="../../js/valida/lib/jquery.js"></script>
+        <script src="../../js/valida/lib/jquery.mockjax.js"></script>
+        <script src="../../js/valida/lib/jquery.form.js"></script>
+        <script src="../../js/valida/dist/jquery.validate.js"></script>
+        <script src="../../js/valida/lib/jquery-1.11.1.js"></script>
+        <script src="../../js/valida/dist/jquery.validate.js"></script>
+         <script>
+        $(function(){
+            $.validator.addMethod('latino',function(value, element){
+                return this.optional(element) || /^[a-záéóóúàèìòùäëïöüñ\s]+$/i.test(value);
+            });
+            $("#btn").on("click", function(){
+                $("#formulario").validate 
+                    ({
+                    rules:
+                        {
+                        nombre: {required:true,latino: true ,minlength:3, maxlength:14},                     
+                        clave: {required:true, minlength:6, maxlength:15},                       
+                        respuesta: {required:true, minlength:8, maxlength:25},
+                        email: {required:true, email: true, maxlength:40}             
+
+                       
+                        },
+                        messages:
+                        {
+                            nombre:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 14</font>',latino:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo letras</font>'},
+                            
+                            clave:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 6</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 15</font>'},
+
+                          
+
+                            respuesta:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>',maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 15</font>'},
+
+                            email:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', email:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Debe ser un formato de email correcto</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 40</font>'}
+
+                            
+
+                        }
+                    
+                });
+            });
+        });
+
+    </script>
     </head>
      <body class="skin-blue">
         <!-- header logo: style can be found in header.less -->
@@ -138,7 +183,7 @@
                                     <h3 class="box-title">Registrar Periodo Escolar</h3>
                                 </div>
                             <!-- inicio de form -->
-                            <form action="../control/registro_usuario.php" method="post" >
+                            <form id="formulario" action="../control/registro_usuario.php" method="post" >
 
                                 <div class="box-body">
                                     <!-- Nombre -->
@@ -148,7 +193,7 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="nombre" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" id="nombre" name="nombre" class="form-control"/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -158,7 +203,7 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="email" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" id="email" name="email" class="form-control"/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -168,19 +213,11 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="password" name="clave" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" id="clave" name="clave" class="form-control"/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    <div class="form-group">
-                                        <label>Confirmar Clave:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
-                                            </div>
-                                            <input type="password" name="clave_confirmada" class="form-control"/>
-                                        </div><!-- /.input group -->
-                                    </div><!-- /.form group -->
+                                    
 
                                     <div class="form-group">
                                             <label>Pregunta Secreta</label>
@@ -200,7 +237,7 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="respuesta" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" id="respuesta" name="respuesta" class="form-control"/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -214,7 +251,7 @@
 
                                     
 
-                                    <button type="submit" class="btn btn-primary">REGISTRAR</button>
+                                    <button type="submit" id="btn" class="btn btn-primary">REGISTRAR</button>
 
                                    
 
@@ -313,8 +350,8 @@ require ("../control/conexion_bd.php");
 
 
         <!-- jQuery 2.0.2 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -->
-        <script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>  -->
         <!-- Bootstrap -->
         <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
         <!-- InputMask -->
