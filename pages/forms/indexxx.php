@@ -1,14 +1,3 @@
-<?php
-session_start();
-//manejamos en sesion el nombre del usuario que se ha logeado
-if (!isset($_SESSION["nombre_usuario"])){
-    header("location:login.php");
-    
-}
-$_SESSION["nombre_usuario"];
-?>
-
-
 
 
 
