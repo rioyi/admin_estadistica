@@ -1,3 +1,20 @@
+<?php
+
+
+session_start();
+//manejamos en sesion el nombre del usuario que se ha logeado
+if (!isset($_SESSION["nombre_usuario"])){
+    header("location:../../login.php");
+    
+}
+$id_user = $_SESSION["nombre_usuario"];
+require ("../control/conexion_bd.php");
+$consulta = "SELECT * FROM usuario WHERE id_usuario ='$id_user'";
+$query = mysql_query($consulta,$link);
+$arreglo = mysql_fetch_array($query);
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,6 +38,34 @@
         <!-- Theme style -->
         <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
         
+        <script type="text/javascript" src="../../js/valida/lib/jquery-1.11.1.js"></script>
+        <script src="../../js/valida/lib/jquery.js"></script>
+        <script src="../../js/valida/lib/jquery.mockjax.js"></script>
+        <script src="../../js/valida/lib/jquery.form.js"></script>
+        <script src="../../js/valida/dist/jquery.validate.js"></script>
+        <script src="../../js/valida/lib/jquery-1.11.1.js"></script>
+        <script src="../../js/valida/dist/jquery.validate.js"></script>
+       <script>
+        $(function(){
+            $("#btn").on("click", function(){
+                $("#formulario").validate 
+                    ({
+                    rules:
+                        {
+                        inicio:{required: true,digits: true, minlength: 4, maxlength: 4},
+                        final:{required: true, digits: true, minlength: 4, maxlength: 4}
+                        },
+                        messages:
+                        {
+                            inicio:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 4</font>',digits:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo Números</font>'},
+                            final:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 4</font>',digits:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo Números</font>'}
+                        }
+                    
+                });
+            });
+        });
+
+    </script>
 
 
 
@@ -50,15 +95,14 @@
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
-                                <span>Nombre Usuario <i class="caret"></i></span>
+                                <span>BIENVENIDO <?php echo $arreglo['nombre_usuario']  ?> <i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
                                     <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
-                                        Nombre Usuario - Maestra Piso 1
-                                        
+                                        <?php echo $arreglo['nombre_usuario']  ?> - Tipo de Cuenta <?php echo $arreglo['roles'] ?>                                       
                                     </p>
                                 </li>
                                 
@@ -68,7 +112,7 @@
                                         <a href="#" class="btn btn-default btn-flat">Perfil</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">Salir</a>
+                                        <a href="../../logout.php" class="btn btn-default btn-flat">Salir</a>
                                     </div>
                                 </li>
                             </ul>
@@ -88,7 +132,8 @@
                             <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
-                            <p>Hola, Usuario</p>                            
+                            <p>Hola, <?php echo $arreglo['nombre_usuario'];  ?></p>
+                            <p><?php echo $arreglo['roles'];  ?></p>                                
                         </div>
                     </div>
                     <!-- formulario del Buscador -->
@@ -286,35 +331,7 @@ require ("../control/conexion_bd.php");
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
-        <script type="text/javascript" src="../../js/valida/lib/jquery-1.11.1.js"></script>
-		<script src="../../js/valida/lib/jquery.js"></script>
-		<script src="../../js/valida/lib/jquery.mockjax.js"></script>
-		<script src="../../js/valida/lib/jquery.form.js"></script>
-		<script src="../../js/valida/dist/jquery.validate.js"></script>
-		<script src="../../js/valida/lib/jquery-1.11.1.js"></script>
-		<script src="../../js/valida/dist/jquery.validate.js"></script>
-       <script>
-		$(function(){
-			$("#btn").on("click", function(){
-				$("#formulario").validate 
-					({
-					rules:
-						{
-						inicio:{required: true,digits: true, minlength: 4, maxlength: 4},
-						final:{required: true, digits: true, minlength: 4, maxlength: 4}
-						},
-						messages:
-						{
-							inicio:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 4</font>',digits:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo Números</font>'},
-							final:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 4</font>',digits:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo Números</font>'}
-						}
-					
-				});
-			});
-		});
-
-	</script>
-
+        
         <!-- jQuery 2.0.2 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> 
 		<script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>

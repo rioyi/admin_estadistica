@@ -1,3 +1,19 @@
+<?php
+
+
+session_start();
+//manejamos en sesion el nombre del usuario que se ha logeado
+if (!isset($_SESSION["nombre_usuario"])){
+    header("location:../../login.php");
+    
+}
+$id_user = $_SESSION["nombre_usuario"];
+require ("../control/conexion_bd.php");
+$consulta = "SELECT * FROM usuario WHERE id_usuario ='$id_user'";
+$query = mysql_query($consulta,$link);
+$arreglo = mysql_fetch_array($query);
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -27,6 +43,51 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
+        <script type="text/javascript" src="../../js/valida/lib/jquery-1.11.1.js"></script>
+        <script src="../../js/valida/lib/jquery.js"></script>
+        <script src="../../js/valida/lib/jquery.mockjax.js"></script>
+        <script src="../../js/valida/lib/jquery.form.js"></script>
+        <script src="../../js/valida/dist/jquery.validate.js"></script>
+        <script src="../../js/valida/lib/jquery-1.11.1.js"></script>
+        <script src="../../js/valida/dist/jquery.validate.js"></script>
+         <script>
+        $(function(){
+            $.validator.addMethod('latino',function(value, element){
+                return this.optional(element) || /^[a-záéóóúàèìòùäëïöüñ\s]+$/i.test(value);
+            });
+            $("#btn").on("click", function(){
+                $("#formulario").validate 
+                    ({
+                    rules:
+                        {
+                        nombre: {required:true,latino: true ,minlength:3, maxlength:14},                     
+                        clave: {required:true, minlength:6, maxlength:15},                       
+                        respuesta: {required:true, minlength:8, maxlength:25},
+                        email: {required:true, email: true, maxlength:40}             
+
+                       
+                        },
+                        messages:
+                        {
+                            nombre:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 14</font>',latino:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo letras</font>'},
+                            
+                            clave:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 6</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 15</font>'},
+
+                          
+
+                            respuesta:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>',maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 15</font>'},
+
+                            email:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', email:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Debe ser un formato de email correcto</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 40</font>'}
+
+                            
+
+                        }
+                    
+                });
+            });
+        });
+
+    </script>
     </head>
      <body class="skin-blue">
         <!-- header logo: style can be found in header.less -->
@@ -52,15 +113,14 @@
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
-                                <span>Nombre Usuario <i class="caret"></i></span>
+                                <span>BIENVENIDO <?php echo $arreglo['nombre_usuario']  ?> <i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
                                     <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
-                                        Nombre Usuario - Maestra Piso 1
-                                        
+                                        <?php echo $arreglo['nombre_usuario']  ?> - Tipo de Cuenta <?php echo $arreglo['roles'] ?>                                       
                                     </p>
                                 </li>
                                 
@@ -70,7 +130,7 @@
                                         <a href="#" class="btn btn-default btn-flat">Perfil</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">Salir</a>
+                                        <a href="../../logout.php" class="btn btn-default btn-flat">Salir</a>
                                     </div>
                                 </li>
                             </ul>
@@ -90,7 +150,8 @@
                             <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
-                            <p>Hola, Usuario</p>                            
+                            <p>Hola, <?php echo $arreglo['nombre_usuario'];  ?></p>
+                            <p><?php echo $arreglo['roles'];  ?></p>                                
                         </div>
                     </div>
                     <!-- formulario del Buscador -->
@@ -138,7 +199,7 @@
                                     <h3 class="box-title">Registrar Periodo Escolar</h3>
                                 </div>
                             <!-- inicio de form -->
-                            <form action="../control/registro_usuario.php" method="post" >
+                            <form id="formulario" action="../control/registro_usuario.php" method="post" >
 
                                 <div class="box-body">
                                     <!-- Nombre -->
@@ -148,7 +209,7 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="nombre" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" id="nombre" name="nombre" class="form-control"/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -158,7 +219,7 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="email" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" id="email" name="email" class="form-control"/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -168,19 +229,11 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="password" name="clave" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" id="clave" name="clave" class="form-control"/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    <div class="form-group">
-                                        <label>Confirmar Clave:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
-                                            </div>
-                                            <input type="password" name="clave_confirmada" class="form-control"/>
-                                        </div><!-- /.input group -->
-                                    </div><!-- /.form group -->
+                                    
 
                                     <div class="form-group">
                                             <label>Pregunta Secreta</label>
@@ -200,7 +253,7 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="respuesta" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                            <input type="text" id="respuesta" name="respuesta" class="form-control"/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -214,7 +267,7 @@
 
                                     
 
-                                    <button type="submit" class="btn btn-primary">REGISTRAR</button>
+                                    <button type="submit" id="btn" class="btn btn-primary">REGISTRAR</button>
 
                                    
 
@@ -313,8 +366,8 @@ require ("../control/conexion_bd.php");
 
 
         <!-- jQuery 2.0.2 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -->
-        <script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>  -->
         <!-- Bootstrap -->
         <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
         <!-- InputMask -->

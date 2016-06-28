@@ -1,3 +1,19 @@
+<?php
+
+
+session_start();
+//manejamos en sesion el nombre del usuario que se ha logeado
+if (!isset($_SESSION["nombre_usuario"])){
+    header("location:../../login.php");
+    
+}
+$id_user = $_SESSION["nombre_usuario"];
+require ("../control/conexion_bd.php");
+$consulta = "SELECT * FROM usuario WHERE id_usuario ='$id_user'";
+$query = mysql_query($consulta,$link);
+$arreglo = mysql_fetch_array($query);
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -46,22 +62,19 @@
                     <span class="icon-bar"></span>
                 </a>
                 <div class="navbar-right">
-                    <ul class="nav navbar-nav">
-                                                
-                        
+                    <ul class="nav navbar-nav">              
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
-                                <span>Nombre Usuario <i class="caret"></i></span>
+                                <span>BIENVENIDO <?php echo $arreglo['nombre_usuario']  ?> <i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
                                     <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
-                                        Nombre Usuario - Maestra P1
-                                        
+                                        <?php echo $arreglo['nombre_usuario']  ?> - Tipo de Cuenta <?php echo $arreglo['roles'] ?>                                       
                                     </p>
                                 </li>
                                 
@@ -70,8 +83,8 @@
                                     <div class="pull-left">
                                         <a href="#" class="btn btn-default btn-flat">Perfil</a>
                                     </div>
-                                    <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">Salir</a>
+                                    <div class="pull-right">                                    
+                                        <a href="../../logout.php" class="btn btn-default btn-flat">Salir</a>
                                     </div>
                                 </li>
                             </ul>
@@ -91,7 +104,8 @@
                             <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
-                            <p>Hola, Usuario</p>                            
+                            <p>Hola, <?php echo $arreglo['nombre_usuario'];  ?></p>
+                            <p><?php echo $arreglo['roles'];  ?></p>                            
                         </div>
                     </div>
                     <!-- formulario del Buscador -->

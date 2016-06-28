@@ -1453,7 +1453,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
 
 
                                     
-                            <a href="#"><button type="button" class="btn btn-info"><b><span class="glyphicon glyphicon-print" aria-hidden="true"></span> IMPRIMIR</b></button></a>
+                            <a href="anual.php"><button type="button" class="btn btn-info"><b><span class="glyphicon glyphicon-print" aria-hidden="true"></span> IMPRIMIR</b></button></a>
                             <a href="#top"><button type="button" class="btn btn-success"><b><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> IR A TOP</b></button></a> 
 
                                 </div><!-- /.box-body -->

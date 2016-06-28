@@ -21,19 +21,47 @@
         <!-- Theme style -->
         <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-        <script language="JavaScript"> 
-function pregunta(){ 
-    if (confirm('¿Estas seguro de enviar este formulario?')){ 
-       document.tuformulario.submit() 
-    } 
-} 
-</script>
+         <script type="text/javascript" src="../../js/valida/lib/jquery-1.11.1.js"></script>
+        <script src="../../js/valida/lib/jquery.js"></script>
+        <script src="../../js/valida/lib/jquery.mockjax.js"></script>
+        <script src="../../js/valida/lib/jquery.form.js"></script>
+        <script src="../../js/valida/dist/jquery.validate.js"></script>
+        <script src="../../js/valida/lib/jquery-1.11.1.js"></script>
+        <script src="../../js/valida/dist/jquery.validate.js"></script>
+       
+         <script>
+        $(function(){
+            $.validator.addMethod('latino',function(value, element){
+                return this.optional(element) || /^[a-záéóóúàèìòùäëïöüñ\s]+$/i.test(value);
+            });
+            $("#btn").on("click", function(){
+                $("#formulario").validate 
+                    ({
+                    rules:
+                        {
+                        nombre: {required:true,latino: true ,minlength:3, maxlength:14},
+                        apellido: {required:true, latino: true, minlength:3, maxlength:14},
+                        telefono: {required:true, digits:true, minlength:11, maxlength:11},
+                        direccion: {required:true, minlength:8, maxlength:25},
+                        email: {required:true, email: true, maxlength:40}
+
+
+                       
+                        },
+                        messages:
+                        {
+                            nombre:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 14</font>',latino:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo letras</font>'},
+                            apellido:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 14</font>',latino:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo letras</font>'},
+                            telefono: {required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 11</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 11</font>',digits:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo Números</font>'},
+                            direccion:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 5</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 25</font>'},
+                            email:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', email:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Debe ser un formato de email correcto</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 40</font>'},
+                        }
+                    
+                });
+            });
+        });
+
+    </script>
     </head>
      <body class="skin-blue">
 
@@ -154,7 +182,7 @@ $id=$_GET['id'];
                                     <h3 class="box-title">Ver y Modificar Información del Usuario</h3>
                                 </div>
                             <!-- inicio de form -->
-                            <form name=tuformulario action="../control/editar_docente.php" method="post" >
+                            <form name=tuformulario id="formulario" action="../control/editar_docente.php" method="post" >
 
                                 <div class="box-body">
                                     <!-- Nombre -->
@@ -166,7 +194,7 @@ $id=$_GET['id'];
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="nombre" class="form-control" value="<?php echo $arreglo['nombre_docente']?>" />
+                                            <input id="nombre" type="text" name="nombre" class="form-control" value="<?php echo $arreglo['nombre_docente']?>" />
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -176,7 +204,7 @@ $id=$_GET['id'];
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="apellido" class="form-control" value="<?php echo $arreglo['apellido_docente'];?>" />
+                                            <input id="apellido" type="text" name="apellido" class="form-control" value="<?php echo $arreglo['apellido_docente'];?>" />
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -196,7 +224,7 @@ $id=$_GET['id'];
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="direccion" class="form-control" value="<?php echo $arreglo['direccion']; ?>" />
+                                            <input id="direccion" type="text" name="direccion" class="form-control" value="<?php echo $arreglo['direccion']; ?>" />
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
                                     
@@ -207,7 +235,7 @@ $id=$_GET['id'];
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" name="telefono" class="form-control" value="<?php echo $arreglo['telefono']; ?>"/>
+                                            <input id="telefono" type="text" name="telefono" class="form-control" value="<?php echo $arreglo['telefono']; ?>"/>
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
@@ -228,7 +256,7 @@ $id=$_GET['id'];
 
                                     
 
-                                    <button type="submit" class="btn btn-primary">GUARDAR CAMBIOS</button>
+                                    <button type="submit" id="btn" class="btn btn-primary">GUARDAR CAMBIOS</button>
 
                                    
 
@@ -320,8 +348,10 @@ require ("../control/conexion_bd.php");
 
 
         <!-- jQuery 2.0.2 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -->
-        <script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> 
+         <script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>
+        -->
+       
         <!-- Bootstrap -->
         <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
         <!-- InputMask -->
