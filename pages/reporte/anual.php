@@ -77,10 +77,241 @@ $pdf->SetFont('Times','B',12);
 //Ancho Alto Cadena, Borde, Ln, Alineación, Relleno, Link
 $pdf->Cell(0,4,utf8_decode('ESTADÍSTICA GENERAL AH DR. LUIS RAZETTI'),0,1,'C');
 $pdf->Cell(0,4,utf8_decode('MES: JUNIO - PERIODO ESCOLAR: 2015-2016'),0,1,'C');
-
+$pdf->Ln(2);
  
 
- $pdf->SetFont('Times','',8);
+$pdf->SetFont('Times','',9);
+$pdf->Cell(70);
+$pdf->Cell(40,5,"VARONES",1,0,'C');
+$pdf->Cell(40,5,"HEMBRA",1,0,'C');
+$pdf->Cell(40,5,"TOTAL",1,0,'C');
+     
+$pdf->Ln();
+$pdf->Cell(70);
+$pdf->Cell(40,5,"### ",1,0,'C');
+$pdf->Cell(40,5,"###",1,0,'C');
+$pdf->Cell(40,5,"###",1,0,'C');
+$pdf->Ln();
+$pdf->Ln();
+
+#Por edad
+
+$pdf->Cell(255,5,utf8_decode("Niños, niñas y adolencentes visitados por habitaciones agrupados por edad"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(15,5,utf8_decode("EDAD"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("0-11Meses"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("1 año"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("2 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("3 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("4 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("5 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("6 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("7 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("8 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("9 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("10 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("11 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("12 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("13 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("14 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("+15 años"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(15,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("###"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("###"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("###"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("###"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("4 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("5 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("6 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("7 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("8 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("9 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("10 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("11 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("12 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("13 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("14 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("+15 años"),1,0,'C');
+
+$pdf->Ln();
+$pdf->Cell(15,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("0-11Meses"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("1 año"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("2 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("3 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("4 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("5 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("6 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("7 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("8 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("9 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("10 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("11 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("12 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("13 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("14 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("+15 años"),1,0,'C');
+      
+#Escolaridad
+
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Cell(255,5,utf8_decode("Escolaridad"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(19,5,utf8_decode("Grados"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("Maternal"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("1 Nivel"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("2 Nivel"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("3 Nivel"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("1° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("2° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("3° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("4° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("5° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("6° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("7mo"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("8vo"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("9no"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("4to Año"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("5to Año"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("6to Años"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("S/E"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("E/E"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(19,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("Maternal"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("1 Nivel"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("2 Nivel"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("3 Nivel"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("1° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("2° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("3° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("4° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("5° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("6° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("7mo"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("8vo"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("9no"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("4to Año"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("5to Año"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("6to Años"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("S/E"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("E/E"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(19,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("Maternal"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("1 Nivel"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("2 Nivel"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("3 Nivel"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("1° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("2° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("3° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("4° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("5° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("6° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("7mo"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("8vo"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("9no"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("4to Año"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("5to Año"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("6to Años"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("S/E"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("E/E"),1,0,'C');
+
+#Tiempo de Permanencia
+
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Cell(255,5,utf8_decode("Tiempo de Permanencia en el Hospital"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(22,5,utf8_decode("Periodos"),1,0,'C');
+$pdf->Cell(78,5,utf8_decode("Corta Estadia"),1,0,'C');
+$pdf->Cell(40,5,utf8_decode("Media Estadia"),1,0,'C');
+$pdf->Cell(115,5,utf8_decode("Larga Estadia"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(22,5,utf8_decode("Tiempo"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("0 - 5 Días"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("6 - 10 Días"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("11 - 15 Días"),1,0,'C');
+$pdf->Cell(40,5,utf8_decode("16 - 30 Días"),1,0,'C');
+$pdf->Cell(37,5,utf8_decode("2 Meses"),1,0,'C');
+$pdf->Cell(37,5,utf8_decode("3 Meses"),1,0,'C');
+$pdf->Cell(41,5,utf8_decode("+ 3 Meses"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(22,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("0 - 5 Días"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("6 - 10 Días"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("11 - 15 Días"),1,0,'C');
+$pdf->Cell(40,5,utf8_decode("16 - 30 Días"),1,0,'C');
+$pdf->Cell(37,5,utf8_decode("2 Meses"),1,0,'C');
+$pdf->Cell(37,5,utf8_decode("3 Meses"),1,0,'C');
+$pdf->Cell(41,5,utf8_decode("+ 3 Meses"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(22,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("0 - 5 Días"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("6 - 10 Días"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("11 - 15 Días"),1,0,'C');
+$pdf->Cell(40,5,utf8_decode("16 - 30 Días"),1,0,'C');
+$pdf->Cell(37,5,utf8_decode("2 Meses"),1,0,'C');
+$pdf->Cell(37,5,utf8_decode("3 Meses"),1,0,'C');
+$pdf->Cell(41,5,utf8_decode("+ 3 Meses"),1,0,'C');
+
+$pdf->Ln();
+$pdf->Ln();
+#Poblacion Atendida
+
+$pdf->Cell(70);
+$pdf->Cell(120,5,utf8_decode("Población Atendida"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(70);
+$pdf->Cell(30,5,"",1,0,'C');
+$pdf->Cell(30,5,"Aula",1,0,'C');
+$pdf->Cell(30,5,utf8_decode("Habitación"),1,0,'C');
+$pdf->Cell(30,5,"TOTAL",1,0,'C');
+
+$pdf->Ln();
+$pdf->Cell(70);
+$pdf->Cell(30,5,"VARONES",1,0,'C');
+$pdf->Cell(30,5,"Aula",1,0,'C');
+$pdf->Cell(30,5,utf8_decode("Habitación"),1,0,'C');
+$pdf->Cell(30,5,"TOTAL",1,0,'C');
+
+$pdf->Ln();
+
+$pdf->Cell(70);
+$pdf->Cell(30,5,"HEMBRAS",1,0,'C');
+$pdf->Cell(30,5,"Aula",1,0,'C');
+$pdf->Cell(30,5,utf8_decode("Habitación"),1,0,'C');
+$pdf->Cell(30,5,"TOTAL",1,0,'C');
+$pdf->Ln();
+$pdf->Ln();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$pdf->Ln();
+
+
+
+
+
+ 
 $pdf->Cell(-55); //Mueve el cursor a la posición -55 de DER a IZQ "Valor 0 a la derecha"
 $pdf->Cell(0,4,'ESTATAL',0,0,'L');
 $pdf->Cell(-29); //Mueve el cursor a la posición -29 de DER a IZQ "Valor 0 a la derecha"
