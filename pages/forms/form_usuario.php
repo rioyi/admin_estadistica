@@ -5,7 +5,7 @@ session_start();
 //manejamos en sesion el nombre del usuario que se ha logeado
 if (!isset($_SESSION["nombre_usuario"])){
     header("location:../../login.php");
-    
+
 }
 $id_user = $_SESSION["nombre_usuario"];
 require ("../control/conexion_bd.php");
@@ -56,33 +56,33 @@ $arreglo = mysql_fetch_array($query);
                 return this.optional(element) || /^[a-záéóóúàèìòùäëïöüñ\s]+$/i.test(value);
             });
             $("#btn").on("click", function(){
-                $("#formulario").validate 
+                $("#formulario").validate
                     ({
                     rules:
                         {
-                        nombre: {required:true,latino: true ,minlength:3, maxlength:14},                     
-                        clave: {required:true, minlength:6, maxlength:15},                       
+                        nombre: {required:true,latino: true ,minlength:3, maxlength:14},
+                        clave: {required:true, minlength:6, maxlength:15},
                         respuesta: {required:true, minlength:8, maxlength:25},
-                        email: {required:true, email: true, maxlength:40}             
+                        email: {required:true, email: true, maxlength:40}
 
-                       
+
                         },
                         messages:
                         {
                             nombre:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 14</font>',latino:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo letras</font>'},
-                            
+
                             clave:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 6</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 15</font>'},
 
-                          
 
-                            respuesta:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>',maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 15</font>'},
+
+                            respuesta:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>',minlength: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 8</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 15</font>'},
 
                             email:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', email:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Debe ser un formato de email correcto</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 40</font>'}
 
-                            
+
 
                         }
-                    
+
                 });
             });
         });
@@ -107,8 +107,8 @@ $arreglo = mysql_fetch_array($query);
                 </a>
                 <div class="navbar-right">
                     <ul class="nav navbar-nav">
-                                                
-                        
+
+
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -120,10 +120,10 @@ $arreglo = mysql_fetch_array($query);
                                 <li class="user-header bg-light-blue">
                                     <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
-                                        <?php echo $arreglo['nombre_usuario']  ?> - Tipo de Cuenta <?php echo $arreglo['roles'] ?>                                       
+                                        <?php echo $arreglo['nombre_usuario']  ?> - Tipo de Cuenta <?php echo $arreglo['roles'] ?>
                                     </p>
                                 </li>
-                                
+
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
@@ -151,7 +151,7 @@ $arreglo = mysql_fetch_array($query);
                         </div>
                         <div class="pull-left info">
                             <p>Hola, <?php echo $arreglo['nombre_usuario'];  ?></p>
-                            <p><?php echo $arreglo['roles'];  ?></p>                                
+                            <p><?php echo $arreglo['roles'];  ?></p>
                         </div>
                     </div>
                     <!-- formulario del Buscador -->
@@ -165,9 +165,9 @@ $arreglo = mysql_fetch_array($query);
                     </form>
                     <!-- /.formulario del buscado -->
                     <!-- sidebar del menu: el estilo puedeo ser encontrado en sidebar.less -->
-<?php 
+<?php
     include("menu_form.php")
-?>                  
+?>
 
 
                     </ul>
@@ -185,7 +185,7 @@ $arreglo = mysql_fetch_array($query);
                     <ol class="breadcrumb">
                         <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
                         <li><a href="#">Formularios</a></li>
-                        <li class="active">Formulario Periodo Escolar</li>
+                        <li class="active">Formulario Registro Usuario</li>
                     </ol>
                 </section>
 
@@ -196,7 +196,7 @@ $arreglo = mysql_fetch_array($query);
 
                             <div class="box box-info">
                                 <div class="box-header">
-                                    <h3 class="box-title">Registrar Periodo Escolar</h3>
+                                    <h3 class="box-title">Registar Usuario</h3>
                                 </div>
                             <!-- inicio de form -->
                             <form id="formulario" action="../control/registro_usuario.php" method="post" >
@@ -233,7 +233,7 @@ $arreglo = mysql_fetch_array($query);
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    
+
 
                                     <div class="form-group">
                                             <label>Pregunta Secreta</label>
@@ -261,20 +261,20 @@ $arreglo = mysql_fetch_array($query);
                                             <label>Tipo de usuario</label>
                                             <select class="form-control" name="rol">
                                                 <option value="Estandar">Estandar</option>
-                                                <option value="Administrador" >Administrador</option>                    
+                                                <option value="Administrador" >Administrador</option>
                                             </select>
                                     </div>
 
-                                    
+
 
                                     <button type="submit" id="btn" class="btn btn-primary">REGISTRAR</button>
 
-                                   
+
 
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                             </form>
-                           
+
                         </div><!-- /.col (left) -->
 
 
@@ -283,7 +283,7 @@ $arreglo = mysql_fetch_array($query);
 #echo "<h3>Su Consulta es: $consulta</h3>";
 
 require ("../control/conexion_bd.php");
-  
+
   $sql="SELECT * FROM usuario";
   $datos=mysql_query($sql,$link);
   $contador = mysql_num_rows($datos);
@@ -293,7 +293,7 @@ require ("../control/conexion_bd.php");
       }
     else
       {
-                    
+
 ?>
 
 
@@ -308,38 +308,38 @@ require ("../control/conexion_bd.php");
                                      <h3 class="box-title">Lista de Usuarios Registraso</h3>
                                 </div><!-- /.box-header -->
                                 <div class="box-body">
-                               
+
                                     <table class="table table-bordered">
                                         <tr>
                                             <th style="width: 10px">ID</th>
                                             <th> <center> USUARIOS </center></th>
                                             <th>TIPO</th>
                                             <th>OPCIONES</th>
-                                            
-                                            
+
+
                                         </tr>
                                         <?php
-                              while ($renglon=mysql_fetch_array($datos)) 
+                              while ($renglon=mysql_fetch_array($datos))
                                 {
 ?>
                               <tbody>
-                                <tr>                                
+                                <tr>
                                   <td><?php echo $renglon['id_usuario']; ?></td>
                                   <td><center><?php echo $renglon['nombre_usuario'];?></center></td>
                                   <td><center><?php echo $renglon['roles'];?></center></td>
                                   <td>
                                   <a href="../forms/form_usuario_editar.php?id=<?php echo $renglon['id_usuario']?>"> <button class="btn btn-success btn-xs"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button>
                                   </a>
-                                  
-                                  <a href="../emergente/borrar_usuario.php?id=<?php echo $renglon['id_usuario']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button>   
-                                    
+
+                                  <a href="../emergente/borrar_usuario.php?id=<?php echo $renglon['id_usuario']?>"><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i> BORRAR</button>
+
                                   </td>
                                 </tr>
 
-                                 
+
                               </tbody>
                               <?php } }?>
-                                        
+
                                     </table>
                                 </div><!-- /.box-body -->
                                 <div class="box-footer clearfix">
@@ -356,16 +356,16 @@ require ("../control/conexion_bd.php");
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
 
-                            
+
                         </div><!-- /.col (right) -->
-                    </div><!-- /.row -->                    
+                    </div><!-- /.row -->
 
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
 
 
-        <!-- jQuery 2.0.2 
+        <!-- jQuery 2.0.2
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>  -->
         <!-- Bootstrap -->
@@ -383,66 +383,7 @@ require ("../control/conexion_bd.php");
         <!-- AdminLTE App -->
         <script src="../../js/AdminLTE/app.js" type="text/javascript"></script>
 
-        <!-- Page script -->
-        <script type="text/javascript">
-            $(function() {
-                //Datemask dd/mm/yyyy
-                $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
-                //Datemask2 mm/dd/yyyy
-                $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
-                //Money Euro
-                $("[data-mask]").inputmask();
 
-                //Date range picker
-                $('#reservation').daterangepicker();
-                //Date range picker with time picker
-                $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
-                //Date range as a button
-                $('#daterange-btn').daterangepicker(
-                        {
-                            ranges: {
-                                'Today': [moment(), moment()],
-                                'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
-                                'Last 7 Days': [moment().subtract('days', 6), moment()],
-                                'Last 30 Days': [moment().subtract('days', 29), moment()],
-                                'This Month': [moment().startOf('month'), moment().endOf('month')],
-                                'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
-                            },
-                            startDate: moment().subtract('days', 29),
-                            endDate: moment()
-                        },
-                function(start, end) {
-                    $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-                }
-                );
-
-                //iCheck for checkbox and radio inputs
-                $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
-                    checkboxClass: 'icheckbox_minimal',
-                    radioClass: 'iradio_minimal'
-                });
-                //Red color scheme for iCheck
-                $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
-                    checkboxClass: 'icheckbox_minimal-red',
-                    radioClass: 'iradio_minimal-red'
-                });
-                //Flat red color scheme for iCheck
-                $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
-                    checkboxClass: 'icheckbox_flat-red',
-                    radioClass: 'iradio_flat-red'
-                });
-
-                //Colorpicker
-                $(".my-colorpicker1").colorpicker();
-                //color picker with addon
-                $(".my-colorpicker2").colorpicker();
-
-                //Timepicker
-                $(".timepicker").timepicker({
-                    showInputs: false
-                });
-            });
-        </script>
 
     </body>
 </html>
