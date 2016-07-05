@@ -29,7 +29,7 @@ if(!$consulta==0){
 			echo "<html><a href='../../index.html'>inicio</a><html>";
 
 
-
+}
 
 
 
