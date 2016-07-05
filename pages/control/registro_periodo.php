@@ -6,13 +6,13 @@ $final = $_POST['final'];
 #conexion la base de datos
 require("../control/conexion_bd.php");
 
-#consulta para corroborar no dublicidad de ci_escolar
+#consulta para corroborar no dublicidad
 
 $consulta = mysql_num_rows(mysql_query("SELECT inicio FROM periodo_escolar WHERE inicio='$inicio'"));
 if(!$consulta==0){
   header('location: ../emergente/duplicado.php');
 }else{
-    echo 'Hay un total de '.$consulta.' usuarios';
+  
 
 
 
