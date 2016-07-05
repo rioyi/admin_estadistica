@@ -47,7 +47,7 @@
 <div class="alert alert-danger" role="alert">
   <font size="9"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
   <span class="sr-only"></span>
-  SE ENCONTRO UN REGISTRO SIMILAR</font>
+  SE ENCONTRÓ UN REGISTRO SIMILAR</font>
 </div>
 
          <h2><b>LOS DATOS ESTAN DUPLICADO EN LA BASE DE DATOS</b></h2></p>
