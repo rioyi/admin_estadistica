@@ -5,7 +5,7 @@ session_start();
 //manejamos en sesion el nombre del usuario que se ha logeado
 if (!isset($_SESSION["nombre_usuario"])){
     header("location:../../login.php");
-    
+
 }
 $id_user = $_SESSION["nombre_usuario"];
 require ("../control/conexion_bd.php");
@@ -37,7 +37,7 @@ $arreglo = mysql_fetch_array($query);
         <link href="../../css/timepicker/bootstrap-timepicker.min.css" rel="stylesheet"/>
         <!-- Theme style -->
         <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
-        
+
         <script type="text/javascript" src="../../js/valida/lib/jquery-1.11.1.js"></script>
         <script src="../../js/valida/lib/jquery.js"></script>
         <script src="../../js/valida/lib/jquery.mockjax.js"></script>
@@ -48,7 +48,7 @@ $arreglo = mysql_fetch_array($query);
        <script>
         $(function(){
             $("#btn").on("click", function(){
-                $("#formulario").validate 
+                $("#formulario").validate
                     ({
                     rules:
                         {
@@ -60,7 +60,7 @@ $arreglo = mysql_fetch_array($query);
                             inicio:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 4</font>',digits:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo Números</font>'},
                             final:{required: '<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Este campo es requerido</font>', minlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El mínimo de caracteres son 4</font>', maxlength:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> El maximo de caracteres son 4</font>',digits:'<font color="red"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Solo Números</font>'}
                         }
-                    
+
                 });
             });
         });
@@ -89,8 +89,8 @@ $arreglo = mysql_fetch_array($query);
                 </a>
                 <div class="navbar-right">
                     <ul class="nav navbar-nav">
-                                                
-                        
+
+
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -102,10 +102,10 @@ $arreglo = mysql_fetch_array($query);
                                 <li class="user-header bg-light-blue">
                                     <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
-                                        <?php echo $arreglo['nombre_usuario']  ?> - Tipo de Cuenta <?php echo $arreglo['roles'] ?>                                       
+                                        <?php echo $arreglo['nombre_usuario']  ?> - Tipo de Cuenta <?php echo $arreglo['roles'] ?>
                                     </p>
                                 </li>
-                                
+
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
@@ -133,7 +133,7 @@ $arreglo = mysql_fetch_array($query);
                         </div>
                         <div class="pull-left info">
                             <p>Hola, <?php echo $arreglo['nombre_usuario'];  ?></p>
-                            <p><?php echo $arreglo['roles'];  ?></p>                                
+                            <p><?php echo $arreglo['roles'];  ?></p>
                         </div>
                     </div>
                     <!-- formulario del Buscador -->
@@ -147,15 +147,15 @@ $arreglo = mysql_fetch_array($query);
                     </form>
                     <!-- /.formulario del buscado -->
                     <!-- sidebar del menu: el estilo puedeo ser encontrado en sidebar.less -->
-<?php 
+<?php
     include("menu_form.php")
 ?>
 
 
 
-                        
 
-                  
+
+
                     </ul>
                 </section>
                 <!-- /.sidebar -->
@@ -210,16 +210,16 @@ $arreglo = mysql_fetch_array($query);
                                         </div><!-- /.input group -->
                                     </div><!-- /.form group -->
 
-                                    
+
 
                                     <button type="submit" id="btn" class="btn btn-primary">REGISTRAR</button>
 
-                                   
+
 
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                             </form>
-                           
+
                         </div><!-- /.col (left) -->
 
 
@@ -228,7 +228,7 @@ $arreglo = mysql_fetch_array($query);
 #echo "<h3>Su Consulta es: $consulta</h3>";
 
 require ("../control/conexion_bd.php");
-  
+
   $sql="SELECT * FROM periodo_escolar";
   $datos=mysql_query($sql,$link);
   $contador = mysql_num_rows($datos);
@@ -238,7 +238,7 @@ require ("../control/conexion_bd.php");
       }
     else
       {
-                    
+
 ?>
 
 
@@ -275,39 +275,39 @@ require ("../control/conexion_bd.php");
                                             <th style="width: 10px">ID</th>
                                             <th> <center> PERIODO ESCOLAR </center></th>
                                             <th>ACCIÓN</th>
-                                            
-                                            
+
+
                                         </tr>
                                         <?php
-                              while ($renglon=mysql_fetch_array($datos)) 
+                              while ($renglon=mysql_fetch_array($datos))
                                 {
                             ?>
                               <tbody>
-                                <tr>                                
+                                <tr>
                                     <td><?php echo $renglon['id_periodo_escolar']; ?></td>
                                     <td><center><?php echo $renglon['inicio']; echo " - "; echo $renglon['fin']?></center></td>
                                     <td>
-                                        
-                                        <a href="../forms/form_periodo_editar.php?id=<?php echo $renglon['id_periodo_escolar']?>"> 
+
+                                        <a href="../forms/form_periodo_editar.php?id=<?php echo $renglon['id_periodo_escolar']?>">
 
                                         <button class="btn btn-success"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button>
                                         </a>
                                             <a href="../emergente/borrar_periodo.php?id=<?php echo $renglon['id_periodo_escolar']?>" >
                                                 <button class="btn btn-danger">
                                                     <b>
-                                                        <span class="glyphicon glyphicon-trash" aria-hidden="true">                                                    
+                                                        <span class="glyphicon glyphicon-trash" aria-hidden="true">
                                                         </span> ELIMINAR
                                                     </b>
                                                 </button>
                                             </a>
-                                        
-                                    </td>          
+
+                                    </td>
                                 </tr>
 
-                                 
+
                               </tbody>
                               <?php } }?>
-                                        
+
                                     </table>
                                 </div><!-- /.box-body -->
                                 <div class="box-footer clearfix">
@@ -324,20 +324,20 @@ require ("../control/conexion_bd.php");
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
 
-                            
+
                         </div><!-- /.col (right) -->
-                    </div><!-- /.row -->                    
+                    </div><!-- /.row -->
 
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
-        
-        <!-- jQuery 2.0.2 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> 
+
+        <!-- jQuery 2.0.2
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 		<script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>
-	
+
         -->
-        
+
         <!-- Bootstrap -->
         <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
         <!-- InputMask -->
@@ -354,7 +354,7 @@ require ("../control/conexion_bd.php");
         <script src="../../js/AdminLTE/app.js" type="text/javascript"></script>
 
         <!-- Page script -->
-       
+
 
     </body>
 </html>
