@@ -5,7 +5,7 @@ session_start();
 //manejamos en sesion el nombre del usuario que se ha logeado
 if (!isset($_SESSION["nombre_usuario"])){
     header("location:../../login.php");
-    
+
 }
 $id_user = $_SESSION["nombre_usuario"];
 require ("../control/conexion_bd.php");
@@ -65,8 +65,8 @@ $arreglo = mysql_fetch_array($query);
                 </a>
                 <div class="navbar-right">
                     <ul class="nav navbar-nav">
-                                                
-                        
+
+
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -78,10 +78,10 @@ $arreglo = mysql_fetch_array($query);
                                 <li class="user-header bg-light-blue">
                                     <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
-                                        <?php echo $arreglo['nombre_usuario']  ?> - Tipo de Cuenta <?php echo $arreglo['roles'] ?>                                       
+                                        <?php echo $arreglo['nombre_usuario']  ?> - Tipo de Cuenta <?php echo $arreglo['roles'] ?>
                                     </p>
                                 </li>
-                                
+
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
@@ -109,7 +109,7 @@ $arreglo = mysql_fetch_array($query);
                         </div>
                         <div class="pull-left info">
                             <p>Hola, <?php echo $arreglo['nombre_usuario'];  ?></p>
-                            <p><?php echo $arreglo['roles'];  ?></p>                                
+                            <p><?php echo $arreglo['roles'];  ?></p>
                         </div>
                     </div>
                     <!-- formulario del Buscador -->
@@ -123,11 +123,11 @@ $arreglo = mysql_fetch_array($query);
                     </form>
                     <!-- /.formulario del buscado -->
                     <!-- sidebar del menu: el estilo puedeo ser encontrado en sidebar.less -->
-<?php 
+<?php
     include("menu_form.php")
 ?>
 
-                   
+
                     </ul>
                 </section>
                 <!-- /.sidebar -->
@@ -162,7 +162,7 @@ $arreglo = mysql_fetch_array($query);
 
                                 <div class="box-body">
                                     <!-- Nombre -->
-                                    
+
 
                                     <div class="form-group">
                                         <label>Indique el Mes a aconsultar:</label>
@@ -170,23 +170,23 @@ $arreglo = mysql_fetch_array($query);
                                                         <h3>SELECCIONAR PERIODO ESCOLAR</h3>
                                                         <select class="form-control" name="periodo_escolar">
                                                         <OPTION>SELECCIONE EL PERIODO ESCOLAR</OPTION>
-                                                        
+
 <?php
 require ("../control/conexion_bd.php");
 $query = 'SELECT * FROM periodo_escolar';
 $result= mysql_query($query, $link);
- 
+
 ?>
 
     <?php
     while ( $row = mysql_fetch_array($result) )
     {
         ?>
- 
+
         <option value=" <?php echo $row['id_periodo_escolar'] ?> " >
         <?php echo $row['inicio']; echo "-"; echo $row['fin']; ?>
         </option>
- 
+
         <?php
     }
     ?>
@@ -195,19 +195,19 @@ $result= mysql_query($query, $link);
                                                     </div>  <!-- /.form-group   Select Dinamico -->
                                     </div><!-- /.form group -->
 
-                                    
+
                                     <button  type="submit" class="btn btn-primary btn-lg btn-block">
                                                                         <H1>
                                                                             <span class="glyphicon glyphicon-send" aria-hidden="true"></span> CONSULTAR
                                                                         </H1>
-                                                                    </button> 
+                                                                    </button>
                                     <!-- Apellido -->
-                                                                       
+
 
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                             </form>
-                           
+
                         </div><!-- /.col (left) -->
                         <div class="col-md-6">
                             <div class="box box-success">
@@ -217,13 +217,13 @@ $result= mysql_query($query, $link);
                                 <div class="box-body">
                                 <div class="alert alert-info" role="alert">
                                     <CENTER>
-                                        <H2>PERIODO ESCOLAR ACTUAL</H2>                         
-                                    </CENTER>    
+                                        <H2>PERIODO ESCOLAR ACTUAL</H2>
+                                    </CENTER>
                                 </div><!-- /.box-body -->
-                                
+
                             </div><!-- /.form group -->
 
-                    </div><!-- /.row -->                    
+                    </div><!-- /.row -->
 
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
@@ -231,11 +231,11 @@ $result= mysql_query($query, $link);
 
 
          <!-- jQuery 2.0.2 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script src="../../js/jquery-2.2.0.min.js" type="text/javascript"></script>
-    
+
         -->
-        
+
         <!-- Bootstrap -->
         <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
         <!-- InputMask -->
