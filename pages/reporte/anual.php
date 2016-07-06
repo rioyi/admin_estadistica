@@ -66,7 +66,7 @@ $pdf->Ln(2);
 $pdf->Cell(0,4,'    ',0,0,'L');//
 $pdf->Cell(-60); //Mueve el cursor a la posición -60 de DER a IZQ "Valor 0 a la derecha"
 $pdf->Cell(0,4,'CODIGO     '.$suscrito_puesto,0,1,'L');
-$pdf->Cell(0,4,'MES: JUNIO     ',0,0,'L');
+$pdf->Cell(0,4,'MES: TODO EL PERIODO ESCOLAR     ',0,0,'L');
 $pdf->Cell(-60); //Mueve el cursor a la posición -60 de DER a IZQ "Valor 0 a la derecha"
 $pdf->Cell(0,4,'CIUDAD     '.$solicita_puesto,0,1,'L');
 $pdf->Cell(0,4,'PERIODO ESCOLAR:  2015 - 2016     ',0,0,'L');
@@ -79,8 +79,8 @@ $pdf->Cell(0,4,'       ',0,1,'L');
 
 $pdf->SetFont('Times','B',12);
 //Ancho Alto Cadena, Borde, Ln, Alineación, Relleno, Link
-$pdf->Cell(0,4,utf8_decode('ESTADÍSTICA GENERAL AH DR. LUIS RAZETTI'),0,1,'C');
-$pdf->Cell(0,4,utf8_decode('MES: JUNIO - PERIODO ESCOLAR: 2015-2016'),0,1,'C');
+$pdf->Cell(0,4,utf8_decode('ESTADÍSTICA GENERAL ANUAL AH DR. LUIS RAZETTI'),0,1,'C');
+$pdf->Cell(0,4,utf8_decode('PERIODO ESCOLAR: 2015-2016'),0,1,'C');
 $pdf->Ln(2);
 
 
@@ -302,6 +302,42 @@ $pdf->Cell(0,4,'FIRMA AUTORIZADA ',0,1,'L');
 $pdf->Ln(5);
 
 
+
+
+//Familia, Estilo, Tamaño
+$pdf->SetFont('Times','B',12);
+//Ancho Alto Cadena, Borde, Ln, Alineación, Relleno, Link
+
+$pdf->Cell(0,4,'Republica Bolivariana de Venezuela',0,1,'C');
+$pdf->Cell(0,4,utf8_decode('Ministerio del poder popular para la educación'),0,1,'C');
+$pdf->Cell(0,4,utf8_decode('Modalidad de educación especial'),0,1,'C');
+$pdf->Cell(0,4,'Impedimento Fisico',0,1,'C');
+$pdf->Cell(0,4,''.$pdf->Image('../../img/logo_aulas.png',250,05,20,0,''),0,1,'C');
+$pdf->SetFont('Times','',8);
+$pdf->Ln(2);
+$pdf->Cell(0,4,'    ',0,0,'L');//
+$pdf->Cell(-60); //Mueve el cursor a la posición -60 de DER a IZQ "Valor 0 a la derecha"
+$pdf->Cell(0,4,'CODIGO     '.$suscrito_puesto,0,1,'L');
+$pdf->Cell(0,4,'MES: TODO EL PERIODO ESCOLAR     ',0,0,'L');
+$pdf->Cell(-60); //Mueve el cursor a la posición -60 de DER a IZQ "Valor 0 a la derecha"
+$pdf->Cell(0,4,'CIUDAD     '.$solicita_puesto,0,1,'L');
+$pdf->Cell(0,4,'PERIODO ESCOLAR:  2015 - 2016     ',0,0,'L');
+$pdf->Cell(-60); //Mueve el cursor a la posición -60 de DER a IZQ "Valor 0 a la derecha"
+$pdf->Cell(0,4,'ESTADO    '.$adscrito_rfc,0,1,'L');
+$pdf->Cell(0,4,'      ',0,1,'L');
+
+$pdf->Cell(0,4,'       ',0,1,'L');
+
+
+$pdf->SetFont('Times','B',12);
+//Ancho Alto Cadena, Borde, Ln, Alineación, Relleno, Link
+$pdf->Cell(0,4,utf8_decode('ESTADÍSTICA GENERAL AH DR. LUIS RAZETTI'),0,1,'C');
+$pdf->Cell(0,4,utf8_decode('PERIODO ESCOLAR: 2015-2016'),0,1,'C');
+$pdf->Ln(2);
+
+
+$pdf->SetFont('Times','',9);
+
 #Poblacion referida
 
 $pdf->Cell(255,5,utf8_decode("Población Referida"),1,0,'C');
@@ -350,143 +386,137 @@ $pdf->Cell(21,5,utf8_decode("Otros"),1,0,'C');
 
 $pdf->Ln(5);
 $pdf->Ln(5);
-#Tipo de Atención
+
+#Tipo de Atención y asistencia
+
+
 $pdf->Cell(125,5,utf8_decode("Tipo de Atención"),1,0,'C');
 $pdf->Cell(5);
-$pdf->Cell(125,5,utf8_decode("Tipo de Atención"),1,0,'C');
+$pdf->Cell(125,5,utf8_decode("Total Asistencia"),1,0,'C');
 $pdf->Ln();
 $pdf->Cell(55,5,utf8_decode("Servicio de Atención"),1,0,'C');
 $pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
 $pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
 $pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
 $pdf->Cell(5);
-$pdf->Cell(55,5,utf8_decode("Servicio de Atención"),1,0,'C');
+$pdf->Cell(55,5,utf8_decode("Piso"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Cirugía"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Piso 1"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Traumatología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Piso 2"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Otorrinolaringologo"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Piso 3"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Pediatría"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Piso 4"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Nerología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Piso 5"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Cadiología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Las Garzas I"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Nefrología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Las Garzas II"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Urología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Neumonología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Hermatología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Oncología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Dermatología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Gastrología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Infectología"),1,0,'C');
 $pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
 $pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
 $pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
 $pdf->Ln();
 
-
 $pdf->Ln(5);
 $pdf->Ln(5);
-
-$pdf->SetFont('Times','B',7);
-$pdf->Cell(0,4,'PERIODO DE COMISIÓN',0,0,'L');
-$pdf->Cell(-160); //Mueve el cursor a la posición -160 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'DÍAS',0,0,'L');
-$pdf->Cell(-147); //Mueve el cursor a la posición -147 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'CUOTA DIARIA',0,0,'L');
-$pdf->Cell(-118); //Mueve el cursor a la posición -120 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'PARCIAL',0,0,'L');
-
-$pdf->Cell(-93); //Mueve el cursor a la posición -65 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'TOTAL ANTICIPO',0,0,'L');
-$pdf->Cell(-60); //Mueve el cursor a la posición -65 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'COMPROBACIÓN',0,0,'L');
-$pdf->Cell(-25); //Mueve el cursor a la posición -65 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'DIFERENCIA',0,1,'L');
-
-/**********************       Inicio Con Cargo al Subprograma o Unidad Presupuestal       **********************/
-$pdf->SetFont('Times','',6.5);
-$pdf->Cell(0.5);                $pdf->Cell(0,4,$periodo_comision,0,0,'L'); //periodo de comision1
-$pdf->SetFont('Times','',7);
-$pdf->Cell(-158);               $pdf->Cell(0,4,$dias[0],0,0,'L'); //días1
-/*Periodo de Comisión, Días, Signo de moneda+Cuota Diaria, Signo de moneda+Parcial*/
-$pdf->SetFont('Times','B',7);
-//$pdf->Cell(-149);     $pdf->Cell(0,4,'$           '.number_format($cuota_diaria[0],2,'.',','),0,0,'L'); //cuota diaria1 (47)
-$pdf->Cell(-149);       $pdf->Cell(0,4,'$           '.$cuota_diaria[0],0,0,'L'); //cuota diaria1 (47)
-$pdf->Cell(-124);       $pdf->Cell(0,4,'$           '.$parcial[0],0,1,'L'); //parcial1 (-124)
-
-$pdf->SetFont('Times','',6.5);
-$pdf->Cell(0.5);                $pdf->Cell(0,4,$periodo_comision,0,0,'L'); //periodo de comision1
-$pdf->SetFont('Times','',7);
-$pdf->Cell(-158);               $pdf->Cell(0,4,$dias[1],0,0,'L'); //días1
-/*Periodo de Comisión, Días, Signo de moneda+Cuota Diaria, Signo de moneda+Parcial*/
-$pdf->SetFont('Times','B',7);
-$pdf->Cell(-149);       $pdf->Cell(0,4,'$           '.$cuota_diaria[1],0,0,'L'); //cuota diaria2 (47)
-$pdf->Cell(-124);       $pdf->Cell(0,4,'$           '.$parcial[1],0,1,'L'); //parcial2 (-124)
-
-$pdf->SetFont('Times','',6.5);
-$pdf->Cell(0.5);                $pdf->Cell(0,4,$periodo_comision,0,0,'L'); //periodo de comision1
-$pdf->SetFont('Times','',7);
-$pdf->Cell(-158);               $pdf->Cell(0,4,$dias[2],0,0,'L'); //días1
-/*Periodo de Comisión, Días, Signo de moneda+Cuota Diaria, Signo de moneda+Parcial*/
-$pdf->SetFont('Times','B',7);
-$pdf->Cell(-149);       $pdf->Cell(0,4,'$           '.$cuota_diaria[2],0,0,'L'); //cuota diaria3 (47)
-$pdf->Cell(-124);       $pdf->Cell(0,4,'$           '.$parcial[2],0,0,'L'); //parcial3 (-124)
-/**********************       Fin Con Cargo al Subprograma o Unidad Presupuestal       **********************/
-
-$pdf->Cell(-96);        $pdf->Cell(0,4,'$               '.$total_anticipo[0],0,0,'L'); //Total Anticipo
-$pdf->Cell(-63);        $pdf->Cell(0,4,'$               '.$comprobacion[0],0,0,'L'); //Comprobación
-$pdf->Cell(-30);        $pdf->Cell(0,4,'$               '.$diferencia[0],0,1,'L'); //Diferencia
-
-$pdf->Ln(2);
-$fecha = date("j /F /Y");
-$fecha = split('/',$fecha);
-$fecha = implode('de ',$fecha);
-$pdf->Cell(15);         $pdf->Cell(0,4,$lugar.$fecha,0,0,'L'); //Descripción Lugar y Fecha
-$pdf->Cell(-123);       $pdf->Cell(0,4,'COMBUSTIBLES',0,1,'L'); //Combustibles y Peajes 1
-$pdf->Cell(25);         $pdf->Cell(0,4,'LUGAR Y FECHA',0,0,'L'); //Lugar y Fecha
-$pdf->Cell(-118.5);     $pdf->Cell(0,4,'Y PEAJES',0,0,'L'); //Combustibles y Peajes 2
-//                                                                                              $combustible_peaje = array('ta'=>5154.54,'comprobacion'=>3531.14);
-$pdf->Cell(-96);        $pdf->Cell(0,4,'$               '.$combustible_peaje['ta'],0,0,'L'); //Total Anticipo Combustible
-$pdf->Cell(-63);        $pdf->Cell(0,4,'$               '.$combustible_peaje['comprobacion'],0,0,'L'); //Comprobación Combustible
-$pdf->Cell(-30);        $pdf->Cell(0,4,'$                ',0,1,'L'); //Diferencia Combustible
-
-$pdf->Cell(74); $pdf->Cell(20,4,'  VEHICULOS:',1,1,'L'); //Diferencia Combustible
-$pdf->SetFont('Times','',7);
-$pdf->Ln(1);
-
-if(strcasecmp($tipo_pago, 'EFECTIVO') == 0){
-        $efectivo = '                             X';
-}
-        else{
-                $tarjeta = '                                 X';
-        }
-
-$pdf->Cell(0,4,'PAGO REALIZADO',0,0,'L');
-$pdf->Cell(-137);       $pdf->Cell(0,4,'MARCA:             '.$marca_vehiculo,0,1,'L');
-$pdf->Cell(0,4,'EN EFECTIVO'.$efectivo,0,0,'L');
-$pdf->Cell(-137);       $pdf->Cell(0,4,'TIPO:                   '.$tipo_vehiculo,0,1,'L');
-$pdf->Cell(59); $pdf->Cell(0,4,'PLACAS:            '.$placas_vehiculo,0,1,'L');
-$pdf->Cell(0,4,'PAGO ABONADO',0,0,'L');
-$pdf->Cell(-137);       $pdf->Cell(0,4,'Nº ECON:           '.$economico_vehiculo,0,1,'L');
-$pdf->Cell(0,4,'EN TARJETA',0,1,'L');
-$pdf->Cell(0,4,'DE DÉBITO'.$tarjeta,0,0,'L');
-$pdf->SetFont('Times','B',7);
-$pdf->Cell(-122);       $pdf->Cell(20,4,'      PASAJES:',1,1,'L'); //Diferencia Combustible
-$pdf->SetFont('Times','',7);
-$pdf->Ln(1);
-$pdf->Cell(0,4,'TARJETA BITAL NUM.      '.$tarjeta_bital,0,0,'L');
-
-$pdf->Cell(-122);       $pdf->Cell(0,4,'TERRESTRE',0,0,'L');
-$pdf->Cell(-96);        $pdf->Cell(0,4,'$',0,0,'L'); //Total Anticipo Pasaje Terrestre 1
-$pdf->Cell(-63);        $pdf->Cell(0,4,'$',0,0,'L'); //Comprobación Pasaje Terrestre 2
-$pdf->Cell(-30);        $pdf->Cell(0,4,'$',0,1,'L'); //Diferencia Pasaje Terrestre 3
-
-$pdf->Cell(74); $pdf->Cell(0,4,'AÉREO',0,0,'L');
-$pdf->Cell(-96);        $pdf->Cell(0,4,'$',0,0,'L'); //Total Anticipo Pasaje Aéreo 1
-$pdf->Cell(-63);        $pdf->Cell(0,4,'$',0,0,'L'); //Comprobación Pasaje Aéreo 2
-$pdf->Cell(-30);        $pdf->Cell(0,4,'$',0,1,'L'); //Diferencia Pasaje Aéreo 3
-
-$pdf->Cell(60);         $pdf->Cell(0,4,'OTROS',0,0,'L');
-$pdf->Cell(-96);        $pdf->Cell(0,4,'$',0,0,'L'); //Total Anticipo Otros 1
-$pdf->Cell(-63);        $pdf->Cell(0,4,'$',0,0,'L'); //Comprobación Otros 2
-$pdf->Cell(-30);        $pdf->Cell(0,4,'$',0,1,'L'); //Diferencia Otros 3
-
-$pdf->Cell(74); $pdf->Cell(0,4,'TOTAL',0,0,'L');
-$pdf->Cell(-96);        $pdf->Cell(0,4,'$',0,0,'L'); //Total Suma 1
-$pdf->Cell(-63);        $pdf->Cell(0,4,'$',0,0,'L'); //Comprobación Suma 2
-$pdf->Cell(-30);        $pdf->Cell(0,4,'$',0,1,'L'); //Diferencia Suma 3
-
-/*********************** Recepción del Anticipo  ***************************/
-$pdf->Ln(2);    $pdf->Cell(0,4,'RECIBÍ EL ANTICIPO',0,1,'C');
-$pdf->Ln(16.5); $pdf->Cell(0,4,utf8_decode('FIRMA AUTOGRÁFA'),0,1,'C');
-$pdf->SetFont('Times','',5);
-$pdf->Cell(0,3,'CONCLUIDA LA COMISIÓN, ME COMPROMETO A EFECTUAR LA COMPROBACIÓN CORRESPONDIENTE EN UN',0,1,'C');
-$pdf->Cell(0,3,'TÉRMINO NO MAYOR DE TRES DÍAS, EN CASO CONTRARIO REINTEGRARE EL IMPORTE DE ESTE ANTICIPO',0,1,'C');
-
-
+#fecha y firma de entrega
+$pdf->Cell(0,4,utf8_decode("FECHA DE IMPRESIÓN: ").$dia.'/'.$mes.'/'.$año,0,0,'L');
+$pdf->Cell(-65); //Mueve el cursor a la posición -65 de DER a IZQ "Valor 0 a la derecha"
+$pdf->Cell(0,4,'FIRMA AUTORIZADA ',0,1,'L');
+$pdf->Ln(5);
 
 /*********************** FIN RECTÁNGULOS *************************/
 $pdf->Output();
