@@ -1,3 +1,6 @@
+Problemas de variables limite del servidor
+
+
 Cambiar archvivo php.ini
 
 $sudo nano /etc/php5/apache2/php.ini
@@ -5,9 +8,9 @@ $sudo nano /etc/php5/apache2/php.ini
 ; How many GET/POST/COOKIE input variables may be accepted
  max_input_vars = 1000
 
- a 
+ a
 
- max_input_vars = 
+ max_input_vars = 2000
 
 
  y por ultimo reiniciar el servidor
@@ -21,28 +24,28 @@ Abrir el siguiente archivo:
 
 $sudo nano /etc/php5/apache2/php.ini
 1
-	
+
 $sudo nano /etc/php5/apache2/php.ini
 
 Buscar (ctrl+w) la línea:
 
 display_errors = Off
 
-	
+
 display_errors = Off
 
 Sustituirla por:
 
 display_errors = On
 
-	
+
 display_errors = On
 
 Guardar el archivo y reiniciar Apache:
 
 sudo /etc/init.d/apache2 restart
 
-	
+
 sudo /etc/init.d/apache2 restart
 
 
