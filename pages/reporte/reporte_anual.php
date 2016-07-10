@@ -1553,63 +1553,84 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td><?php $query = mysql_query("SELECT SUM(p1) FROM total_asistencia WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_p1_v = mysql_result($query, 0);
                                 echo "$asistencia_p1_v";   ?></td>
+                                <input type="hidden" name="asistencia_p1_v" value="<?=$asistencia_p1_v ?>">
                                                  <td><?php $query = mysql_query("SELECT SUM(p1) FROM total_asistencia WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_p1_h = mysql_result($query, 0); echo "$asistencia_p1_h";  ?></td>
+                                <input type="hidden" name="asistencia_p1_h" value="<?=$asistencia_p1_h ?>">
                                                 <td><?php $asistencia_p1 = $asistencia_p1_v + $asistencia_p1_h; echo "$asistencia_p1";  ?></td>
+                                                <input type="hidden" name="asistencia_p1" value="<?=$asistencia_p1 ?>">
 
                                             </tr>
                                             <tr>
                                                 <td>Piso 2</td>
                                                 <td><?php $query = mysql_query("SELECT SUM(p2) FROM total_asistencia WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_p2_v = mysql_result($query, 0); echo "$asistencia_p2_v";  ?></td>
+                                <input type="hidden" name="asistencia_p2_v" value="<?=$asistencia_p2_v ?>">
                                                  <td><?php $query = mysql_query("SELECT SUM(p2) FROM total_asistencia WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_p2_h = mysql_result($query, 0); echo "$asistencia_p2_h";  ?></td>
+                                <input type="hidden" name="asistencia_p2_h" value="<?=$asistencia_p2_h ?>">
                                                 <td><?php $asistencia_p2 = $asistencia_p2_v + $asistencia_p2_h; echo "$asistencia_p2";  ?></td>
+                                <input type="hidden" name="asistencia_p2" value="<?=$asistencia_p2 ?>">
 
                                             </tr>
                                             <tr>
                                                 <td>Piso 3</td>
                                                 <td><?php $query = mysql_query("SELECT SUM(p3) FROM total_asistencia WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_p3_v = mysql_result($query, 0); echo "$asistencia_p3_v";  ?></td>
+                                <input type="hidden" name="asistencia_p3_v" value="<?=$asistencia_p3_v ?>">
                                                 <td><?php $query = mysql_query("SELECT SUM(p3) FROM total_asistencia WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_p3_h = mysql_result($query, 0); echo "$asistencia_p3_h";  ?></td>
+                                <input type="hidden" name="asistencia_p3_h" value="<?=$asistencia_p3_h ?>">
                                                 <td><?php $asistencia_p3 = $asistencia_p3_v + $asistencia_p3_h; echo "$asistencia_p3";  ?></td>
+                                <input type="hidden" name="asistencia_p3" value="<?=$asistencia_p3 ?>">
 
                                             </tr>
                                             <tr>
                                                 <td>Piso 4</td>
                                                 <td><?php $query = mysql_query("SELECT SUM(p4) FROM total_asistencia WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_p4_v = mysql_result($query, 0); echo "$asistencia_p4_v";  ?></td>
+                                <input type="hidden" name="asistencia_p4_v" value="<?=$asistencia_p4_v ?>">
                                                 <td><?php $query = mysql_query("SELECT SUM(p4) FROM total_asistencia WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_p4_h = mysql_result($query, 0); echo "$asistencia_p4_h";  ?></td>
+                                <input type="hidden" name="asistencia_p4_h" value="<?=$asistencia_p4_h ?>">
                                                 <td><?php $asistencia_p4 = $asistencia_p4_v + $asistencia_p4_h; echo "$asistencia_p4";  ?></td>
+                                <input type="hidden" name="asistencia_p4" value="<?=$asistencia_p4 ?>">
                                             </tr>
 
                                             <tr>
                                                 <td>Piso5</td>
                                                 <td><?php $query = mysql_query("SELECT SUM(p5) FROM total_asistencia WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_p5_v = mysql_result($query, 0); echo "$asistencia_p5_v";  ?></td>
+                                 <input type="hidden" name="asistencia_p5_v" value="<?=$asistencia_p5_v ?>">
                                                 <td><?php $query = mysql_query("SELECT SUM(p5) FROM total_asistencia WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_p5_h = mysql_result($query, 0); echo "$asistencia_p5_h";  ?></td>
+                                 <input type="hidden" name="asistencia_p5_h" value="<?=$asistencia_p5_h ?>">
                                                 <td><?php $asistencia_p5 = $asistencia_p5_v + $asistencia_p5_h; echo "$asistencia_p5";  ?></td>
+                                <input type="hidden" name="asistencia_p5" value="<?=$asistencia_p5 ?>">
                                             </tr>
 
                                             <tr>
                                                 <td>Garzas I</td>
                                                 <td><?php $query = mysql_query("SELECT SUM(gi) FROM total_asistencia WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_gi_v = mysql_result($query, 0); echo "$asistencia_gi_v";  ?></td>
+                                <input type="hidden" name="asistencia_gi_v" value="<?=$asistencia_gi_v ?>">
                                                 <td><?php $query = mysql_query("SELECT SUM(gi) FROM total_asistencia WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_gi_h = mysql_result($query, 0); echo "$asistencia_gi_h";  ?></td>
+                                <input type="hidden" name="asistencia_gi_h" value="<?=$asistencia_gi_h ?>">
                                                 <td><?php $asistencia_gi = $asistencia_gi_v + $asistencia_gi_h; echo "$asistencia_gi";  ?></td>
+                                <input type="hidden" name="asistencia_gi" value="<?=$asistencia_gi ?>">
                                             </tr>
 
                                             <tr>
                                                 <td>Garzas II</td>
                                                 <td><?php $query = mysql_query("SELECT SUM(gii) FROM total_asistencia WHERE id_sexo = '1' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_gii_v = mysql_result($query, 0); echo "$asistencia_gii_v";  ?></td>
+                                <input type="hidden" name="asistencia_gii_v" value="<?=$asistencia_gii_v ?>">
                                                 <td><?php $query = mysql_query("SELECT SUM(gii) FROM total_asistencia WHERE id_sexo = '2' AND id_periodo_escolar='$periodo_escolar'");
                                 $asistencia_gii_h = mysql_result($query, 0); echo "$asistencia_gii_h";  ?></td>
+                                <input type="hidden" name="asistencia_gii_h" value="<?=$asistencia_gii_h ?>">
                                                 <td><?php $asistencia_gii = $asistencia_gii_v + $asistencia_gii_h; echo "$asistencia_gii";  ?></td>
+                                <input type="hidden" name="asistencia_gii" value="<?=$asistencia_gii ?>">
                                             </tr>
 
                                         </tbody>

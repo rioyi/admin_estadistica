@@ -84,6 +84,12 @@ $total_edad_v = $_POST['total_edad_v'];
 $total_edad_h = $_POST['total_edad_h'];
 $total_edad = $_POST['total_edad'];
 
+#promedio por edad
+
+$promedio_v = $total_edad_v/12;
+$promedio_h = $total_edad_h/12;
+$promedio = $total_edad/12;
+
 #Escolaridad
 
 #maternal
@@ -313,11 +319,34 @@ $sum_tipo_a_infecto = $_POST['sum_tipo_a_infecto'];
 
 
 
-#Cadiología 
-$poblacion_a_aula_v = $_POST['poblacion_a_aula_v'];
-$poblacion_a_aula_h = $_POST['poblacion_a_aula_h'];
-$sum_poblacion_a_aula = $_POST['sum_poblacion_a_aula'];
-
+#piso 1 
+$asistencia_p1_v = $_POST['asistencia_p1_v'];
+$asistencia_p1_h = $_POST['asistencia_p1_h'];
+$asistencia_p1 = $_POST['asistencia_p1'];
+#Piso 2 
+$asistencia_p2_v = $_POST['asistencia_p2_v'];
+$asistencia_p2_h = $_POST['asistencia_p2_h'];
+$asistencia_p2 = $_POST['asistencia_p2'];
+#piso 3 
+$asistencia_p3_v = $_POST['asistencia_p3_v'];
+$asistencia_p3_h = $_POST['asistencia_p3_h'];
+$asistencia_p3 = $_POST['asistencia_p3'];
+#Piso 4 
+$asistencia_p4_v = $_POST['asistencia_p4_v'];
+$asistencia_p4_h = $_POST['asistencia_p4_h'];
+$asistencia_p4 = $_POST['asistencia_p4'];
+#Piso 5 
+$asistencia_p5_v = $_POST['asistencia_p5_v'];
+$asistencia_p5_h = $_POST['asistencia_p5_h'];
+$asistencia_p5 = $_POST['asistencia_p5'];
+#Piso gi
+$asistencia_gi_v = $_POST['asistencia_gi_v'];
+$asistencia_gi_h = $_POST['asistencia_gi_h'];
+$asistencia_gi = $_POST['asistencia_gi'];
+#Piso gii
+$asistencia_gii_v = $_POST['asistencia_gii_v'];
+$asistencia_gii_h = $_POST['asistencia_gii_h'];
+$asistencia_gii = $_POST['asistencia_gii'];
 
 
 
@@ -735,9 +764,9 @@ $pdf->Cell(23,5,utf8_decode("$tipo_a_cirugia_h"),1,0,'C');
 $pdf->Cell(24,5,utf8_decode("$sum_tipo_a_cirugia"),1,0,'C');
 $pdf->Cell(5);
 $pdf->Cell(55,5,utf8_decode("Piso 1"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
-$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p1_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p1_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_p1"),1,0,'C');
 $pdf->Ln();
 $pdf->Cell(55,5,utf8_decode("Traumatología"),1,0,'C');
 $pdf->Cell(23,5,utf8_decode("$tipo_a_trauma_v"),1,0,'C');
@@ -745,9 +774,9 @@ $pdf->Cell(23,5,utf8_decode("$tipo_a_trauma_h"),1,0,'C');
 $pdf->Cell(24,5,utf8_decode("$sum_tipo_a_trauma"),1,0,'C');
 $pdf->Cell(5);
 $pdf->Cell(55,5,utf8_decode("Piso 2"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
-$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p2_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p2_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_p2"),1,0,'C');
 $pdf->Ln();
 $pdf->Cell(55,5,utf8_decode("Otorrinolaringologo"),1,0,'C');
 $pdf->Cell(23,5,utf8_decode("$tipo_a_oto_v"),1,0,'C');
@@ -755,9 +784,9 @@ $pdf->Cell(23,5,utf8_decode("$tipo_a_oto_h"),1,0,'C');
 $pdf->Cell(24,5,utf8_decode("$sum_tipo_a_oto"),1,0,'C');
 $pdf->Cell(5);
 $pdf->Cell(55,5,utf8_decode("Piso 3"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
-$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p3_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p3_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_p3"),1,0,'C');
 $pdf->Ln();
 $pdf->Cell(55,5,utf8_decode("Pediatría"),1,0,'C');
 $pdf->Cell(23,5,utf8_decode("$tipo_a_pedia_v"),1,0,'C');
@@ -765,9 +794,9 @@ $pdf->Cell(23,5,utf8_decode("$tipo_a_pedia_h"),1,0,'C');
 $pdf->Cell(24,5,utf8_decode("$sum_tipo_a_pedia"),1,0,'C');
 $pdf->Cell(5);
 $pdf->Cell(55,5,utf8_decode("Piso 4"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
-$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p4_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p4_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_p4"),1,0,'C');
 $pdf->Ln();
 $pdf->Cell(55,5,utf8_decode("Neurología"),1,0,'C');
 $pdf->Cell(23,5,utf8_decode("$tipo_a_nero_v"),1,0,'C');
@@ -775,9 +804,9 @@ $pdf->Cell(23,5,utf8_decode("$tipo_a_nero_h"),1,0,'C');
 $pdf->Cell(24,5,utf8_decode("$sum_tipo_a_nero"),1,0,'C');
 $pdf->Cell(5);
 $pdf->Cell(55,5,utf8_decode("Piso 5"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
-$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p5_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p5_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_p5"),1,0,'C');
 $pdf->Ln();
 $pdf->Cell(55,5,utf8_decode("Cadiología"),1,0,'C');
 $pdf->Cell(23,5,utf8_decode("$tipo_a_cardio_v"),1,0,'C');
@@ -785,9 +814,9 @@ $pdf->Cell(23,5,utf8_decode("$tipo_a_cardio_h"),1,0,'C');
 $pdf->Cell(24,5,utf8_decode("$sum_tipo_a_cardio"),1,0,'C');
 $pdf->Cell(5);
 $pdf->Cell(55,5,utf8_decode("Las Garzas I"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
-$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_gi_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_gi_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_gi"),1,0,'C');
 $pdf->Ln();
 $pdf->Cell(55,5,utf8_decode("Nefrología"),1,0,'C');
 $pdf->Cell(23,5,utf8_decode("$tipo_a_nefro_v"),1,0,'C');
@@ -795,9 +824,9 @@ $pdf->Cell(23,5,utf8_decode("$tipo_a_nefro_h"),1,0,'C');
 $pdf->Cell(24,5,utf8_decode("$sum_tipo_a_nefro"),1,0,'C');
 $pdf->Cell(5);
 $pdf->Cell(55,5,utf8_decode("Las Garzas II"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
-$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
-$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_gii_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_gii_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_gii"),1,0,'C');
 $pdf->Ln();
 $pdf->Cell(55,5,utf8_decode("Urología"),1,0,'C');
 $pdf->Cell(23,5,utf8_decode("$tipo_a_uro_v"),1,0,'C');
