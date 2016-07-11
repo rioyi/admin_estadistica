@@ -146,7 +146,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                             <div class="box box-info">
                               <div class="col-md-12">
                                 <div class="box-header">
-                                    <p><h3 class="box-title">Resultado de consulta del mes</h3></p>
+                                    <p><h3 class="box-title">Resultado de consulta Anual</h3></p>
                                 </div>
                                 
                             <!-- inicio de form -->
@@ -166,7 +166,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                       <input type="hidden" name="inicio" value="<?=$arreglo['inicio'] ?>">
                                       <input type="hidden" name="fin" value="<?=$arreglo['fin'] ?>">
 
-                                      <a href="#resumen"><button type="button" class="btn btn-success"><b>VER RESUMEN</b></button></a>
+                                      <a href="#resumen"><button type="button" class="btn btn-success"><b>IR ABAJO</b></button></a>
 
 
 

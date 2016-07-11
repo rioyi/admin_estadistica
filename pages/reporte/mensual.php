@@ -1,15 +1,373 @@
-
-
 <?php
+
+#periodo escolar
+$inicio  = $_POST['inicio'];
+$fin  = $_POST['fin'];
+
+
+
+
+#0
+$edad_cero_v = $_POST['edad_cero_v'];
+$edad_cero_h = $_POST['edad_cero_h'];
+$sum_edad_cero = $_POST['sum_edad_cero'];
+#1
+$edad_uno_v = $_POST['edad_uno_v'];
+$edad_uno_h = $_POST['edad_uno_h'];
+$sum_edad_uno = $_POST['sum_edad_uno'];
+#2
+$edad_dos_v = $_POST['edad_dos_v'];
+$edad_dos_h = $_POST['edad_dos_h'];
+$sum_edad_dos = $_POST['sum_edad_dos'];
+#3
+$edad_tres_v = $_POST['edad_tres_v'];
+$edad_tres_h = $_POST['edad_tres_h'];
+$sum_edad_tres = $_POST['sum_edad_tres'];
+#4
+$edad_cuatro_v = $_POST['edad_cuatro_v'];
+$edad_cuatro_h = $_POST['edad_cuatro_h'];
+$sum_edad_cuatro = $_POST['sum_edad_cuatro'];
+#5
+$edad_cinco_v = $_POST['edad_cinco_v'];
+$edad_cinco_h = $_POST['edad_cinco_h'];
+$sum_edad_cinco = $_POST['sum_edad_cinco'];
+#6
+$edad_seis_v = $_POST['edad_seis_v'];
+$edad_seis_h = $_POST['edad_seis_h'];
+$sum_edad_seis = $_POST['sum_edad_seis'];
+#7
+$edad_siete_v = $_POST['edad_siete_v'];
+$edad_siete_h = $_POST['edad_siete_h'];
+$sum_edad_siete = $_POST['sum_edad_siete'];
+#8
+$edad_ocho_v = $_POST['edad_ocho_v'];
+$edad_ocho_h = $_POST['edad_ocho_h'];
+$sum_edad_ocho = $_POST['sum_edad_ocho'];
+#9
+$edad_nueve_v = $_POST['edad_nueve_v'];
+$edad_nueve_h = $_POST['edad_nueve_h'];
+$sum_edad_nueve = $_POST['sum_edad_nueve'];
+#10
+$edad_diez_v = $_POST['edad_diez_v'];
+$edad_diez_h = $_POST['edad_diez_h'];
+$sum_edad_diez = $_POST['sum_edad_diez'];
+#11
+$edad_once_v = $_POST['edad_once_v'];
+$edad_once_h = $_POST['edad_once_h'];
+$sum_edad_once = $_POST['sum_edad_once'];
+#12
+$edad_doce_v = $_POST['edad_doce_v'];
+$edad_doce_h = $_POST['edad_doce_h'];
+$sum_edad_doce = $_POST['sum_edad_doce'];
+#13
+$edad_trece_v = $_POST['edad_trece_v'];
+$edad_trece_h = $_POST['edad_trece_h'];
+$sum_edad_trece = $_POST['sum_edad_trece'];
+#14
+$edad_catorce_v = $_POST['edad_catorce_v'];
+$edad_catorce_h = $_POST['edad_catorce_h'];
+$sum_edad_catorce = $_POST['sum_edad_catorce'];
+#15
+$edad_quince_v = $_POST['edad_quince_v'];
+$edad_quince_h = $_POST['edad_quince_h'];
+$sum_edad_quince = $_POST['sum_edad_quince'];
+#16
+$edad_dieciseis_v = $_POST['edad_dieciseis_v'];
+$edad_dieciseis_h = $_POST['edad_dieciseis_h'];
+$sum_edad_dieciseis = $_POST['sum_edad_dieciseis'];
+#17
+$edad_diecisiete_v = $_POST['edad_diecisiete_v'];
+$edad_diecisiete_h = $_POST['edad_diecisiete_h'];
+$sum_edad_diecisiete = $_POST['sum_edad_diecisiete'];
+#total por edad
+$total_edad_v = $_POST['total_edad_v'];
+$total_edad_h = $_POST['total_edad_h'];
+$total_edad = $_POST['total_edad'];
+
+#promedio por edad
+
+$promedio_v = $total_edad_v/12;
+$promedio_h = $total_edad_h/12;
+$promedio = $total_edad/12;
+
+#Escolaridad
+
+#maternal
+$maternal_v = $_POST['maternal_v'];
+$maternal_h = $_POST['maternal_h'];
+$sum_maternal = $_POST['sum_maternal'];
+#nivel 1
+$nivel_uno_v = $_POST['nivel_uno_v'];
+$nivel_uno_h = $_POST['nivel_uno_h'];
+$sum_nivel_uno = $_POST['sum_nivel_uno'];
+#nivel 2
+$nivel_dos_v = $_POST['nivel_dos_v'];
+$nivel_dos_h = $_POST['nivel_dos_h'];
+$sum_nivel_dos = $_POST['sum_nivel_dos'];
+#nivel 3
+$nivel_tres_v = $_POST['nivel_tres_v'];
+$nivel_tres_h = $_POST['nivel_tres_h'];
+$sum_nivel_tres = $_POST['sum_nivel_tres'];
+#grado 1
+$grado_uno_v = $_POST['grado_uno_v'];
+$grado_uno_h = $_POST['grado_uno_h'];
+$sum_grado_uno = $_POST['sum_grado_uno'];
+#grado 2
+$grado_dos_v = $_POST['grado_dos_v'];
+$grado_dos_h = $_POST['grado_dos_h'];
+$sum_grado_dos = $_POST['sum_grado_dos'];
+#grado 3
+$grado_tres_v = $_POST['grado_tres_v'];
+$grado_tres_h = $_POST['grado_tres_h'];
+$sum_grado_tres = $_POST['sum_grado_tres'];
+#grado 4
+$grado_cuatro_v = $_POST['grado_cuatro_v'];
+$grado_cuatro_h = $_POST['grado_cuatro_h'];
+$sum_grado_cuatro = $_POST['sum_grado_cuatro'];
+#grado 5
+$grado_cinco_v = $_POST['grado_cinco_v'];
+$grado_cinco_h = $_POST['grado_cinco_h'];
+$sum_grado_cinco = $_POST['sum_grado_cinco'];
+#grado 6
+$grado_seis_v = $_POST['grado_seis_v'];
+$grado_seis_h = $_POST['grado_seis_h'];
+$sum_grado_sies = $_POST['sum_grado_sies'];
+#grado 7
+$grado_siete_v = $_POST['grado_siete_v'];
+$grado_siete_h = $_POST['grado_siete_h'];
+$sum_grado_siente = $_POST['sum_grado_siente'];
+#grado 8
+$grado_ocho_v = $_POST['grado_ocho_v'];
+$grado_ocho_h = $_POST['grado_ocho_h'];
+$sum_grado_ocho = $_POST['sum_grado_ocho'];
+#grado 9
+$grado_nueve_v = $_POST['grado_nueve_v'];
+$grado_nueve_h = $_POST['grado_nueve_h'];
+$sum_grado_nueve = $_POST['sum_grado_nueve'];
+#grado 10
+$grado_diez_v = $_POST['grado_diez_v'];
+$grado_diez_h = $_POST['grado_diez_h'];
+$sum_grado_diez = $_POST['sum_grado_diez'];
+#grado 11
+$grado_once_v = $_POST['grado_once_v'];
+$grado_once_h = $_POST['grado_once_h'];
+$sum_grado_once = $_POST['sum_grado_once'];
+#grado S/E
+$grado_sin_v = $_POST['grado_sin_v'];
+$grado_sin_h = $_POST['grado_sin_h'];
+$sum_grado_sin = $_POST['sum_grado_sin'];
+#grado E/E
+$grado_especial_v = $_POST['grado_especial_v'];
+$grado_especial_h = $_POST['grado_especial_h'];
+$sum_grado_especial = $_POST['sum_grado_especial'];
+#grado 12
+$grado_doce_v = $_POST['grado_doce_v'];
+$grado_doce_h = $_POST['grado_doce_h'];
+$sum_grado_doce = $_POST['sum_grado_doce'];
+
+#Tiempo de Permanencia
+#5
+$permanencia_cinco_v = $_POST['permanencia_cinco_v'];
+$permanencia_cinco_h = $_POST['permanencia_cinco_h'];
+$sum_permanencia_cinco = $_POST['sum_permanencia_cinco'];
+#10
+$permanencia_diez_v = $_POST['permanencia_diez_v'];
+$permanencia_diez_h = $_POST['permanencia_diez_h'];
+$sum_permanencia_diez = $_POST['sum_permanencia_diez'];
+#15
+$permanencia_quince_v = $_POST['permanencia_quince_v'];
+$permanencia_quice_h = $_POST['permanencia_quice_h'];
+$sum_permanencia_quice = $_POST['sum_permanencia_quice'];
+#30
+$permanencia_trainta_v = $_POST['permanencia_trainta_v'];
+$permanencia_trainta_h = $_POST['permanencia_trainta_h'];
+$sum_permanencia_trainta = $_POST['sum_permanencia_trainta'];
+#2M
+$permanencia_dosmeses_v = $_POST['permanencia_dosmeses_v'];
+$permanencia_dosmeses_h = $_POST['permanencia_dosmeses_h'];
+$sum_permanencia_dosmeses = $_POST['sum_permanencia_dosmeses'];
+#3M
+$permanencia_tresmeses_v = $_POST['permanencia_tresmeses_v'];
+$permanencia_tresmeses_h = $_POST['permanencia_tresmeses_h'];
+$sum_permanencia_tresmeses = $_POST['sum_permanencia_tresmeses'];
+#+3M
+$permanencia_masmeses_v = $_POST['permanencia_masmeses_v'];
+$permanencia_masmeses_h = $_POST['permanencia_masmeses_h'];
+$sum_permanencia_masmeses = $_POST['sum_permanencia_masmeses'];
+
+#Poblacion Atendida
+
+#En Aula
+$poblacion_a_aula_v = $_POST['poblacion_a_aula_v'];
+$poblacion_a_aula_h = $_POST['poblacion_a_aula_h'];
+$sum_poblacion_a_aula = $_POST['sum_poblacion_a_aula'];
+#En Habitacion
+$poblacion_a_habitacion_v = $_POST['poblacion_a_aula_v'];
+$poblacion_a_habitacion_h = $_POST['poblacion_a_aula_h'];
+$sum_poblacion_a_habitacion = $_POST['sum_poblacion_a_aula'];
+
+#Poblacion Referida
+
+
+#Defensoria
+$poblacion_r_defen_v = $_POST['poblacion_r_defen_v'];
+$poblacion_r_defen_h = $_POST['poblacion_r_defen_h'];
+$sum_poblacion_r_defen = $_POST['sum_poblacion_r_defen'];
+#cdi
+$poblacion_r_cdi_v = $_POST['poblacion_r_cdi_v'];
+$poblacion_r_cdi_h = $_POST['poblacion_r_cdi_h'];
+$sum_poblacion_r_cdi = $_POST['sum_poblacion_r_cdi'];
+#Seguro Social
+$poblacion_r_social_v = $_POST['poblacion_r_social_v'];
+$poblacion_r_social_h = $_POST['poblacion_r_social_h'];
+$sum_poblacion_r_social = $_POST['sum_poblacion_r_social'];
+#Psicologia
+$poblacion_r_psicologia_v = $_POST['poblacion_r_psicologia_v'];
+$poblacion_r_psicologia_h = $_POST['poblacion_r_psicologia_h'];
+$sum_poblacion_r_psicologia = $_POST['sum_poblacion_r_psicologia'];
+#CAIPA
+$poblacion_r_caipa_v = $_POST['poblacion_r_caipa_v'];
+$poblacion_r_caipa_h = $_POST['poblacion_r_caipa_h'];
+$sum_poblacion_r_caipa = $_POST['sum_poblacion_r_caipa'];
+#Integración
+$poblacion_r_integracion_v = $_POST['poblacion_r_integracion_v'];
+$poblacion_r_integracion_h = $_POST['poblacion_r_integracion_h'];
+$sum_poblacion_r_integracion = $_POST['sum_poblacion_r_integracion'];
+#A. Integral
+$poblacion_r_integral_v = $_POST['poblacion_r_integral_v'];
+$poblacion_r_integral_h = $_POST['poblacion_r_integral_h'];
+$sum_poblacion_r_integral = $_POST['sum_poblacion_r_integral'];
+#CENDA
+$poblacion_r_cenda_v = $_POST['poblacion_r_cenda_v'];
+$poblacion_r_cenda_h = $_POST['poblacion_r_cenda_h'];
+$sum_poblacion_r_cenda = $_POST['sum_poblacion_r_cenda'];
+#UPE
+$poblacion_r_upe_v = $_POST['poblacion_r_upe_v'];
+$poblacion_r_upe_h = $_POST['poblacion_r_upe_h'];
+$sum_poblacion_r_upe = $_POST['sum_poblacion_r_upe'];
+#Articulación
+$poblacion_r_arti_v = $_POST['poblacion_r_arti_v'];
+$poblacion_r_arti_h = $_POST['poblacion_r_arti_h'];
+$sum_poblacion_r_arti = $_POST['sum_poblacion_r_arti'];
+#Otros
+$poblacion_r_otros_v = $_POST['poblacion_r_otros_v'];
+$poblacion_r_otros_h = $_POST['poblacion_r_otros_h'];
+$sum_poblacion_r_otros = $_POST['sum_poblacion_r_otros'];
+
+
+
+#Tiempo de Atencion
+
+#Cirugía
+$tipo_a_cirugia_v = $_POST['tipo_a_cirugia_v'];
+$tipo_a_cirugia_h = $_POST['tipo_a_cirugia_h'];
+$sum_tipo_a_cirugia = $_POST['sum_tipo_a_cirugia'];
+#Traumatología 
+$tipo_a_trauma_v = $_POST['tipo_a_trauma_v'];
+$tipo_a_trauma_h = $_POST['tipo_a_trauma_h'];
+$sum_tipo_a_trauma = $_POST['sum_tipo_a_trauma'];
+#Otorrinolaringologo
+$tipo_a_oto_v = $_POST['tipo_a_oto_v'];
+$tipo_a_oto_h = $_POST['tipo_a_oto_h'];
+$sum_tipo_a_oto = $_POST['sum_tipo_a_oto'];
+#Pediatría 
+$tipo_a_pedia_v = $_POST['tipo_a_pedia_v'];
+$tipo_a_pedia_h = $_POST['tipo_a_pedia_h'];
+$sum_tipo_a_pedia = $_POST['sum_tipo_a_pedia'];
+#Nerología 
+$tipo_a_nero_v = $_POST['tipo_a_nero_v'];
+$tipo_a_nero_h = $_POST['tipo_a_nero_h'];
+$sum_tipo_a_nero = $_POST['sum_tipo_a_nero'];
+#Cadiología 
+$tipo_a_cardio_v = $_POST['tipo_a_cardio_v'];
+$tipo_a_cardio_h = $_POST['tipo_a_cardio_h'];
+$sum_tipo_a_cardio = $_POST['sum_tipo_a_cardio'];
+#Nefrología 
+$tipo_a_nefro_v = $_POST['tipo_a_nefro_v'];
+$tipo_a_nefro_h = $_POST['tipo_a_nefro_h'];
+$sum_tipo_a_nefro = $_POST['sum_tipo_a_nefro'];
+#Urología 
+$tipo_a_uro_v = $_POST['tipo_a_uro_v'];
+$tipo_a_uro_h = $_POST['tipo_a_uro_h'];
+$sum_tipo_a_uro = $_POST['sum_tipo_a_uro'];
+#Neumonología 
+$tipo_a_neumo_v = $_POST['tipo_a_neumo_v'];
+$resultado_h = $_POST['resultado_h'];
+$sum_tipo_a_neumo = $_POST['sum_tipo_a_neumo'];
+#Hermatología 
+$tipo_a_herma_v = $_POST['tipo_a_herma_v'];
+$tipo_a_herma_h = $_POST['tipo_a_herma_h'];
+$sum_tipo_a_herma = $_POST['sum_tipo_a_herma'];
+#Oncología 
+$tipo_a_onco_v = $_POST['tipo_a_onco_v'];
+$tipo_a_onco_h = $_POST['tipo_a_onco_h'];
+$sum_tipo_a_onco = $_POST['sum_tipo_a_onco'];
+#Dermatología 
+$tipo_a_derma_v = $_POST['tipo_a_derma_v'];
+$tipo_a_derma_h = $_POST['tipo_a_derma_h'];
+$sum_tipo_a_derma = $_POST['sum_tipo_a_derma'];
+#Gastrología 
+$tipo_a_gastro_v = $_POST['tipo_a_gastro_v'];
+$tipo_a_gastro_h = $_POST['tipo_a_gastro_h'];
+$sum_tipo_a_gastro = $_POST['sum_tipo_a_gastro'];
+#Infectología 
+$tipo_a_infecto_v = $_POST['tipo_a_infecto_v'];
+$tipo_a_infecto_h = $_POST['tipo_a_infecto_h'];
+$sum_tipo_a_infecto = $_POST['sum_tipo_a_infecto'];
+
+
+
+
+
+#piso 1 
+$asistencia_p1_v = $_POST['asistencia_p1_v'];
+$asistencia_p1_h = $_POST['asistencia_p1_h'];
+$asistencia_p1 = $_POST['asistencia_p1'];
+#Piso 2 
+$asistencia_p2_v = $_POST['asistencia_p2_v'];
+$asistencia_p2_h = $_POST['asistencia_p2_h'];
+$asistencia_p2 = $_POST['asistencia_p2'];
+#piso 3 
+$asistencia_p3_v = $_POST['asistencia_p3_v'];
+$asistencia_p3_h = $_POST['asistencia_p3_h'];
+$asistencia_p3 = $_POST['asistencia_p3'];
+#Piso 4 
+$asistencia_p4_v = $_POST['asistencia_p4_v'];
+$asistencia_p4_h = $_POST['asistencia_p4_h'];
+$asistencia_p4 = $_POST['asistencia_p4'];
+#Piso 5 
+$asistencia_p5_v = $_POST['asistencia_p5_v'];
+$asistencia_p5_h = $_POST['asistencia_p5_h'];
+$asistencia_p5 = $_POST['asistencia_p5'];
+#Piso gi
+$asistencia_gi_v = $_POST['asistencia_gi_v'];
+$asistencia_gi_h = $_POST['asistencia_gi_h'];
+$asistencia_gi = $_POST['asistencia_gi'];
+#Piso gii
+$asistencia_gii_v = $_POST['asistencia_gii_v'];
+$asistencia_gii_h = $_POST['asistencia_gii_h'];
+$asistencia_gii = $_POST['asistencia_gii'];
+
+
+
+
+
+
+
+
+
+ $dia =  date("d");
+ $mes =  date("m");
+ $año = date ("Y");
 
 require('fpdf/fpdf.php');
 
 $pdf=new FPDF('L','mm','Letter');
 $pdf->AddPage();
- 
+
 ////Ruta de la imagen "imgs/ver.jpg" modificar función para recuperar el nombre con extensión.
 //abcisa, ordenada, ancho, aimgs/ver.jpglto, type, link_url
-
+$pdf->Image('../../img/logo_aulas.png',250,05,20,0,'');
 $suscrito = 'C.P. Paco Remes Frias';
 $suscrito_puesto = '006810041';
 $solicita_autorice = 'WAR4412 UNIDAD DE RECURSOS FINANCIEROS';
@@ -47,7 +405,7 @@ $solicitante = 'DR. JOSE GUSTAVO REYES SEMERIO';
 $autoriza_comision = 'C.P. BIOGENES CAMPOMANES LÓPEZ';
 $responsable_registro = 'C.P. RAFAEL MORALES COVARRUBIAS';
 $subjefe_administrativo = 'C.P. CARLOS GOMEZ CASARES';
- 
+
 /*********************** INICIO TEXTO *********************************/
 //Familia, Estilo, Tamaño
 $pdf->SetFont('Times','B',12);
@@ -56,319 +414,464 @@ $pdf->Cell(0,4,'Republica Bolivariana de Venezuela',0,1,'C');
 $pdf->Cell(0,4,utf8_decode('Ministerio del poder popular para la educación'),0,1,'C');
 $pdf->Cell(0,4,utf8_decode('Modalidad de educación especial'),0,1,'C');
 $pdf->Cell(0,4,'Impedimento Fisico',0,1,'C');
- 
+
 $pdf->SetFont('Times','',8);
 $pdf->Ln(2);
-$pdf->Cell(0,4,'EL SUSCRITO     '.$suscrito,0,0,'L');//
+$pdf->Cell(0,4,'    ',0,0,'L');//
 $pdf->Cell(-60); //Mueve el cursor a la posición -60 de DER a IZQ "Valor 0 a la derecha"
 $pdf->Cell(0,4,'CODIGO     '.$suscrito_puesto,0,1,'L');
-$pdf->Cell(0,4,'SOLICITA SE AUTORICE A      '.$solicita_autorice,0,0,'L');
+$pdf->Cell(0,4,'MES: TODO EL PERIODO ESCOLAR     ',0,0,'L');
 $pdf->Cell(-60); //Mueve el cursor a la posición -60 de DER a IZQ "Valor 0 a la derecha"
 $pdf->Cell(0,4,'CIUDAD     '.$solicita_puesto,0,1,'L');
-$pdf->Cell(0,4,'ADSCRITO A      '.$adscrito,0,0,'L');
+$pdf->Cell(0,4,'PERIODO ESCOLAR: '.$inicio." - ".$fin,0,0,'L');
 $pdf->Cell(-60); //Mueve el cursor a la posición -60 de DER a IZQ "Valor 0 a la derecha"
 $pdf->Cell(0,4,'ESTADO    '.$adscrito_rfc,0,1,'L');
-$pdf->Cell(0,4,'OBJETO DE LA COMISIÓN       '.$objeto_comision,0,1,'L');
-$pdf->Ln();    
-$pdf->Cell(0,4,'LUGAR(ES) DE COMISIÓN       '.$lugar_comision,0,1,'L');
- 
-$pdf->Cell(112); //Mueve el cursor a la posición 112 después de la linea "lugar de comision2"
-$pdf->Cell(0,4,'PRESUPUESTO:',0,0,'L');
-if(strcasecmp($tipo_presupuesto, 'ESTATAL') == 0){
-        $pdf->Cell(-59.5); //Mueve el cursor a la posición -59.5 de DER a IZQ "Valor 0 a la derecha" Marca ESTATAL
-}
-        else{
-                $pdf->Cell(-33.5); //Mueve el cursor a la posición -33.4 de DER a IZQ "Valor 0 a la derecha" Marca FEDERAL
-        }
-$pdf->Cell(0,4,$presupuesto,0,0,'L');
- 
-$pdf->Cell(-55); //Mueve el cursor a la posición -55 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'ESTATAL',0,0,'L');
-$pdf->Cell(-29); //Mueve el cursor a la posición -29 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'FEDERAL',0,1,'L');
-$pdf->Cell(0,4,'CON CARGO AL SUBPROGRAMA O UNIDAD PRESUPUESTAL',0,0,'L');
+$pdf->Cell(0,4,'      ',0,1,'L');
+
+$pdf->Cell(0,4,'       ',0,1,'L');
+
+
+$pdf->SetFont('Times','B',12);
+//Ancho Alto Cadena, Borde, Ln, Alineación, Relleno, Link
+$pdf->Cell(0,4,utf8_decode('ESTADÍSTICA GENERAL ANUAL AH DR. LUIS RAZETTI'),0,1,'C');
+$pdf->Cell(0,4,utf8_decode('PERIODO ESCOLAR: '.$inicio." - ".$fin),0,1,'C');
+$pdf->Ln(2);
+
+
+$pdf->SetFont('Times','',9);
+$pdf->Cell(70);
+$pdf->Cell(40,5,"VARONES",1,0,'C');
+$pdf->Cell(40,5,"HEMBRA",1,0,'C');
+$pdf->Cell(40,5,"TOTAL",1,0,'C');
+
+$pdf->Ln();
+$pdf->Cell(70);
+$pdf->Cell(40,5,"$total_edad_v",1,0,'C');
+$pdf->Cell(40,5,"$total_edad_h",1,0,'C');
+$pdf->Cell(40,5,"$total_edad",1,0,'C');
+$pdf->Ln();
+$pdf->Ln();
+
+#Por edad
+
+$pdf->Cell(255,5,utf8_decode("Niños, niñas y adolencentes visitados por habitaciones agrupados por edad"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(15,5,utf8_decode("EDAD"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("0-11Meses"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("1 año"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("2 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("3 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("4 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("5 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("6 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("7 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("8 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("9 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("10 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("11 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("12 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("13 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("14 años"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("+15 años"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(15,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_cero_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_uno_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_dos_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_tres_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_cuatro_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_cinco_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_seis_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_siete_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_ocho_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_nueve_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_diez_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_once_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_doce_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_trece_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_catorce_v"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_quince_v"),1,0,'C');
+
+$pdf->Ln();
+$pdf->Cell(15,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_cero_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_uno_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_dos_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_tres_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_cuatro_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_cinco_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_seis_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_siete_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_ocho_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_nueve_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_diez_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_once_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_doce_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_trece_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_catorce_h"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$edad_quince_h"),1,0,'C');
+
+#Escolaridad
+
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Cell(255,5,utf8_decode("Escolaridad"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(19,5,utf8_decode("Grados"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("Maternal"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("1 Nivel"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("2 Nivel"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("3 Nivel"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("1° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("2° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("3° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("4° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("5° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("6° G"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("7mo"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("8vo"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("9no"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("4to Año"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("5to Año"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("6to Años"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("S/E"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("E/E"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(19,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$maternal_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$nivel_uno_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$nivel_dos_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$nivel_tres_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_uno_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_dos_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_tres_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_cuatro_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_cinco_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_seis_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_siete_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_ocho_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_nueve_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_diez_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_once_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_doce_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_sin_v"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_especial_v"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(19,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(15,5,utf8_decode("$maternal_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$nivel_uno_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$nivel_dos_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$nivel_tres_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_uno_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_dos_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_tres_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_cuatro_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_cinco_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_seis_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_siete_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_ocho_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_nueve_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_diez_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_once_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_doce_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_sin_h"),1,0,'C');
+$pdf->Cell(13,5,utf8_decode("$grado_especial_h"),1,0,'C');
+
+#Tiempo de Permanencia
+
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Cell(255,5,utf8_decode("Tiempo de Permanencia en el Hospital"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(22,5,utf8_decode("Periodos"),1,0,'C');
+$pdf->Cell(78,5,utf8_decode("Corta Estadia"),1,0,'C');
+$pdf->Cell(40,5,utf8_decode("Media Estadia"),1,0,'C');
+$pdf->Cell(115,5,utf8_decode("Larga Estadia"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(22,5,utf8_decode("Tiempo"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("0 - 5 Días"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("6 - 10 Días"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("11 - 15 Días"),1,0,'C');
+$pdf->Cell(40,5,utf8_decode("16 - 30 Días"),1,0,'C');
+$pdf->Cell(37,5,utf8_decode("2 Meses"),1,0,'C');
+$pdf->Cell(37,5,utf8_decode("3 Meses"),1,0,'C');
+$pdf->Cell(41,5,utf8_decode("+ 3 Meses"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(22,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("$permanencia_cinco_v"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("$permanencia_diez_v"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("$permanencia_quince_v"),1,0,'C');
+$pdf->Cell(40,5,utf8_decode("$permanencia_trainta_v"),1,0,'C');
+$pdf->Cell(37,5,utf8_decode("$permanencia_dosmeses_v"),1,0,'C');
+$pdf->Cell(37,5,utf8_decode("$permanencia_tresmeses_v"),1,0,'C');
+$pdf->Cell(41,5,utf8_decode("$permanencia_masmeses_v"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(22,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("$permanencia_cinco_h"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("$permanencia_diez_h"),1,0,'C');
+$pdf->Cell(26,5,utf8_decode("$permanencia_quice_h"),1,0,'C');
+$pdf->Cell(40,5,utf8_decode("$permanencia_trainta_h"),1,0,'C');
+$pdf->Cell(37,5,utf8_decode("$permanencia_dosmeses_h"),1,0,'C');
+$pdf->Cell(37,5,utf8_decode("$permanencia_tresmeses_h"),1,0,'C');
+$pdf->Cell(41,5,utf8_decode("$permanencia_masmeses_h"),1,0,'C');
+
+$pdf->Ln();
+$pdf->Ln();
+#Poblacion Atendida
+
+$pdf->Cell(70);
+$pdf->Cell(120,5,utf8_decode("Población Atendida"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(70);
+$pdf->Cell(30,5,"",1,0,'C');
+$pdf->Cell(30,5,"Aula",1,0,'C');
+$pdf->Cell(30,5,utf8_decode("Habitación"),1,0,'C');
+$pdf->Cell(30,5,"TOTAL",1,0,'C');
+
+$pdf->Ln();
+$pdf->Cell(70);
+$pdf->Cell(30,5,"VARONES",1,0,'C');
+$pdf->Cell(30,5,"$poblacion_a_aula_v",1,0,'C');
+$pdf->Cell(30,5,utf8_decode("$poblacion_a_aula_v"),1,0,'C');
+$pdf->Cell(30,5,"$sum_poblacion_a_aula",1,0,'C');
+
+$pdf->Ln();
+
+$pdf->Cell(70);
+$pdf->Cell(30,5,"HEMBRAS",1,0,'C');
+$pdf->Cell(30,5,"$poblacion_a_aula_h",1,0,'C');
+$pdf->Cell(30,5,utf8_decode("$poblacion_a_aula_h"),1,0,'C');
+$pdf->Cell(30,5,"$sum_poblacion_a_aula",1,0,'C');
+$pdf->Ln();
+$pdf->Ln();
+$pdf->Ln();
+
+
+
+
+#fecha y firma de entrega
+$pdf->Cell(0,4,utf8_decode("FECHA DE IMPRESIÓN: ").$dia.'/'.$mes.'/'.$año,0,0,'L');
 $pdf->Cell(-65); //Mueve el cursor a la posición -65 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'OFICIO DE COMISIÓN No '.$oficio_comision,0,1,'L');
- 
+$pdf->Cell(0,4,'FIRMA AUTORIZADA ',0,1,'L');
 $pdf->Ln(5);
-$pdf->SetFont('Times','B',7);
-$pdf->Cell(0,4,'PERIODO DE COMISIÓN',0,0,'L');
-$pdf->Cell(-160); //Mueve el cursor a la posición -160 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'DÍAS',0,0,'L');
-$pdf->Cell(-147); //Mueve el cursor a la posición -147 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'CUOTA DIARIA',0,0,'L');
-$pdf->Cell(-118); //Mueve el cursor a la posición -120 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'PARCIAL',0,0,'L');
- 
-$pdf->Cell(-93); //Mueve el cursor a la posición -65 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'TOTAL ANTICIPO',0,0,'L');
-$pdf->Cell(-60); //Mueve el cursor a la posición -65 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'COMPROBACIÓN',0,0,'L');
-$pdf->Cell(-25); //Mueve el cursor a la posición -65 de DER a IZQ "Valor 0 a la derecha"
-$pdf->Cell(0,4,'DIFERENCIA',0,1,'L');
- 
-/**********************       Inicio Con Cargo al Subprograma o Unidad Presupuestal       **********************/
-$pdf->SetFont('Times','',6.5); 
-$pdf->Cell(0.5);                $pdf->Cell(0,4,$periodo_comision,0,0,'L'); //periodo de comision1
-$pdf->SetFont('Times','',7);   
-$pdf->Cell(-158);               $pdf->Cell(0,4,$dias[0],0,0,'L'); //días1
-/*Periodo de Comisión, Días, Signo de moneda+Cuota Diaria, Signo de moneda+Parcial*/
-$pdf->SetFont('Times','B',7);
-//$pdf->Cell(-149);     $pdf->Cell(0,4,'$           '.number_format($cuota_diaria[0],2,'.',','),0,0,'L'); //cuota diaria1 (47)
-$pdf->Cell(-149);       $pdf->Cell(0,4,'$           '.$cuota_diaria[0],0,0,'L'); //cuota diaria1 (47)
-$pdf->Cell(-124);       $pdf->Cell(0,4,'$           '.$parcial[0],0,1,'L'); //parcial1 (-124)
- 
-$pdf->SetFont('Times','',6.5); 
-$pdf->Cell(0.5);                $pdf->Cell(0,4,$periodo_comision,0,0,'L'); //periodo de comision1
-$pdf->SetFont('Times','',7);   
-$pdf->Cell(-158);               $pdf->Cell(0,4,$dias[1],0,0,'L'); //días1
-/*Periodo de Comisión, Días, Signo de moneda+Cuota Diaria, Signo de moneda+Parcial*/
-$pdf->SetFont('Times','B',7);
-$pdf->Cell(-149);       $pdf->Cell(0,4,'$           '.$cuota_diaria[1],0,0,'L'); //cuota diaria2 (47)
-$pdf->Cell(-124);       $pdf->Cell(0,4,'$           '.$parcial[1],0,1,'L'); //parcial2 (-124)
- 
-$pdf->SetFont('Times','',6.5); 
-$pdf->Cell(0.5);                $pdf->Cell(0,4,$periodo_comision,0,0,'L'); //periodo de comision1
-$pdf->SetFont('Times','',7);   
-$pdf->Cell(-158);               $pdf->Cell(0,4,$dias[2],0,0,'L'); //días1
-/*Periodo de Comisión, Días, Signo de moneda+Cuota Diaria, Signo de moneda+Parcial*/
-$pdf->SetFont('Times','B',7);
-$pdf->Cell(-149);       $pdf->Cell(0,4,'$           '.$cuota_diaria[2],0,0,'L'); //cuota diaria3 (47)
-$pdf->Cell(-124);       $pdf->Cell(0,4,'$           '.$parcial[2],0,0,'L'); //parcial3 (-124)
-/**********************       Fin Con Cargo al Subprograma o Unidad Presupuestal       **********************/
- 
-$pdf->Cell(-96);        $pdf->Cell(0,4,'$               '.$total_anticipo[0],0,0,'L'); //Total Anticipo
-$pdf->Cell(-63);        $pdf->Cell(0,4,'$               '.$comprobacion[0],0,0,'L'); //Comprobación
-$pdf->Cell(-30);        $pdf->Cell(0,4,'$               '.$diferencia[0],0,1,'L'); //Diferencia
- 
+
+
+
+
+//Familia, Estilo, Tamaño
+$pdf->SetFont('Times','B',12);
+//Ancho Alto Cadena, Borde, Ln, Alineación, Relleno, Link
+
+$pdf->Cell(0,4,'Republica Bolivariana de Venezuela',0,1,'C');
+$pdf->Cell(0,4,utf8_decode('Ministerio del poder popular para la educación'),0,1,'C');
+$pdf->Cell(0,4,utf8_decode('Modalidad de educación especial'),0,1,'C');
+$pdf->Cell(0,4,'Impedimento Fisico',0,1,'C');
+$pdf->Cell(0,4,''.$pdf->Image('../../img/logo_aulas.png',250,05,20,0,''),0,1,'C');
+$pdf->SetFont('Times','',8);
 $pdf->Ln(2);
-$fecha = date("j /F /Y");
-$fecha = split('/',$fecha);
-$fecha = implode('de ',$fecha);
-$pdf->Cell(15);         $pdf->Cell(0,4,$lugar.$fecha,0,0,'L'); //Descripción Lugar y Fecha
-$pdf->Cell(-123);       $pdf->Cell(0,4,'COMBUSTIBLES',0,1,'L'); //Combustibles y Peajes 1
-$pdf->Cell(25);         $pdf->Cell(0,4,'LUGAR Y FECHA',0,0,'L'); //Lugar y Fecha
-$pdf->Cell(-118.5);     $pdf->Cell(0,4,'Y PEAJES',0,0,'L'); //Combustibles y Peajes 2
-//                                                                                              $combustible_peaje = array('ta'=>5154.54,'comprobacion'=>3531.14);
-$pdf->Cell(-96);        $pdf->Cell(0,4,'$               '.$combustible_peaje['ta'],0,0,'L'); //Total Anticipo Combustible
-$pdf->Cell(-63);        $pdf->Cell(0,4,'$               '.$combustible_peaje['comprobacion'],0,0,'L'); //Comprobación Combustible
-$pdf->Cell(-30);        $pdf->Cell(0,4,'$                ',0,1,'L'); //Diferencia Combustible
- 
-$pdf->Cell(74); $pdf->Cell(20,4,'  VEHICULOS:',1,1,'L'); //Diferencia Combustible
-$pdf->SetFont('Times','',7);
-$pdf->Ln(1);
- 
-if(strcasecmp($tipo_pago, 'EFECTIVO') == 0){
-        $efectivo = '                             X';
-}
-        else{
-                $tarjeta = '                                 X';
-        }
- 
-$pdf->Cell(0,4,'PAGO REALIZADO',0,0,'L');
-$pdf->Cell(-137);       $pdf->Cell(0,4,'MARCA:             '.$marca_vehiculo,0,1,'L');
-$pdf->Cell(0,4,'EN EFECTIVO'.$efectivo,0,0,'L');
-$pdf->Cell(-137);       $pdf->Cell(0,4,'TIPO:                   '.$tipo_vehiculo,0,1,'L');
-$pdf->Cell(59); $pdf->Cell(0,4,'PLACAS:            '.$placas_vehiculo,0,1,'L');
-$pdf->Cell(0,4,'PAGO ABONADO',0,0,'L');
-$pdf->Cell(-137);       $pdf->Cell(0,4,'Nº ECON:           '.$economico_vehiculo,0,1,'L');
-$pdf->Cell(0,4,'EN TARJETA',0,1,'L');
-$pdf->Cell(0,4,'DE DÉBITO'.$tarjeta,0,0,'L');
-$pdf->SetFont('Times','B',7);
-$pdf->Cell(-122);       $pdf->Cell(20,4,'      PASAJES:',1,1,'L'); //Diferencia Combustible
-$pdf->SetFont('Times','',7);
-$pdf->Ln(1);
-$pdf->Cell(0,4,'TARJETA BITAL NUM.      '.$tarjeta_bital,0,0,'L');
- 
-$pdf->Cell(-122);       $pdf->Cell(0,4,'TERRESTRE',0,0,'L');
-$pdf->Cell(-96);        $pdf->Cell(0,4,'$',0,0,'L'); //Total Anticipo Pasaje Terrestre 1
-$pdf->Cell(-63);        $pdf->Cell(0,4,'$',0,0,'L'); //Comprobación Pasaje Terrestre 2
-$pdf->Cell(-30);        $pdf->Cell(0,4,'$',0,1,'L'); //Diferencia Pasaje Terrestre 3
- 
-$pdf->Cell(74); $pdf->Cell(0,4,'AÉREO',0,0,'L');
-$pdf->Cell(-96);        $pdf->Cell(0,4,'$',0,0,'L'); //Total Anticipo Pasaje Aéreo 1
-$pdf->Cell(-63);        $pdf->Cell(0,4,'$',0,0,'L'); //Comprobación Pasaje Aéreo 2
-$pdf->Cell(-30);        $pdf->Cell(0,4,'$',0,1,'L'); //Diferencia Pasaje Aéreo 3
- 
-$pdf->Cell(60);         $pdf->Cell(0,4,'OTROS',0,0,'L');
-$pdf->Cell(-96);        $pdf->Cell(0,4,'$',0,0,'L'); //Total Anticipo Otros 1
-$pdf->Cell(-63);        $pdf->Cell(0,4,'$',0,0,'L'); //Comprobación Otros 2
-$pdf->Cell(-30);        $pdf->Cell(0,4,'$',0,1,'L'); //Diferencia Otros 3
- 
-$pdf->Cell(74); $pdf->Cell(0,4,'TOTAL',0,0,'L');
-$pdf->Cell(-96);        $pdf->Cell(0,4,'$',0,0,'L'); //Total Suma 1
-$pdf->Cell(-63);        $pdf->Cell(0,4,'$',0,0,'L'); //Comprobación Suma 2
-$pdf->Cell(-30);        $pdf->Cell(0,4,'$',0,1,'L'); //Diferencia Suma 3
- 
-/*********************** Recepción del Anticipo  ***************************/
-$pdf->Ln(2);    $pdf->Cell(0,4,'RECIBÍ EL ANTICIPO',0,1,'C');
-$pdf->Ln(16.5); $pdf->Cell(0,4,'FIRMA AUTOGRÁFA',0,1,'C');
-$pdf->SetFont('Times','',5);
-$pdf->Cell(0,3,'CONCLUIDA LA COMISIÓN, ME COMPROMETO A EFECTUAR LA COMPROBACIÓN CORRESPONDIENTE EN UN',0,1,'C');
-$pdf->Cell(0,3,'TÉRMINO NO MAYOR DE TRES DÍAS, EN CASO CONTRARIO REINTEGRARE EL IMPORTE DE ESTE ANTICIPO',0,1,'C');
- 
-/*********************** Ampliación y Modificación *************************/
-$pdf->Ln(9.5);  $pdf->SetFont('Times','B',7);
-$pdf->Cell(0,4,'AMPLIACIÓN DE:',0,1,'C');
-$pdf->Ln(1);    $pdf->SetFont('Times','',7);                                    //-------------------------------------------------------------
-$pdf->Cell(5);  $pdf->Cell(0,4,'VIÁTICO',0,0,'L');
-$pdf->Cell(-160);       $pdf->Cell(0,4,'VIAT-24 HRS',0,0,'L');
-$pdf->Cell(-125);       $pdf->Cell(0,4,'GASOLINA',0,0,'L');
-$pdf->Cell(-90);        $pdf->Cell(0,4,'PEAJE',0,0,'L');
-$pdf->Cell(-60);        $pdf->Cell(0,4,'PASAJE',0,0,'L');
-$pdf->Cell(-25);        $pdf->Cell(0,4,'OTROS',0,1,'L');
- 
-$pdf->Ln(2);            $pdf->SetFont('Times','B',7);
-$pdf->Cell(0,4,'MODIFICACIÓN',0,1,'C');
-$pdf->Ln(1);    $pdf->SetFont('Times','',7);
-$pdf->Cell(48);         $pdf->Cell(0,4,'DÍAS DE COMISIÓN',0,0,'L'); //Texto Cuadro de selección 28
-$pdf->Cell(-70);        $pdf->Cell(0,4,'LUGAR',0,1,'L'); //Texto Cuadro de selección                   -90
- 
-$pdf->Cell(5);          $pdf->Cell(0,4,'IMPORTE'."\t\t\t$".$importe_modificacion,0,1,'L');
-$pdf->Cell(5);          $pdf->Cell(0,4,'LUGAR(ES) COMISIÓN'."\t\t\t\t".$lugar_modificacion,0,1,'L');
-$pdf->Cell(5);          $pdf->Cell(0,4,'DÍAS'."\t\t\t\t\t".$dias_modificacion,0,1,'L');
-$pdf->Cell(5);          $pdf->Cell(0,4,'FECHA'."\t\t\t".$fecha_modificacion,0,1,'L');
-$pdf->Ln(6);            $pdf->Cell(0,4,$nombre_autoriza,0,1,'C');//Nombre de la persona que autoriza -NOMBRE (OK) O FIRMA (ELIMINAR LINEA Y RESTAURAR SALTO A 11)-
-$pdf->Cell(0,4,'AUTORIZÓ',0,1,'C');//Salto de página (11)
- 
-/*********************** Firmas del Documento ***************************/
-$pdf->Ln(1);
-$pdf->Cell(23);         $pdf->Cell(0,3,'SOLICITANTE',0,0,'L');
-$pdf->Cell(-49);        $pdf->Cell(0,3,'COMISIÓN AUTORIZADA POR',0,1,'L');
- 
+$pdf->Cell(0,4,'    ',0,0,'L');//
+$pdf->Cell(-60); //Mueve el cursor a la posición -60 de DER a IZQ "Valor 0 a la derecha"
+$pdf->Cell(0,4,'CODIGO     '.$suscrito_puesto,0,1,'L');
+$pdf->Cell(0,4,'MES: TODO EL PERIODO ESCOLAR     ',0,0,'L');
+$pdf->Cell(-60); //Mueve el cursor a la posición -60 de DER a IZQ "Valor 0 a la derecha"
+$pdf->Cell(0,4,'CIUDAD     '.$solicita_puesto,0,1,'L');
+$pdf->Cell(0,4,'PERIODO ESCOLAR: '.$inicio." - ".$fin,0,0,'L');
+$pdf->Cell(-60); //Mueve el cursor a la posición -60 de DER a IZQ "Valor 0 a la derecha"
+$pdf->Cell(0,4,'ESTADO    '.$adscrito_rfc,0,1,'L');
+$pdf->Cell(0,4,'      ',0,1,'L');
+
+$pdf->Cell(0,4,'       ',0,1,'L');
+
+
+$pdf->SetFont('Times','B',12);
+//Ancho Alto Cadena, Borde, Ln, Alineación, Relleno, Link
+$pdf->Cell(0,4,utf8_decode('ESTADÍSTICA GENERAL AH DR. LUIS RAZETTI'),0,1,'C');
+$pdf->Cell(0,4,utf8_decode('PERIODO ESCOLAR: '.$inicio." - ".$fin),0,1,'C');
 $pdf->Ln(2);
-$pdf->Cell(8);          $pdf->Cell(0,4,$solicitante,0,0,'L'); //Nombre Solicitante
-$pdf->Cell(-49);        $pdf->Cell(0,4,$autoriza_comision,0,1,'L'); //Nombre Persona Autoriza Comisión
- 
-$pdf->Ln(4);
-$pdf->Cell(26);         $pdf->Cell(0,2,'REGISTRO',0,0,'L');    
-$pdf->Cell(-35);        $pdf->Cell(0,2,'Vo.Bo.',0,1,'L');
-$pdf->Cell(5);          $pdf->Cell(0,3,'DEPARTAMENTO DE RECURSOS FINANCIEROS',0,0,'L');
-$pdf->Cell(-49);        $pdf->Cell(0,3,'EL SUBJEFE ADMINISTRATIVO',0,1,'L');
- 
-$pdf->Ln(2);
-$pdf->Cell(8);          $pdf->Cell(0,4,$responsable_registro,0,0,'L'); //Nombre Responsable Registro Depto R.H.
-$pdf->Cell(-49);        $pdf->Cell(0,4,$subjefe_administrativo,0,1,'L'); //Nombre Subjefe Admtivo.
- 
-$pdf->Ln(2);            $pdf->SetFont('Times','',5);
-$pdf->Cell(2);          $pdf->Cell(0,2,'AL COMPROBAR ANEXAR INFORME DE ACTIVIDADES Y RELACIÓN DE COMPROBANTES',0,1,'L');
-$pdf->Cell(2);          $pdf->Cell(0,2,'ESTE DOCUMENTO NO ES VÁLIDO CON TACHADURAS Y/O ENMENDADURAS',0,1,'L');
-/*********************** FIN TEXTO **********************************/
- 
-/*********************** INICIO LINEAS ******************************/
-//abcisaX1, ordenadaY1, abcisaX2, ordenadaY2
-$pdf->Line(32, 27.5, 145, 27.5); //suscrito
-$pdf->Line(161, 27.5, 200, 27.5); //suscrito-puesto
-$pdf->Line(50, 31.5, 145, 31.5); //solicita
-$pdf->Line(161, 31.5, 200, 31.5); //solicita-puesto
-$pdf->Line(32, 35.5, 145, 35.5); //adscrito
-$pdf->Line(157, 35.5, 200, 35.5); //adscrito-rfc
-$pdf->Line(50, 39.5, 200, 39.5); //objeto comisión
-$pdf->Line(11, 43.5, 200, 43.5); //objeto comisión2
-$pdf->Line(50, 47.5, 200, 47.5); //lugar de comisión
-$pdf->Line(11, 51.5, 120, 51.5); //lugar de comisión2
-$pdf->Line(110, 56, 200, 56); //oficio de comisión
- 
-$pdf->Line(11, 68.5, 41, 68.5); //periodo de comisión1
-$pdf->Line(11, 72.5, 41, 72.5); //periodo de comisión2
-$pdf->Line(11, 76.5, 41, 76.5); //periodo de comisión3
- 
-$pdf->Line(46, 68.5, 55, 68.5); //días1
-$pdf->Line(46, 72.5, 55, 72.5); //días2
-$pdf->Line(46, 76.5, 55, 76.5); //días2
- 
-$pdf->Line(60, 68.5, 79, 68.5); //cuota diaria1
-$pdf->Line(60, 72.5, 79, 72.5); //cuota diaria2
-$pdf->Line(60, 76.5, 79, 76.5); //cuota diaria3
- 
-$pdf->Line(85, 68.5, 104, 68.5); //parcial1
-$pdf->Line(85, 72.5, 104, 72.5); //parcial2
-$pdf->Line(85, 76.5, 104, 76.5); //parcial3
- 
-$pdf->Line(114, 76.5, 136, 76.5); //Total Anticipo Parciales(22)
-$pdf->Line(147, 76.5, 169, 76.5); //Comprobación Parciales(22)
-$pdf->Line(180, 76.5, 200, 76.5); //Diferencia Parciales(20)
- 
-$pdf->Line(11, 82.5, 79, 82.5); //Lugar y Fecha
- 
-$pdf->Line(114, 86.5, 136, 86.5); //Total Anticipo Combustible (22)
-$pdf->Line(147, 86.5, 169, 86.5); //Comprobación Combustible (22)
-$pdf->Line(180, 86.5, 200, 86.5); //Diferencia Combustible (20)
- 
-$pdf->Line(85, 95.5, 104, 95.5); //Vehículos Marca
-$pdf->Line(85, 99.5, 104, 99.5); //Vehículos Tipo
-$pdf->Line(85, 103.5, 104, 103.5); //Vehículos Placas
-$pdf->Line(85, 107.5, 104, 107.5); //Vehículos No Económico
- 
-$pdf->Line(38, 120.5, 68, 120.5); //Tarjeta BITAL Num
- 
-$pdf->Line(114, 120.5, 136, 120.5); //Total Anticipo Terrestre
-$pdf->Line(147, 120.5, 169, 120.5); //Comprobación Terrestre(22)
-$pdf->Line(180, 120.5, 200, 120.5); //Diferencia Terrestre(20)
- 
-$pdf->Line(114, 124.5, 136, 124.5); //Total Anticipo Aéreo
-$pdf->Line(147, 124.5, 169, 124.5); //Comprobación Aéreo(22)
-$pdf->Line(180, 124.5, 200, 124.5); //Diferencia Aéreo(20)
- 
-$pdf->Line(80, 128.5, 100, 128.5); //Total Anticipo Otros
-$pdf->Line(114, 128.5, 136, 128.5); //Total Anticipo Otros
-$pdf->Line(147, 128.5, 169, 128.5); //Comprobación Otros(22)
-$pdf->Line(180, 128.5, 200, 128.5); //Diferencia Otros(20)
- 
-$pdf->Line(114, 132.5, 136, 132.5); //Total Suma
-$pdf->Line(147, 132.5, 169, 132.5); //Comprobación Suma(22)
-$pdf->Line(180, 132.5, 200, 132.5); //Diferencia Suma(20)
- 
-$pdf->Line(114, 133, 136, 133); //Total Suma Doble Raya
-$pdf->Line(147, 133, 169, 133); //Comprobación Suma Doble Raya(22)
-$pdf->Line(180, 133, 200, 133); //Diferencia Suma Doble Raya(20)
- 
-$pdf->Line(55, 155.5, 160, 155.5); //Firma Autográfa Superior 160.5 - 164.5
-$pdf->Line(55, 159.5, 160, 159.5); //Firma Autográfa Inferior
- 
-/*********************** Ampliación y Modificación ***************************/
-$pdf->Line(13, 178.5, 203, 178.5); //"Ampliación de" Inferior
- 
-$pdf->Line(13, 185.5, 203, 185.5); //"Modificación de" Superior 188.5
-$pdf->Line(13, 189.5, 203, 189.5); //"Modificación de" Inferior
- 
-$pdf->Line(28, 198.5, 200, 198.5); //Importe - Modificación 201.5 + 4
-$pdf->Line(43, 202.5, 200, 202.5); //Lugar de Comision - Modificación
-$pdf->Line(24, 206.5, 200, 206.5); //Días - Modificación
-$pdf->Line(25, 210.5, 200, 210.5); //Fecha - Modificación
-$pdf->Line(75, 220.5, 140, 220.5); //Firma de Autorización
- 
-/*********************** Firmas del Documento ***************************/
-$pdf->Line(13, 234.5, 69, 234.5); //Solicitante (241.5)
-$pdf->Line(147, 234.5, 203, 234.5); //Comisión Autorizada por
- 
-$pdf->Line(13, 249.5, 69, 249.5); //Registro Departamento de Recursos Financieros (261.5)
-$pdf->Line(147, 249.5, 203, 249.5); //Subjefe Administrativo
- 
-/*********************** FIN LINEAS *******************************/
- 
-/*********************** INICIO RECTÁNGULOS ***********************/
-//Rectángulo  izq sup der inf
-$pdf->Rect(147, 48.5, 3, 3); //Cuadro1 Presupuesto Estatal [*]
-$pdf->Rect(173, 48.5, 3, 3); //Cuadro2 Presupuesto Federal [*]
- 
-$pdf->Rect(44, 96, 3, 3); //Cuadro1 Pago Efectivo       [*]
-$pdf->Rect(43.5, 112, 3, 3); //Cuadro2 pago Tarjeta     [*]
- 
-$pdf->Rect( 34, 180.5, 3, 3); //Cuadro 1 Viático               Tipo de Ampliación     [*]
-$pdf->Rect( 74, 180.5, 3, 3); //Cuadro 2 Viat-24hrs     Tipo de Ampliación     [*]
-$pdf->Rect(104, 180.5, 3, 3); //Cuadro 3 Gasolina       Tipo de Ampliación     [*]
-$pdf->Rect(134, 180.5, 3, 3); //Cuadro 4 Peaje          Tipo de Ampliación     [*]
-$pdf->Rect(164, 180.5, 3, 3); //Cuadro 5 Pasaje         Tipo de Ampliación     [*]
-$pdf->Rect(194, 180.5, 3, 3); //Cuadro 6 Otros          Tipo de Ampliación     [*]
- 
-$pdf->Rect(89, 191.5, 3, 3); //Cuadro 1 Día Comisión  Tipo de Modificación   [*]
-$pdf->Rect(154, 191.5, 3, 3); //Cuadro 2 Lugar          Tipo de Modificación   [*]
- 
-$pdf->Rect(55, 135, 105, 30);//Recibo el Anticipo - Rectangulo central [ ] (35)
-$pdf->Rect(13, 175, 190, 50);//Descripción de Ampliación [    ] (55)
- 
+
+
+$pdf->SetFont('Times','',9);
+
+#Poblacion referida
+
+$pdf->Cell(255,5,utf8_decode("Población Referida"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(22,5,utf8_decode("Institución"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("Defensoria"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("CDI"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("Seguro Social"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("Psicologia"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("CAIPA"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("Integración"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("A. Integral"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("CENDA"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("UPE"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("Articulación"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("Otros"),1,0,'C');
+
+$pdf->Ln();
+
+$pdf->Cell(22,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_defen_v"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_cdi_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$poblacion_r_social_v"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_psicologia_v"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_caipa_v"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_integracion_v"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_integral_v"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_cenda_v"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_upe_v"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_arti_v"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_otros_v"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(22,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_defen_h"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_cdi_h"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$poblacion_r_social_h"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_psicologia_h"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_caipa_h"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_integracion_h"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_integral_h"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_cenda_h"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_upe_h"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_arti_h"),1,0,'C');
+$pdf->Cell(21,5,utf8_decode("$poblacion_r_otros_h"),1,0,'C');
+
+
+$pdf->Ln(5);
+$pdf->Ln(5);
+
+#Tipo de Atención y asistencia
+
+
+$pdf->Cell(125,5,utf8_decode("Tipo de Atención"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(125,5,utf8_decode("Total Asistencia"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Servicio de Atención"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Piso"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("VARONES"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("HEMBRAS"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("TOTAL"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Cirugía"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_cirugia_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_cirugia_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_cirugia"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Piso 1"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p1_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p1_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_p1"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Traumatología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_trauma_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_trauma_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_trauma"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Piso 2"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p2_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p2_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_p2"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Otorrinolaringologo"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_oto_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_oto_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_oto"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Piso 3"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p3_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p3_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_p3"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Pediatría"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_pedia_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_pedia_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_pedia"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Piso 4"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p4_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p4_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_p4"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Neurología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_nero_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_nero_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_nero"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Piso 5"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p5_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_p5_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_p5"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Cadiología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_cardio_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_cardio_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_cardio"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Las Garzas I"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_gi_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_gi_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_gi"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Nefrología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_nefro_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_nefro_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_nefro"),1,0,'C');
+$pdf->Cell(5);
+$pdf->Cell(55,5,utf8_decode("Las Garzas II"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_gii_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$asistencia_gii_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$asistencia_gii"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Urología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_uro_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_uro_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_uro"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Neumonología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_neumo_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$resultado_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_neumo"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Hermatología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_herma_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_herma_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_herma"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Oncología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_onco_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_onco_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_onco"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Dermatología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_derma_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_derma_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_derma"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Gastrología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_gastro_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_gastro_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_gastro"),1,0,'C');
+$pdf->Ln();
+$pdf->Cell(55,5,utf8_decode("Infectología"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_infecto_v"),1,0,'C');
+$pdf->Cell(23,5,utf8_decode("$tipo_a_infecto_h"),1,0,'C');
+$pdf->Cell(24,5,utf8_decode("$sum_tipo_a_infecto"),1,0,'C');
+$pdf->Ln();
+
+$pdf->Ln(5);
+$pdf->Ln(5);
+#fecha y firma de entrega
+$pdf->Cell(0,4,utf8_decode("FECHA DE IMPRESIÓN: ").$dia.'/'.$mes.'/'.$año,0,0,'L');
+$pdf->Cell(-65); //Mueve el cursor a la posición -65 de DER a IZQ "Valor 0 a la derecha"
+$pdf->Cell(0,4,'FIRMA AUTORIZADA ',0,1,'L');
+$pdf->Ln(5);
+
 /*********************** FIN RECTÁNGULOS *************************/
 $pdf->Output();
 ?>
-
