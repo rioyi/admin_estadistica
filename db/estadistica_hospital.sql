@@ -2,10 +2,10 @@
 -- version 4.0.10deb1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: May 21, 2016 at 07:46 PM
--- Server version: 5.5.49-0ubuntu0.14.04.1
--- PHP Version: 5.5.9-1ubuntu4.16
+-- Servidor: localhost
+-- Tiempo de generación: 10-07-2016 a las 17:29:25
+-- Versión del servidor: 5.5.49-0ubuntu0.14.04.1
+-- Versión de PHP: 5.5.9-1ubuntu4.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `estadistica_hospital`
+-- Base de datos: `estadistica_hospital`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `docente`
+-- Estructura de tabla para la tabla `docente`
 --
 
 CREATE TABLE IF NOT EXISTS `docente` (
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `docente` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
--- Dumping data for table `docente`
+-- Volcado de datos para la tabla `docente`
 --
 
 INSERT INTO `docente` (`id_docente`, `nombre_docente`, `apellido_docente`, `email`, `direccion`, `telefono`, `piso`) VALUES
@@ -51,7 +51,7 @@ INSERT INTO `docente` (`id_docente`, `nombre_docente`, `apellido_docente`, `emai
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mes`
+-- Estructura de tabla para la tabla `mes`
 --
 
 CREATE TABLE IF NOT EXISTS `mes` (
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `mes` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
--- Dumping data for table `mes`
+-- Volcado de datos para la tabla `mes`
 --
 
 INSERT INTO `mes` (`id_mes`, `mes`) VALUES
@@ -81,7 +81,7 @@ INSERT INTO `mes` (`id_mes`, `mes`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `periodo_escolar`
+-- Estructura de tabla para la tabla `periodo_escolar`
 --
 
 CREATE TABLE IF NOT EXISTS `periodo_escolar` (
@@ -89,10 +89,10 @@ CREATE TABLE IF NOT EXISTS `periodo_escolar` (
   `inicio` int(4) NOT NULL,
   `fin` int(4) NOT NULL,
   PRIMARY KEY (`id_periodo_escolar`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
 
 --
--- Dumping data for table `periodo_escolar`
+-- Volcado de datos para la tabla `periodo_escolar`
 --
 
 INSERT INTO `periodo_escolar` (`id_periodo_escolar`, `inicio`, `fin`) VALUES
@@ -102,7 +102,7 @@ INSERT INTO `periodo_escolar` (`id_periodo_escolar`, `inicio`, `fin`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sexo`
+-- Estructura de tabla para la tabla `sexo`
 --
 
 CREATE TABLE IF NOT EXISTS `sexo` (
@@ -112,7 +112,7 @@ CREATE TABLE IF NOT EXISTS `sexo` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Dumping data for table `sexo`
+-- Volcado de datos para la tabla `sexo`
 --
 
 INSERT INTO `sexo` (`id_sexo`, `nombre`) VALUES
@@ -123,7 +123,7 @@ INSERT INTO `sexo` (`id_sexo`, `nombre`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tipo_atencion`
+-- Estructura de tabla para la tabla `tipo_atencion`
 --
 
 CREATE TABLE IF NOT EXISTS `tipo_atencion` (
@@ -133,7 +133,7 @@ CREATE TABLE IF NOT EXISTS `tipo_atencion` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
--- Dumping data for table `tipo_atencion`
+-- Volcado de datos para la tabla `tipo_atencion`
 --
 
 INSERT INTO `tipo_atencion` (`id_tipo_atencion`, `tipo_atencion`) VALUES
@@ -155,7 +155,7 @@ INSERT INTO `tipo_atencion` (`id_tipo_atencion`, `tipo_atencion`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tipo_edad`
+-- Estructura de tabla para la tabla `tipo_edad`
 --
 
 CREATE TABLE IF NOT EXISTS `tipo_edad` (
@@ -165,7 +165,7 @@ CREATE TABLE IF NOT EXISTS `tipo_edad` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
 
 --
--- Dumping data for table `tipo_edad`
+-- Volcado de datos para la tabla `tipo_edad`
 --
 
 INSERT INTO `tipo_edad` (`id_tipo_edad`, `tipo_edad`) VALUES
@@ -192,7 +192,7 @@ INSERT INTO `tipo_edad` (`id_tipo_edad`, `tipo_edad`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tipo_escolaridad`
+-- Estructura de tabla para la tabla `tipo_escolaridad`
 --
 
 CREATE TABLE IF NOT EXISTS `tipo_escolaridad` (
@@ -202,7 +202,7 @@ CREATE TABLE IF NOT EXISTS `tipo_escolaridad` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
 
 --
--- Dumping data for table `tipo_escolaridad`
+-- Volcado de datos para la tabla `tipo_escolaridad`
 --
 
 INSERT INTO `tipo_escolaridad` (`id_tipo_escolaridad`, `escolaridad`) VALUES
@@ -228,7 +228,7 @@ INSERT INTO `tipo_escolaridad` (`id_tipo_escolaridad`, `escolaridad`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tipo_permanencia`
+-- Estructura de tabla para la tabla `tipo_permanencia`
 --
 
 CREATE TABLE IF NOT EXISTS `tipo_permanencia` (
@@ -238,7 +238,7 @@ CREATE TABLE IF NOT EXISTS `tipo_permanencia` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
--- Dumping data for table `tipo_permanencia`
+-- Volcado de datos para la tabla `tipo_permanencia`
 --
 
 INSERT INTO `tipo_permanencia` (`id_tipo_permanencia`, `tiempo`) VALUES
@@ -253,7 +253,7 @@ INSERT INTO `tipo_permanencia` (`id_tipo_permanencia`, `tiempo`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tipo_poblacion_atendida`
+-- Estructura de tabla para la tabla `tipo_poblacion_atendida`
 --
 
 CREATE TABLE IF NOT EXISTS `tipo_poblacion_atendida` (
@@ -263,7 +263,7 @@ CREATE TABLE IF NOT EXISTS `tipo_poblacion_atendida` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `tipo_poblacion_atendida`
+-- Volcado de datos para la tabla `tipo_poblacion_atendida`
 --
 
 INSERT INTO `tipo_poblacion_atendida` (`id_tipo_poblacion_atendida`, `poblacion_atendida`) VALUES
@@ -273,7 +273,7 @@ INSERT INTO `tipo_poblacion_atendida` (`id_tipo_poblacion_atendida`, `poblacion_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tipo_referido`
+-- Estructura de tabla para la tabla `tipo_referido`
 --
 
 CREATE TABLE IF NOT EXISTS `tipo_referido` (
@@ -283,7 +283,7 @@ CREATE TABLE IF NOT EXISTS `tipo_referido` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
--- Dumping data for table `tipo_referido`
+-- Volcado de datos para la tabla `tipo_referido`
 --
 
 INSERT INTO `tipo_referido` (`id_tipo_referido`, `tipo_referido`) VALUES
@@ -303,7 +303,7 @@ INSERT INTO `tipo_referido` (`id_tipo_referido`, `tipo_referido`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `total_asistencia`
+-- Estructura de tabla para la tabla `total_asistencia`
 --
 
 CREATE TABLE IF NOT EXISTS `total_asistencia` (
@@ -326,7 +326,7 @@ CREATE TABLE IF NOT EXISTS `total_asistencia` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=596 ;
 
 --
--- Dumping data for table `total_asistencia`
+-- Volcado de datos para la tabla `total_asistencia`
 --
 
 INSERT INTO `total_asistencia` (`id_asistencia`, `id_periodo_escolar`, `id_mes`, `id_sexo`, `dia`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
@@ -534,7 +534,7 @@ INSERT INTO `total_asistencia` (`id_asistencia`, `id_periodo_escolar`, `id_mes`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `total_atencion`
+-- Estructura de tabla para la tabla `total_atencion`
 --
 
 CREATE TABLE IF NOT EXISTS `total_atencion` (
@@ -558,7 +558,7 @@ CREATE TABLE IF NOT EXISTS `total_atencion` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=257 ;
 
 --
--- Dumping data for table `total_atencion`
+-- Volcado de datos para la tabla `total_atencion`
 --
 
 INSERT INTO `total_atencion` (`id_atencion`, `id_periodo_escolar`, `id_mes`, `id_sexo`, `id_tipo_atencion`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
@@ -706,7 +706,7 @@ INSERT INTO `total_atencion` (`id_atencion`, `id_periodo_escolar`, `id_mes`, `id
 -- --------------------------------------------------------
 
 --
--- Table structure for table `total_escolaridad`
+-- Estructura de tabla para la tabla `total_escolaridad`
 --
 
 CREATE TABLE IF NOT EXISTS `total_escolaridad` (
@@ -730,7 +730,7 @@ CREATE TABLE IF NOT EXISTS `total_escolaridad` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=395 ;
 
 --
--- Dumping data for table `total_escolaridad`
+-- Volcado de datos para la tabla `total_escolaridad`
 --
 
 INSERT INTO `total_escolaridad` (`id_escolaridad`, `id_sexo`, `id_periodo_escolar`, `id_mes`, `id_tipo_escolaridad`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
@@ -918,7 +918,7 @@ INSERT INTO `total_escolaridad` (`id_escolaridad`, `id_sexo`, `id_periodo_escola
 -- --------------------------------------------------------
 
 --
--- Table structure for table `total_poblacion_atendida`
+-- Estructura de tabla para la tabla `total_poblacion_atendida`
 --
 
 CREATE TABLE IF NOT EXISTS `total_poblacion_atendida` (
@@ -942,7 +942,7 @@ CREATE TABLE IF NOT EXISTS `total_poblacion_atendida` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=37 ;
 
 --
--- Dumping data for table `total_poblacion_atendida`
+-- Volcado de datos para la tabla `total_poblacion_atendida`
 --
 
 INSERT INTO `total_poblacion_atendida` (`id_poblacion_atendida`, `id_sexo`, `id_periodo_escolar`, `id_mes`, `id_tipo_poblacion_atendida`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
@@ -970,7 +970,7 @@ INSERT INTO `total_poblacion_atendida` (`id_poblacion_atendida`, `id_sexo`, `id_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `total_referidos`
+-- Estructura de tabla para la tabla `total_referidos`
 --
 
 CREATE TABLE IF NOT EXISTS `total_referidos` (
@@ -994,7 +994,7 @@ CREATE TABLE IF NOT EXISTS `total_referidos` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=241 ;
 
 --
--- Dumping data for table `total_referidos`
+-- Volcado de datos para la tabla `total_referidos`
 --
 
 INSERT INTO `total_referidos` (`id_referido`, `id_sexo`, `id_periodo_escolar`, `id_mes`, `id_tipo_referido`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
@@ -1122,7 +1122,7 @@ INSERT INTO `total_referidos` (`id_referido`, `id_sexo`, `id_periodo_escolar`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `total_tiempo_permanencia`
+-- Estructura de tabla para la tabla `total_tiempo_permanencia`
 --
 
 CREATE TABLE IF NOT EXISTS `total_tiempo_permanencia` (
@@ -1148,7 +1148,7 @@ CREATE TABLE IF NOT EXISTS `total_tiempo_permanencia` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=155 ;
 
 --
--- Dumping data for table `total_tiempo_permanencia`
+-- Volcado de datos para la tabla `total_tiempo_permanencia`
 --
 
 INSERT INTO `total_tiempo_permanencia` (`id_tiempo_permanencia`, `id_sexo`, `id_periodo_escolar`, `id_mes`, `id_tipo_permanencia`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
@@ -1226,7 +1226,7 @@ INSERT INTO `total_tiempo_permanencia` (`id_tiempo_permanencia`, `id_sexo`, `id_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `total_visita_edad`
+-- Estructura de tabla para la tabla `total_visita_edad`
 --
 
 CREATE TABLE IF NOT EXISTS `total_visita_edad` (
@@ -1250,7 +1250,7 @@ CREATE TABLE IF NOT EXISTS `total_visita_edad` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=325 ;
 
 --
--- Dumping data for table `total_visita_edad`
+-- Volcado de datos para la tabla `total_visita_edad`
 --
 
 INSERT INTO `total_visita_edad` (`id_visita_edad`, `id_periodo_escolar`, `id_mes`, `id_sexo`, `id_tipo_edad`, `p1`, `p2`, `p3`, `p4`, `p5`, `gi`, `gii`) VALUES
@@ -1438,7 +1438,7 @@ INSERT INTO `total_visita_edad` (`id_visita_edad`, `id_periodo_escolar`, `id_mes
 -- --------------------------------------------------------
 
 --
--- Table structure for table `usuario`
+-- Estructura de tabla para la tabla `usuario`
 --
 
 CREATE TABLE IF NOT EXISTS `usuario` (
@@ -1453,22 +1453,22 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
--- Dumping data for table `usuario`
+-- Volcado de datos para la tabla `usuario`
 --
 
 INSERT INTO `usuario` (`id_usuario`, `email`, `clave`, `pregunta_secreta`, `nombre_usuario`, `respuesta_secreta`, `roles`) VALUES
 (1, 'dasd@sdsadas.com', '', 'home', 'maria', '', 'Estandar'),
 (3, 'virginia', '123', 'color_favorito', 'Virginia Lusinchi', 'rojo', 'Estandar'),
-(4, 'root', 'root', '', 'Root', '', 'Administrador'),
+(4, 'root', 'root123', '', 'Root', '', 'Administrador'),
 (7, 'rioyi_kaji@hotmail.c', '123', 'animal_favorito', 'rioyi', 'pikachu', 'Estandar'),
 (9, 'misato_katsuragui@hotmail.com', '123', '', 'Misato', 'dsadcasassss', 'Estandar');
 
 --
--- Constraints for dumped tables
+-- Restricciones para tablas volcadas
 --
 
 --
--- Constraints for table `total_asistencia`
+-- Filtros para la tabla `total_asistencia`
 --
 ALTER TABLE `total_asistencia`
   ADD CONSTRAINT `total_asistencia_ibfk_1` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -1476,7 +1476,7 @@ ALTER TABLE `total_asistencia`
   ADD CONSTRAINT `total_asistencia_ibfk_3` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `total_atencion`
+-- Filtros para la tabla `total_atencion`
 --
 ALTER TABLE `total_atencion`
   ADD CONSTRAINT `total_atencion_ibfk_1` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -1485,43 +1485,43 @@ ALTER TABLE `total_atencion`
   ADD CONSTRAINT `total_atencion_ibfk_4` FOREIGN KEY (`id_tipo_atencion`) REFERENCES `tipo_atencion` (`id_tipo_atencion`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `total_escolaridad`
+-- Filtros para la tabla `total_escolaridad`
 --
 ALTER TABLE `total_escolaridad`
-  ADD CONSTRAINT `total_escolaridad_ibfk_2` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `total_escolaridad_ibfk_1` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `total_escolaridad_ibfk_2` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `total_escolaridad_ibfk_3` FOREIGN KEY (`id_mes`) REFERENCES `mes` (`id_mes`) ON UPDATE CASCADE,
   ADD CONSTRAINT `total_escolaridad_ibfk_4` FOREIGN KEY (`id_tipo_escolaridad`) REFERENCES `tipo_escolaridad` (`id_tipo_escolaridad`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `total_poblacion_atendida`
+-- Filtros para la tabla `total_poblacion_atendida`
 --
 ALTER TABLE `total_poblacion_atendida`
-  ADD CONSTRAINT `total_poblacion_atendida_ibfk_2` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `total_poblacion_atendida_ibfk_1` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `total_poblacion_atendida_ibfk_2` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `total_poblacion_atendida_ibfk_3` FOREIGN KEY (`id_mes`) REFERENCES `mes` (`id_mes`) ON UPDATE CASCADE,
   ADD CONSTRAINT `total_poblacion_atendida_ibfk_4` FOREIGN KEY (`id_tipo_poblacion_atendida`) REFERENCES `tipo_poblacion_atendida` (`id_tipo_poblacion_atendida`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `total_referidos`
+-- Filtros para la tabla `total_referidos`
 --
 ALTER TABLE `total_referidos`
-  ADD CONSTRAINT `total_referidos_ibfk_2` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `total_referidos_ibfk_1` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `total_referidos_ibfk_2` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `total_referidos_ibfk_3` FOREIGN KEY (`id_mes`) REFERENCES `mes` (`id_mes`) ON UPDATE CASCADE,
   ADD CONSTRAINT `total_referidos_ibfk_4` FOREIGN KEY (`id_tipo_referido`) REFERENCES `tipo_referido` (`id_tipo_referido`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `total_tiempo_permanencia`
+-- Filtros para la tabla `total_tiempo_permanencia`
 --
 ALTER TABLE `total_tiempo_permanencia`
-  ADD CONSTRAINT `total_tiempo_permanencia_ibfk_2` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `total_tiempo_permanencia_ibfk_1` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `total_tiempo_permanencia_ibfk_2` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `total_tiempo_permanencia_ibfk_3` FOREIGN KEY (`id_mes`) REFERENCES `mes` (`id_mes`) ON UPDATE CASCADE,
   ADD CONSTRAINT `total_tiempo_permanencia_ibfk_4` FOREIGN KEY (`id_tipo_permanencia`) REFERENCES `tipo_permanencia` (`id_tipo_permanencia`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `total_visita_edad`
+-- Filtros para la tabla `total_visita_edad`
 --
 ALTER TABLE `total_visita_edad`
   ADD CONSTRAINT `total_visita_edad_ibfk_1` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
