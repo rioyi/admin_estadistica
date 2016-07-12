@@ -25,7 +25,14 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="../forms/form_piso.php"><i class="fa fa-angle-double-right"></i> Consulta por mes </a></li>                             
+                                <li><a href="../forms/form_piso.php">
+                                        <i class="fa fa-angle-double-right"></i> Consulta por mes 
+                                    </a>
+                                    <a href="../forms/form_anual.php"> 
+                                        <i class="fa fa-angle-double-right"></i> Consulta Anual 
+                                    </a> 
+                                    
+                                </li>                             
                             </ul>
                         </li>
 
