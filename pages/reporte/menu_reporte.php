@@ -33,7 +33,7 @@
                                     </a>
 
                                   </a>
-                                  <a href="../forms/backup.php">
+                                  <a href="../reporte/backup.php">
                                       <i class="fa fa-angle-double-right"></i> Respaldo
                                   </a>
 
