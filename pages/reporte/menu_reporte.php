@@ -13,7 +13,7 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="../forms/form_verificar.php"><i class="fa fa-angle-double-right"></i>Registro Estadistica del Mes </a></li>                                
+                                <li><a href="../forms/form_verificar.php"><i class="fa fa-angle-double-right"></i>Registro Estadistica del Mes </a></li>
                             </ul>
                         </li>
 
@@ -26,13 +26,18 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li><a href="../forms/form_piso.php">
-                                        <i class="fa fa-angle-double-right"></i> Consulta por mes 
+                                        <i class="fa fa-angle-double-right"></i> Consulta por mes
                                     </a>
-                                    <a href="../forms/form_anual.php"> 
-                                        <i class="fa fa-angle-double-right"></i> Consulta Anual 
-                                    </a> 
-                                    
-                                </li>                             
+                                    <a href="../forms/form_anual.php">
+                                        <i class="fa fa-angle-double-right"></i> Consulta Anual
+                                    </a>
+
+                                  </a>
+                                  <a href="../forms/backup.php">
+                                      <i class="fa fa-angle-double-right"></i> Respaldo
+                                  </a>
+
+                                </li>
                             </ul>
                         </li>
 
@@ -45,12 +50,8 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li><a href="../forms/form_periodo.php"><i class="fa fa-angle-double-right"></i> Periodo Escolar </a></li>
-                                
+
                                 <li><a href="../forms/form_docente.php"><i class="fa fa-angle-double-right"></i> Docente </a></li>
                                 <li><a href="../forms/form_usuario.php"><i class="fa fa-angle-double-right"></i> Usuario </a></li>
                             </ul>
                         </li>
-
-
-
-                       

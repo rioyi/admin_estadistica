@@ -1,0 +1,597 @@
+-- MySQL dump 10.13  Distrib 5.5.49, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: estadistica_hospital
+-- ------------------------------------------------------
+-- Server version	5.5.49-0ubuntu0.14.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `docente`
+--
+
+DROP TABLE IF EXISTS `docente`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `docente` (
+  `id_docente` int(10) NOT NULL AUTO_INCREMENT,
+  `nombre_docente` varchar(15) NOT NULL,
+  `apellido_docente` varchar(15) NOT NULL,
+  `email` varchar(35) NOT NULL,
+  `direccion` varchar(40) DEFAULT NULL,
+  `telefono` varchar(12) DEFAULT NULL,
+  `piso` varchar(3) NOT NULL,
+  PRIMARY KEY (`id_docente`),
+  KEY `piso` (`piso`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `docente`
+--
+
+LOCK TABLES `docente` WRITE;
+/*!40000 ALTER TABLE `docente` DISABLE KEYS */;
+INSERT INTO `docente` VALUES (9,'Marilyn','Monroe','Marilyn@gmail.com','USA.dc','5555555','2'),(10,'Carmen C','Angarita','','ccs','042324324','P2'),(11,'Maria','Gelvez','maria.gelvez@gmail.c','efsdfsdf','4534543','P5'),(12,'Patricia','Morales','','','','P2');
+/*!40000 ALTER TABLE `docente` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `mes`
+--
+
+DROP TABLE IF EXISTS `mes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `mes` (
+  `id_mes` int(2) NOT NULL AUTO_INCREMENT,
+  `mes` varchar(10) NOT NULL,
+  PRIMARY KEY (`id_mes`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `mes`
+--
+
+LOCK TABLES `mes` WRITE;
+/*!40000 ALTER TABLE `mes` DISABLE KEYS */;
+INSERT INTO `mes` VALUES (1,'ENERO'),(2,'FEBRERO'),(3,'MARZO'),(4,'ABRIL'),(5,'MAYO'),(6,'JUNIO'),(7,'JULIO'),(8,'AGOSTO'),(9,'SEPTIEMBRE'),(10,'OCTUBRE'),(11,'NOVIEMBRE'),(12,'DICIEMBRE');
+/*!40000 ALTER TABLE `mes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `periodo_escolar`
+--
+
+DROP TABLE IF EXISTS `periodo_escolar`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `periodo_escolar` (
+  `id_periodo_escolar` int(10) NOT NULL AUTO_INCREMENT,
+  `inicio` int(4) NOT NULL,
+  `fin` int(4) NOT NULL,
+  PRIMARY KEY (`id_periodo_escolar`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `periodo_escolar`
+--
+
+LOCK TABLES `periodo_escolar` WRITE;
+/*!40000 ALTER TABLE `periodo_escolar` DISABLE KEYS */;
+INSERT INTO `periodo_escolar` VALUES (7,2015,2016),(13,4545,454);
+/*!40000 ALTER TABLE `periodo_escolar` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sexo`
+--
+
+DROP TABLE IF EXISTS `sexo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sexo` (
+  `id_sexo` int(1) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(8) NOT NULL,
+  PRIMARY KEY (`id_sexo`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sexo`
+--
+
+LOCK TABLES `sexo` WRITE;
+/*!40000 ALTER TABLE `sexo` DISABLE KEYS */;
+INSERT INTO `sexo` VALUES (1,'Masculin'),(2,'Femenino'),(3,'N/A');
+/*!40000 ALTER TABLE `sexo` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tipo_atencion`
+--
+
+DROP TABLE IF EXISTS `tipo_atencion`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tipo_atencion` (
+  `id_tipo_atencion` int(4) NOT NULL AUTO_INCREMENT,
+  `tipo_atencion` varchar(20) NOT NULL,
+  PRIMARY KEY (`id_tipo_atencion`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tipo_atencion`
+--
+
+LOCK TABLES `tipo_atencion` WRITE;
+/*!40000 ALTER TABLE `tipo_atencion` DISABLE KEYS */;
+INSERT INTO `tipo_atencion` VALUES (1,'cirugia'),(2,'Traumatología'),(3,'Otorrinolaringologo'),(4,'Pediatría'),(5,'Nerología'),(6,'Cadiología'),(7,'Nefrología'),(8,'Urología'),(9,'Neumonología'),(10,'Hermatología'),(11,'Oncología'),(12,'Dermatología'),(13,'Gastrología'),(14,'Infectología');
+/*!40000 ALTER TABLE `tipo_atencion` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tipo_edad`
+--
+
+DROP TABLE IF EXISTS `tipo_edad`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tipo_edad` (
+  `id_tipo_edad` int(4) NOT NULL AUTO_INCREMENT,
+  `tipo_edad` int(2) NOT NULL,
+  PRIMARY KEY (`id_tipo_edad`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tipo_edad`
+--
+
+LOCK TABLES `tipo_edad` WRITE;
+/*!40000 ALTER TABLE `tipo_edad` DISABLE KEYS */;
+INSERT INTO `tipo_edad` VALUES (1,11),(2,1),(3,2),(4,3),(5,4),(6,5),(7,6),(8,7),(9,8),(10,9),(11,10),(12,111),(13,12),(14,13),(15,14),(16,15),(17,16),(18,17),(19,18);
+/*!40000 ALTER TABLE `tipo_edad` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tipo_escolaridad`
+--
+
+DROP TABLE IF EXISTS `tipo_escolaridad`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tipo_escolaridad` (
+  `id_tipo_escolaridad` int(4) NOT NULL AUTO_INCREMENT,
+  `escolaridad` varchar(11) NOT NULL,
+  PRIMARY KEY (`id_tipo_escolaridad`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tipo_escolaridad`
+--
+
+LOCK TABLES `tipo_escolaridad` WRITE;
+/*!40000 ALTER TABLE `tipo_escolaridad` DISABLE KEYS */;
+INSERT INTO `tipo_escolaridad` VALUES (1,'Maternal'),(2,'Nivel I'),(3,'Nivel II'),(4,'Nivel III'),(5,'1° Grado'),(6,'2° Grado'),(7,'3° Grado'),(8,'4° Grado'),(9,'5° Grado'),(10,'6° Grado'),(11,'7°mo'),(12,'8°vo'),(13,'9°no'),(14,'4° Año'),(15,'5° Año'),(16,'S/E'),(17,'E/E'),(18,'6° Año');
+/*!40000 ALTER TABLE `tipo_escolaridad` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tipo_permanencia`
+--
+
+DROP TABLE IF EXISTS `tipo_permanencia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tipo_permanencia` (
+  `id_tipo_permanencia` int(4) NOT NULL AUTO_INCREMENT,
+  `tiempo` varchar(11) NOT NULL,
+  PRIMARY KEY (`id_tipo_permanencia`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tipo_permanencia`
+--
+
+LOCK TABLES `tipo_permanencia` WRITE;
+/*!40000 ALTER TABLE `tipo_permanencia` DISABLE KEYS */;
+INSERT INTO `tipo_permanencia` VALUES (1,'0 - 5 Días'),(2,'6 - 10 Días'),(3,'11 -15 Días'),(4,'16 -30 Días'),(5,'2 Meses'),(6,'3 Meses'),(7,'+3 Meses');
+/*!40000 ALTER TABLE `tipo_permanencia` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tipo_poblacion_atendida`
+--
+
+DROP TABLE IF EXISTS `tipo_poblacion_atendida`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tipo_poblacion_atendida` (
+  `id_tipo_poblacion_atendida` int(4) NOT NULL AUTO_INCREMENT,
+  `poblacion_atendida` varchar(15) NOT NULL,
+  PRIMARY KEY (`id_tipo_poblacion_atendida`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tipo_poblacion_atendida`
+--
+
+LOCK TABLES `tipo_poblacion_atendida` WRITE;
+/*!40000 ALTER TABLE `tipo_poblacion_atendida` DISABLE KEYS */;
+INSERT INTO `tipo_poblacion_atendida` VALUES (1,'En Aula'),(2,'En Habitación');
+/*!40000 ALTER TABLE `tipo_poblacion_atendida` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tipo_referido`
+--
+
+DROP TABLE IF EXISTS `tipo_referido`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tipo_referido` (
+  `id_tipo_referido` int(11) NOT NULL AUTO_INCREMENT,
+  `tipo_referido` varchar(15) NOT NULL,
+  PRIMARY KEY (`id_tipo_referido`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tipo_referido`
+--
+
+LOCK TABLES `tipo_referido` WRITE;
+/*!40000 ALTER TABLE `tipo_referido` DISABLE KEYS */;
+INSERT INTO `tipo_referido` VALUES (1,'Defensoria'),(2,'CDI'),(3,'Seguro Social'),(4,'Psicologia'),(5,'CAIPA'),(6,'Integración'),(7,'A. Integral'),(8,'CENDA'),(9,'UPE'),(10,'Articulación'),(11,'Otros'),(12,'Otros');
+/*!40000 ALTER TABLE `tipo_referido` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `total_asistencia`
+--
+
+DROP TABLE IF EXISTS `total_asistencia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `total_asistencia` (
+  `id_asistencia` int(4) NOT NULL AUTO_INCREMENT,
+  `id_periodo_escolar` int(4) NOT NULL,
+  `id_mes` int(4) NOT NULL,
+  `id_sexo` int(4) NOT NULL,
+  `dia` int(2) NOT NULL,
+  `p1` int(4) NOT NULL,
+  `p2` int(4) NOT NULL,
+  `p3` int(4) NOT NULL,
+  `p4` int(4) NOT NULL,
+  `p5` int(4) NOT NULL,
+  `gi` int(4) NOT NULL,
+  `gii` int(4) NOT NULL,
+  PRIMARY KEY (`id_asistencia`),
+  KEY `id_periodo_escolar` (`id_periodo_escolar`),
+  KEY `id_mes` (`id_mes`),
+  KEY `id_sexo` (`id_sexo`),
+  CONSTRAINT `total_asistencia_ibfk_1` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `total_asistencia_ibfk_2` FOREIGN KEY (`id_mes`) REFERENCES `mes` (`id_mes`) ON UPDATE CASCADE,
+  CONSTRAINT `total_asistencia_ibfk_3` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=596 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `total_asistencia`
+--
+
+LOCK TABLES `total_asistencia` WRITE;
+/*!40000 ALTER TABLE `total_asistencia` DISABLE KEYS */;
+INSERT INTO `total_asistencia` VALUES (316,7,6,1,1,1,2,3,4,5,6,7),(317,7,6,1,2,1,2,3,4,5,6,7),(318,7,6,1,3,1,2,3,4,5,6,7),(319,7,6,1,4,1,2,3,4,5,6,7),(320,7,6,1,5,1,2,3,4,5,6,7),(321,7,6,1,6,1,2,3,4,5,6,7),(322,7,6,1,7,1,2,3,4,5,6,7),(323,7,6,1,8,1,2,3,4,5,6,7),(324,7,6,1,9,1,2,3,4,5,6,7),(325,7,6,1,10,1,2,3,4,5,6,7),(326,7,6,1,11,1,2,3,4,5,6,7),(327,7,6,1,12,1,2,3,4,5,6,7),(328,7,6,1,13,1,2,3,4,5,6,7),(329,7,6,1,14,1,2,3,4,5,6,7),(330,7,6,1,15,1,2,3,4,5,6,7),(331,7,6,1,16,1,2,3,4,5,6,7),(332,7,6,1,17,1,2,3,4,5,6,7),(333,7,6,1,18,1,2,3,4,5,6,7),(334,7,6,1,19,1,2,3,4,5,6,7),(335,7,6,1,20,1,2,3,4,5,6,7),(336,7,6,2,1,1,2,3,4,5,6,7),(337,7,6,2,2,1,2,3,4,5,6,7),(338,7,6,2,3,1,2,3,4,5,6,7),(339,7,6,2,4,1,2,3,4,5,6,7),(340,7,6,2,5,1,2,3,4,5,6,7),(341,7,6,2,6,1,2,3,4,5,6,7),(342,7,6,2,7,1,2,3,4,5,6,7),(343,7,6,2,8,1,2,3,4,5,6,7),(344,7,6,2,9,1,2,3,4,5,6,7),(345,7,6,2,10,1,2,3,4,5,6,7),(346,7,6,2,11,1,2,3,4,5,6,7),(347,7,6,2,12,1,2,3,4,5,6,7),(348,7,6,2,13,1,2,3,4,5,6,7),(349,7,6,2,14,1,2,3,4,5,6,7),(350,7,6,2,15,1,2,3,4,5,6,7),(351,7,6,2,16,1,2,3,4,5,6,7),(352,7,6,2,17,1,2,3,4,5,6,7),(353,7,6,2,18,1,2,3,4,5,6,7),(354,7,6,2,19,1,2,3,4,5,6,7),(355,7,6,2,20,1,2,3,4,5,6,7),(356,7,7,1,0,0,0,0,0,0,0,0),(357,7,7,1,0,0,0,0,0,0,0,0),(358,7,7,1,0,0,0,0,0,0,0,0),(359,7,7,1,0,0,0,0,0,0,0,0),(360,7,7,1,0,0,0,0,0,0,0,0),(361,7,7,1,0,0,0,0,0,0,0,0),(362,7,7,1,0,0,0,0,0,0,0,0),(363,7,7,1,0,0,0,0,0,0,0,0),(364,7,7,1,0,0,0,0,0,0,0,0),(365,7,7,1,0,0,0,0,0,0,0,0),(366,7,7,1,0,0,0,0,0,0,0,0),(367,7,7,1,0,0,0,0,0,0,0,0),(368,7,7,1,0,0,0,0,0,0,0,0),(369,7,7,1,0,0,0,0,0,0,0,0),(370,7,7,1,0,0,0,0,0,0,0,0),(371,7,7,1,0,0,0,0,0,0,0,0),(372,7,7,1,0,0,0,0,0,0,0,0),(373,7,7,1,0,0,0,0,0,0,0,0),(374,7,7,1,0,0,0,0,0,0,0,0),(375,7,7,1,0,0,0,0,0,0,0,0),(376,7,7,2,0,0,0,0,0,0,0,0),(377,7,7,2,0,0,0,0,0,0,0,0),(378,7,7,2,0,0,0,0,0,0,0,0),(379,7,7,2,0,0,0,0,0,0,0,0),(380,7,7,2,0,0,0,0,0,0,0,0),(381,7,7,2,0,0,0,0,0,0,0,0),(382,7,7,2,0,0,0,0,0,0,0,0),(383,7,7,2,0,0,0,0,0,0,0,0),(384,7,7,2,0,0,0,0,0,0,0,0),(385,7,7,2,0,0,0,0,0,0,0,0),(386,7,7,2,0,0,0,0,0,0,0,0),(387,7,7,2,0,0,0,0,0,0,0,0),(388,7,7,2,0,0,0,0,0,0,0,0),(389,7,7,2,0,0,0,0,0,0,0,0),(390,7,7,2,0,0,0,0,0,0,0,0),(391,7,7,2,0,0,0,0,0,0,0,0),(392,7,7,2,0,0,0,0,0,0,0,0),(393,7,7,2,0,0,0,0,0,0,0,0),(394,7,7,2,0,0,0,0,0,0,0,0),(395,7,7,2,0,0,0,0,0,0,0,0),(396,7,8,1,0,0,0,0,0,0,0,0),(397,7,8,1,0,0,0,0,0,0,0,0),(398,7,8,1,0,0,0,0,0,0,0,0),(399,7,8,1,0,0,0,0,0,0,0,0),(400,7,8,1,0,0,0,0,0,0,0,0),(401,7,8,1,0,0,0,0,0,0,0,0),(402,7,8,1,0,0,0,0,0,0,0,0),(403,7,8,1,0,0,0,0,0,0,0,0),(404,7,8,1,0,0,0,0,0,0,0,0),(405,7,8,1,0,0,0,0,0,0,0,0),(406,7,8,1,0,0,0,0,0,0,0,0),(407,7,8,1,0,0,0,0,0,0,0,0),(408,7,8,1,0,0,0,0,0,0,0,0),(409,7,8,1,0,0,0,0,0,0,0,0),(410,7,8,1,0,0,0,0,0,0,0,0),(411,7,8,1,0,0,0,0,0,0,0,0),(412,7,8,1,0,0,0,0,0,0,0,0),(413,7,8,1,0,0,0,0,0,0,0,0),(414,7,8,1,0,0,0,0,0,0,0,0),(415,7,8,1,0,0,0,0,0,0,0,0),(416,7,8,2,0,0,0,0,0,0,0,0),(417,7,8,2,0,0,0,0,0,0,0,0),(418,7,8,2,0,0,0,0,0,0,0,0),(419,7,8,2,0,0,0,0,0,0,0,0),(420,7,8,2,0,0,0,0,0,0,0,0),(421,7,8,2,0,0,0,0,0,0,0,0),(422,7,8,2,0,0,0,0,0,0,0,0),(423,7,8,2,0,0,0,0,0,0,0,0),(424,7,8,2,0,0,0,0,0,0,0,0),(425,7,8,2,0,0,0,0,0,0,0,0),(426,7,8,2,0,0,0,0,0,0,0,0),(427,7,8,2,0,0,0,0,0,0,0,0),(428,7,8,2,0,0,0,0,0,0,0,0),(429,7,8,2,0,0,0,0,0,0,0,0),(430,7,8,2,0,0,0,0,0,0,0,0),(431,7,8,2,0,0,0,0,0,0,0,0),(432,7,8,2,0,0,0,0,0,0,0,0),(433,7,8,2,0,0,0,0,0,0,0,0),(434,7,8,2,0,0,0,0,0,0,0,0),(435,7,8,2,0,0,0,0,0,0,0,0),(436,7,9,1,0,0,0,0,0,0,0,0),(437,7,9,1,0,0,0,0,0,0,0,0),(438,7,9,1,0,0,0,0,0,0,0,0),(439,7,9,1,0,0,0,0,0,0,0,0),(440,7,9,1,0,0,0,0,0,0,0,0),(441,7,9,1,0,0,0,0,0,0,0,0),(442,7,9,1,0,0,0,0,0,0,0,0),(443,7,9,1,0,0,0,0,0,0,0,0),(444,7,9,1,0,0,0,0,0,0,0,0),(445,7,9,1,0,0,0,0,0,0,0,0),(446,7,9,1,0,0,0,0,0,0,0,0),(447,7,9,1,0,0,0,0,0,0,0,0),(448,7,9,1,0,0,0,0,0,0,0,0),(449,7,9,1,0,0,0,0,0,0,0,0),(450,7,9,1,0,0,0,0,0,0,0,0),(451,7,9,1,0,0,0,0,0,0,0,0),(452,7,9,1,0,0,0,0,0,0,0,0),(453,7,9,1,0,0,0,0,0,0,0,0),(454,7,9,1,0,0,0,0,0,0,0,0),(455,7,9,1,0,0,0,0,0,0,0,0),(456,7,9,2,0,0,0,0,0,0,0,0),(457,7,9,2,0,0,0,0,0,0,0,0),(458,7,9,2,0,0,0,0,0,0,0,0),(459,7,9,2,0,0,0,0,0,0,0,0),(460,7,9,2,0,0,0,0,0,0,0,0),(461,7,9,2,0,0,0,0,0,0,0,0),(462,7,9,2,0,0,0,0,0,0,0,0),(463,7,9,2,0,0,0,0,0,0,0,0),(464,7,9,2,0,0,0,0,0,0,0,0),(465,7,9,2,0,0,0,0,0,0,0,0),(466,7,9,2,0,0,0,0,0,0,0,0),(467,7,9,2,0,0,0,0,0,0,0,0),(468,7,9,2,0,0,0,0,0,0,0,0),(469,7,9,2,0,0,0,0,0,0,0,0),(470,7,9,2,0,0,0,0,0,0,0,0),(471,7,9,2,0,0,0,0,0,0,0,0),(472,7,9,2,0,0,0,0,0,0,0,0),(473,7,9,2,0,0,0,0,0,0,0,0),(474,7,9,2,0,0,0,0,0,0,0,0),(475,7,9,2,0,0,0,0,0,0,0,0),(556,13,5,1,0,0,0,0,0,0,0,0),(557,13,5,1,0,0,0,0,0,0,0,0),(558,13,5,1,0,0,0,0,0,0,0,0),(559,13,5,1,0,0,0,0,0,0,0,0),(560,13,5,1,0,0,0,0,0,0,0,0),(561,13,5,1,0,0,0,0,0,0,0,0),(562,13,5,1,0,0,0,0,0,0,0,0),(563,13,5,1,0,0,0,0,0,0,0,0),(564,13,5,1,0,0,0,0,0,0,0,0),(565,13,5,1,0,0,0,0,0,0,0,0),(566,13,5,1,0,0,0,0,0,0,0,0),(567,13,5,1,0,0,0,0,0,0,0,0),(568,13,5,1,0,0,0,0,0,0,0,0),(569,13,5,1,0,0,0,0,0,0,0,0),(570,13,5,1,0,0,0,0,0,0,0,0),(571,13,5,1,0,0,0,0,0,0,0,0),(572,13,5,1,0,0,0,0,0,0,0,0),(573,13,5,1,0,0,0,0,0,0,0,0),(574,13,5,1,0,0,0,0,0,0,0,0),(575,13,5,1,0,0,0,0,0,0,0,0),(576,13,5,2,0,0,0,0,0,0,0,0),(577,13,5,2,0,0,0,0,0,0,0,0),(578,13,5,2,0,0,0,0,0,0,0,0),(579,13,5,2,0,0,0,0,0,0,0,0),(580,13,5,2,0,0,0,0,0,0,0,0),(581,13,5,2,0,0,0,0,0,0,0,0),(582,13,5,2,0,0,0,0,0,0,0,0),(583,13,5,2,0,0,0,0,0,0,0,0),(584,13,5,2,0,0,0,0,0,0,0,0),(585,13,5,2,0,0,0,0,0,0,0,0),(586,13,5,2,0,0,0,0,0,0,0,0),(587,13,5,2,0,0,0,0,0,0,0,0),(588,13,5,2,0,0,0,0,0,0,0,0),(589,13,5,2,0,0,0,0,0,0,0,0),(590,13,5,2,0,0,0,0,0,0,0,0),(591,13,5,2,0,0,0,0,0,0,0,0),(592,13,5,2,0,0,0,0,0,0,0,0),(593,13,5,2,0,0,0,0,0,0,0,0),(594,13,5,2,0,0,0,0,0,0,0,0),(595,13,5,2,0,0,0,0,0,0,0,0);
+/*!40000 ALTER TABLE `total_asistencia` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `total_atencion`
+--
+
+DROP TABLE IF EXISTS `total_atencion`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `total_atencion` (
+  `id_atencion` int(11) NOT NULL AUTO_INCREMENT,
+  `id_periodo_escolar` int(4) NOT NULL,
+  `id_mes` int(4) NOT NULL,
+  `id_sexo` int(4) NOT NULL,
+  `id_tipo_atencion` int(4) NOT NULL,
+  `p1` int(3) NOT NULL,
+  `p2` int(3) NOT NULL,
+  `p3` int(3) NOT NULL,
+  `p4` int(3) NOT NULL,
+  `p5` int(3) NOT NULL,
+  `gi` int(3) NOT NULL,
+  `gii` int(3) NOT NULL,
+  PRIMARY KEY (`id_atencion`),
+  KEY `id_periodo_escolar` (`id_periodo_escolar`),
+  KEY `id_mes` (`id_mes`),
+  KEY `id_sexo` (`id_sexo`),
+  KEY `id_tipo_atencion` (`id_tipo_atencion`),
+  CONSTRAINT `total_atencion_ibfk_1` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `total_atencion_ibfk_2` FOREIGN KEY (`id_mes`) REFERENCES `mes` (`id_mes`) ON UPDATE CASCADE,
+  CONSTRAINT `total_atencion_ibfk_3` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
+  CONSTRAINT `total_atencion_ibfk_4` FOREIGN KEY (`id_tipo_atencion`) REFERENCES `tipo_atencion` (`id_tipo_atencion`) ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=257 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `total_atencion`
+--
+
+LOCK TABLES `total_atencion` WRITE;
+/*!40000 ALTER TABLE `total_atencion` DISABLE KEYS */;
+INSERT INTO `total_atencion` VALUES (61,7,6,1,1,1,2,3,4,5,6,7),(62,7,6,1,2,1,2,3,4,5,6,7),(63,7,6,1,3,1,2,3,4,5,6,7),(64,7,6,1,4,1,2,3,4,5,6,7),(65,7,6,1,5,1,2,3,4,5,6,7),(66,7,6,1,6,1,2,3,4,5,6,7),(67,7,6,1,7,1,2,3,4,5,6,7),(68,7,6,1,8,1,2,3,4,5,6,7),(69,7,6,1,9,1,2,3,4,5,6,7),(70,7,6,1,10,1,2,3,4,5,6,7),(71,7,6,1,11,1,2,3,4,5,6,7),(72,7,6,1,12,1,2,3,4,5,6,7),(73,7,6,1,13,1,2,3,4,5,6,7),(74,7,6,1,14,1,2,3,4,5,6,7),(75,7,6,2,1,1,2,3,4,5,6,7),(76,7,6,2,2,1,2,3,4,5,6,7),(77,7,6,2,3,1,2,3,4,5,6,7),(78,7,6,2,4,1,2,3,4,5,6,7),(79,7,6,2,5,1,2,3,4,5,6,7),(80,7,6,2,6,1,2,3,4,5,6,7),(81,7,6,2,7,1,2,3,4,5,6,7),(82,7,6,2,8,1,2,3,4,5,6,7),(83,7,6,2,9,1,2,3,4,5,6,7),(84,7,6,2,10,1,2,3,4,5,6,7),(85,7,6,2,11,1,2,3,4,5,6,7),(86,7,6,2,12,1,2,3,4,5,6,7),(87,7,6,2,13,1,2,3,4,5,6,7),(88,7,6,2,14,1,2,3,4,5,6,7),(89,7,7,1,1,0,0,0,0,0,0,0),(90,7,7,1,2,0,0,0,0,0,0,0),(91,7,7,1,3,0,0,0,0,0,0,0),(92,7,7,1,4,0,0,0,0,0,0,0),(93,7,7,1,5,0,0,0,0,0,0,0),(94,7,7,1,6,0,0,0,0,0,0,0),(95,7,7,1,7,0,0,0,0,0,0,0),(96,7,7,1,8,0,0,0,0,0,0,0),(97,7,7,1,9,0,0,0,0,0,0,0),(98,7,7,1,10,0,0,0,0,0,0,0),(99,7,7,1,11,0,0,0,0,0,0,0),(100,7,7,1,12,0,0,0,0,0,0,0),(101,7,7,1,13,0,0,0,0,0,0,0),(102,7,7,1,14,0,0,0,0,0,0,0),(103,7,7,2,1,0,0,0,0,0,0,0),(104,7,7,2,2,0,0,0,0,0,0,0),(105,7,7,2,3,0,0,0,0,0,0,0),(106,7,7,2,4,0,0,0,0,0,0,0),(107,7,7,2,5,0,0,0,0,0,0,0),(108,7,7,2,6,0,0,0,0,0,0,0),(109,7,7,2,7,0,0,0,0,0,0,0),(110,7,7,2,8,0,0,0,0,0,0,0),(111,7,7,2,9,0,0,0,0,0,0,0),(112,7,7,2,10,0,0,0,0,0,0,0),(113,7,7,2,11,0,0,0,0,0,0,0),(114,7,7,2,12,0,0,0,0,0,0,0),(115,7,7,2,13,0,0,0,0,0,0,0),(116,7,7,2,14,0,0,0,0,0,0,0),(117,7,8,1,1,0,0,0,0,0,0,0),(118,7,8,1,2,0,0,0,0,0,0,0),(119,7,8,1,3,0,0,0,0,0,0,0),(120,7,8,1,4,0,0,0,0,0,0,0),(121,7,8,1,5,0,0,0,0,0,0,0),(122,7,8,1,6,0,0,0,0,0,0,0),(123,7,8,1,7,0,0,0,0,0,0,0),(124,7,8,1,8,0,0,0,0,0,0,0),(125,7,8,1,9,0,0,0,0,0,0,0),(126,7,8,1,10,0,0,0,0,0,0,0),(127,7,8,1,11,0,0,0,0,0,0,0),(128,7,8,1,12,0,0,0,0,0,0,0),(129,7,8,1,13,0,0,0,0,0,0,0),(130,7,8,1,14,0,0,0,0,0,0,0),(131,7,8,2,1,0,0,0,0,0,0,0),(132,7,8,2,2,0,0,0,0,0,0,0),(133,7,8,2,3,0,0,0,0,0,0,0),(134,7,8,2,4,0,0,0,0,0,0,0),(135,7,8,2,5,0,0,0,0,0,0,0),(136,7,8,2,6,0,0,0,0,0,0,0),(137,7,8,2,7,0,0,0,0,0,0,0),(138,7,8,2,8,0,0,0,0,0,0,0),(139,7,8,2,9,0,0,0,0,0,0,0),(140,7,8,2,10,0,0,0,0,0,0,0),(141,7,8,2,11,0,0,0,0,0,0,0),(142,7,8,2,12,0,0,0,0,0,0,0),(143,7,8,2,13,0,0,0,0,0,0,0),(144,7,8,2,14,0,0,0,0,0,0,0),(145,7,9,1,1,0,0,0,0,0,0,0),(146,7,9,1,2,0,0,0,0,0,0,0),(147,7,9,1,3,0,0,0,0,0,0,0),(148,7,9,1,4,0,0,0,0,0,0,0),(149,7,9,1,5,0,0,0,0,0,0,0),(150,7,9,1,6,0,0,0,0,0,0,0),(151,7,9,1,7,0,0,0,0,0,0,0),(152,7,9,1,8,0,0,0,0,0,0,0),(153,7,9,1,9,0,0,0,0,0,0,0),(154,7,9,1,10,0,0,0,0,0,0,0),(155,7,9,1,11,0,0,0,0,0,0,0),(156,7,9,1,12,0,0,0,0,0,0,0),(157,7,9,1,13,0,0,0,0,0,0,0),(158,7,9,1,14,0,0,0,0,0,0,0),(159,7,9,2,1,0,0,0,0,0,0,0),(160,7,9,2,2,0,0,0,0,0,0,0),(161,7,9,2,3,0,0,0,0,0,0,0),(162,7,9,2,4,0,0,0,0,0,0,0),(163,7,9,2,5,0,0,0,0,0,0,0),(164,7,9,2,6,0,0,0,0,0,0,0),(165,7,9,2,7,0,0,0,0,0,0,0),(166,7,9,2,8,0,0,0,0,0,0,0),(167,7,9,2,9,0,0,0,0,0,0,0),(168,7,9,2,10,0,0,0,0,0,0,0),(169,7,9,2,11,0,0,0,0,0,0,0),(170,7,9,2,12,0,0,0,0,0,0,0),(171,7,9,2,13,0,0,0,0,0,0,0),(172,7,9,2,14,0,0,0,0,0,0,0),(229,13,5,1,1,0,0,0,0,0,0,0),(230,13,5,1,2,0,0,0,0,0,0,0),(231,13,5,1,3,0,0,0,0,0,0,0),(232,13,5,1,4,0,0,0,0,0,0,0),(233,13,5,1,5,0,0,0,0,0,0,0),(234,13,5,1,6,0,0,0,0,0,0,0),(235,13,5,1,7,0,0,0,0,0,0,0),(236,13,5,1,8,0,0,0,0,0,0,0),(237,13,5,1,9,0,0,0,0,0,0,0),(238,13,5,1,10,0,0,0,0,0,0,0),(239,13,5,1,11,0,0,0,0,0,0,0),(240,13,5,1,12,0,0,0,0,0,0,0),(241,13,5,1,13,0,0,0,0,0,0,0),(242,13,5,1,14,0,0,0,0,0,0,0),(243,13,5,2,1,0,0,0,0,0,0,0),(244,13,5,2,2,0,0,0,0,0,0,0),(245,13,5,2,3,0,0,0,0,0,0,0),(246,13,5,2,4,0,0,0,0,0,0,0),(247,13,5,2,5,0,0,0,0,0,0,0),(248,13,5,2,6,0,0,0,0,0,0,0),(249,13,5,2,7,0,0,0,0,0,0,0),(250,13,5,2,8,0,0,0,0,0,0,0),(251,13,5,2,9,0,0,0,0,0,0,0),(252,13,5,2,10,0,0,0,0,0,0,0),(253,13,5,2,11,0,0,0,0,0,0,0),(254,13,5,2,12,0,0,0,0,0,0,0),(255,13,5,2,13,0,0,0,0,0,0,0),(256,13,5,2,14,0,0,0,0,0,0,0);
+/*!40000 ALTER TABLE `total_atencion` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `total_escolaridad`
+--
+
+DROP TABLE IF EXISTS `total_escolaridad`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `total_escolaridad` (
+  `id_escolaridad` int(4) NOT NULL AUTO_INCREMENT,
+  `id_sexo` int(4) NOT NULL,
+  `id_periodo_escolar` int(4) NOT NULL,
+  `id_mes` int(4) NOT NULL,
+  `id_tipo_escolaridad` int(4) NOT NULL,
+  `p1` int(4) NOT NULL,
+  `p2` int(4) NOT NULL,
+  `p3` int(4) NOT NULL,
+  `p4` int(4) NOT NULL,
+  `p5` int(4) NOT NULL,
+  `gi` int(4) NOT NULL,
+  `gii` int(4) NOT NULL,
+  PRIMARY KEY (`id_escolaridad`),
+  KEY `id_sexo` (`id_sexo`,`id_periodo_escolar`,`id_mes`,`id_tipo_escolaridad`),
+  KEY `id_periodo_escolar` (`id_periodo_escolar`),
+  KEY `id_mes` (`id_mes`),
+  KEY `id_tipo_escolaridad` (`id_tipo_escolaridad`),
+  CONSTRAINT `total_escolaridad_ibfk_1` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
+  CONSTRAINT `total_escolaridad_ibfk_2` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `total_escolaridad_ibfk_3` FOREIGN KEY (`id_mes`) REFERENCES `mes` (`id_mes`) ON UPDATE CASCADE,
+  CONSTRAINT `total_escolaridad_ibfk_4` FOREIGN KEY (`id_tipo_escolaridad`) REFERENCES `tipo_escolaridad` (`id_tipo_escolaridad`) ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=395 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `total_escolaridad`
+--
+
+LOCK TABLES `total_escolaridad` WRITE;
+/*!40000 ALTER TABLE `total_escolaridad` DISABLE KEYS */;
+INSERT INTO `total_escolaridad` VALUES (143,1,7,6,1,1,2,3,4,5,6,7),(144,1,7,6,2,1,2,3,4,5,6,7),(145,1,7,6,3,1,2,3,4,5,6,7),(146,1,7,6,4,1,2,3,4,5,6,7),(147,1,7,6,5,1,2,3,4,5,6,7),(148,1,7,6,6,1,2,3,4,5,6,7),(149,1,7,6,7,1,2,3,4,5,6,7),(150,1,7,6,8,1,2,33,4,5,6,7),(151,1,7,6,9,1,2,3,4,5,6,7),(152,1,7,6,10,1,2,3,4,5,6,7),(153,1,7,6,11,1,2,3,4,5,6,7),(154,1,7,6,12,1,2,3,4,5,6,7),(155,1,7,6,13,1,2,3,4,5,6,7),(156,1,7,6,14,1,2,3,4,5,6,7),(157,1,7,6,15,1,2,3,4,5,6,7),(158,1,7,6,16,1,2,3,4,5,6,7),(159,1,7,6,17,1,2,3,4,5,6,7),(160,1,7,6,18,1,2,3,4,5,6,7),(161,2,7,6,1,1,2,3,4,5,6,7),(162,2,7,6,2,1,2,3,4,5,6,7),(163,2,7,6,3,1,2,3,4,5,6,7),(164,2,7,6,4,1,2,3,4,5,6,7),(165,2,7,6,5,1,2,3,4,5,6,7),(166,2,7,6,6,1,2,3,4,5,6,7),(167,2,7,6,7,1,2,3,4,5,6,7),(168,2,7,6,8,1,2,3,4,5,6,7),(169,2,7,6,9,1,2,3,4,5,6,7),(170,2,7,6,10,1,2,3,4,5,6,7),(171,2,7,6,11,1,2,3,4,5,6,7),(172,2,7,6,12,1,2,3,4,5,6,7),(173,2,7,6,13,1,2,3,4,5,6,7),(174,2,7,6,14,1,2,3,4,5,6,7),(175,2,7,6,15,1,2,3,4,5,6,7),(176,2,7,6,16,1,2,3,4,5,6,7),(177,2,7,6,17,1,2,3,4,5,6,7),(178,2,7,6,18,1,2,3,4,5,6,7),(179,1,7,7,1,1,2,3,4,5,6,7),(180,1,7,7,2,1,442,3,4,5,6,7),(181,1,7,7,3,1,2,3,4,5,6,7),(182,1,7,7,4,1,2,3,4,5,6,7),(183,1,7,7,5,1,2,3,4,5,6,7),(184,1,7,7,6,1,2,3,4,5,6,7),(185,1,7,7,7,0,0,0,0,0,0,0),(186,1,7,7,8,0,0,0,0,0,0,0),(187,1,7,7,9,0,0,0,0,0,0,0),(188,1,7,7,10,0,0,0,0,0,0,0),(189,1,7,7,11,0,0,0,0,0,0,0),(190,1,7,7,12,0,0,0,0,0,0,0),(191,1,7,7,13,0,0,0,0,0,0,0),(192,1,7,7,14,0,0,0,0,0,0,0),(193,1,7,7,15,0,0,0,0,0,0,0),(194,1,7,7,16,0,0,0,0,0,0,0),(195,1,7,7,17,0,0,0,0,0,0,0),(196,1,7,7,18,0,0,0,0,0,0,0),(197,2,7,7,1,9,9,7,8,8,9,6),(198,2,7,7,2,9,9,7,9,8,8,5),(199,2,7,7,3,9,9,7,9,9,9,5),(200,2,7,7,4,9,9,7,9,9,8,5),(201,2,7,7,5,9,9,7,9,8,7,67),(202,2,7,7,6,9,9,7,8,8,6,0),(203,2,7,7,7,4,0,0,0,0,0,0),(204,2,7,7,8,6,0,0,0,0,0,0),(205,2,7,7,9,7,0,0,0,0,0,0),(206,2,7,7,10,9,0,0,0,0,0,0),(207,2,7,7,11,5,0,0,0,0,0,0),(208,2,7,7,12,4,0,0,0,0,0,0),(209,2,7,7,13,0,0,0,0,0,0,0),(210,2,7,7,14,0,0,0,0,0,0,0),(211,2,7,7,15,0,0,0,0,0,0,0),(212,2,7,7,16,0,0,0,0,0,0,0),(213,2,7,7,17,0,0,0,0,0,0,0),(214,2,7,7,18,0,0,0,0,0,0,0),(215,1,7,8,1,0,0,0,0,0,0,0),(216,1,7,8,2,0,0,0,0,0,0,0),(217,1,7,8,3,0,0,0,0,0,0,0),(218,1,7,8,4,0,0,0,0,0,0,0),(219,1,7,8,5,0,0,0,0,0,0,0),(220,1,7,8,6,0,0,0,0,0,0,0),(221,1,7,8,7,0,0,0,0,0,0,0),(222,1,7,8,8,0,0,0,0,0,0,0),(223,1,7,8,9,0,0,0,0,0,0,0),(224,1,7,8,10,0,0,0,0,0,0,0),(225,1,7,8,11,0,0,0,0,0,0,0),(226,1,7,8,12,0,0,0,0,0,0,0),(227,1,7,8,13,0,0,0,0,0,0,0),(228,1,7,8,14,0,0,0,0,0,0,0),(229,1,7,8,15,0,0,0,0,0,0,0),(230,1,7,8,16,0,0,0,0,0,0,0),(231,1,7,8,17,0,0,0,0,0,0,0),(232,1,7,8,18,0,0,0,0,0,0,0),(233,2,7,8,1,0,0,0,0,0,0,0),(234,2,7,8,2,0,0,0,0,0,0,0),(235,2,7,8,3,0,0,0,0,0,0,0),(236,2,7,8,4,0,0,0,0,0,0,0),(237,2,7,8,5,0,0,0,0,0,0,0),(238,2,7,8,6,0,0,0,0,0,0,0),(239,2,7,8,7,0,0,0,0,0,0,0),(240,2,7,8,8,0,0,0,0,0,0,0),(241,2,7,8,9,0,0,0,0,0,0,0),(242,2,7,8,10,0,0,0,0,0,0,0),(243,2,7,8,11,0,0,0,0,0,0,0),(244,2,7,8,12,0,0,0,0,0,0,0),(245,2,7,8,13,0,0,0,0,0,0,0),(246,2,7,8,14,0,0,0,0,0,0,0),(247,2,7,8,15,0,0,0,0,0,0,0),(248,2,7,8,16,0,0,0,0,0,0,0),(249,2,7,8,17,0,0,0,0,0,0,0),(250,2,7,8,18,0,0,0,0,0,0,0),(251,1,7,9,1,0,0,0,0,0,0,0),(252,1,7,9,2,0,0,0,0,0,0,0),(253,1,7,9,3,0,0,0,0,0,0,0),(254,1,7,9,4,0,0,0,0,0,0,0),(255,1,7,9,5,0,0,0,0,0,0,0),(256,1,7,9,6,0,0,0,0,0,0,0),(257,1,7,9,7,0,0,0,0,0,0,0),(258,1,7,9,8,0,0,0,0,0,0,0),(259,1,7,9,9,0,0,0,0,0,0,0),(260,1,7,9,10,0,0,0,0,0,0,0),(261,1,7,9,11,0,0,0,0,0,0,0),(262,1,7,9,12,0,0,0,0,0,0,0),(263,1,7,9,13,0,0,0,0,0,0,0),(264,1,7,9,14,0,0,0,0,0,0,0),(265,1,7,9,15,0,0,0,0,0,0,0),(266,1,7,9,16,0,0,0,0,0,0,0),(267,1,7,9,17,0,0,0,0,0,0,0),(268,1,7,9,18,0,0,0,0,0,0,0),(269,2,7,9,1,0,0,0,0,0,0,0),(270,2,7,9,2,0,0,0,0,0,0,0),(271,2,7,9,3,0,0,0,0,0,0,0),(272,2,7,9,4,0,0,0,0,0,0,0),(273,2,7,9,5,0,0,0,0,0,0,0),(274,2,7,9,6,0,0,0,0,0,0,0),(275,2,7,9,7,0,0,0,0,0,0,0),(276,2,7,9,8,0,0,0,0,0,0,0),(277,2,7,9,9,0,0,0,0,0,0,0),(278,2,7,9,10,0,0,0,0,0,0,0),(279,2,7,9,11,0,0,0,0,0,0,0),(280,2,7,9,12,0,0,0,0,0,0,0),(281,2,7,9,13,0,0,0,0,0,0,0),(282,2,7,9,14,0,0,0,0,0,0,0),(283,2,7,9,15,0,0,0,0,0,0,0),(284,2,7,9,16,0,0,0,0,0,0,0),(285,2,7,9,17,0,0,0,0,0,0,0),(286,2,7,9,18,0,0,0,0,0,0,0),(359,1,13,5,1,0,0,0,0,0,0,0),(360,1,13,5,2,0,0,0,0,0,0,0),(361,1,13,5,3,0,0,0,0,0,0,0),(362,1,13,5,4,0,0,0,0,0,0,0),(363,1,13,5,5,0,0,0,0,0,0,0),(364,1,13,5,6,0,0,0,0,0,0,0),(365,1,13,5,7,0,0,0,0,0,0,0),(366,1,13,5,8,0,0,0,0,0,0,0),(367,1,13,5,9,0,0,0,0,0,0,0),(368,1,13,5,10,0,0,0,0,0,0,0),(369,1,13,5,11,0,0,0,0,0,0,0),(370,1,13,5,12,0,0,0,0,0,0,0),(371,1,13,5,13,0,0,0,0,0,0,0),(372,1,13,5,14,0,0,0,0,0,0,0),(373,1,13,5,15,0,0,0,0,0,0,0),(374,1,13,5,16,0,0,0,0,0,0,0),(375,1,13,5,17,0,0,0,0,0,0,0),(376,1,13,5,18,0,0,0,0,0,0,0),(377,2,13,5,1,0,0,0,0,0,0,0),(378,2,13,5,2,0,0,0,0,0,0,0),(379,2,13,5,3,0,0,0,0,0,0,0),(380,2,13,5,4,0,0,0,0,0,0,0),(381,2,13,5,5,0,0,0,0,0,0,0),(382,2,13,5,6,0,0,0,0,0,0,0),(383,2,13,5,7,0,0,0,0,0,0,0),(384,2,13,5,8,0,0,0,0,0,0,0),(385,2,13,5,9,0,0,0,0,0,0,0),(386,2,13,5,10,0,0,0,0,0,0,0),(387,2,13,5,11,0,0,0,0,0,0,0),(388,2,13,5,12,0,0,0,0,0,0,0),(389,2,13,5,13,0,0,0,0,0,0,0),(390,2,13,5,14,0,0,0,0,0,0,0),(391,2,13,5,15,0,0,0,0,0,0,0),(392,2,13,5,16,0,0,0,0,0,0,0),(393,2,13,5,17,0,0,0,0,0,0,0),(394,2,13,5,18,0,0,0,0,0,0,0);
+/*!40000 ALTER TABLE `total_escolaridad` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `total_poblacion_atendida`
+--
+
+DROP TABLE IF EXISTS `total_poblacion_atendida`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `total_poblacion_atendida` (
+  `id_poblacion_atendida` int(4) NOT NULL AUTO_INCREMENT,
+  `id_sexo` int(4) NOT NULL,
+  `id_periodo_escolar` int(4) NOT NULL,
+  `id_mes` int(4) NOT NULL,
+  `id_tipo_poblacion_atendida` int(4) NOT NULL,
+  `p1` int(4) NOT NULL,
+  `p2` int(4) NOT NULL,
+  `p3` int(4) NOT NULL,
+  `p4` int(4) NOT NULL,
+  `p5` int(4) NOT NULL,
+  `gi` int(4) NOT NULL,
+  `gii` int(4) NOT NULL,
+  PRIMARY KEY (`id_poblacion_atendida`),
+  KEY `id_sexo` (`id_sexo`,`id_periodo_escolar`,`id_mes`,`id_tipo_poblacion_atendida`),
+  KEY `id_periodo_escolar` (`id_periodo_escolar`),
+  KEY `id_mes` (`id_mes`),
+  KEY `id_tipo_poblacion_atendida` (`id_tipo_poblacion_atendida`),
+  CONSTRAINT `total_poblacion_atendida_ibfk_1` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
+  CONSTRAINT `total_poblacion_atendida_ibfk_2` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `total_poblacion_atendida_ibfk_3` FOREIGN KEY (`id_mes`) REFERENCES `mes` (`id_mes`) ON UPDATE CASCADE,
+  CONSTRAINT `total_poblacion_atendida_ibfk_4` FOREIGN KEY (`id_tipo_poblacion_atendida`) REFERENCES `tipo_poblacion_atendida` (`id_tipo_poblacion_atendida`) ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `total_poblacion_atendida`
+--
+
+LOCK TABLES `total_poblacion_atendida` WRITE;
+/*!40000 ALTER TABLE `total_poblacion_atendida` DISABLE KEYS */;
+INSERT INTO `total_poblacion_atendida` VALUES (9,1,7,6,1,1,2,3,4,5,6,7),(10,1,7,6,2,1,2,3,4,5,6,7),(11,2,7,6,1,1,2,3,4,5,6,7),(12,2,7,6,2,1,2,3,4,5,6,7),(13,1,7,7,1,0,0,0,0,0,0,0),(14,1,7,7,2,0,0,0,0,0,0,0),(15,2,7,7,1,0,0,0,0,0,0,0),(16,2,7,7,2,0,0,0,0,0,0,0),(17,1,7,8,1,0,0,0,0,0,0,0),(18,1,7,8,2,0,0,0,0,0,0,0),(19,2,7,8,1,0,0,0,0,0,0,0),(20,2,7,8,2,0,0,0,0,0,0,0),(21,1,7,9,1,0,0,0,0,0,0,0),(22,1,7,9,2,0,0,0,0,0,0,0),(23,2,7,9,1,0,0,0,0,0,0,0),(24,2,7,9,2,0,0,0,0,0,0,0),(33,1,13,5,1,0,0,0,0,0,0,0),(34,1,13,5,2,0,0,0,0,0,0,0),(35,2,13,5,1,0,0,0,0,0,0,0),(36,2,13,5,2,0,0,0,0,0,0,0);
+/*!40000 ALTER TABLE `total_poblacion_atendida` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `total_referidos`
+--
+
+DROP TABLE IF EXISTS `total_referidos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `total_referidos` (
+  `id_referido` int(10) NOT NULL AUTO_INCREMENT,
+  `id_sexo` int(11) NOT NULL,
+  `id_periodo_escolar` int(11) NOT NULL,
+  `id_mes` int(11) NOT NULL,
+  `id_tipo_referido` int(11) NOT NULL,
+  `p1` int(3) NOT NULL,
+  `p2` int(3) NOT NULL,
+  `p3` int(3) NOT NULL,
+  `p4` int(3) NOT NULL,
+  `p5` int(3) NOT NULL,
+  `gi` int(3) NOT NULL,
+  `gii` int(3) NOT NULL,
+  PRIMARY KEY (`id_referido`),
+  KEY `id_sexo` (`id_sexo`,`id_periodo_escolar`,`id_mes`,`id_tipo_referido`),
+  KEY `id_periodo_escolar` (`id_periodo_escolar`),
+  KEY `id_mes` (`id_mes`),
+  KEY `id_tipo_referido` (`id_tipo_referido`),
+  CONSTRAINT `total_referidos_ibfk_1` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
+  CONSTRAINT `total_referidos_ibfk_2` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `total_referidos_ibfk_3` FOREIGN KEY (`id_mes`) REFERENCES `mes` (`id_mes`) ON UPDATE CASCADE,
+  CONSTRAINT `total_referidos_ibfk_4` FOREIGN KEY (`id_tipo_referido`) REFERENCES `tipo_referido` (`id_tipo_referido`) ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=241 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `total_referidos`
+--
+
+LOCK TABLES `total_referidos` WRITE;
+/*!40000 ALTER TABLE `total_referidos` DISABLE KEYS */;
+INSERT INTO `total_referidos` VALUES (73,1,7,6,1,1,2,3,4,5,6,7),(74,1,7,6,2,1,2,3,4,5,6,7),(75,1,7,6,3,1,2,3,4,5,6,7),(76,1,7,6,4,1,2,3,4,5,6,7),(77,1,7,6,5,1,2,3,4,5,6,7),(78,1,7,6,6,1,2,3,4,5,6,7),(79,1,7,6,7,1,2,3,4,5,6,7),(80,1,7,6,8,1,2,3,4,5,6,7),(81,1,7,6,9,1,2,3,4,5,6,7),(82,1,7,6,10,1,2,3,4,5,6,7),(83,1,7,6,11,1,2,3,4,5,6,7),(84,1,7,6,12,1,2,3,4,5,6,7),(85,2,7,6,1,1,2,3,4,5,6,7),(86,2,7,6,2,1,2,3,4,5,6,7),(87,2,7,6,3,1,2,3,4,5,6,7),(88,2,7,6,4,1,2,3,4,5,6,7),(89,2,7,6,5,1,2,3,4,5,6,7),(90,2,7,6,6,1,2,3,4,5,6,7),(91,2,7,6,7,1,2,3,4,5,6,7),(92,2,7,6,8,1,2,3,4,5,6,7),(93,2,7,6,9,1,2,3,4,5,6,7),(94,2,7,6,10,1,2,3,4,5,6,7),(95,2,7,6,11,1,2,3,4,5,6,7),(96,2,7,6,12,1,2,3,4,5,6,7),(97,1,7,7,1,0,0,0,0,0,0,0),(98,1,7,7,2,0,0,0,0,0,0,0),(99,1,7,7,3,0,0,0,0,0,0,0),(100,1,7,7,4,0,0,0,0,0,0,0),(101,1,7,7,5,0,0,0,0,0,0,0),(102,1,7,7,6,0,0,0,0,0,0,0),(103,1,7,7,7,0,0,0,0,0,0,0),(104,1,7,7,8,0,0,0,0,0,0,0),(105,1,7,7,9,0,0,0,0,0,0,0),(106,1,7,7,10,0,0,0,0,0,0,0),(107,1,7,7,11,0,0,0,0,0,0,0),(108,1,7,7,12,0,0,0,0,0,0,0),(109,2,7,7,1,0,0,0,0,0,0,0),(110,2,7,7,2,0,0,0,0,0,0,0),(111,2,7,7,3,0,0,0,0,0,0,0),(112,2,7,7,4,0,0,0,0,0,0,0),(113,2,7,7,5,0,0,0,0,0,0,0),(114,2,7,7,6,0,0,0,0,0,0,0),(115,2,7,7,7,0,0,0,0,0,0,0),(116,2,7,7,8,0,0,0,0,0,0,0),(117,2,7,7,9,0,0,0,0,0,0,0),(118,2,7,7,10,0,0,0,0,0,0,0),(119,2,7,7,11,0,0,0,0,0,0,0),(120,2,7,7,12,0,0,0,0,0,0,0),(121,1,7,8,1,0,0,0,0,0,0,0),(122,1,7,8,2,0,0,0,0,0,0,0),(123,1,7,8,3,0,0,0,0,0,0,0),(124,1,7,8,4,0,0,0,0,0,0,0),(125,1,7,8,5,0,0,0,0,0,0,0),(126,1,7,8,6,0,0,0,0,0,0,0),(127,1,7,8,7,0,0,0,0,0,0,0),(128,1,7,8,8,0,0,0,0,0,0,0),(129,1,7,8,9,0,0,0,0,0,0,0),(130,1,7,8,10,0,0,0,0,0,0,0),(131,1,7,8,11,0,0,0,0,0,0,0),(132,1,7,8,12,0,0,0,0,0,0,0),(133,2,7,8,1,0,0,0,0,0,0,0),(134,2,7,8,2,0,0,0,0,0,0,0),(135,2,7,8,3,0,0,0,0,0,0,0),(136,2,7,8,4,0,0,0,0,0,0,0),(137,2,7,8,5,0,0,0,0,0,0,0),(138,2,7,8,6,0,0,0,0,0,0,0),(139,2,7,8,7,0,0,0,0,0,0,0),(140,2,7,8,8,0,0,0,0,0,0,0),(141,2,7,8,9,0,0,0,0,0,0,0),(142,2,7,8,10,0,0,0,0,0,0,0),(143,2,7,8,11,0,0,0,0,0,0,0),(144,2,7,8,12,0,0,0,0,0,0,0),(145,1,7,9,1,0,0,0,0,0,0,0),(146,1,7,9,2,0,0,0,0,0,0,0),(147,1,7,9,3,0,0,0,0,0,0,0),(148,1,7,9,4,0,0,0,0,0,0,0),(149,1,7,9,5,0,0,0,0,0,0,0),(150,1,7,9,6,0,0,0,0,0,0,0),(151,1,7,9,7,0,0,0,0,0,0,0),(152,1,7,9,8,0,0,0,0,0,0,0),(153,1,7,9,9,0,0,0,0,0,0,0),(154,1,7,9,10,0,0,0,0,0,0,0),(155,1,7,9,11,0,0,0,0,0,0,0),(156,1,7,9,12,0,0,0,0,0,0,0),(157,2,7,9,1,0,0,0,0,0,0,0),(158,2,7,9,2,0,0,0,0,0,0,0),(159,2,7,9,3,0,0,0,0,0,0,0),(160,2,7,9,4,0,0,0,0,0,0,0),(161,2,7,9,5,0,0,0,0,0,0,0),(162,2,7,9,6,0,0,0,0,0,0,0),(163,2,7,9,7,0,0,0,0,0,0,0),(164,2,7,9,8,0,0,0,0,0,0,0),(165,2,7,9,9,0,0,0,0,0,0,0),(166,2,7,9,10,0,0,0,0,0,0,0),(167,2,7,9,11,0,0,0,0,0,0,0),(168,2,7,9,12,0,0,0,0,0,0,0),(217,1,13,5,1,0,0,0,0,0,0,0),(218,1,13,5,2,0,0,0,0,0,0,0),(219,1,13,5,3,0,0,0,0,0,0,0),(220,1,13,5,4,0,0,0,0,0,0,0),(221,1,13,5,5,0,0,0,0,0,0,0),(222,1,13,5,6,0,0,0,0,0,0,0),(223,1,13,5,7,0,0,0,0,0,0,0),(224,1,13,5,8,0,0,0,0,0,0,0),(225,1,13,5,9,0,0,0,0,0,0,0),(226,1,13,5,10,0,0,0,0,0,0,0),(227,1,13,5,11,0,0,0,0,0,0,0),(228,1,13,5,12,0,0,0,0,0,0,0),(229,2,13,5,1,0,0,0,0,0,0,0),(230,2,13,5,2,0,0,0,0,0,0,0),(231,2,13,5,3,0,0,0,0,0,0,0),(232,2,13,5,4,0,0,0,0,0,0,0),(233,2,13,5,5,0,0,0,0,0,0,0),(234,2,13,5,6,0,0,0,0,0,0,0),(235,2,13,5,7,0,0,0,0,0,0,0),(236,2,13,5,8,0,0,0,0,0,0,0),(237,2,13,5,9,0,0,0,0,0,0,0),(238,2,13,5,10,0,0,0,0,0,0,0),(239,2,13,5,11,0,0,0,0,0,0,0),(240,2,13,5,12,0,0,0,0,0,0,0);
+/*!40000 ALTER TABLE `total_referidos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `total_tiempo_permanencia`
+--
+
+DROP TABLE IF EXISTS `total_tiempo_permanencia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `total_tiempo_permanencia` (
+  `id_tiempo_permanencia` int(4) NOT NULL AUTO_INCREMENT,
+  `id_sexo` int(4) NOT NULL,
+  `id_periodo_escolar` int(4) NOT NULL,
+  `id_mes` int(4) NOT NULL,
+  `id_tipo_permanencia` int(4) NOT NULL,
+  `p1` int(4) NOT NULL,
+  `p2` int(4) NOT NULL,
+  `p3` int(4) NOT NULL,
+  `p4` int(4) NOT NULL,
+  `p5` int(4) NOT NULL,
+  `gi` int(4) NOT NULL,
+  `gii` int(4) NOT NULL,
+  PRIMARY KEY (`id_tiempo_permanencia`),
+  KEY `id_sexo` (`id_sexo`,`id_periodo_escolar`,`id_mes`),
+  KEY `id_tipo_permanencia` (`id_tipo_permanencia`),
+  KEY `id_sexo_2` (`id_sexo`),
+  KEY `id_periodo_escolar` (`id_periodo_escolar`),
+  KEY `id_mes` (`id_mes`),
+  KEY `id_tipo_permanencia_2` (`id_tipo_permanencia`),
+  CONSTRAINT `total_tiempo_permanencia_ibfk_1` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
+  CONSTRAINT `total_tiempo_permanencia_ibfk_2` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `total_tiempo_permanencia_ibfk_3` FOREIGN KEY (`id_mes`) REFERENCES `mes` (`id_mes`) ON UPDATE CASCADE,
+  CONSTRAINT `total_tiempo_permanencia_ibfk_4` FOREIGN KEY (`id_tipo_permanencia`) REFERENCES `tipo_permanencia` (`id_tipo_permanencia`) ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=155 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `total_tiempo_permanencia`
+--
+
+LOCK TABLES `total_tiempo_permanencia` WRITE;
+/*!40000 ALTER TABLE `total_tiempo_permanencia` DISABLE KEYS */;
+INSERT INTO `total_tiempo_permanencia` VALUES (57,1,7,6,1,1,2,3,4,5,6,7),(58,1,7,6,2,1,2,3,4,5,6,7),(59,1,7,6,3,1,2,3,4,5,6,7),(60,1,7,6,4,1,2,3,4,5,6,7),(61,1,7,6,5,1,2,3,4,5,6,7),(62,1,7,6,6,1,2,3,4,5,6,7),(63,1,7,6,7,1,2,3,4,5,6,7),(64,2,7,6,1,1,2,3,4,5,6,7),(65,2,7,6,2,1,2,3,4,5,6,7),(66,2,7,6,3,1,2,3,4,5,6,7),(67,2,7,6,4,1,2,3,4,5,6,7),(68,2,7,6,5,1,2,3,4,5,6,7),(69,2,7,6,6,1,2,3,4,5,6,7),(70,2,7,6,7,1,2,3,4,5,6,7),(71,1,7,7,1,0,0,0,0,0,0,0),(72,1,7,7,2,0,0,0,0,0,0,0),(73,1,7,7,3,0,0,0,0,0,0,0),(74,1,7,7,4,0,0,0,0,0,0,0),(75,1,7,7,5,0,0,0,0,0,0,0),(76,1,7,7,6,0,0,0,0,0,0,0),(77,1,7,7,7,0,0,0,0,0,0,0),(78,2,7,7,1,0,0,0,0,0,0,0),(79,2,7,7,2,0,0,0,0,0,0,0),(80,2,7,7,3,0,0,0,0,0,0,0),(81,2,7,7,4,0,0,0,0,0,0,0),(82,2,7,7,5,0,0,0,0,0,0,0),(83,2,7,7,6,0,0,0,0,0,0,0),(84,2,7,7,7,0,0,0,0,0,0,0),(85,1,7,8,1,0,0,0,0,0,0,0),(86,1,7,8,2,0,0,0,0,0,0,0),(87,1,7,8,3,0,0,0,0,0,0,0),(88,1,7,8,4,0,0,0,0,0,0,0),(89,1,7,8,5,0,0,0,0,0,0,0),(90,1,7,8,6,0,0,0,0,0,0,0),(91,1,7,8,7,0,0,0,0,0,0,0),(92,2,7,8,1,0,0,0,0,0,0,0),(93,2,7,8,2,0,0,0,0,0,0,0),(94,2,7,8,3,0,0,0,0,0,0,0),(95,2,7,8,4,0,0,0,0,0,0,0),(96,2,7,8,5,0,0,0,0,0,0,0),(97,2,7,8,6,0,0,0,0,0,0,0),(98,2,7,8,7,0,0,0,0,0,0,0),(99,1,7,9,1,0,0,0,0,0,0,0),(100,1,7,9,2,0,0,0,0,0,0,0),(101,1,7,9,3,0,0,0,0,0,0,0),(102,1,7,9,4,0,0,0,0,0,0,0),(103,1,7,9,5,0,0,0,0,0,0,0),(104,1,7,9,6,0,0,0,0,0,0,0),(105,1,7,9,7,0,0,0,0,0,0,0),(106,2,7,9,1,0,0,0,0,0,0,0),(107,2,7,9,2,0,0,0,0,0,0,0),(108,2,7,9,3,0,0,0,0,0,0,0),(109,2,7,9,4,0,0,0,0,0,0,0),(110,2,7,9,5,0,0,0,0,0,0,0),(111,2,7,9,6,0,0,0,0,0,0,0),(112,2,7,9,7,0,0,0,0,0,0,0),(141,1,13,5,1,0,0,0,0,0,0,0),(142,1,13,5,2,0,0,0,0,0,0,0),(143,1,13,5,3,0,0,0,0,0,0,0),(144,1,13,5,4,0,0,0,0,0,0,0),(145,1,13,5,5,0,0,0,0,0,0,0),(146,1,13,5,6,0,0,0,0,0,0,0),(147,1,13,5,7,0,0,0,0,0,0,0),(148,2,13,5,1,0,0,0,0,0,0,0),(149,2,13,5,2,0,0,0,0,0,0,0),(150,2,13,5,3,0,0,0,0,0,0,0),(151,2,13,5,4,0,0,0,0,0,0,0),(152,2,13,5,5,0,0,0,0,0,0,0),(153,2,13,5,6,0,0,0,0,0,0,0),(154,2,13,5,7,0,0,0,0,0,0,0);
+/*!40000 ALTER TABLE `total_tiempo_permanencia` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `total_visita_edad`
+--
+
+DROP TABLE IF EXISTS `total_visita_edad`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `total_visita_edad` (
+  `id_visita_edad` int(4) NOT NULL AUTO_INCREMENT,
+  `id_periodo_escolar` int(4) NOT NULL,
+  `id_mes` int(4) NOT NULL,
+  `id_sexo` int(4) NOT NULL,
+  `id_tipo_edad` int(4) NOT NULL,
+  `p1` int(4) NOT NULL,
+  `p2` int(4) NOT NULL,
+  `p3` int(4) NOT NULL,
+  `p4` int(4) NOT NULL,
+  `p5` int(4) NOT NULL,
+  `gi` int(4) NOT NULL,
+  `gii` int(4) NOT NULL,
+  PRIMARY KEY (`id_visita_edad`),
+  KEY `id_periodo_escolar` (`id_periodo_escolar`),
+  KEY `id_mes` (`id_mes`),
+  KEY `id_sexo` (`id_sexo`),
+  KEY `id_tipo_edad` (`id_tipo_edad`),
+  CONSTRAINT `total_visita_edad_ibfk_1` FOREIGN KEY (`id_periodo_escolar`) REFERENCES `periodo_escolar` (`id_periodo_escolar`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `total_visita_edad_ibfk_2` FOREIGN KEY (`id_mes`) REFERENCES `mes` (`id_mes`) ON UPDATE CASCADE,
+  CONSTRAINT `total_visita_edad_ibfk_3` FOREIGN KEY (`id_sexo`) REFERENCES `sexo` (`id_sexo`) ON UPDATE CASCADE,
+  CONSTRAINT `total_visita_edad_ibfk_4` FOREIGN KEY (`id_tipo_edad`) REFERENCES `tipo_edad` (`id_tipo_edad`) ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=325 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `total_visita_edad`
+--
+
+LOCK TABLES `total_visita_edad` WRITE;
+/*!40000 ALTER TABLE `total_visita_edad` DISABLE KEYS */;
+INSERT INTO `total_visita_edad` VALUES (73,7,6,1,1,1,2,3,4,5,6,2),(74,7,6,1,2,1,2,3,4,5,6,2),(75,7,6,1,3,1,2,3,4,5,6,2),(76,7,6,1,4,1,2,3,4,5,6,2),(77,7,6,1,5,1,2,3,4,5,6,2),(78,7,6,1,6,1,2,3,4,5,6,2),(79,7,6,1,7,1,2,3,4,5,6,7),(80,7,6,1,8,1,2,3,4,5,6,7),(81,7,6,1,9,1,2,3,4,5,6,7),(82,7,6,1,10,1,2,3,4,5,6,7),(83,7,6,1,11,1,2,3,4,5,6,7),(84,7,6,1,12,1,2,3,4,5,6,7),(85,7,6,1,13,1,2,3,4,5,6,7),(86,7,6,1,14,1,2,3,4,5,6,7),(87,7,6,1,15,1,2,3,4,5,6,7),(88,7,6,1,16,1,2,3,4,5,6,7),(89,7,6,1,17,1,2,3,4,5,6,7),(90,7,6,1,18,1,2,3,4,5,6,7),(91,7,6,2,1,1,2,3,4,5,6,2),(92,7,6,2,2,1,2,3,4,5,6,2),(93,7,6,2,3,1,2,3,4,5,6,2),(94,7,6,2,4,1,2,3,4,5,6,2),(95,7,6,2,5,1,2,3,4,5,6,2),(96,7,6,2,6,1,2,3,4,5,6,2),(97,7,6,2,7,1,2,3,4,5,6,7),(98,7,6,2,8,1,2,3,4,5,6,7),(99,7,6,2,9,1,2,3,4,5,6,7),(100,7,6,2,10,1,2,3,4,5,6,7),(101,7,6,2,11,1,2,3,4,5,6,7),(102,7,6,2,12,1,2,3,4,5,6,7),(103,7,6,2,13,1,2,3,4,5,6,7),(104,7,6,2,14,1,2,3,4,5,6,7),(105,7,6,2,15,1,2,3,4,5,6,7),(106,7,6,2,16,1,2,3,4,5,6,7),(107,7,6,2,17,1,2,3,4,5,6,7),(108,7,6,2,18,1,2,3,4,5,6,7),(109,7,7,1,1,1,2,4,54,0,0,2),(110,7,7,1,2,0,2,5,3,0,0,2),(111,7,7,1,3,1,2,6,3,0,0,2),(112,7,7,1,4,2,2,7,32,0,0,2),(113,7,7,1,5,2,3,7,22,0,0,3),(114,7,7,1,6,2,4,7,0,0,0,4),(115,7,7,1,7,0,0,0,0,0,0,0),(116,7,7,1,8,0,0,0,0,0,0,0),(117,7,7,1,9,0,0,0,0,0,0,0),(118,7,7,1,10,0,0,0,0,0,0,0),(119,7,7,1,11,0,0,0,0,0,0,0),(120,7,7,1,12,0,0,0,0,0,0,0),(121,7,7,1,13,0,0,0,0,0,0,0),(122,7,7,1,14,0,0,0,0,0,0,0),(123,7,7,1,15,0,0,0,0,0,0,0),(124,7,7,1,16,0,0,0,0,0,0,0),(125,7,7,1,17,0,0,0,0,0,0,0),(126,7,7,1,18,0,0,0,0,0,0,0),(127,7,7,2,1,0,9,0,0,0,0,9),(128,7,7,2,2,88,8,6,0,0,0,8),(129,7,7,2,3,0,9,8,0,0,0,9),(130,7,7,2,4,8,9,0,0,0,0,9),(131,7,7,2,5,9,8,0,0,0,0,8),(132,7,7,2,6,9,7,0,0,0,0,7),(133,7,7,2,7,0,0,0,0,0,0,0),(134,7,7,2,8,0,0,0,0,0,0,0),(135,7,7,2,9,0,0,0,0,0,0,0),(136,7,7,2,10,0,0,0,0,0,0,0),(137,7,7,2,11,0,0,0,0,0,0,0),(138,7,7,2,12,0,0,0,0,0,0,0),(139,7,7,2,13,0,0,0,0,0,0,0),(140,7,7,2,14,0,0,0,0,0,0,0),(141,7,7,2,15,0,0,0,0,0,0,0),(142,7,7,2,16,0,0,0,0,0,0,0),(143,7,7,2,17,0,0,0,0,0,0,0),(144,7,7,2,18,0,0,0,0,0,0,0),(145,7,8,1,1,4,45,3,3,0,0,45),(146,7,8,1,2,43,3,3,33,5,0,3),(147,7,8,1,3,3,0,3,0,0,0,0),(148,7,8,1,4,2,3,3,44,0,0,3),(149,7,8,1,5,2,3,3,4,0,0,3),(150,7,8,1,6,3,3,3,4,0,0,3),(151,7,8,1,7,0,0,0,0,0,0,0),(152,7,8,1,8,0,0,0,0,0,0,0),(153,7,8,1,9,0,0,0,0,0,0,0),(154,7,8,1,10,0,0,0,0,0,0,0),(155,7,8,1,11,0,0,0,0,0,0,0),(156,7,8,1,12,0,0,0,0,0,0,0),(157,7,8,1,13,0,5,2,0,6,4,0),(158,7,8,1,14,0,4,2,7,0,4,0),(159,7,8,1,15,0,4,0,77,6,0,0),(160,7,8,1,16,0,3,4,0,4,0,0),(161,7,8,1,17,0,0,0,7,44,0,0),(162,7,8,1,18,0,0,6,7,4,0,0),(163,7,8,2,1,0,0,0,0,0,0,0),(164,7,8,2,2,0,0,0,0,0,0,0),(165,7,8,2,3,0,0,0,0,0,0,0),(166,7,8,2,4,0,0,0,0,0,0,0),(167,7,8,2,5,0,0,0,0,0,0,0),(168,7,8,2,6,0,0,0,0,0,0,0),(169,7,8,2,7,0,0,0,0,0,0,0),(170,7,8,2,8,0,0,0,0,0,0,0),(171,7,8,2,9,0,0,0,0,0,0,0),(172,7,8,2,10,0,0,0,0,0,0,0),(173,7,8,2,11,0,0,0,0,0,0,0),(174,7,8,2,12,0,0,0,0,0,0,0),(175,7,8,2,13,0,0,0,0,0,0,0),(176,7,8,2,14,0,0,0,0,0,0,0),(177,7,8,2,15,0,0,0,0,0,0,0),(178,7,8,2,16,0,0,0,0,0,0,0),(179,7,8,2,17,0,0,0,0,0,0,0),(180,7,8,2,18,0,0,0,0,0,0,0),(181,7,9,1,1,0,0,0,0,0,0,0),(182,7,9,1,2,0,0,0,0,0,0,0),(183,7,9,1,3,0,0,0,0,0,0,0),(184,7,9,1,4,0,0,0,0,0,0,0),(185,7,9,1,5,0,0,0,0,0,0,0),(186,7,9,1,6,0,0,0,0,0,0,0),(187,7,9,1,7,0,0,0,0,0,0,0),(188,7,9,1,8,0,0,0,0,0,0,0),(189,7,9,1,9,0,0,0,0,0,0,0),(190,7,9,1,10,0,0,0,0,0,0,0),(191,7,9,1,11,0,0,0,0,0,0,0),(192,7,9,1,12,0,0,0,0,0,0,0),(193,7,9,1,13,0,0,0,0,0,0,0),(194,7,9,1,14,0,0,0,0,0,0,0),(195,7,9,1,15,0,0,0,0,0,0,0),(196,7,9,1,16,0,0,0,0,0,0,0),(197,7,9,1,17,0,0,0,0,0,0,0),(198,7,9,1,18,0,0,0,0,0,0,0),(199,7,9,2,1,0,0,0,0,0,0,0),(200,7,9,2,2,0,0,0,0,0,0,0),(201,7,9,2,3,0,0,0,0,0,0,0),(202,7,9,2,4,0,0,0,0,0,0,0),(203,7,9,2,5,0,0,0,0,0,0,0),(204,7,9,2,6,0,0,0,0,0,0,0),(205,7,9,2,7,1000,0,0,0,0,0,0),(206,7,9,2,8,0,0,0,0,0,0,0),(207,7,9,2,9,0,0,0,0,0,0,0),(208,7,9,2,10,0,0,0,0,0,0,0),(209,7,9,2,11,0,0,0,0,0,0,0),(210,7,9,2,12,0,0,0,0,0,0,0),(211,7,9,2,13,0,0,0,0,0,0,0),(212,7,9,2,14,0,0,0,0,0,0,0),(213,7,9,2,15,0,0,0,0,0,0,0),(214,7,9,2,16,0,0,0,0,0,0,0),(215,7,9,2,17,0,0,0,0,0,0,0),(216,7,9,2,18,0,0,0,0,0,0,0),(289,13,5,1,1,500,0,0,0,0,0,0),(290,13,5,1,2,0,0,0,0,0,0,0),(291,13,5,1,3,0,0,0,0,0,0,0),(292,13,5,1,4,0,0,0,0,0,0,0),(293,13,5,1,5,0,0,0,0,0,0,0),(294,13,5,1,6,0,0,0,0,0,0,0),(295,13,5,1,7,0,0,0,0,0,0,0),(296,13,5,1,8,0,0,0,0,0,0,0),(297,13,5,1,9,0,0,0,0,0,0,0),(298,13,5,1,10,0,0,0,0,0,0,0),(299,13,5,1,11,0,0,0,0,0,0,0),(300,13,5,1,12,0,0,0,0,0,0,0),(301,13,5,1,13,0,0,0,0,0,0,0),(302,13,5,1,14,0,0,0,0,0,0,0),(303,13,5,1,15,0,0,0,0,0,0,0),(304,13,5,1,16,0,0,0,0,0,0,0),(305,13,5,1,17,0,0,0,0,0,0,0),(306,13,5,1,18,0,0,0,0,0,0,0),(307,13,5,2,1,0,0,0,0,0,0,0),(308,13,5,2,2,0,0,0,0,0,0,0),(309,13,5,2,3,0,0,0,0,0,0,0),(310,13,5,2,4,0,0,0,0,0,0,0),(311,13,5,2,5,0,0,0,0,0,0,0),(312,13,5,2,6,0,0,0,0,0,0,0),(313,13,5,2,7,0,0,0,0,0,0,0),(314,13,5,2,8,1000,0,0,0,0,0,0),(315,13,5,2,9,0,0,0,0,0,0,0),(316,13,5,2,10,0,0,0,0,0,0,0),(317,13,5,2,11,0,0,0,0,0,0,0),(318,13,5,2,12,0,0,0,0,0,0,0),(319,13,5,2,13,0,0,0,0,0,0,0),(320,13,5,2,14,0,0,0,0,0,0,0),(321,13,5,2,15,0,0,0,0,0,0,0),(322,13,5,2,16,0,0,0,0,0,0,0),(323,13,5,2,17,0,0,0,0,0,0,0),(324,13,5,2,18,0,0,0,0,0,0,0);
+/*!40000 ALTER TABLE `total_visita_edad` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `usuario`
+--
+
+DROP TABLE IF EXISTS `usuario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `usuario` (
+  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(35) NOT NULL,
+  `clave` varchar(20) NOT NULL,
+  `pregunta_secreta` varchar(20) NOT NULL,
+  `nombre_usuario` varchar(20) NOT NULL,
+  `respuesta_secreta` varchar(20) NOT NULL,
+  `roles` varchar(15) NOT NULL,
+  PRIMARY KEY (`id_usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `usuario`
+--
+
+LOCK TABLES `usuario` WRITE;
+/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+INSERT INTO `usuario` VALUES (1,'dasd@sdsadas.com','','home','maria','','Estandar'),(3,'virginia','123','color_favorito','Virginia Lusinchi','rojo','Estandar'),(4,'root','root123','','Root','','Administrador'),(7,'rioyi_kaji@hotmail.c','123','animal_favorito','rioyi','pikachu','Estandar'),(9,'misato_katsuragui@hotmail.com','123','','Misato','dsadcasassss','Estandar');
+/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2016-07-19 11:58:11
