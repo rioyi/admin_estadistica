@@ -49,8 +49,6 @@
 
                                 <li><a href="../forms/form_docente.php"><i class="fa fa-angle-double-right"></i> Docente </a></li>
                                 <li><a href="../forms/form_usuario.php"><i class="fa fa-angle-double-right"></i> Usuario </a></li>
-                                <li><a href="../reporte/backup.php">
-                                    <i class="fa fa-angle-double-right"></i> Respaldo
-                                </a></li>
+                                <li><a href="../emergente/backup.php"><i class="fa fa-angle-double-right"></i> Respaldo</a></li>
                             </ul>
                         </li>

@@ -61,9 +61,9 @@
                 <a href="../../pages/forms/form_usuario.php">
                     <i class="fa fa-angle-double-right"></i> Usuario
                 </a>
-                <li><a href="../../pages/reporte/backup.php">
-                    <i class="fa fa-angle-double-right"></i> Respaldo
-                </a></li>
+                <li><a href="../../pages/emergente/backup.php">
+                <i class="fa fa-angle-double-right"></i> Respaldo
+            </a></li>
             </li>
         </ul>
     </li>
