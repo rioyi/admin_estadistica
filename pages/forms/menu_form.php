@@ -16,11 +16,11 @@
             <li>
                 <a href="../../pages/forms/form_verificar.php">
                     <i class="fa fa-angle-double-right"></i>
-                    Registro Estadistica del Mes 
+                    Registro Estadistica del Mes
                 </a>
-            </li>                                
+            </li>
         </ul>
-    </li>                        
+    </li>
     <!--Reportes -->
     <li class="treeview">
         <a href="#">
@@ -31,12 +31,12 @@
         <ul class="treeview-menu">
             <li>
                 <a href="../../pages/forms/form_piso.php">
-                    <i class="fa fa-angle-double-right"></i> Consulta por mes 
+                    <i class="fa fa-angle-double-right"></i> Consulta por mes
                 </a>
                 <a href="../../pages/forms/form_anual.php">
-                    <i class="fa fa-angle-double-right"></i> Consulta Anual 
+                    <i class="fa fa-angle-double-right"></i> Consulta Anual
                 </a>
-            </li>                             
+            </li>
         </ul>
     </li>
     <!--Micelaneo -->
@@ -49,18 +49,21 @@
         <ul class="treeview-menu">
             <li>
                 <a href="../../pages/forms/form_periodo.php">
-                    <i class="fa fa-angle-double-right"></i> Periodo Escolar 
+                    <i class="fa fa-angle-double-right"></i> Periodo Escolar
                 </a>
-            </li>                                
+            </li>
             <li>
                 <a href="../../pages/forms/form_docente.php">
-                    <i class="fa fa-angle-double-right"></i> Docente 
+                    <i class="fa fa-angle-double-right"></i> Docente
                 </a>
             </li>
             <li>
                 <a href="../../pages/forms/form_usuario.php">
-                    <i class="fa fa-angle-double-right"></i> Usuario 
+                    <i class="fa fa-angle-double-right"></i> Usuario
                 </a>
+                <li><a href="../../pages/reporte/backup.php">
+                    <i class="fa fa-angle-double-right"></i> Respaldo
+                </a></li>
             </li>
         </ul>
     </li>
