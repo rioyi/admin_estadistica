@@ -292,7 +292,7 @@ require ("../control/conexion_bd.php");
 
                                         <button class="btn btn-success"></i><b><span class="glyphicon glyphicon glyphicon-eye-open" aria-hidden="true"></span> VER</b></button>
                                         </a>
-                                            <a href="../emergente/borrar_periodo.php?id=<?php echo $renglon['id_periodo_escolar']?>" >
+                                            <a href="../emergente/borrar_mes.php?id=<?php echo $renglon['id_periodo_escolar']?>" >
                                                 <button class="btn btn-danger">
                                                     <b>
                                                         <span class="glyphicon glyphicon-trash" aria-hidden="true">

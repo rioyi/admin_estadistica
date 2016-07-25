@@ -1693,12 +1693,28 @@ $periodo_escolar = $_POST['periodo_escolar'];
 
 
 
-
+<a href="#top"><button type="button" class="btn btn-success"><b><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> IR A TOP</b></button></a>
 
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                             </form>
 
+
+<form action="../emergente/borrar_mes.php" method="post">
+    <p>
+                                       
+                                      <input type="hidden" name="mesb" value="<?=$arreglo_mes['id_mes'] ?>">
+
+                                      <input type="hidden" name="inicio" value="<?=$arreglo['inicio'] ?>">
+                                      <input type="hidden" name="fin" value="<?=$arreglo['fin'] ?>">
+                                      <input type="hidden" name="id_periodo" value="<?=$arreglo['id_periodo_escolar'] ?>">
+                                      
+
+
+
+
+<button type="submit" class="btn btn-danger"><b><span class=" glyphicon glyphicon-floppy-remove" aria-hidden="true"></span> Borrar</b></button>
+</form>               
                         </div><!-- /.col (left) -->
 
 
@@ -1706,7 +1722,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
 <br>   
-    <a href="#top"><button type="button" class="btn btn-success"><b><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> IR A TOP</b></button></a>
+    
 
                         </div><!-- /.col (right) -->
                     </div><!-- /.row -->
