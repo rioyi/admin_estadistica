@@ -151,9 +151,11 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                 <div class="box-header">
                                     <p><h3 class="box-title">Resultado de consulta del mes</h3></p>
                                 </div>
+                                <div id="#top" class="box-body">
+                                </div>
 
                             <!-- inicio de form -->
-                            <form action="../reporte/mensual.php" method="post" >
+                            <form action="../reporte/mensual.php" method="post" target="nventana" onsubmit="procesar(this.action);>
 
 
                                 <div class="box-body">
@@ -1664,12 +1666,14 @@ $periodo_escolar = $_POST['periodo_escolar'];
 
                             <div id="resumen">
 
+                            
 
                             </div>
 
                             <button type="submit" class="btn btn-primary">IMPRIMIR</button>
-
-
+    
+                       
+    
 
 
 
@@ -1701,7 +1705,8 @@ $periodo_escolar = $_POST['periodo_escolar'];
 
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
-
+<br>   
+    <a href="#top"><button type="button" class="btn btn-success"><b><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> IR A TOP</b></button></a>
 
                         </div><!-- /.col (right) -->
                     </div><!-- /.row -->

@@ -150,7 +150,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                 </div>
 
                             <!-- inicio de form -->
-                            <form action="../reporte/anual.php" method="POST" >
+                            <form action="../reporte/anual.php" method="POST" target="nventana" onsubmit="procesar(this.action);>
 
 
                                 <div id="#top" class="box-body">
