@@ -3,6 +3,7 @@
 #periodo escolar
 $inicio  = $_POST['inicio'];
 $fin  = $_POST['fin'];
+$mesc = $_POST['mes'];
 
 
 
@@ -262,7 +263,7 @@ $sum_poblacion_r_otros = $_POST['sum_poblacion_r_otros'];
 $tipo_a_cirugia_v = $_POST['tipo_a_cirugia_v'];
 $tipo_a_cirugia_h = $_POST['tipo_a_cirugia_h'];
 $sum_tipo_a_cirugia = $_POST['sum_tipo_a_cirugia'];
-#Traumatología 
+#Traumatología
 $tipo_a_trauma_v = $_POST['tipo_a_trauma_v'];
 $tipo_a_trauma_h = $_POST['tipo_a_trauma_h'];
 $sum_tipo_a_trauma = $_POST['sum_tipo_a_trauma'];
@@ -270,47 +271,47 @@ $sum_tipo_a_trauma = $_POST['sum_tipo_a_trauma'];
 $tipo_a_oto_v = $_POST['tipo_a_oto_v'];
 $tipo_a_oto_h = $_POST['tipo_a_oto_h'];
 $sum_tipo_a_oto = $_POST['sum_tipo_a_oto'];
-#Pediatría 
+#Pediatría
 $tipo_a_pedia_v = $_POST['tipo_a_pedia_v'];
 $tipo_a_pedia_h = $_POST['tipo_a_pedia_h'];
 $sum_tipo_a_pedia = $_POST['sum_tipo_a_pedia'];
-#Nerología 
+#Nerología
 $tipo_a_nero_v = $_POST['tipo_a_nero_v'];
 $tipo_a_nero_h = $_POST['tipo_a_nero_h'];
 $sum_tipo_a_nero = $_POST['sum_tipo_a_nero'];
-#Cadiología 
+#Cadiología
 $tipo_a_cardio_v = $_POST['tipo_a_cardio_v'];
 $tipo_a_cardio_h = $_POST['tipo_a_cardio_h'];
 $sum_tipo_a_cardio = $_POST['sum_tipo_a_cardio'];
-#Nefrología 
+#Nefrología
 $tipo_a_nefro_v = $_POST['tipo_a_nefro_v'];
 $tipo_a_nefro_h = $_POST['tipo_a_nefro_h'];
 $sum_tipo_a_nefro = $_POST['sum_tipo_a_nefro'];
-#Urología 
+#Urología
 $tipo_a_uro_v = $_POST['tipo_a_uro_v'];
 $tipo_a_uro_h = $_POST['tipo_a_uro_h'];
 $sum_tipo_a_uro = $_POST['sum_tipo_a_uro'];
-#Neumonología 
+#Neumonología
 $tipo_a_neumo_v = $_POST['tipo_a_neumo_v'];
 $resultado_h = $_POST['resultado_h'];
 $sum_tipo_a_neumo = $_POST['sum_tipo_a_neumo'];
-#Hermatología 
+#Hermatología
 $tipo_a_herma_v = $_POST['tipo_a_herma_v'];
 $tipo_a_herma_h = $_POST['tipo_a_herma_h'];
 $sum_tipo_a_herma = $_POST['sum_tipo_a_herma'];
-#Oncología 
+#Oncología
 $tipo_a_onco_v = $_POST['tipo_a_onco_v'];
 $tipo_a_onco_h = $_POST['tipo_a_onco_h'];
 $sum_tipo_a_onco = $_POST['sum_tipo_a_onco'];
-#Dermatología 
+#Dermatología
 $tipo_a_derma_v = $_POST['tipo_a_derma_v'];
 $tipo_a_derma_h = $_POST['tipo_a_derma_h'];
 $sum_tipo_a_derma = $_POST['sum_tipo_a_derma'];
-#Gastrología 
+#Gastrología
 $tipo_a_gastro_v = $_POST['tipo_a_gastro_v'];
 $tipo_a_gastro_h = $_POST['tipo_a_gastro_h'];
 $sum_tipo_a_gastro = $_POST['sum_tipo_a_gastro'];
-#Infectología 
+#Infectología
 $tipo_a_infecto_v = $_POST['tipo_a_infecto_v'];
 $tipo_a_infecto_h = $_POST['tipo_a_infecto_h'];
 $sum_tipo_a_infecto = $_POST['sum_tipo_a_infecto'];
@@ -319,23 +320,23 @@ $sum_tipo_a_infecto = $_POST['sum_tipo_a_infecto'];
 
 
 
-#piso 1 
+#piso 1
 $asistencia_p1_v = $_POST['asistencia_p1_v'];
 $asistencia_p1_h = $_POST['asistencia_p1_h'];
 $asistencia_p1 = $_POST['asistencia_p1'];
-#Piso 2 
+#Piso 2
 $asistencia_p2_v = $_POST['asistencia_p2_v'];
 $asistencia_p2_h = $_POST['asistencia_p2_h'];
 $asistencia_p2 = $_POST['asistencia_p2'];
-#piso 3 
+#piso 3
 $asistencia_p3_v = $_POST['asistencia_p3_v'];
 $asistencia_p3_h = $_POST['asistencia_p3_h'];
 $asistencia_p3 = $_POST['asistencia_p3'];
-#Piso 4 
+#Piso 4
 $asistencia_p4_v = $_POST['asistencia_p4_v'];
 $asistencia_p4_h = $_POST['asistencia_p4_h'];
 $asistencia_p4 = $_POST['asistencia_p4'];
-#Piso 5 
+#Piso 5
 $asistencia_p5_v = $_POST['asistencia_p5_v'];
 $asistencia_p5_h = $_POST['asistencia_p5_h'];
 $asistencia_p5 = $_POST['asistencia_p5'];
@@ -420,7 +421,7 @@ $pdf->Ln(2);
 $pdf->Cell(0,4,'    ',0,0,'L');//
 $pdf->Cell(-60); //Mueve el cursor a la posición -60 de DER a IZQ "Valor 0 a la derecha"
 $pdf->Cell(0,4,'CODIGO     '.$suscrito_puesto,0,1,'L');
-$pdf->Cell(0,4,'MES: TODO EL PERIODO ESCOLAR     ',0,0,'L');
+$pdf->Cell(0,4,'MES: '.$mesc,0,0,'L');
 $pdf->Cell(-60); //Mueve el cursor a la posición -60 de DER a IZQ "Valor 0 a la derecha"
 $pdf->Cell(0,4,'CIUDAD     '.$solicita_puesto,0,1,'L');
 $pdf->Cell(0,4,'PERIODO ESCOLAR: '.$inicio." - ".$fin,0,0,'L');
