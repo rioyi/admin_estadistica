@@ -57,8 +57,8 @@ $periodo_escolar = $_POST['periodo_escolar'];
                 </a>
                 <div class="navbar-right">
                     <ul class="nav navbar-nav">
-                                                
-                        
+
+
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -71,10 +71,10 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                     <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                                     <p>
                                         Nombre Usuario - Maestra Piso 1
-                                        
+
                                     </p>
                                 </li>
-                                
+
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
@@ -101,7 +101,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                             <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
-                            <p>Hola, Usuario</p>                            
+                            <p>Hola, Usuario</p>
                         </div>
                     </div>
                     <!-- formulario del Buscador -->
@@ -115,11 +115,11 @@ $periodo_escolar = $_POST['periodo_escolar'];
                     </form>
                     <!-- /.formulario del buscado -->
                     <!-- sidebar del menu: el estilo puedeo ser encontrado en sidebar.less -->
-<?php 
+<?php
     include("menu_reporte.php")
 ?>
 
-                     
+
                     </ul>
                 </section>
                 <!-- /.sidebar -->
@@ -145,15 +145,17 @@ $periodo_escolar = $_POST['periodo_escolar'];
                     <div class="row">
                      <section class="content">
                     <div class="row">
-                        
-                        <div class="col-md-12">                            
+
+                        <div class="col-md-12">
                             <div class="box box-info">
                                 <div class="box-header">
-                                    <p><h3 class="box-title">Resultado de consulta del mes</h3></p>       
+                                    <p><h3 class="box-title">Resultado de consulta del mes</h3></p>
                                 </div>
-                                
+                                <div id="#top" class="box-body">
+                                </div>
+
                             <!-- inicio de form -->
-                            <form action="../reporte/mensual.php" method="post" >
+                            <form action="../reporte/mensual.php" method="post" target="nventana" onsubmit="procesar(this.action);>
 
 
                                 <div class="box-body">
@@ -161,11 +163,11 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                         $sql = "SELECT * FROM periodo_escolar WHERE id_periodo_escolar = '$periodo_escolar'";
                                         $query = mysql_query($sql,$link);
                                         $arreglo = mysql_fetch_array($query);
-                                   ?>                                    
+                                   ?>
                                     <p>
                                         <h3>PERIODO ESCOLAR <span class="label label-info"><?php echo $arreglo['inicio']; echo " - "; echo $arreglo['fin'];  ?></span></h3>
                                       </p>
-                                      
+
 
                                       <?php
                                         $sql = "SELECT * FROM mes WHERE id_mes = '$mes'";
@@ -175,20 +177,22 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                       <p>
                                         <h3>MES <span class="label label-info"><?php  echo $arreglo_mes['mes']; ?></span></h3>
                                       </p>
-
+                                      <input type="hidden" name="mes" value="<?=$arreglo_mes['mes'] ?>">
                                       <input type="hidden" name="inicio" value="<?=$arreglo['inicio'] ?>">
                                       <input type="hidden" name="fin" value="<?=$arreglo['fin'] ?>">
-                                      <input type="hidden" name="fin" value="<?=$arreglo['mes'] ?>">
 
-	
-                                   
+
+
+
+
+
 
                                     <!-- Apellido -->
-                                    
+
                                 <div class="page-header">
                                   <h1>TOTAL POR EDAD <small>Niños, niñas y adolencentes vistados en las habitaciones, agrupados por edad</small></h1>
                                 </div>
-                                    
+
                                 <!-- Inicio Tabale Por edad -->
                                 <div class="box-body table-responsive">
                                     <table id="example2" class="table table-bordered table-striped">
@@ -197,7 +201,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <th>EDAD</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
-                                                <th>TOTAL</th>                                                
+                                                <th>TOTAL</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -215,7 +219,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_cero = $edad_cero_v + $edad_cero_h; echo "$sum_edad_cero";  ?>
                                                     <input type="hidden" name="sum_edad_cero" value="<?=$sum_edad_cero ?>">
-                                                </td>                                                
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>1 Año</td>
@@ -231,7 +235,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_uno = $edad_uno_v + $edad_uno_h; echo "$sum_edad_uno";  ?>
                                                     <input type="hidden" name="sum_edad_uno" value="<?=$sum_edad_uno ?>">
-                                                </td>                                                
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>2 Años</td>
@@ -247,7 +251,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_dos = $edad_dos_v + $edad_dos_h; echo "$sum_edad_dos";  ?>
                                                     <input type="hidden" name="sum_edad_dos" value="<?=$sum_edad_dos ?>">
-                                                </td>                                                
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>3 Años</td>
@@ -263,7 +267,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_tres = $edad_tres_v + $edad_tres_h; echo "$sum_edad_tres";  ?>
                                                     <input type="hidden" name="sum_edad_tres" value="<?=$sum_edad_tres ?>">
-                                                </td>                                                
+                                                </td>
                                             </tr>
 
                                             <tr>
@@ -280,7 +284,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_cuatro = $edad_cuatro_v + $edad_cuatro_h; echo "$sum_edad_cuatro";  ?>
                                                     <input type="hidden" name="sum_edad_cuatro" value="<?=$sum_edad_cuatro ?>">
-                                                </td>                                                
+                                                </td>
                                             </tr>
 
                                             <tr>
@@ -297,7 +301,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_cinco = $edad_cinco_v + $edad_cinco_h; echo "$sum_edad_cinco";  ?>
                                                     <input type="hidden" name="sum_edad_cinco" value="<?=$sum_edad_cinco ?>">
-                                                </td>                                                
+                                                </td>
                                             </tr>
 
                                             <tr>
@@ -314,7 +318,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_seis = $edad_seis_v + $edad_seis_h; echo "$sum_edad_seis";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_edad_seis" value="<?=$sum_edad_seis ?>">                                             
+                                                <input type="hidden" name="sum_edad_seis" value="<?=$sum_edad_seis ?>">
                                             </tr>
 
                                             <tr>
@@ -331,7 +335,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_siete = $edad_siete_v + $edad_siete_h; echo "$sum_edad_siete";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_edad_siete" value="<?=$sum_edad_siete ?>">                                               
+                                                <input type="hidden" name="sum_edad_siete" value="<?=$sum_edad_siete ?>">
                                             </tr>
 
                                             <tr>
@@ -348,7 +352,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_ocho = $edad_ocho_v + $edad_ocho_h; echo "$sum_edad_ocho";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_edad_ocho" value="<?=$sum_edad_ocho ?>">                                              
+                                                <input type="hidden" name="sum_edad_ocho" value="<?=$sum_edad_ocho ?>">
                                             </tr>
 
                                             <tr>
@@ -365,7 +369,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_nueve = $edad_nueve_v + $edad_nueve_h; echo "$sum_edad_nueve";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_edad_nueve" value="<?=$sum_edad_nueve ?>">                                               
+                                                <input type="hidden" name="sum_edad_nueve" value="<?=$sum_edad_nueve ?>">
                                             </tr>
 
                                             <tr>
@@ -382,7 +386,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_diez = $edad_diez_v + $edad_diez_h; echo "$sum_edad_diez";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_edad_diez" value="<?=$sum_edad_diez ?>">                                              
+                                                <input type="hidden" name="sum_edad_diez" value="<?=$sum_edad_diez ?>">
                                             </tr>
 
                                             <tr>
@@ -399,7 +403,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_once = $edad_once_v + $edad_once_h; echo "$sum_edad_once";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_edad_once" value="<?=$sum_edad_once ?>">                                                
+                                                <input type="hidden" name="sum_edad_once" value="<?=$sum_edad_once ?>">
                                             </tr>
 
                                             <tr>
@@ -416,7 +420,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                    <?php $sum_edad_doce = $edad_doce_v + $edad_doce_h; echo "$sum_edad_doce";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_edad_doce" value="<?=$sum_edad_doce ?>">                                              
+                                                <input type="hidden" name="sum_edad_doce" value="<?=$sum_edad_doce ?>">
                                             </tr>
 
                                             <tr>
@@ -433,7 +437,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_trece = $edad_trece_v + $edad_trece_h; echo "$sum_edad_trece";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_edad_trece" value="<?=$sum_edad_trece ?>">                                              
+                                                <input type="hidden" name="sum_edad_trece" value="<?=$sum_edad_trece ?>">
                                             </tr>
 
                                             <tr>
@@ -450,7 +454,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_catorce = $edad_catorce_v + $edad_catorce_h; echo "$sum_edad_catorce";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_edad_catorce" value="<?=$sum_edad_catorce ?>">                                               
+                                                <input type="hidden" name="sum_edad_catorce" value="<?=$sum_edad_catorce ?>">
                                             </tr>
 
                                             <tr>
@@ -467,7 +471,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_quince = $edad_quince_v + $edad_quince_h; echo "$sum_edad_quince";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_edad_quince" value="<?=$sum_edad_quince ?>">                                              
+                                                <input type="hidden" name="sum_edad_quince" value="<?=$sum_edad_quince ?>">
                                             </tr>
 
                                             <tr>
@@ -484,7 +488,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_dieciseis = $edad_dieciseis_v + $edad_dieciseis_h; echo "$sum_edad_dieciseis";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_edad_dieciseis" value="<?=$sum_edad_dieciseis ?>">                                              
+                                                <input type="hidden" name="sum_edad_dieciseis" value="<?=$sum_edad_dieciseis ?>">
                                             </tr>
 
                                             <tr>
@@ -501,7 +505,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_edad_diecisiete = $edad_diecisiete_v + $edad_diecisiete_h; echo "$sum_edad_diecisiete";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_edad_diecisiete" value="<?=$sum_edad_diecisiete ?>">                                             
+                                                <input type="hidden" name="sum_edad_diecisiete" value="<?=$sum_edad_diecisiete ?>">
                                             </tr>
                                             </table>
                                             <h3>TOTAL VARONES <span class="label label-info  "><?php echo $total_edad_v = $edad_cero_v+$edad_uno_v+$edad_dos_v+$edad_tres_v+$edad_cuatro_v+$edad_cinco_v+$edad_seis_v+$edad_siete_v+$edad_ocho_v+$edad_nueve_v+$edad_diez_v+$edad_once_v+$edad_doce_v+$edad_trece_v+$edad_catorce_v+$edad_quince_v+$edad_dieciseis_v+$edad_diecisiete_v;  ?> </span></h3>
@@ -511,15 +515,15 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                     <input type="hidden" name="total_edad_v" value="<?=$total_edad_v ?>">
                                     <input type="hidden" name="total_edad_h" value="<?=$total_edad_h ?>">
                                     <input type="hidden" name="total_edad" value="<?=$total_edad_h+$total_edad_v; ?>">
-				
-                                          
+
+
 
                                     <!-- Inicio tabla escolaridad  -->
                                     <div class="page-header">
-                                        <h1>TOTAL ESCOLARIDAD 
+                                        <h1>TOTAL ESCOLARIDAD
                                             <small>Agrupados por grado de estudio</small>
                                         </h1>
-                                    </div>                        
+                                    </div>
                                 <div class="box-body table-responsive">
                                     <table id="example2" class="table table-bordered table-striped">
                                         <thead>
@@ -527,7 +531,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <th>ESCOLARIDAD</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
-                                                <th>TOTAL</th>                                                
+                                                <th>TOTAL</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -545,7 +549,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_maternal = $maternal_v + $maternal_h; echo "$sum_maternal";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_maternal" value="<?=$sum_maternal ?>">                                               
+                                                <input type="hidden" name="sum_maternal" value="<?=$sum_maternal ?>">
                                             </tr>
                                             <tr>
                                                 <td>I NIVEL</td>
@@ -561,7 +565,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_nivel_uno = $nivel_uno_v + $nivel_uno_h; echo "$sum_nivel_uno";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_nivel_uno" value="<?=$sum_nivel_uno ?>">                                               
+                                                <input type="hidden" name="sum_nivel_uno" value="<?=$sum_nivel_uno ?>">
                                             </tr>
                                             <tr>
                                                 <td>II NIVEL</td>
@@ -577,7 +581,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_nivel_dos = $nivel_dos_v + $nivel_dos_h; echo "$sum_nivel_dos";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_nivel_dos" value="<?=$sum_nivel_dos ?>">                                              
+                                                <input type="hidden" name="sum_nivel_dos" value="<?=$sum_nivel_dos ?>">
                                             </tr>
                                             <tr>
                                                 <td>III NIVEL</td>
@@ -593,7 +597,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_nivel_tres = $nivel_tres_v + $nivel_tres_h; echo "$sum_nivel_tres";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_nivel_tres" value="<?=$sum_nivel_tres ?>">                                             
+                                                <input type="hidden" name="sum_nivel_tres" value="<?=$sum_nivel_tres ?>">
                                             </tr>
 
                                             <tr>
@@ -610,7 +614,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_grado_uno = $grado_uno_v + $grado_uno_h; echo "$sum_grado_uno";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_grado_uno" value="<?=$sum_grado_uno ?>">                                              
+                                                <input type="hidden" name="sum_grado_uno" value="<?=$sum_grado_uno ?>">
                                             </tr>
 
                                             <tr>
@@ -627,7 +631,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_grado_dos = $grado_dos_v + $grado_dos_h; echo "$sum_grado_dos";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_grado_dos" value="<?=$sum_grado_dos ?>">                                              
+                                                <input type="hidden" name="sum_grado_dos" value="<?=$sum_grado_dos ?>">
                                             </tr>
 
                                             <tr>
@@ -644,7 +648,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_grado_tres = $grado_tres_v + $grado_tres_h; echo "$sum_grado_tres";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_grado_tres" value="<?=$sum_grado_tres ?>">                                               
+                                                <input type="hidden" name="sum_grado_tres" value="<?=$sum_grado_tres ?>">
                                             </tr>
 
                                             <tr>
@@ -661,7 +665,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_grado_cuatro = $grado_cuatro_v + $grado_cuatro_h; echo "$sum_grado_cuatro";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_grado_cuatro" value="<?=$sum_grado_cuatro ?>">                                              
+                                                <input type="hidden" name="sum_grado_cuatro" value="<?=$sum_grado_cuatro ?>">
                                             </tr>
 
                                             <tr>
@@ -678,7 +682,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_grado_cinco = $grado_cinco_v + $grado_cinco_h; echo "$sum_grado_cinco";  ?>
                                                 </td>
-                                                 <input type="hidden" name="sum_grado_cinco" value="<?=$sum_grado_cinco ?>">                                              
+                                                 <input type="hidden" name="sum_grado_cinco" value="<?=$sum_grado_cinco ?>">
                                             </tr>
 
                                             <tr>
@@ -695,7 +699,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                    <?php $sum_grado_sies = $grado_seis_v + $grado_seis_h; echo "$sum_grado_sies";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_grado_sies" value="<?=$sum_grado_sies ?>">                                               
+                                                <input type="hidden" name="sum_grado_sies" value="<?=$sum_grado_sies ?>">
                                             </tr>
 
                                             <tr>
@@ -712,7 +716,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                    <?php $sum_grado_siente = $grado_siete_v + $grado_siete_h; echo "$sum_grado_siente";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_grado_siente" value="<?=$sum_grado_siente ?>">                                            
+                                                <input type="hidden" name="sum_grado_siente" value="<?=$sum_grado_siente ?>">
                                             </tr>
 
                                             <tr>
@@ -729,7 +733,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_grado_ocho = $grado_ocho_v + $grado_ocho_h; echo "$sum_grado_ocho";  ?>
                                                 </td>
-                                                 <input type="hidden" name="sum_grado_ocho" value="<?=$sum_grado_ocho ?>">                                               
+                                                 <input type="hidden" name="sum_grado_ocho" value="<?=$sum_grado_ocho ?>">
                                             </tr>
 
                                             <tr>
@@ -746,7 +750,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_grado_nueve = $grado_nueve_v + $grado_nueve_h; echo "$sum_grado_nueve";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_grado_nueve" value="<?=$sum_grado_nueve ?>">                                               
+                                                <input type="hidden" name="sum_grado_nueve" value="<?=$sum_grado_nueve ?>">
                                             </tr>
 
                                             <tr>
@@ -763,7 +767,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_grado_diez = $grado_diez_v + $grado_diez_h; echo "$sum_grado_diez";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_grado_diez" value="<?=$sum_grado_diez ?>">                                               
+                                                <input type="hidden" name="sum_grado_diez" value="<?=$sum_grado_diez ?>">
                                             </tr>
 
                                             <tr>
@@ -780,7 +784,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_grado_once = $grado_once_v + $grado_once_h; echo "$sum_grado_once";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_grado_once" value="<?=$sum_grado_once ?>">                                               
+                                                <input type="hidden" name="sum_grado_once" value="<?=$sum_grado_once ?>">
                                             </tr>
 
                                             <tr>
@@ -797,7 +801,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_grado_sin = $grado_sin_v + $grado_sin_h; echo "$sum_grado_sin";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_grado_sin" value="<?=$sum_grado_sin ?>">                                               
+                                                <input type="hidden" name="sum_grado_sin" value="<?=$sum_grado_sin ?>">
                                             </tr>
 
                                             <tr>
@@ -814,7 +818,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_grado_especial = $grado_especial_v + $grado_especial_h; echo "$sum_grado_especial";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_grado_especial" value="<?=$sum_grado_especial ?>">                                              
+                                                <input type="hidden" name="sum_grado_especial" value="<?=$sum_grado_especial ?>">
                                             </tr>
 
                                             <tr>
@@ -831,15 +835,15 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_grado_doce = $grado_doce_v + $grado_doce_h; echo "$sum_grado_doce";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_grado_doce" value="<?=$sum_grado_doce ?>">                                               
-                                            </tr>                                  
+                                                <input type="hidden" name="sum_grado_doce" value="<?=$sum_grado_doce ?>">
+                                            </tr>
                                         </tbody>
                                         <tfoot>
                                             <tr>
                                                 <th>ESCOLARIDAD</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
-                                                <th>TOTAL</th>                                                
+                                                <th>TOTAL</th>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -853,10 +857,10 @@ $periodo_escolar = $_POST['periodo_escolar'];
 
                                     <!-- Inicio tabla tiempo de permanencia  -->
                                     <div class="page-header">
-                                        <h1>TOTAL TIEMPO DE PERMANENCIA 
+                                        <h1>TOTAL TIEMPO DE PERMANENCIA
                                             <small>Agrupados por días y meses</small>
                                         </h1>
-                                    </div>                        
+                                    </div>
                                 <div class="box-body table-responsive">
                                     <table id="example2" class="table table-bordered table-striped">
                                         <thead>
@@ -864,7 +868,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <th>TIEMPO DE PERMANENCIA</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
-                                                <th>TOTAL</th>                                                
+                                                <th>TOTAL</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -882,7 +886,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_permanencia_cinco = $permanencia_cinco_v + $permanencia_cinco_h; echo "$sum_permanencia_cinco";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_permanencia_cinco" value="<?=$sum_permanencia_cinco ?>">                                               
+                                                <input type="hidden" name="sum_permanencia_cinco" value="<?=$sum_permanencia_cinco ?>">
                                             </tr>
                                             <tr>
                                                 <td>6 - 10 Días</td>
@@ -898,7 +902,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_permanencia_diez = $permanencia_diez_v + $permanencia_diez_h; echo "$sum_permanencia_diez";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_permanencia_diez" value="<?=$sum_permanencia_diez ?>">                                                
+                                                <input type="hidden" name="sum_permanencia_diez" value="<?=$sum_permanencia_diez ?>">
                                             </tr>
                                             <tr>
                                                 <td>11 - 15 Días</td>
@@ -914,7 +918,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_permanencia_quice = $permanencia_quince_v + $permanencia_quice_h; echo "$sum_permanencia_quice";  ?>
                                                 </td>
-                                                 <input type="hidden" name="sum_permanencia_quice" value="<?=$sum_permanencia_quice ?>">                                               
+                                                 <input type="hidden" name="sum_permanencia_quice" value="<?=$sum_permanencia_quice ?>">
                                             </tr>
                                             <tr>
                                                 <td>16 - 30 Días</td>
@@ -930,7 +934,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_permanencia_trainta = $permanencia_trainta_v + $permanencia_trainta_h; echo "$sum_permanencia_trainta";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_permanencia_trainta" value="<?=$sum_permanencia_trainta ?>">                                              
+                                                <input type="hidden" name="sum_permanencia_trainta" value="<?=$sum_permanencia_trainta ?>">
                                             </tr>
 
                                             <tr>
@@ -947,7 +951,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                    <?php $sum_permanencia_dosmeses = $permanencia_dosmeses_v + $permanencia_dosmeses_h; echo "$sum_permanencia_dosmeses";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_permanencia_dosmeses" value="<?=$sum_permanencia_dosmeses ?>">                                              
+                                                <input type="hidden" name="sum_permanencia_dosmeses" value="<?=$sum_permanencia_dosmeses ?>">
                                             </tr>
 
                                             <tr>
@@ -964,7 +968,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_permanencia_tresmeses = $permanencia_tresmeses_v + $permanencia_tresmeses_h; echo "$sum_permanencia_tresmeses";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_permanencia_tresmeses" value="<?=$sum_permanencia_tresmeses ?>">                                                
+                                                <input type="hidden" name="sum_permanencia_tresmeses" value="<?=$sum_permanencia_tresmeses ?>">
                                             </tr>
 
                                             <tr>
@@ -981,15 +985,15 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_permanencia_masmeses = $permanencia_masmeses_v + $permanencia_masmeses_h; echo "$sum_permanencia_masmeses";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_permanencia_masmeses" value="<?=$sum_permanencia_masmeses ?>">                                              
-                                            </tr>                                                      
+                                                <input type="hidden" name="sum_permanencia_masmeses" value="<?=$sum_permanencia_masmeses ?>">
+                                            </tr>
                                         </tbody>
                                         <tfoot>
                                             <tr>
                                                 <th>TIEMPO DE PERMANENCIA</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
-                                                <th>TOTAL</th>                                                
+                                                <th>TOTAL</th>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -997,16 +1001,16 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                     <h3>TOTAL HEMBRAS <span class="label label-danger  "><?php echo $total_permanencia_h = $permanencia_cinco_h+$permanencia_diez_h+$permanencia_quince_h+$permanencia_trainta_h+$permanencia_dosmeses_h+$permanencia_tresmeses_h+$permanencia_masmeses_h;  ?> </span>
                                     </h3>
                                     <h3>TOTAL <span class="label label-success  "><?php echo $total_permanencia_h+$total_permanencia_v;  ?> </span></h3>
-		
+
                                     <!-- / Tiempo de permanencia  -->
 
 
                                     <!-- Inicio tabla Poblacion Atendida  -->
                                     <div class="page-header">
-                                        <h1>TOTAL POBLACION ATENDIDA 
+                                        <h1>TOTAL POBLACION ATENDIDA
                                             <small>Agrupados por Aulas y Habitación</small>
                                         </h1>
-                                    </div>                        
+                                    </div>
                                 <div class="box-body table-responsive">
                                     <table id="example2" class="table table-bordered table-striped">
                                         <thead>
@@ -1014,7 +1018,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <th>LUGAR DE ATENCIÓN</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
-                                                <th>TOTAL</th>                                                
+                                                <th>TOTAL</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -1032,7 +1036,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_poblacion_a_aula = $poblacion_a_aula_v + $poblacion_a_aula_h; echo "$sum_poblacion_a_aula";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_poblacion_a_aula" value="<?=$sum_poblacion_a_aula ?>">                                              
+                                                <input type="hidden" name="sum_poblacion_a_aula" value="<?=$sum_poblacion_a_aula ?>">
                                             </tr>
                                             <tr>
                                                 <td>En Habitación</td>
@@ -1045,15 +1049,15 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 </td> <input type="hidden" name="poblacion_a_habitacion_h" value="<?=$poblacion_a_habitacion_h ?>">
                                                 <td>
                                                     <?php $sum_poblacion_a_habitacion = $poblacion_a_habitacion_v + $poblacion_a_habitacion_h; echo "$sum_poblacion_a_habitacion";  ?>
-                                                </td> <input type="hidden" name="sum_poblacion_a_habitacion" value="<?=$sum_poblacion_a_habitacion ?>">                                               
-                                            </tr>                                                                                    
+                                                </td> <input type="hidden" name="sum_poblacion_a_habitacion" value="<?=$sum_poblacion_a_habitacion ?>">
+                                            </tr>
                                         </tbody>
                                         <tfoot>
                                             <tr>
                                                 <th>TIEMPO DE PERMANENCIA</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
-                                                <th>TOTAL</th>                                                
+                                                <th>TOTAL</th>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -1067,10 +1071,10 @@ $periodo_escolar = $_POST['periodo_escolar'];
 
                                 <!-- Inicio tabla Poblacion Referida  -->
                                     <div class="page-header">
-                                        <h1>TOTAL POBLACION REFERIDA 
+                                        <h1>TOTAL POBLACION REFERIDA
                                             <small>Agrupados por Servicios</small>
                                         </h1>
-                                    </div>                        
+                                    </div>
                                 <div class="box-body table-responsive">
                                     <table id="example2" class="table table-bordered table-striped">
                                         <thead>
@@ -1078,7 +1082,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <th>SERVICIO DE REFERENCIA</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
-                                                <th>TOTAL</th>                                                
+                                                <th>TOTAL</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -1096,7 +1100,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_poblacion_r_defen = $poblacion_r_defen_v + $poblacion_r_defen_h; echo "$sum_poblacion_r_defen";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_poblacion_r_defen" value="<?=$sum_poblacion_r_defen ?>">                                              
+                                                <input type="hidden" name="sum_poblacion_r_defen" value="<?=$sum_poblacion_r_defen ?>">
                                             </tr>
                                             <tr>
                                                 <td>CDI</td>
@@ -1112,7 +1116,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_poblacion_r_cdi = $poblacion_r_cdi_v + $poblacion_r_cdi_h; echo "$sum_poblacion_r_cdi";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_poblacion_r_cdi" value="<?=$sum_poblacion_r_cdi ?>">                                              
+                                                <input type="hidden" name="sum_poblacion_r_cdi" value="<?=$sum_poblacion_r_cdi ?>">
                                             </tr>
                                             <tr>
                                                 <td>Seguro Social</td>
@@ -1125,7 +1129,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 </td><input type="hidden" name="poblacion_r_social_h" value="<?=$poblacion_r_social_h ?>">
                                                 <td>
                                                     <?php $sum_poblacion_r_social = $poblacion_r_social_v + $poblacion_r_social_h; echo "$sum_poblacion_r_social";  ?>
-                                                </td><input type="hidden" name="sum_poblacion_r_social" value="<?=$sum_poblacion_r_social ?>">                                               
+                                                </td><input type="hidden" name="sum_poblacion_r_social" value="<?=$sum_poblacion_r_social ?>">
                                             </tr>
                                             <tr>
                                                 <td>Psicologia</td>
@@ -1141,7 +1145,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_poblacion_r_psicologia = $poblacion_r_psicologia_v + $poblacion_r_psicologia_h; echo "$sum_poblacion_r_psicologia";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_poblacion_r_psicologia" value="<?=$sum_poblacion_r_psicologia ?>">                                              
+                                                <input type="hidden" name="sum_poblacion_r_psicologia" value="<?=$sum_poblacion_r_psicologia ?>">
                                             </tr>
                                             <tr>
                                                 <td>CAIPA</td>
@@ -1157,7 +1161,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_poblacion_r_caipa = $poblacion_r_caipa_v + $poblacion_r_caipa_h; echo "$sum_poblacion_r_caipa";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_poblacion_r_caipa" value="<?=$sum_poblacion_r_caipa ?>">                                              
+                                                <input type="hidden" name="sum_poblacion_r_caipa" value="<?=$sum_poblacion_r_caipa ?>">
                                             </tr>
                                             <tr>
                                                 <td>Integración</td>
@@ -1173,7 +1177,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_poblacion_r_integracion = $poblacion_r_integracion_v + $poblacion_r_integracion_h; echo "$sum_poblacion_r_integracion";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_poblacion_r_integracion" value="<?=$sum_poblacion_r_integracion ?>">                                              
+                                                <input type="hidden" name="sum_poblacion_r_integracion" value="<?=$sum_poblacion_r_integracion ?>">
                                             </tr>
 
                                             <tr>
@@ -1190,8 +1194,8 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_poblacion_r_integral = $poblacion_r_integral_v + $poblacion_r_integral_h; echo "$sum_poblacion_r_integral";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_poblacion_r_integral" value="<?=$sum_poblacion_r_integral ?>">                                               
-                                            </tr>  
+                                                <input type="hidden" name="sum_poblacion_r_integral" value="<?=$sum_poblacion_r_integral ?>">
+                                            </tr>
 
                                             <tr>
                                                 <td>CENDA</td>
@@ -1207,8 +1211,8 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_poblacion_r_cenda = $poblacion_r_cenda_v + $poblacion_r_cenda_h; echo "$sum_poblacion_r_cenda";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_poblacion_r_cenda" value="<?=$sum_poblacion_r_cenda ?>">                                              
-                                            </tr>  
+                                                <input type="hidden" name="sum_poblacion_r_cenda" value="<?=$sum_poblacion_r_cenda ?>">
+                                            </tr>
 
                                             <tr>
                                                 <td>UPE</td>
@@ -1224,7 +1228,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                    <?php $sum_poblacion_r_upe = $poblacion_r_upe_v + $poblacion_r_upe_h; echo "$sum_poblacion_r_upe";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_poblacion_r_upe" value="<?=$sum_poblacion_r_upe ?>">                                               
+                                                <input type="hidden" name="sum_poblacion_r_upe" value="<?=$sum_poblacion_r_upe ?>">
                                             </tr>
 
                                             <tr>
@@ -1241,10 +1245,10 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_poblacion_r_arti = $poblacion_r_arti_v + $poblacion_r_arti_h; echo "$sum_poblacion_r_arti";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_poblacion_r_arti" value="<?=$sum_poblacion_r_arti ?>">                                               
+                                                <input type="hidden" name="sum_poblacion_r_arti" value="<?=$sum_poblacion_r_arti ?>">
                                             </tr>
 
-                                           
+
 
                                             <tr>
                                                 <td>Otros</td>
@@ -1260,15 +1264,15 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                    <?php $sum_poblacion_r_otros = $poblacion_r_otros_v + $poblacion_r_otros_h; echo "$sum_poblacion_r_otros";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_poblacion_r_otros" value="<?=$sum_poblacion_r_otros ?>">                                               
-                                            </tr>                                                                                      
+                                                <input type="hidden" name="sum_poblacion_r_otros" value="<?=$sum_poblacion_r_otros ?>">
+                                            </tr>
                                         </tbody>
                                         <tfoot>
                                             <tr>
                                                 <th>SERVICIO DE REFERENCIA</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
-                                                <th>TOTAL</th>                                                
+                                                <th>TOTAL</th>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -1282,10 +1286,10 @@ $periodo_escolar = $_POST['periodo_escolar'];
 
                                 <!-- Inicio Tabla tipo de atención  -->
                                     <div class="page-header">
-                                        <h1>TOTAL TIPO DE ATENCIÓN 
+                                        <h1>TOTAL TIPO DE ATENCIÓN
                                             <small>Agrupados por Servicios</small>
                                         </h1>
-                                    </div>                        
+                                    </div>
                                 <div class="box-body table-responsive">
                                     <table id="example2" class="table table-bordered table-striped">
                                         <thead>
@@ -1293,7 +1297,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <th>SERVICIO DE ATENCIÓN</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
-                                                <th>TOTAL</th>                                                
+                                                <th>TOTAL</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -1311,7 +1315,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_tipo_a_cirugia = $tipo_a_cirugia_v + $tipo_a_cirugia_h; echo "$sum_tipo_a_cirugia";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_cirugia" value="<?=$sum_tipo_a_cirugia ?>">                                                
+                                                <input type="hidden" name="sum_tipo_a_cirugia" value="<?=$sum_tipo_a_cirugia ?>">
                                             </tr>
                                             <tr>
                                                 <td>Traumatología</td>
@@ -1327,7 +1331,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_tipo_a_trauma = $tipo_a_trauma_v + $tipo_a_trauma_h; echo "$sum_tipo_a_trauma";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_trauma" value="<?=$sum_tipo_a_trauma ?>">                                                
+                                                <input type="hidden" name="sum_tipo_a_trauma" value="<?=$sum_tipo_a_trauma ?>">
                                             </tr>
                                             <tr>
                                                 <td>Otorrinolaringologo</td>
@@ -1343,7 +1347,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                      <?php $sum_tipo_a_oto = $tipo_a_oto_v + $tipo_a_oto_h; echo "$sum_tipo_a_oto";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_oto" value="<?=$sum_tipo_a_oto ?>">                                             
+                                                <input type="hidden" name="sum_tipo_a_oto" value="<?=$sum_tipo_a_oto ?>">
                                             </tr>
                                             <tr>
                                                 <td>Pediatría</td>
@@ -1359,7 +1363,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_tipo_a_pedia = $tipo_a_pedia_v + $tipo_a_pedia_h; echo "$sum_tipo_a_pedia";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_pedia" value="<?=$sum_tipo_a_pedia ?>">                                                
+                                                <input type="hidden" name="sum_tipo_a_pedia" value="<?=$sum_tipo_a_pedia ?>">
                                             </tr>
                                             <tr>
                                                 <td>Nerología</td>
@@ -1375,7 +1379,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                    <?php $sum_tipo_a_nero = $tipo_a_nero_v + $tipo_a_nero_h; echo "$sum_tipo_a_nero";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_nero" value="<?=$sum_tipo_a_nero ?>">                                               
+                                                <input type="hidden" name="sum_tipo_a_nero" value="<?=$sum_tipo_a_nero ?>">
                                             </tr>
                                             <tr>
                                                 <td>Cadiología</td>
@@ -1391,7 +1395,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_tipo_a_cardio = $tipo_a_cardio_v + $tipo_a_cardio_h; echo "$sum_tipo_a_cardio";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_cardio" value="<?=$sum_tipo_a_cardio ?>">                                              
+                                                <input type="hidden" name="sum_tipo_a_cardio" value="<?=$sum_tipo_a_cardio ?>">
                                             </tr>
 
                                             <tr>
@@ -1408,8 +1412,8 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_tipo_a_nefro = $tipo_a_nefro_v + $tipo_a_nefro_h; echo "$sum_tipo_a_nefro";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_nefro" value="<?=$sum_tipo_a_nefro ?>">                                               
-                                            </tr>  
+                                                <input type="hidden" name="sum_tipo_a_nefro" value="<?=$sum_tipo_a_nefro ?>">
+                                            </tr>
 
                                             <tr>
                                                 <td>Urología</td>
@@ -1425,8 +1429,8 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_tipo_a_uro = $tipo_a_uro_v + $tipo_a_uro_h; echo "$sum_tipo_a_uro";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_uro" value="<?=$sum_tipo_a_uro ?>">                                               
-                                            </tr>  
+                                                <input type="hidden" name="sum_tipo_a_uro" value="<?=$sum_tipo_a_uro ?>">
+                                            </tr>
 
                                             <tr>
                                                 <td>Neumonología</td>
@@ -1442,7 +1446,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_tipo_a_neumo = $tipo_a_neumo_v + $resultado_h; echo "$sum_tipo_a_neumo";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_neumo" value="<?=$sum_tipo_a_neumo ?>">                                               
+                                                <input type="hidden" name="sum_tipo_a_neumo" value="<?=$sum_tipo_a_neumo ?>">
                                             </tr>
 
                                             <tr>
@@ -1459,7 +1463,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                    <?php $sum_tipo_a_herma = $tipo_a_herma_v + $tipo_a_herma_h; echo "$sum_tipo_a_herma";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_herma" value="<?=$sum_tipo_a_herma ?>">                                               
+                                                <input type="hidden" name="sum_tipo_a_herma" value="<?=$sum_tipo_a_herma ?>">
                                             </tr>
 
                                             <tr>
@@ -1476,7 +1480,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_tipo_a_onco = $tipo_a_onco_v + $tipo_a_onco_h; echo "$sum_tipo_a_onco";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_onco" value="<?=$sum_tipo_a_onco ?>">                                               
+                                                <input type="hidden" name="sum_tipo_a_onco" value="<?=$sum_tipo_a_onco ?>">
                                             </tr>
 
                                             <tr>
@@ -1493,7 +1497,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_tipo_a_derma = $tipo_a_derma_v + $tipo_a_derma_h; echo "$sum_tipo_a_derma";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_derma" value="<?=$sum_tipo_a_derma ?>">                                               
+                                                <input type="hidden" name="sum_tipo_a_derma" value="<?=$sum_tipo_a_derma ?>">
                                             </tr>
 
                                             <tr>
@@ -1510,7 +1514,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_tipo_a_gastro = $tipo_a_gastro_v + $tipo_a_gastro_h; echo "$sum_tipo_a_gastro";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_gastro" value="<?=$sum_tipo_a_gastro ?>">                                              
+                                                <input type="hidden" name="sum_tipo_a_gastro" value="<?=$sum_tipo_a_gastro ?>">
                                             </tr>
 
                                             <tr>
@@ -1527,15 +1531,15 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                                 <td>
                                                     <?php $sum_tipo_a_infecto = $tipo_a_infecto_v + $tipo_a_infecto_h; echo "$sum_tipo_a_infecto";  ?>
                                                 </td>
-                                                <input type="hidden" name="sum_tipo_a_infecto" value="<?=$sum_tipo_a_infecto ?>">                                                
-                                            </tr>                                                                                      
+                                                <input type="hidden" name="sum_tipo_a_infecto" value="<?=$sum_tipo_a_infecto ?>">
+                                            </tr>
                                         </tbody>
                                         <tfoot>
                                             <tr>
                                                 <th>SERVICIO DE ATENCIÓN</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
-                                                <th>TOTAL</th>                                                
+                                                <th>TOTAL</th>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -1549,14 +1553,14 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                   <h1>TOTAL ASISTENCIA <small>Agrupado el total del todo el mes</small></h1>
                                 </div>
                                 <!-- Inicio Tabale asistencia   -->
-                                
+
                                     <table id="example2" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
                                                 <th>PISO</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
-                                                <th>TOTAL</th>                                                
+                                                <th>TOTAL</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -1571,7 +1575,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                 <input type="hidden" name="asistencia_p1_h" value="<?=$asistencia_p1_h ?>">
                                                  <td><?php $asistencia_p1 = $asistencia_p1_v + $asistencia_p1_h; echo "$asistencia_p1";  ?></td>
                                                 <input type="hidden" name="asistencia_p1" value="<?=$asistencia_p1 ?>">
-                                                
+
                                             </tr>
                                             <tr>
                                                 <td>Piso 2</td>
@@ -1583,7 +1587,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                 <input type="hidden" name="asistencia_p2_h" value="<?=$asistencia_p2_h ?>">
                                                 <td><?php $asistencia_p2 = $asistencia_p2_v + $asistencia_p2_h; echo "$asistencia_p2";  ?></td>
                                 <input type="hidden" name="asistencia_p2" value="<?=$asistencia_p2 ?>">
-                                                
+
                                             </tr>
                                             <tr>
                                                 <td>Piso 3</td>
@@ -1595,7 +1599,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                 <input type="hidden" name="asistencia_p3_h" value="<?=$asistencia_p3_h ?>">
                                                 <td><?php $asistencia_p3 = $asistencia_p3_v + $asistencia_p3_h; echo "$asistencia_p3";  ?></td>
                                 <input type="hidden" name="asistencia_p3" value="<?=$asistencia_p3 ?>">
-                                                
+
                                             </tr>
                                             <tr>
                                                 <td>Piso 4</td>
@@ -1606,7 +1610,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                $asistencia_p4_h = mysql_result($query, 0); echo "$asistencia_p4_h";  ?></td>
                                 <input type="hidden" name="asistencia_p4_h" value="<?=$asistencia_p4_h ?>">
                                                 <td><?php $asistencia_p4 = $asistencia_p4_v + $asistencia_p4_h; echo "$asistencia_p4";  ?></td>
-                                <input type="hidden" name="asistencia_p4" value="<?=$asistencia_p4 ?>">            
+                                <input type="hidden" name="asistencia_p4" value="<?=$asistencia_p4 ?>">
                                             </tr>
 
                                             <tr>
@@ -1618,7 +1622,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                $asistencia_p5_h = mysql_result($query, 0); echo "$asistencia_p5_h";  ?></td>
                                  <input type="hidden" name="asistencia_p5_h" value="<?=$asistencia_p5_h ?>">
                                                  <td><?php $asistencia_p5 = $asistencia_p5_v + $asistencia_p5_h; echo "$asistencia_p5";  ?></td>
-                                <input type="hidden" name="asistencia_p5" value="<?=$asistencia_p5 ?>">            
+                                <input type="hidden" name="asistencia_p5" value="<?=$asistencia_p5 ?>">
                                             </tr>
 
                                             <tr>
@@ -1630,7 +1634,7 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                 $asistencia_gi_h = mysql_result($query, 0); echo "$asistencia_gi_h";  ?></td>
                                 <input type="hidden" name="asistencia_gi_h" value="<?=$asistencia_gi_h ?>">
                                                 <td><?php $asistencia_gi = $asistencia_gi_v + $asistencia_gi_h; echo "$asistencia_gi";  ?></td>
-                                <input type="hidden" name="asistencia_gi" value="<?=$asistencia_gi ?>">           
+                                <input type="hidden" name="asistencia_gi" value="<?=$asistencia_gi ?>">
                                             </tr>
 
                                             <tr>
@@ -1642,35 +1646,34 @@ $periodo_escolar = $_POST['periodo_escolar'];
                                 $asistencia_gii_h = mysql_result($query, 0); echo "$asistencia_gii_h";  ?></td>
                                 <input type="hidden" name="asistencia_gii_h" value="<?=$asistencia_gii_h ?>">
                                                 <td><?php $asistencia_gii = $asistencia_gii_v + $asistencia_gii_h; echo "$asistencia_gii";  ?></td>
-                                <input type="hidden" name="asistencia_gii" value="<?=$asistencia_gii ?>">           
+                                <input type="hidden" name="asistencia_gii" value="<?=$asistencia_gii ?>">
                                             </tr>
-                                          
+
                                         </tbody>
                                         <tfoot>
                                             <tr>
                                                 <th>PISO</th>
                                                 <th>VARONES</th>
                                                 <th>HEMBRAS</th>
-                                                <th>TOTAL</th>                                                
+                                                <th>TOTAL</th>
                                             </tr>
                                         </tfoot>
                                     </table>
                                     <!-- /Table asistencia-->
-                                    
+
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
 
                             <div id="resumen">
-                                
+
+                            
 
                             </div>
 
                             <button type="submit" class="btn btn-primary">IMPRIMIR</button>
-
-		
-
-
-
+    
+                       
+    
 
 
 
@@ -1685,24 +1688,44 @@ $periodo_escolar = $_POST['periodo_escolar'];
 
 
 
-                                    
 
-                                   
+
+
+
+
+<a href="#top"><button type="button" class="btn btn-success"><b><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> IR A TOP</b></button></a>
 
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                             </form>
-                           
+
+
+<form action="../emergente/borrar_mes.php" method="post">
+    <p>
+                                       
+                                      <input type="hidden" name="mesb" value="<?=$arreglo_mes['id_mes'] ?>">
+
+                                      <input type="hidden" name="inicio" value="<?=$arreglo['inicio'] ?>">
+                                      <input type="hidden" name="fin" value="<?=$arreglo['fin'] ?>">
+                                      <input type="hidden" name="id_periodo" value="<?=$arreglo['id_periodo_escolar'] ?>">
+                                      
+
+
+
+
+<button type="submit" class="btn btn-danger"><b><span class=" glyphicon glyphicon-floppy-remove" aria-hidden="true"></span> Borrar</b></button>
+</form>               
                         </div><!-- /.col (left) -->
 
 
 
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
+<br>   
+    
 
-                            
                         </div><!-- /.col (right) -->
-                    </div><!-- /.row -->                    
+                    </div><!-- /.row -->
 
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
